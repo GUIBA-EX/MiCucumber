@@ -1,5 +1,9 @@
 # Changelog / 更新记录
 
+## Unreleased / 未发布版本
+
+- Add bilingual conservation and amplicon-region figures to both READMEs, with source tables and plotting script. / 为中英文README添加保守性与扩增区域图、数据表及可复现绘图脚本。
+
 ## v0.1.0 — 2026-10-24
 
 - Recover historical v4 and decided-pair baselines / 恢复历史v4及决定版基线。

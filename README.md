@@ -19,6 +19,14 @@ Coverage uses a common panel of **149 taxon-name labels / 347 within-label haplo
 
 The original v4 has 87.46% coverage and 3,248 / 3,401 WC≤3 / GT≤2 background hits. The first optimized separate-PCR v4 reached 90.50%; Apodida supplementation raises this to 92.51% without increasing its background unions. Substantial WC≤4 risk remains.
 
+## Amplicon region map
+
+![MiCucumber conservation and amplicon regions](figures/amplicon_regions.en.png)
+
+Following the MiStar visualization layout, the upper panel shows equal-label-weighted conservation and callable-base weight; the lower panel shows forward/reverse primer direction and primer-free intervals on **AB525437.1 extracted 16S coordinates (1-based)**. Arrows depict the four seed design windows; same-locus variants and Apodida additions can have different physical lengths. The reference spans are not universal product-size predictions. Counts refer to the latest **separate-PCR** schemes, not a mixed tube.
+
+[Vector SVG](figures/amplicon_regions.en.svg) · [PDF](figures/amplicon_regions.en.pdf) · [Coordinates](figures/region_coordinates.csv) · [Conservation data](figures/reference_conservation.csv) · [Plot script](plot_regions.py)
+
 ## Get the primers
 
 - **[Complete latest separate-PCR pairs](results/final_separate_pairs.csv)** — includes the four original component pairs plus additions; no manual joining needed.

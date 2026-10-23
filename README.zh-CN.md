@@ -19,6 +19,14 @@
 
 原v4覆盖87.46%，WC≤3 / GT≤2背景命中为3,248 / 3,401。第一轮优化版分别PCR覆盖90.50%；补充后达到92.51%，非目标并集未增加。更宽松的WC≤4下仍存在明显风险。
 
+## 扩增区域可视化
+
+![MiCucumber序列保守性与扩增区域](figures/amplicon_regions.zh.png)
+
+参考MiStar的图示结构：上图显示名称标签等权的序列保守性及可判定碱基权重；下图显示正反向引物方向及不含引物的内部区间，统一使用 **AB525437.1提取16S的1-based坐标**。箭头表示四个种子设计窗口；同位置变体及Apodida追加引物的实际长度可能不同，因此参考跨度不能当作全部分类群的产物长度。图中配对数量对应最新**独立PCR**方案，不代表同管混合。
+
+[矢量SVG](figures/amplicon_regions.zh.svg) · [PDF](figures/amplicon_regions.zh.pdf) · [坐标表](figures/region_coordinates.csv) · [保守性数据](figures/reference_conservation.csv) · [绘图脚本](plot_regions.py)
+
 ## 使用序列
 
 - **[最新完整独立PCR配对表](results/final_separate_pairs.csv)**：已合并原4对和追加引物，无需手工拼表。
