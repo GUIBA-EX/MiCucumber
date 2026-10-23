@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "schemes": 8,
+  "scope": "all allowed component/cross-pair unions independently validated on original target/background sequences; <=5 confirmed records per WC3/GT2 analysis constraint; not wet-lab read fractions",
+  "common_labels": 149,
+  "common_haplotypes": 347
+}

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "record_primer_model_checks": 336,
+  "scope": "independent exhaustive windows on synthetic and 5 real background records; not final-candidate full-database audit"
+}

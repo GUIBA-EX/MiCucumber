@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "target": 1846,
+  "background": 5600,
+  "clades": {
+    "Holothuroidea": 1846,
+    "Echinoidea": 1401,
+    "Ophiuroidea": 1736,
+    "Crinoidea": 269,
+    "Asteroidea": 1955,
+    "other_metazoa": 239
+  },
+  "target_annotation": {
+    "annotated": 1686,
+    "title_only": 160
+  },
+  "source_hashes_unchanged": true
+}

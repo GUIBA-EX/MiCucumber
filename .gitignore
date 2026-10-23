@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+analysis/independent_scan
+analysis/apodida/target.fasta
+analysis/apodida/background.fasta

@@ -1,0 +1,5 @@
+﻿scheme,additional_pairs,total_pairs,coverage_pct,Apodida_panel_records,Apodida_hit_records,Apodida_coverage_pct,WC3,GT2,WC4
+MiCucumber-L-Separate-Apodida,5,9,66.76147864067326,4,4,100.0,0,4,492
+MiCucumber-M-Separate-Apodida,2,6,79.47587088526686,4,2,50.0,4,0,109
+MiCucumber-S-Separate-Apodida,3,7,70.70230105465004,4,3,74.99999999999999,0,0,130
+MiCucumber-v4opt-Separate-Apodida,3,7,92.50878875039949,4,2,50.0,2,0,750

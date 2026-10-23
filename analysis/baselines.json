@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MiCucumber_v4",
+    "F": "GWWAGACGARAAGACCCTG",
+    "R": "CCCTRCGGTAACTWTTTCYG",
+    "source": "MiStar.xlsx Primer_Cucumber!B30:C31"
+  },
+  {
+    "name": "MiCucumber_decided_Fv2_Rv3A",
+    "F": "GACCGTGCWAAGGTAGCATAATMAYTTGT",
+    "R": "GTTATCCCTRCGGTAACTHTTTCYG",
+    "source": "MiStar.xlsx Primer_Cucumber!B17:C18, adapters removed"
+  }
+]

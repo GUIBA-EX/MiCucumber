@@ -1,0 +1,145 @@
+[
+  {
+    "scheme": "MiCucumber-L-Separate-Apodida",
+    "name": "AP034",
+    "locus": "MiCucumber-L",
+    "F": "CATAAGAGGTGGTCCCTGCCCAGTGA",
+    "R": "CCCTGCGGTAACTTTCTCTAATTACCAT",
+    "source_accession": "NC_058250.1",
+    "AAAA": false,
+    "Tm_difference": 4.705915148572956,
+    "hairpin_max": 46.51009474611095
+  },
+  {
+    "scheme": "MiCucumber-L-Separate-Apodida",
+    "name": "AP033",
+    "locus": "MiCucumber-L",
+    "F": "CATAGGAAGTTAATCCTGCCCAGTGA",
+    "R": "CCCTGCGGAAACTTATTCAAATCCTCAA",
+    "source_accession": "LC704718.1",
+    "AAAA": false,
+    "Tm_difference": 1.5707447479328494,
+    "hairpin_max": 49.04459828204841
+  },
+  {
+    "scheme": "MiCucumber-L-Separate-Apodida",
+    "name": "AP032",
+    "locus": "MiCucumber-L",
+    "F": "TATAGAAAGTTCTCTCTGCCCGGTGA",
+    "R": "CCCTGTGGGAACTTATTCAAATTACCAA",
+    "source_accession": "PP853087.1",
+    "AAAA": false,
+    "Tm_difference": 1.1547839121606103,
+    "hairpin_max": 48.277404030833964
+  },
+  {
+    "scheme": "MiCucumber-L-Separate-Apodida",
+    "name": "AP031",
+    "locus": "MiCucumber-L",
+    "F": "TATAAGAGGTTTTCTCTGCCCGGTGA",
+    "R": "CCCTGCGGGAACTTATTCAATTTCCCAA",
+    "source_accession": "ON018239.1",
+    "AAAA": false,
+    "Tm_difference": 2.227306802149485,
+    "hairpin_max": 52.35882092226626
+  },
+  {
+    "scheme": "MiCucumber-L-Separate-Apodida",
+    "name": "AP037",
+    "locus": "MiCucumber-L",
+    "F": "AGGGGTGAAGCCTGCCCAGTGG",
+    "R": "CCCTGCGGTAACTTTTTCTGTTTGCCAA",
+    "source_accession": "U15596.1",
+    "AAAA": false,
+    "Tm_difference": 2.23661649508972,
+    "hairpin_max": 44.07098432384538
+  },
+  {
+    "scheme": "MiCucumber-M-Separate-Apodida",
+    "name": "AP026",
+    "locus": "MiCucumber-M",
+    "F": "GCATAATCAATTGGCCTTTAAATGGGGT",
+    "R": "TGCGGTAACTTTCTCTAATTACCATT",
+    "source_accession": "NC_058250.1",
+    "AAAA": false,
+    "Tm_difference": 3.995044366823606,
+    "hairpin_max": 44.56983359158306
+  },
+  {
+    "scheme": "MiCucumber-M-Separate-Apodida",
+    "name": "AP023",
+    "locus": "MiCucumber-M",
+    "F": "GCGTAATCATTTGGCCTTTGATTGGGGT",
+    "R": "TGCGGGAACTTATTCAATTTCCCAAT",
+    "source_accession": "ON018239.1",
+    "AAAA": false,
+    "Tm_difference": 4.607955014674928,
+    "hairpin_max": 52.35882092226626
+  },
+  {
+    "scheme": "MiCucumber-S-Separate-Apodida",
+    "name": "AP016",
+    "locus": "MiCucumber-S",
+    "F": "TTTAATTAAGAGTGCAGATGCT",
+    "R": "GGTAACTTTCTCTAATTACCAT",
+    "source_accession": "NC_058250.1",
+    "AAAA": false,
+    "Tm_difference": 2.8213534831369884,
+    "hairpin_max": 44.02101255443063
+  },
+  {
+    "scheme": "MiCucumber-S-Separate-Apodida",
+    "name": "AP015",
+    "locus": "MiCucumber-S",
+    "F": "TTGAAATTAAAGTGCAGAAGCT",
+    "R": "GGAAACTTATTCAAATCCTCAA",
+    "source_accession": "LC704718.1",
+    "AAAA": false,
+    "Tm_difference": 2.4647252949179688,
+    "hairpin_max": 42.743223879121786
+  },
+  {
+    "scheme": "MiCucumber-S-Separate-Apodida",
+    "name": "AP013",
+    "locus": "MiCucumber-S",
+    "F": "TTGATATTGAGGTGCAGAAGCT",
+    "R": "GGGAACTTATTCAATTTCCCAA",
+    "source_accession": "ON018239.1",
+    "AAAA": false,
+    "Tm_difference": 3.200115974445964,
+    "hairpin_max": 51.356691606036634
+  },
+  {
+    "scheme": "MiCucumber-v4opt-Separate-Apodida",
+    "name": "AP005",
+    "locus": "MiCucumber-v4opt",
+    "F": "TTCGTGGGACGATAAGACCCTGTCGAAC",
+    "R": "TCCCTGCGGAAACTTATTCAAATCCTCAA",
+    "source_accession": "LC704718.1",
+    "AAAA": false,
+    "Tm_difference": 2.969026917292922,
+    "hairpin_max": 50.853350665018525
+  },
+  {
+    "scheme": "MiCucumber-v4opt-Separate-Apodida",
+    "name": "AP003",
+    "locus": "MiCucumber-v4opt",
+    "F": "TTCGTGGGACGATAAGACCCTGTCGAGC",
+    "R": "TCCCTGCGGGAACTTATTCAATTTCCCAA",
+    "source_accession": "ON018239.1",
+    "AAAA": false,
+    "Tm_difference": 2.7849003467062516,
+    "hairpin_max": 52.35882092226626
+  },
+  {
+    "scheme": "MiCucumber-v4opt-Separate-Apodida",
+    "name": "AP009",
+    "locus": "MiCucumber-v4opt",
+    "F": "ATAGAAAGACGAGAAGACCCTGTCGAGC",
+    "R": "TCCCTGCGGTAACTTTTTCCGTATACCAG",
+    "source_accession": "FJ223867.1",
+    "AAAA": false,
+    "Tm_difference": 0.6616415984411219,
+    "hairpin_max": 45.113806076947185
+  }
+]

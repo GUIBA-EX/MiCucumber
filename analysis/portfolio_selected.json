@@ -1,0 +1,1105 @@
+[
+  {
+    "F_ids": [
+      "SL0545",
+      "SL0573",
+      "SL0577",
+      "SL0594"
+    ],
+    "R_ids": [
+      "SL0622",
+      "SL0668",
+      "SL0669",
+      "SL0674"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0545",
+        "SL0668"
+      ],
+      [
+        "SL0573",
+        "SL0674"
+      ],
+      [
+        "SL0577",
+        "SL0622"
+      ],
+      [
+        "SL0594",
+        "SL0669"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0545",
+        "SL0668"
+      ],
+      [
+        "SL0573",
+        "SL0674"
+      ],
+      [
+        "SL0577",
+        "SL0622"
+      ],
+      [
+        "SL0594",
+        "SL0669"
+      ]
+    ],
+    "coverage": 0.6293810589112603,
+    "WC3_accessions": [],
+    "GT2_accessions": [
+      "DQ073743.1",
+      "NC_085242.1",
+      "NC_087841.1",
+      "NC_087866.1"
+    ],
+    "WC4_sum_upper_bound": 506,
+    "total_degeneracy": 106,
+    "locus": "MiCucumber-L",
+    "mode": "separate",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-L-Separate",
+    "allowed_pair_names": [
+      "MC_combo_037",
+      "MC_combo_038",
+      "MC_combo_039",
+      "MC_long_3"
+    ],
+    "F_sequences": [
+      "TATAAGAAGTGAAGCCTGCCCAGTG",
+      "TATGGGGGGTGTAGCCTGCCCAGTGG",
+      "TATWAGGGGTRAMGCCTGCCCARTGG",
+      "YATAARGGGTCMMGCCTGCCCAGTGG"
+    ],
+    "R_sequences": [
+      "CCCTGCGGTAACTKTTTCTGTTTAYCAK",
+      "CCCTGCGGTAACTTTTTCYGWTTWCCAR",
+      "CCCTGCGGTAACTTTTTCYGWWTWCCAR",
+      "CCCTGCGGTAACTYTTTCCGWWTWCCAG"
+    ],
+    "components": [
+      {
+        "F_id": "SL0545",
+        "R_id": "SL0668",
+        "F": "TATAAGAAGTGAAGCCTGCCCAGTG",
+        "R": "CCCTGCGGTAACTTTTTCYGWTTWCCAR"
+      },
+      {
+        "F_id": "SL0573",
+        "R_id": "SL0674",
+        "F": "TATGGGGGGTGTAGCCTGCCCAGTGG",
+        "R": "CCCTGCGGTAACTYTTTCCGWWTWCCAG"
+      },
+      {
+        "F_id": "SL0577",
+        "R_id": "SL0622",
+        "F": "TATWAGGGGTRAMGCCTGCCCARTGG",
+        "R": "CCCTGCGGTAACTKTTTCTGTTTAYCAK"
+      },
+      {
+        "F_id": "SL0594",
+        "R_id": "SL0669",
+        "F": "YATAARGGGTCMMGCCTGCCCAGTGG",
+        "R": "CCCTGCGGTAACTTTTTCYGWWTWCCAR"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0545",
+      "SL0577",
+      "SL0587",
+      "SL0594"
+    ],
+    "R_ids": [
+      "SL0598",
+      "SL0620",
+      "SL0668",
+      "SL0669"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0545",
+        "SL0598"
+      ],
+      [
+        "SL0545",
+        "SL0620"
+      ],
+      [
+        "SL0545",
+        "SL0668"
+      ],
+      [
+        "SL0545",
+        "SL0669"
+      ],
+      [
+        "SL0577",
+        "SL0598"
+      ],
+      [
+        "SL0577",
+        "SL0620"
+      ],
+      [
+        "SL0577",
+        "SL0668"
+      ],
+      [
+        "SL0577",
+        "SL0669"
+      ],
+      [
+        "SL0587",
+        "SL0598"
+      ],
+      [
+        "SL0587",
+        "SL0620"
+      ],
+      [
+        "SL0587",
+        "SL0668"
+      ],
+      [
+        "SL0587",
+        "SL0669"
+      ],
+      [
+        "SL0594",
+        "SL0598"
+      ],
+      [
+        "SL0594",
+        "SL0620"
+      ],
+      [
+        "SL0594",
+        "SL0668"
+      ],
+      [
+        "SL0594",
+        "SL0669"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0545",
+        "SL0598"
+      ],
+      [
+        "SL0577",
+        "SL0620"
+      ],
+      [
+        "SL0587",
+        "SL0668"
+      ],
+      [
+        "SL0594",
+        "SL0669"
+      ]
+    ],
+    "coverage": 0.6264088633216149,
+    "WC3_accessions": [],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 1050,
+    "total_degeneracy": 84,
+    "locus": "MiCucumber-L",
+    "mode": "pool",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-L-Pool",
+    "allowed_pair_names": [
+      "MC_combo_040",
+      "MC_combo_041",
+      "MC_combo_037",
+      "MC_combo_042",
+      "MC_combo_043",
+      "MC_combo_044",
+      "MC_combo_045",
+      "MC_combo_046",
+      "MC_combo_047",
+      "MC_combo_048",
+      "MC_combo_049",
+      "MC_combo_050",
+      "MC_combo_051",
+      "MC_combo_052",
+      "MC_long_2",
+      "MC_long_3"
+    ],
+    "F_sequences": [
+      "TATAAGAAGTGAAGCCTGCCCAGTG",
+      "TATWAGGGGTRAMGCCTGCCCARTGG",
+      "TTTAAGGAGTCTCGCCTGCCCAGTGG",
+      "YATAARGGGTCMMGCCTGCCCAGTGG"
+    ],
+    "R_sequences": [
+      "CCCTACGGTAACTAATTCTGTTTTCCAA",
+      "CCCTGCGGTAACTGTTTCTGTTTATCAT",
+      "CCCTGCGGTAACTTTTTCYGWTTWCCAR",
+      "CCCTGCGGTAACTTTTTCYGWWTWCCAR"
+    ],
+    "components": [
+      {
+        "F_id": "SL0545",
+        "R_id": "SL0598",
+        "F": "TATAAGAAGTGAAGCCTGCCCAGTG",
+        "R": "CCCTACGGTAACTAATTCTGTTTTCCAA"
+      },
+      {
+        "F_id": "SL0577",
+        "R_id": "SL0620",
+        "F": "TATWAGGGGTRAMGCCTGCCCARTGG",
+        "R": "CCCTGCGGTAACTGTTTCTGTTTATCAT"
+      },
+      {
+        "F_id": "SL0587",
+        "R_id": "SL0668",
+        "F": "TTTAAGGAGTCTCGCCTGCCCAGTGG",
+        "R": "CCCTGCGGTAACTTTTTCYGWTTWCCAR"
+      },
+      {
+        "F_id": "SL0594",
+        "R_id": "SL0669",
+        "F": "YATAARGGGTCMMGCCTGCCCAGTGG",
+        "R": "CCCTGCGGTAACTTTTTCYGWWTWCCAR"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0330",
+      "SL0363",
+      "SL0368",
+      "SL0372"
+    ],
+    "R_ids": [
+      "SL0378",
+      "SL0403",
+      "SL0442",
+      "SL0462"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0330",
+        "SL0378"
+      ],
+      [
+        "SL0363",
+        "SL0442"
+      ],
+      [
+        "SL0368",
+        "SL0462"
+      ],
+      [
+        "SL0372",
+        "SL0403"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0330",
+        "SL0378"
+      ],
+      [
+        "SL0363",
+        "SL0442"
+      ],
+      [
+        "SL0368",
+        "SL0462"
+      ],
+      [
+        "SL0372",
+        "SL0403"
+      ]
+    ],
+    "coverage": 0.7813358900607223,
+    "WC3_accessions": [
+      "AF049132.1",
+      "DQ297091.1",
+      "JX312800.1",
+      "NC_001878.1"
+    ],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 109,
+    "total_degeneracy": 79,
+    "locus": "MiCucumber-M",
+    "mode": "separate",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-M-Separate",
+    "allowed_pair_names": [
+      "MC_combo_053",
+      "MC_combo_054",
+      "MC_combo_055",
+      "MC_combo_056"
+    ],
+    "F_sequences": [
+      "GCATAATAATTTGTTTTTTAAATGGAAA",
+      "GCATAATCAYTTGTCTCTTAAATRGRGA",
+      "GCATAATCAYTTGTCTYTTAAATGRRGA",
+      "GCATATTCACTTGCTCTTTAAATGGGAA"
+    ],
+    "R_sequences": [
+      "TACGGTAACTAATTCTGTTTTCCAAA",
+      "TGCGGTAACTKTTTCTGTTTAYCAKK",
+      "TGCGGTAACTTTTTCCGTTTWCCAGR",
+      "TGCGGTAACTTTTTCYGWTTWCCARW"
+    ],
+    "components": [
+      {
+        "F_id": "SL0330",
+        "R_id": "SL0378",
+        "F": "GCATAATAATTTGTTTTTTAAATGGAAA",
+        "R": "TACGGTAACTAATTCTGTTTTCCAAA"
+      },
+      {
+        "F_id": "SL0363",
+        "R_id": "SL0442",
+        "F": "GCATAATCAYTTGTCTCTTAAATRGRGA",
+        "R": "TGCGGTAACTTTTTCCGTTTWCCAGR"
+      },
+      {
+        "F_id": "SL0368",
+        "R_id": "SL0462",
+        "F": "GCATAATCAYTTGTCTYTTAAATGRRGA",
+        "R": "TGCGGTAACTTTTTCYGWTTWCCARW"
+      },
+      {
+        "F_id": "SL0372",
+        "R_id": "SL0403",
+        "F": "GCATATTCACTTGCTCTTTAAATGGGAA",
+        "R": "TGCGGTAACTKTTTCTGTTTAYCAKK"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0330",
+      "SL0333",
+      "SL0368",
+      "SL0369"
+    ],
+    "R_ids": [
+      "SL0377",
+      "SL0391",
+      "SL0394",
+      "SL0462"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0330",
+        "SL0377"
+      ],
+      [
+        "SL0330",
+        "SL0391"
+      ],
+      [
+        "SL0330",
+        "SL0394"
+      ],
+      [
+        "SL0330",
+        "SL0462"
+      ],
+      [
+        "SL0333",
+        "SL0377"
+      ],
+      [
+        "SL0333",
+        "SL0391"
+      ],
+      [
+        "SL0333",
+        "SL0394"
+      ],
+      [
+        "SL0333",
+        "SL0462"
+      ],
+      [
+        "SL0368",
+        "SL0377"
+      ],
+      [
+        "SL0368",
+        "SL0391"
+      ],
+      [
+        "SL0368",
+        "SL0394"
+      ],
+      [
+        "SL0368",
+        "SL0462"
+      ],
+      [
+        "SL0369",
+        "SL0377"
+      ],
+      [
+        "SL0369",
+        "SL0391"
+      ],
+      [
+        "SL0369",
+        "SL0394"
+      ],
+      [
+        "SL0369",
+        "SL0462"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0330",
+        "SL0377"
+      ],
+      [
+        "SL0333",
+        "SL0394"
+      ],
+      [
+        "SL0368",
+        "SL0462"
+      ],
+      [
+        "SL0369",
+        "SL0391"
+      ]
+    ],
+    "coverage": 0.7846915947587089,
+    "WC3_accessions": [
+      "AF049132.1",
+      "DQ297091.1",
+      "JX312800.1",
+      "NC_001878.1"
+    ],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 207,
+    "total_degeneracy": 69,
+    "locus": "MiCucumber-M",
+    "mode": "pool",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-M-Pool",
+    "allowed_pair_names": [
+      "MC_combo_057",
+      "MC_combo_058",
+      "MC_combo_059",
+      "MC_combo_060",
+      "MC_combo_061",
+      "MC_combo_062",
+      "MC_combo_063",
+      "MC_combo_064",
+      "MC_combo_065",
+      "MC_combo_066",
+      "MC_combo_067",
+      "MC_combo_055",
+      "MC_combo_068",
+      "MC_combo_069",
+      "MC_combo_070",
+      "MC_combo_071"
+    ],
+    "F_sequences": [
+      "GCATAATAATTTGTTTTTTAAATGGAAA",
+      "GCATAATCACTTGCTCTTTAAATGAGAA",
+      "GCATAATCAYTTGTCTYTTAAATGRRGA",
+      "GCATAATCAYTTGTCTYYTAAATAGRGA"
+    ],
+    "R_sequences": [
+      "TACGGTAACTAATTCTGATTACCAAA",
+      "TGCGGTAACTATTTCTGTAAATCATT",
+      "TGCGGTAACTATTTCTGTTTACCAGT",
+      "TGCGGTAACTTTTTCYGWTTWCCARW"
+    ],
+    "components": [
+      {
+        "F_id": "SL0330",
+        "R_id": "SL0377",
+        "F": "GCATAATAATTTGTTTTTTAAATGGAAA",
+        "R": "TACGGTAACTAATTCTGATTACCAAA"
+      },
+      {
+        "F_id": "SL0333",
+        "R_id": "SL0394",
+        "F": "GCATAATCACTTGCTCTTTAAATGAGAA",
+        "R": "TGCGGTAACTATTTCTGTTTACCAGT"
+      },
+      {
+        "F_id": "SL0368",
+        "R_id": "SL0462",
+        "F": "GCATAATCAYTTGTCTYTTAAATGRRGA",
+        "R": "TGCGGTAACTTTTTCYGWTTWCCARW"
+      },
+      {
+        "F_id": "SL0369",
+        "R_id": "SL0391",
+        "F": "GCATAATCAYTTGTCTYYTAAATAGRGA",
+        "R": "TGCGGTAACTATTTCTGTAAATCATT"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0151",
+      "SL0201",
+      "SL0230",
+      "SL0245"
+    ],
+    "R_ids": [
+      "SL0266",
+      "SL0279",
+      "SL0318",
+      "SL0321"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0151",
+        "SL0321"
+      ],
+      [
+        "SL0201",
+        "SL0266"
+      ],
+      [
+        "SL0230",
+        "SL0279"
+      ],
+      [
+        "SL0245",
+        "SL0318"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0151",
+        "SL0321"
+      ],
+      [
+        "SL0201",
+        "SL0266"
+      ],
+      [
+        "SL0230",
+        "SL0279"
+      ],
+      [
+        "SL0245",
+        "SL0318"
+      ]
+    ],
+    "coverage": 0.6870805369127517,
+    "WC3_accessions": [],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 130,
+    "total_degeneracy": 85,
+    "locus": "MiCucumber-S",
+    "mode": "separate",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-S-Separate",
+    "allowed_pair_names": [
+      "MC_combo_072",
+      "MC_combo_073",
+      "MC_combo_074",
+      "MC_combo_075"
+    ],
+    "F_sequences": [
+      "CTCTTACCTAGGTGAAGAAACC",
+      "TTCTTTCCTGTGTGAAGAAACC",
+      "TTTCTTTCTGTGTGAAGAAGCA",
+      "YTTCTAYYTAYGTGAAGAAGCR"
+    ],
+    "R_sequences": [
+      "GGTAACTCTTTCCGAATACCAG",
+      "GGTAACTTTTTCCGAATACCAG",
+      "GGTAACTTTTTCYGWWTWCCAR",
+      "GGTAACTYTTTCCGWWTWCCAG"
+    ],
+    "components": [
+      {
+        "F_id": "SL0151",
+        "R_id": "SL0321",
+        "F": "CTCTTACCTAGGTGAAGAAACC",
+        "R": "GGTAACTYTTTCCGWWTWCCAG"
+      },
+      {
+        "F_id": "SL0201",
+        "R_id": "SL0266",
+        "F": "TTCTTTCCTGTGTGAAGAAACC",
+        "R": "GGTAACTCTTTCCGAATACCAG"
+      },
+      {
+        "F_id": "SL0230",
+        "R_id": "SL0279",
+        "F": "TTTCTTTCTGTGTGAAGAAGCA",
+        "R": "GGTAACTTTTTCCGAATACCAG"
+      },
+      {
+        "F_id": "SL0245",
+        "R_id": "SL0318",
+        "F": "YTTCTAYYTAYGTGAAGAAGCR",
+        "R": "GGTAACTTTTTCYGWWTWCCAR"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0151",
+      "SL0201",
+      "SL0230",
+      "SL0245"
+    ],
+    "R_ids": [
+      "SL0252",
+      "SL0266",
+      "SL0271",
+      "SL0318"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0151",
+        "SL0252"
+      ],
+      [
+        "SL0151",
+        "SL0266"
+      ],
+      [
+        "SL0151",
+        "SL0271"
+      ],
+      [
+        "SL0151",
+        "SL0318"
+      ],
+      [
+        "SL0201",
+        "SL0252"
+      ],
+      [
+        "SL0201",
+        "SL0266"
+      ],
+      [
+        "SL0201",
+        "SL0271"
+      ],
+      [
+        "SL0201",
+        "SL0318"
+      ],
+      [
+        "SL0230",
+        "SL0252"
+      ],
+      [
+        "SL0230",
+        "SL0266"
+      ],
+      [
+        "SL0230",
+        "SL0271"
+      ],
+      [
+        "SL0230",
+        "SL0318"
+      ],
+      [
+        "SL0245",
+        "SL0252"
+      ],
+      [
+        "SL0245",
+        "SL0266"
+      ],
+      [
+        "SL0245",
+        "SL0271"
+      ],
+      [
+        "SL0245",
+        "SL0318"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0151",
+        "SL0271"
+      ],
+      [
+        "SL0201",
+        "SL0266"
+      ],
+      [
+        "SL0230",
+        "SL0252"
+      ],
+      [
+        "SL0245",
+        "SL0318"
+      ]
+    ],
+    "coverage": 0.707214765100671,
+    "WC3_accessions": [
+      "DQ297085.1",
+      "EF624412.1",
+      "EU722978.1",
+      "EU722991.1",
+      "KT268108.1"
+    ],
+    "GT2_accessions": [
+      "EU072949.1",
+      "EU722991.1",
+      "KU519516.1"
+    ],
+    "WC4_sum_upper_bound": 284,
+    "total_degeneracy": 77,
+    "locus": "MiCucumber-S",
+    "mode": "pool",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-S-Pool",
+    "allowed_pair_names": [
+      "MC_combo_076",
+      "MC_combo_077",
+      "MC_combo_078",
+      "MC_combo_079",
+      "MC_combo_080",
+      "MC_combo_073",
+      "MC_combo_081",
+      "MC_combo_082",
+      "MC_combo_083",
+      "MC_combo_084",
+      "MC_combo_085",
+      "MC_combo_086",
+      "MC_combo_087",
+      "MC_combo_088",
+      "MC_combo_089",
+      "MC_combo_075"
+    ],
+    "F_sequences": [
+      "CTCTTACCTAGGTGAAGAAACC",
+      "TTCTTTCCTGTGTGAAGAAACC",
+      "TTTCTTTCTGTGTGAAGAAGCA",
+      "YTTCTAYYTAYGTGAAGAAGCR"
+    ],
+    "R_sequences": [
+      "GGTAACTAATTCTGTTTTCCAA",
+      "GGTAACTCTTTCCGAATACCAG",
+      "GGTAACTKTTTCTGTTTAYCAK",
+      "GGTAACTTTTTCYGWWTWCCAR"
+    ],
+    "components": [
+      {
+        "F_id": "SL0151",
+        "R_id": "SL0271",
+        "F": "CTCTTACCTAGGTGAAGAAACC",
+        "R": "GGTAACTKTTTCTGTTTAYCAK"
+      },
+      {
+        "F_id": "SL0201",
+        "R_id": "SL0266",
+        "F": "TTCTTTCCTGTGTGAAGAAACC",
+        "R": "GGTAACTCTTTCCGAATACCAG"
+      },
+      {
+        "F_id": "SL0230",
+        "R_id": "SL0252",
+        "F": "TTTCTTTCTGTGTGAAGAAGCA",
+        "R": "GGTAACTAATTCTGTTTTCCAA"
+      },
+      {
+        "F_id": "SL0245",
+        "R_id": "SL0318",
+        "F": "YTTCTAYYTAYGTGAAGAAGCR",
+        "R": "GGTAACTTTTTCYGWWTWCCAR"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0000",
+      "SL0001",
+      "SL0025",
+      "SL0026"
+    ],
+    "R_ids": [
+      "SL0053",
+      "SL0066",
+      "SL0077",
+      "SL0123"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0000",
+        "SL0077"
+      ],
+      [
+        "SL0001",
+        "SL0066"
+      ],
+      [
+        "SL0025",
+        "SL0053"
+      ],
+      [
+        "SL0026",
+        "SL0123"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0000",
+        "SL0077"
+      ],
+      [
+        "SL0001",
+        "SL0066"
+      ],
+      [
+        "SL0025",
+        "SL0053"
+      ],
+      [
+        "SL0026",
+        "SL0123"
+      ]
+    ],
+    "coverage": 0.9041866410993926,
+    "WC3_accessions": [
+      "JX312800.1",
+      "KU519516.1"
+    ],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 813,
+    "total_degeneracy": 55,
+    "locus": "MiCucumber-v4opt",
+    "mode": "separate",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-v4opt-Separate",
+    "allowed_pair_names": [
+      "MC_combo_090",
+      "MC_combo_091",
+      "MC_combo_092",
+      "MC_v4_refined_1"
+    ],
+    "F_sequences": [
+      "AAAGAAAGACGAGAAGACCCCGTCGAGC",
+      "AAAGAAAGACGAGAAGACCCTGTCAAGC",
+      "HHAGAAAGACGAGAAGACCCTGTCGAGC",
+      "HHAGWAAGACGAGAAGACCCTGTCGAGC"
+    ],
+    "R_sequences": [
+      "TCCCTACGGTAACTAATTCTGTTTTCCAA",
+      "TCCCTGCGGTAACTATTTCTGTAAATCAT",
+      "TCCCTGCGGTAACTKTTTCTGTTTAYCAK",
+      "TCCCTGCGGTAACTTTTTCYGWTTWCCAR"
+    ],
+    "components": [
+      {
+        "F_id": "SL0000",
+        "R_id": "SL0077",
+        "F": "AAAGAAAGACGAGAAGACCCCGTCGAGC",
+        "R": "TCCCTGCGGTAACTKTTTCTGTTTAYCAK"
+      },
+      {
+        "F_id": "SL0001",
+        "R_id": "SL0066",
+        "F": "AAAGAAAGACGAGAAGACCCTGTCAAGC",
+        "R": "TCCCTGCGGTAACTATTTCTGTAAATCAT"
+      },
+      {
+        "F_id": "SL0025",
+        "R_id": "SL0053",
+        "F": "HHAGAAAGACGAGAAGACCCTGTCGAGC",
+        "R": "TCCCTACGGTAACTAATTCTGTTTTCCAA"
+      },
+      {
+        "F_id": "SL0026",
+        "R_id": "SL0123",
+        "F": "HHAGWAAGACGAGAAGACCCTGTCGAGC",
+        "R": "TCCCTGCGGTAACTTTTTCYGWTTWCCAR"
+      }
+    ]
+  },
+  {
+    "F_ids": [
+      "SL0002",
+      "SL0026",
+      "SL0031",
+      "SL0046"
+    ],
+    "R_ids": [
+      "SL0053",
+      "SL0082",
+      "SL0120",
+      "SL0123"
+    ],
+    "allowed_pairs": [
+      [
+        "SL0002",
+        "SL0053"
+      ],
+      [
+        "SL0002",
+        "SL0082"
+      ],
+      [
+        "SL0002",
+        "SL0120"
+      ],
+      [
+        "SL0002",
+        "SL0123"
+      ],
+      [
+        "SL0026",
+        "SL0053"
+      ],
+      [
+        "SL0026",
+        "SL0082"
+      ],
+      [
+        "SL0026",
+        "SL0120"
+      ],
+      [
+        "SL0026",
+        "SL0123"
+      ],
+      [
+        "SL0031",
+        "SL0053"
+      ],
+      [
+        "SL0031",
+        "SL0082"
+      ],
+      [
+        "SL0031",
+        "SL0120"
+      ],
+      [
+        "SL0031",
+        "SL0123"
+      ],
+      [
+        "SL0046",
+        "SL0053"
+      ],
+      [
+        "SL0046",
+        "SL0082"
+      ],
+      [
+        "SL0046",
+        "SL0120"
+      ],
+      [
+        "SL0046",
+        "SL0123"
+      ]
+    ],
+    "component_pairs": [
+      [
+        "SL0002",
+        "SL0120"
+      ],
+      [
+        "SL0026",
+        "SL0053"
+      ],
+      [
+        "SL0031",
+        "SL0123"
+      ],
+      [
+        "SL0046",
+        "SL0082"
+      ]
+    ],
+    "coverage": 0.8907638223074466,
+    "WC3_accessions": [
+      "JX312800.1",
+      "KU519516.1"
+    ],
+    "GT2_accessions": [],
+    "WC4_sum_upper_bound": 1480,
+    "total_degeneracy": 53,
+    "locus": "MiCucumber-v4opt",
+    "mode": "pool",
+    "budget_per_model": 5,
+    "max_component_pairs": 4,
+    "name": "MiCucumber-v4opt-Pool",
+    "allowed_pair_names": [
+      "MC_combo_093",
+      "MC_combo_094",
+      "MC_combo_095",
+      "MC_combo_096",
+      "MC_combo_097",
+      "MC_combo_098",
+      "MC_combo_099",
+      "MC_v4_refined_1",
+      "MC_combo_100",
+      "MC_combo_101",
+      "MC_combo_102",
+      "MC_combo_103",
+      "MC_combo_104",
+      "MC_combo_105",
+      "MC_combo_106",
+      "MC_combo_107"
+    ],
+    "F_sequences": [
+      "AAAGAAAGACGAGAAGACCCTGTCGAAC",
+      "HHAGWAAGACGAGAAGACCCTGTCGAGC",
+      "MHAGAAAGACGAGAAGACCCTGTCGAGC",
+      "VVAGAAAGACGAGAAGACCCTGTCGAGC"
+    ],
+    "R_sequences": [
+      "TCCCTACGGTAACTAATTCTGTTTTCCAA",
+      "TCCCTGCGGTAACTTTATCTGTTTACCAT",
+      "TCCCTGCGGTAACTTTTTCTGTTTTCATT",
+      "TCCCTGCGGTAACTTTTTCYGWTTWCCAR"
+    ],
+    "components": [
+      {
+        "F_id": "SL0002",
+        "R_id": "SL0120",
+        "F": "AAAGAAAGACGAGAAGACCCTGTCGAAC",
+        "R": "TCCCTGCGGTAACTTTTTCTGTTTTCATT"
+      },
+      {
+        "F_id": "SL0026",
+        "R_id": "SL0053",
+        "F": "HHAGWAAGACGAGAAGACCCTGTCGAGC",
+        "R": "TCCCTACGGTAACTAATTCTGTTTTCCAA"
+      },
+      {
+        "F_id": "SL0031",
+        "R_id": "SL0123",
+        "F": "MHAGAAAGACGAGAAGACCCTGTCGAGC",
+        "R": "TCCCTGCGGTAACTTTTTCYGWTTWCCAR"
+      },
+      {
+        "F_id": "SL0046",
+        "R_id": "SL0082",
+        "F": "VVAGAAAGACGAGAAGACCCTGTCGAGC",
+        "R": "TCCCTGCGGTAACTTTATCTGTTTACCAT"
+      }
+    ]
+  }
+]
