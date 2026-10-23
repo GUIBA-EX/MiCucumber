@@ -53,4 +53,4 @@ python revalidate.py
 
 历史v4来源为`MiStar.xlsx`的`Primer_Cucumber`工作表B30:C31（2024-08-23），旧决定版Fv2/Rv3A来源为B17:C18并移除接头。不公开原始私人工作簿或往来通信。参考记录见`analysis/metadata.tsv`，继承数据的指纹见`analysis/input_manifest.json`。
 
-本次发布尚未选择软件或数据许可证；公开可见不等于已授予开源许可。参考序列保留原始数据库来源，本项目不声称拥有其原创权。
+**版权所有 © 2026 Fei Xia（GUIBA-EX），保留所有权利。** 未经书面许可，禁止转载、镜像、再分发及翻译或改编后发布受保护的原创材料。公开访问不等于开源许可；法定例外、GitHub平台权利及第三方参考数据原有权利不受影响。详见[著作权与使用声明](COPYRIGHT.md)。

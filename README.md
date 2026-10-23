@@ -53,4 +53,4 @@ See [reproducibility](docs/REPRODUCIBILITY.md) for the supported scope. The froz
 
 Historical v4 sequences were transcribed from `MiStar.xlsx`, sheet `Primer_Cucumber`, B30:C31 (2024-08-23); the older decided Fv2/Rv3A pair comes from B17:C18 after removing adapters. The private workbook and correspondence are not distributed. The public accession manifest is `analysis/metadata.tsv`; inherited source fingerprints are in `analysis/input_manifest.json`.
 
-No software or data license has been selected for this initial release. Do not infer an open-source license from public repository access. Reference accessions retain their original database provenance; this repository does not claim authorship of those sequences.
+**Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved.** Unauthorized republication, mirroring, redistribution, and publication of translations/adaptations of protected original materials are prohibited. Public access is not an open-source license. Statutory exceptions, GitHub platform rights and third-party reference-data rights remain unaffected. See [Copyright and permissions](COPYRIGHT.md).

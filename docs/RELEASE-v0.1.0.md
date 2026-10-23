@@ -11,3 +11,7 @@ Latest overall coverage: v4opt 92.51%, S 70.70%, M 79.48%, L 66.76%. Apodida com
 No wet-lab validation or final PCR recipe is claimed. This prerelease is suitable for method review and planning experimental validation.
 
 本预发布版本供方法审阅与实验验证准备，不宣称已完成湿实验或确定最终PCR条件。
+
+Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. See COPYRIGHT.md.
+
+版权所有，未经书面许可禁止转载、再分发受保护原创材料；详见COPYRIGHT.md。
