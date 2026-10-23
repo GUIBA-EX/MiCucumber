@@ -1,64 +1,57 @@
 # MiCucumber
 
-**海参线粒体16S引物设计与计算评估。**
+**海参线粒体16S计算候选引物。** [English](README.md)
 
-[English](README.md) · [方法说明](docs/METHODS.zh-CN.md) · [复现说明](docs/REPRODUCIBILITY.md)
+## 当前方案：四个区域，各1对和2对
 
-本项目参考 MiStar 工作流，优化历史 MiCucumber 引物，优先降低非目标风险，使用同位置多对引物补充覆盖，并设计多个长度系列。**v0.1.0 是计算候选发布版，尚未经湿实验验证，也不代表历史引物“v5”。**
+保留v4opt、S、M、L各1对和2对，共8套方案。优先以 **v4opt两对版开展实验验证**；四个区域是替代选择，不要求同一样本全部运行。两对指**两套独立PCR**，不是已验证的单管混池。目前均未完成湿实验验证。
 
-## 最新结果
+Apodida不参与优化目标，但仍报告含Apodida的全部目标覆盖。共同面板为 **151个分类名称标签／351个标签内单倍型，其中非Apodida为145个标签**。两种分母不能混用；区域面板见CSV。名称与历史分类尚未进行同物异名统一。
 
-| Version / 版本 | Independent PCRs / 独立PCR | Overall coverage / 总覆盖 | Apodida panel / 面板 | WC≤3 / GT≤2 | WC≤4 |
-|---|---:|---:|---:|---:|---:|
-| v4opt + Apodida | 7 | 92.51% | 2/4 | 2 / 0 | 750 |
-| S + Apodida | 7 | 70.70% | 3/4 | 0 / 0 | 130 |
-| M + Apodida | 6 | 79.48% | 2/4 | 4 / 0 | 109 |
-| L + Apodida | 9 | 66.76% | 4/4 | 0 / 4 | 492 |
+| Version | Pairs | All-target coverage | All-target exact | Non-Apodida coverage | Non-Apodida exact | WC≤3 / GT≤2 | WC≤4 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| v4opt | 1 | 83.97% | 26.39% | 87.45% | 27.48% | 2 / 0 | 742 |
+| v4opt | 2 | 85.01% | 39.22% | 88.53% | 40.84% | 2 / 0 | 742 |
+| S | 1 | 54.64% | 9.05% | 56.90% | 9.43% | 0 / 0 | 130 |
+| S | 2 | 59.94% | 13.69% | 62.42% | 14.25% | 0 / 0 | 131 |
+| M | 1 | 67.47% | 32.30% | 70.26% | 33.63% | 4 / 0 | 109 |
+| M | 2 | 71.11% | 33.62% | 74.06% | 35.01% | 4 / 0 | 109 |
+| L | 1 | 46.42% | 9.33% | 48.34% | 9.71% | 0 / 0 | 486 |
+| L | 2 | 53.08% | 11.31% | 55.27% | 11.78% | 0 / 4 | 492 |
 
-总覆盖率基于共同面板149个名称标签、347个标签内去重单倍型，标签等权、标签内单倍型等权。面板中Apodida仅有4条记录、4个标签；4/4不能证明覆盖整个目。覆盖模型允许每条引物≤2个错配，同时要求3′末端3个碱基完全匹配。非目标数为5,600条背景参考记录中的accession并集，不是物种数或实验读数比例。
+Coverage为每条引物≤2处错配且3′末端3碱基完全匹配；Exact为正反引物均完全匹配。按标签等权、标签内单倍型等权计算。非目标数是5,600条参考中的accession并集，不是物种数或reads比例。WC≤4残余风险仍较高；L两对版覆盖有限，仅保留为长区域对照。
 
-原v4覆盖87.46%，WC≤3 / GT≤2背景命中为3,248 / 3,401。第一轮优化版分别PCR覆盖90.50%；补充后达到92.51%，非目标并集未增加。更宽松的WC≤4下仍存在明显风险。
+## 选择与复核
 
-## 扩增区域可视化
+在已独立验证的96个配对中穷举各区域1–2对组合；WC≤3、GT≤2背景记录并集分别≤5。不要求保留Apodida覆盖。同对数先优化非Apodida覆盖，再允许共同、区域面板分别相对覆盖优先锚点小幅下降以提高完全匹配率：v4opt/M两对版容差2个百分点，其余1个百分点。最优性仅限于已验证候选池。
 
-![MiCucumber序列保守性与扩增区域](figures/amplicon_regions.zh.png)
+当前8套方案通过 **21,036项检测结果一致性检查**，以及展开简并碱基后的两种浓度场景结构检查。上游第二轮对1,848条目标与5,600条背景完成346,488项一致性检查。新增两条Apodida位点仍为同源推断参考，已校正方向；6条UNVERIFIED记录排除。参考库同时用于设计与评估，不是独立留出验证。
 
-参考MiStar的图示结构：上图显示名称标签等权的序列保守性及可判定碱基权重；下图显示正反向引物方向及不含引物的内部区间，统一使用 **AB525437.1提取16S的1-based坐标**。箭头表示四个种子设计窗口；同位置变体及Apodida追加引物的实际长度可能不同，因此参考跨度不能当作全部分类群的产物长度。图中配对数量对应最新**独立PCR**方案，不代表同管混合。
+旧6–9对组合和v0.1.0保留为历史证据：[历史概览](docs/HISTORICAL_README.zh-CN.md)。本次不移动既有发布标签。
 
-[矢量SVG](figures/amplicon_regions.zh.svg) · [PDF](figures/amplicon_regions.zh.pdf) · [坐标表](figures/region_coordinates.csv) · [保守性数据](figures/reference_conservation.csv) · [绘图脚本](plot_regions.py)
+## Files / 文件
 
-## 使用序列
+- [Eight portfolios: primer sequences / 八套配对序列](results/compact/primer_pairs.csv) · [FASTA](results/compact/primers.fasta)
+- [v4opt](results/compact/v4opt_1_2pairs.csv) · [S](results/compact/S_1_2pairs.csv) · [M](results/compact/M_1_2pairs.csv) · [L](results/compact/L_1_2pairs.csv)
+- [Common and own-region comparisons / 两类面板](results/compact/comparison.csv)
+- [Missed taxa / 漏检类群](results/compact/missed_taxa.csv) · [Off-target records / 非目标命中](results/compact/offtargets.csv)
+- [Thermodynamics / 热力学](results/compact/thermodynamics.tsv) · [Validation / 复核](results/compact/validation.json)
+- [Bilingual HTML report / 双语报告（下载后打开）](results/compact/report.html)
 
-- **[最新完整独立PCR配对表](results/final_separate_pairs.csv)**：已合并原4对和追加引物，无需手工拼表。
-- [FASTA序列](results/final_separate_primers.fasta)：均为5′→3′基因特异序列，不含接头和索引。
-- [Apodida追加配对](results/apodida_additional_pairs.csv)、[最新结果](results/apodida_comparison.csv)。
-- [第一轮序列](results/round1_primers.csv)、[配对与交叉组合](results/round1_pairings.csv)、[方案比较及历史基线](results/round1_comparison.csv)。
+## Amplicon regions / 扩增区域
 
-**最新配对表每行对应一个独立PCR。** 新增方案尚未评估全部混合交叉组合及全池二聚体，不可直接混成单管。第一轮Pool方案已经评估4F×4R，但其序列集合与Separate不同；不同长度系列混合也未评估。
+![MiCucumber reference regions](figures/amplicon_regions.en.png)
 
-第一轮目标预测产物范围（含引物，不含接头）：v4opt 178–218 bp、S 201–241 bp、M 285–325 bp、L 354–395 bp。补充序列长度可能变化，不能直接沿用这些范围；逐记录预测长度见`analysis/apodida/independent_hits.tsv`。
+This historical map locates the four design windows. Its reaction counts refer to the earlier Apodida-supplemented portfolios, **not** the current 1-/2-pair sets. Reference coordinates are not universal product-length predictions.
+旧图展示四个设计区域；图中反应数对应历史Apodida补充组合，**不是当前1对/2对方案**。坐标跨度不等于所有物种的扩增产物长度。
 
-## 证据和限制
+## Reproducibility / 复现
 
-- 冻结参考库包含1,846条目标、5,600条背景，使用116条完整无模糊碱基序列构建比对骨架。
-- 第一轮110个候选/基线配对经独立C++逐位置扫描复核，通过386,492项一致性检查。
-- Apodida补充从17条源记录提取37对候选，保留13条方案内追加配对；使用同一穷举扫描器，但新增配对尚无第二实现的交叉核对。
-- 发现与评估使用同一数据库，并非独立验证；名称与历史分类未统一，短片段及模糊碱基限制阴性判断。
-- 第一轮优化方案完全匹配覆盖率仅11.66%–37.44%；允许错配后的覆盖不能证明实际扩增均一性。追加引物同样需要实验验证。
+- [Round-two frozen references and independent scan reproduction](evidence/MiCucumber_round2_reproducibility.zip): extract, install its requirements, run `python run_revalidation.py`. Includes the original public reference data and orientation audit. / 含冻结参考数据、方向审计及独立扫描复核入口。
+- [Exhaustive 1–4-pair subset analysis](evidence/MiCucumber_compact_reproducibility.zip): extract, install NumPy, run `python work/micucumber_compact/optimize.py`. Recomputes selection from frozen per-pair evidence; does not rerun original sequence scanning. / 从冻结逐配对证据重算组合。
+- `python check_release.py` checks retained historical evidence; `python check_compact.py` checks the current eight portfolios and file hashes. The legacy `revalidate.py` remains scoped to the earlier release. / 历史复现入口不代表当前八套方案。
+- Final export scripts in `evidence/compact_*.py` are provenance records with original workspace-layout dependencies; the two archives above provide the supported reproduction entry points.
 
-## 复现
+## Copyright / 著作权
 
-需要Python 3.12和C++17编译器，在独立环境中运行：
-
-```bash
-python -m pip install -r requirements.txt
-python revalidate.py
-```
-
-[复现说明](docs/REPRODUCIBILITY.md)列出支持范围。仓库包含冻结输入和验证代码，不重新下载NCBI数据。
-
-## 来源与使用
-
-历史v4来源为`MiStar.xlsx`的`Primer_Cucumber`工作表B30:C31（2024-08-23），旧决定版Fv2/Rv3A来源为B17:C18并移除接头。不公开原始私人工作簿或往来通信。参考记录见`analysis/metadata.tsv`，继承数据的指纹见`analysis/input_manifest.json`。
-
-**版权所有 © 2026 Fei Xia（GUIBA-EX），保留所有权利。** 未经书面许可，禁止转载、镜像、再分发及翻译或改编后发布受保护的原创材料。公开访问不等于开源许可；法定例外、GitHub平台权利及第三方参考数据原有权利不受影响。详见[著作权与使用声明](COPYRIGHT.md)。
+Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. Public access is not an open-source license. Unauthorized republication and redistribution of protected original materials are prohibited, subject to statutory exceptions, GitHub platform rights and third-party data rights. [Permissions / 声明](COPYRIGHT.md).

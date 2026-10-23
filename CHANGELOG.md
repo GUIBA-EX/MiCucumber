@@ -1,3 +1,7 @@
+## 2026-10-24 — Compact one-/two-pair portfolios / 精简方案
+
+Eight current computational portfolios; updated Apodida references, exact-match optimization, explicit missed taxa and off-target records, and frozen reproduction archives. Earlier 6–9-pair results retained as history. No wet-lab or pooled-tube claim.
+
 # Changelog / 更新记录
 
 ## Unreleased / 未发布版本

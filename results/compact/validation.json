@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": 21036,
+  "schemes": 8,
+  "scope": "Exhaustive subset selection from previously independently verified 96-pair pool; Apodida excluded from objective; <=5 WC3 and GT2 background records; separate PCRs only; no new sequences and no wet-lab validation",
+  "source_hashes": {
+    "all_tradeoffs.csv": "4ead06ac896d299c908221a3463e30dc6787eac725bd6733465dbc0940e0e06c",
+    "target_detail.tsv": "d17de88f579c4a28aaaffba09f61a50790b99c00d8cf846162ca3c5f9cbd4775",
+    "independent_hits.tsv": "2947358ca5fa9c6a709d08adaefcde42c26559795880da606b4b09c6861bf1c1"
+  },
+  "thermal_max_structure_C": 53.46310880154232,
+  "thermal_unique_pairs": 8
+}

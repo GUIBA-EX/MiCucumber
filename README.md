@@ -1,64 +1,57 @@
 # MiCucumber
 
-**Sea-cucumber mitochondrial 16S primer design and in-silico evaluation.**
+**Sea-cucumber mitochondrial 16S computational primer candidates.** [中文](README.zh-CN.md)
 
-[中文说明](README.zh-CN.md) · [Methods](docs/METHODS.md) · [方法说明](docs/METHODS.zh-CN.md) · [Reproducibility / 复现](docs/REPRODUCIBILITY.md)
+## Current recommendation: one or two pairs per region
 
-This repository documents the optimization of historical MiCucumber primers using a frozen MiStar reference dataset: specificity-first screening, multiple length series, and additional same-locus primer pairs to improve Apodida coverage. Release **v0.1.0** is a computational candidate release, not a validated wet-lab assay or a historical “v5”.
+Eight portfolios are retained: v4opt, S, M and L, each with one-pair and two-pair versions. Prefer **two-pair v4opt for initial validation**. Regions are alternatives; samples do not require all eight assays. Two pairs mean **two independent PCRs**, not a validated single-tube cocktail. No wet-lab validation is claimed.
 
-## Latest results
+Apodida is excluded from the optimization objective, not hidden from reporting. The common panel contains **151 taxon-name labels / 351 within-label haplotypes**, including **145 non-Apodida labels**. Both denominators are shown; own-region panels are in the CSV. Names and historical taxonomy are not synonym-reconciled.
 
-| Version / 版本 | Independent PCRs / 独立PCR | Overall coverage / 总覆盖 | Apodida panel / 面板 | WC≤3 / GT≤2 | WC≤4 |
-|---|---:|---:|---:|---:|---:|
-| v4opt + Apodida | 7 | 92.51% | 2/4 | 2 / 0 | 750 |
-| S + Apodida | 7 | 70.70% | 3/4 | 0 / 0 | 130 |
-| M + Apodida | 6 | 79.48% | 2/4 | 4 / 0 | 109 |
-| L + Apodida | 9 | 66.76% | 4/4 | 0 / 4 | 492 |
+| Version | Pairs | All-target coverage | All-target exact | Non-Apodida coverage | Non-Apodida exact | WC≤3 / GT≤2 | WC≤4 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| v4opt | 1 | 83.97% | 26.39% | 87.45% | 27.48% | 2 / 0 | 742 |
+| v4opt | 2 | 85.01% | 39.22% | 88.53% | 40.84% | 2 / 0 | 742 |
+| S | 1 | 54.64% | 9.05% | 56.90% | 9.43% | 0 / 0 | 130 |
+| S | 2 | 59.94% | 13.69% | 62.42% | 14.25% | 0 / 0 | 131 |
+| M | 1 | 67.47% | 32.30% | 70.26% | 33.63% | 4 / 0 | 109 |
+| M | 2 | 71.11% | 33.62% | 74.06% | 35.01% | 4 / 0 | 109 |
+| L | 1 | 46.42% | 9.33% | 48.34% | 9.71% | 0 / 0 | 486 |
+| L | 2 | 53.08% | 11.31% | 55.27% | 11.78% | 0 / 4 | 492 |
 
-Coverage uses a common panel of **149 taxon-name labels / 347 within-label haplotypes**, with equal label weighting and equal haplotype weighting within each label. The panel contains just **four Apodida records / four labels**; 4/4 does not establish order-wide coverage. Each primer may have ≤2 mismatches, with its terminal three 3′ bases perfectly matched. Background counts are accession unions among 5,600 reference records, not species counts or predicted read fractions.
+Coverage permits ≤2 mismatches per primer with the last three 3′ bases exact; exact coverage requires both primers to match. Labels and within-label haplotypes are equally weighted. Background counts are accession unions among 5,600 records, not species counts or predicted read fractions. WC≤4 risk remains substantial. L has limited coverage even with two pairs and is retained as a long-region comparator.
 
-The original v4 has 87.46% coverage and 3,248 / 3,401 WC≤3 / GT≤2 background hits. The first optimized separate-PCR v4 reached 90.50%; Apodida supplementation raises this to 92.51% without increasing its background unions. Substantial WC≤4 risk remains.
+## Selection and evidence
 
-## Amplicon region map
+Selections derive from exhaustive one-/two-pair subsets of the independently checked 96-pair candidate pool, with WC≤3 and GT≤2 unions each ≤5 records. At each pair count, optimize non-Apodida coverage first, then exact coverage within a limited loss on both common and own-region panels: 2 percentage points for two-pair v4opt/M, 1 for other sets. This is conditional selection, not global primer optimality. Apodida coverage has no minimum requirement.
 
-![MiCucumber conservation and amplicon regions](figures/amplicon_regions.en.png)
+Current eight portfolios passed **21,036 target consistency checks**, plus expanded-IUPAC structural checks under two concentration scenarios. Upstream round-two validation passed 346,488 consistency checks on 1,848 target and 5,600 background records. Two added Apodida loci are homology-inferred, direction-corrected references; six UNVERIFIED records were excluded. Discovery and evaluation reuse references; this is not held-out validation.
 
-Following the MiStar visualization layout, the upper panel shows equal-label-weighted conservation and callable-base weight; the lower panel shows forward/reverse primer direction and primer-free intervals on **AB525437.1 extracted 16S coordinates (1-based)**. Arrows depict the four seed design windows; same-locus variants and Apodida additions can have different physical lengths. The reference spans are not universal product-size predictions. Counts refer to the latest **separate-PCR** schemes, not a mixed tube.
+The former 6–9-pair portfolios and version v0.1.0 remain historical evidence: [previous overview](docs/HISTORICAL_README.md). Existing release tags are unchanged.
 
-[Vector SVG](figures/amplicon_regions.en.svg) · [PDF](figures/amplicon_regions.en.pdf) · [Coordinates](figures/region_coordinates.csv) · [Conservation data](figures/reference_conservation.csv) · [Plot script](plot_regions.py)
+## Files / 文件
 
-## Get the primers
+- [Eight portfolios: primer sequences / 八套配对序列](results/compact/primer_pairs.csv) · [FASTA](results/compact/primers.fasta)
+- [v4opt](results/compact/v4opt_1_2pairs.csv) · [S](results/compact/S_1_2pairs.csv) · [M](results/compact/M_1_2pairs.csv) · [L](results/compact/L_1_2pairs.csv)
+- [Common and own-region comparisons / 两类面板](results/compact/comparison.csv)
+- [Missed taxa / 漏检类群](results/compact/missed_taxa.csv) · [Off-target records / 非目标命中](results/compact/offtargets.csv)
+- [Thermodynamics / 热力学](results/compact/thermodynamics.tsv) · [Validation / 复核](results/compact/validation.json)
+- [Bilingual HTML report / 双语报告（下载后打开）](results/compact/report.html)
 
-- **[Complete latest separate-PCR pairs](results/final_separate_pairs.csv)** — includes the four original component pairs plus additions; no manual joining needed.
-- [FASTA, 5′→3′](results/final_separate_primers.fasta) — gene-specific sequences only, no adapters or indexes.
-- [Apodida additions](results/apodida_additional_pairs.csv) and [latest comparison](results/apodida_comparison.csv).
-- [Round-one primers](results/round1_primers.csv), [pairings](results/round1_pairings.csv), and [comparison](results/round1_comparison.csv), including original v4 and the older decided pair.
+## Amplicon regions / 扩增区域
 
-**Each row of the latest pair table is a separate PCR.** Do not mix the supplemented sets in one tube: their new cross-pair combinations and whole-pool dimers have not been evaluated. Round-one Pool sets were evaluated as 4F × 4R; their sequences differ from Separate sets. Cross-length multiplexing is not evaluated.
+![MiCucumber reference regions](figures/amplicon_regions.en.png)
 
-Round-one predicted product ranges (including primers, excluding adapters) are v4opt 178–218 bp, S 201–241 bp, M 285–325 bp, L 354–395 bp. These ranges must not be automatically assigned to the supplemented sets, whose oligo lengths can differ; per-record sizes are saved in `analysis/apodida/independent_hits.tsv`.
+This historical map locates the four design windows. Its reaction counts refer to the earlier Apodida-supplemented portfolios, **not** the current 1-/2-pair sets. Reference coordinates are not universal product-length predictions.
+旧图展示四个设计区域；图中反应数对应历史Apodida补充组合，**不是当前1对/2对方案**。坐标跨度不等于所有物种的扩增产物长度。
 
-## Evidence and limits
+## Reproducibility / 复现
 
-- 1,846 target records and 5,600 background records; 116 full-length unambiguous sequences anchor the alignment.
-- All 110 round-one selected/baseline pairs were checked by an independent exhaustive C++ scanner: **386,492 consistency checks passed**.
-- Apodida supplementation screened 37 observed pairs from 17 source records and retained 13 scheme-local additions. It uses the same exhaustive scanner but does not yet have a second independent implementation cross-check for the added pairs.
-- The reference set is reused for discovery and evaluation; this is not held-out validation. Names and historical taxonomy were not synonym-reconciled. Partial references and ambiguous bases limit negative evidence.
-- Round-one exact-match coverage is only 11.66–37.44% for optimized schemes; mismatch-tolerant coverage does not establish amplification uniformity. Added pairs also need wet-lab testing.
+- [Round-two frozen references and independent scan reproduction](evidence/MiCucumber_round2_reproducibility.zip): extract, install its requirements, run `python run_revalidation.py`. Includes the original public reference data and orientation audit. / 含冻结参考数据、方向审计及独立扫描复核入口。
+- [Exhaustive 1–4-pair subset analysis](evidence/MiCucumber_compact_reproducibility.zip): extract, install NumPy, run `python work/micucumber_compact/optimize.py`. Recomputes selection from frozen per-pair evidence; does not rerun original sequence scanning. / 从冻结逐配对证据重算组合。
+- `python check_release.py` checks retained historical evidence; `python check_compact.py` checks the current eight portfolios and file hashes. The legacy `revalidate.py` remains scoped to the earlier release. / 历史复现入口不代表当前八套方案。
+- Final export scripts in `evidence/compact_*.py` are provenance records with original workspace-layout dependencies; the two archives above provide the supported reproduction entry points.
 
-## Revalidate
+## Copyright / 著作权
 
-Python 3.12 and a C++17 compiler are required. Install the pinned dependencies in an isolated environment, then run:
-
-```bash
-python -m pip install -r requirements.txt
-python revalidate.py
-```
-
-See [reproducibility](docs/REPRODUCIBILITY.md) for the supported scope. The frozen inputs and validation code are included. No fresh NCBI download is performed.
-
-## Provenance and reuse
-
-Historical v4 sequences were transcribed from `MiStar.xlsx`, sheet `Primer_Cucumber`, B30:C31 (2024-08-23); the older decided Fv2/Rv3A pair comes from B17:C18 after removing adapters. The private workbook and correspondence are not distributed. The public accession manifest is `analysis/metadata.tsv`; inherited source fingerprints are in `analysis/input_manifest.json`.
-
-**Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved.** Unauthorized republication, mirroring, redistribution, and publication of translations/adaptations of protected original materials are prohibited. Public access is not an open-source license. Statutory exceptions, GitHub platform rights and third-party reference-data rights remain unaffected. See [Copyright and permissions](COPYRIGHT.md).
+Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. Public access is not an open-source license. Unauthorized republication and redistribution of protected original materials are prohibited, subject to statutory exceptions, GitHub platform rights and third-party data rights. [Permissions / 声明](COPYRIGHT.md).
