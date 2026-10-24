@@ -4,10 +4,11 @@
 
 ## 方案选择
 
-- 两对表示两套独立PCR。四个区域为可比较的替代选择，不要求同一样本全部运行。
-- **建议优先实验验证S-D2。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。
-- 所有方案尚未完成湿实验验证，尚无经验证的单管混池配方。
+简并方案以 **S-D、M-D、L-D、XL-D** 命名，无简并方案使用 **S、M、L、XL**；末尾的 `1pair` / `2pair` 表示1对 / 2对。
 
+- 两对表示两套独立PCR。四个区域为可比较的替代选择，不要求同一样本全部运行。
+- **建议优先实验验证S-D-2pair。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。
+- 所有方案尚未完成湿实验验证，尚无经验证的单管混池配方。
 
 ## 下载与文档
 
@@ -22,27 +23,27 @@
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-Degenerate-1pair | 87.45% | 27.48% | 2 | 0 | 742 |
-| MiCucumber-S-Degenerate-2pair | 88.53% | 40.84% | 2 | 0 | 742 |
-| MiCucumber-M-Degenerate-1pair | 56.90% | 9.43% | 0 | 0 | 130 |
-| MiCucumber-M-Degenerate-2pair | 62.42% | 14.25% | 0 | 0 | 131 |
-| MiCucumber-L-Degenerate-1pair | 70.26% | 33.63% | 4 | 0 | 109 |
-| MiCucumber-L-Degenerate-2pair | 74.06% | 35.01% | 4 | 0 | 109 |
-| MiCucumber-XL-Degenerate-1pair | 48.34% | 9.71% | 0 | 0 | 486 |
-| MiCucumber-XL-Degenerate-2pair | 55.27% | 11.78% | 0 | 4 | 492 |
+| MiCucumber-S-D-1pair | 87.45% | 27.48% | 2 | 0 | 742 |
+| MiCucumber-S-D-2pair | 88.53% | 40.84% | 2 | 0 | 742 |
+| MiCucumber-M-D-1pair | 56.90% | 9.43% | 0 | 0 | 130 |
+| MiCucumber-M-D-2pair | 62.42% | 14.25% | 0 | 0 | 131 |
+| MiCucumber-L-D-1pair | 70.26% | 33.63% | 4 | 0 | 109 |
+| MiCucumber-L-D-2pair | 74.06% | 35.01% | 4 | 0 | 109 |
+| MiCucumber-XL-D-1pair | 48.34% | 9.71% | 0 | 0 | 486 |
+| MiCucumber-XL-D-2pair | 55.27% | 11.78% | 0 | 4 | 492 |
 
 ## 无简并对照
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-Nondegenerate-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-S-Nondegenerate-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-M-Nondegenerate-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
-| MiCucumber-M-Nondegenerate-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
-| MiCucumber-L-Nondegenerate-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
-| MiCucumber-L-Nondegenerate-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
-| MiCucumber-XL-Nondegenerate-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
-| MiCucumber-XL-Nondegenerate-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
+| MiCucumber-S-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-S-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-M-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
+| MiCucumber-M-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
+| MiCucumber-L-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
+| MiCucumber-L-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
+| MiCucumber-XL-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
+| MiCucumber-XL-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
 
 ## 原版对照
 
@@ -56,7 +57,6 @@
 
 ![S、M、L、XL参考设计窗口](figures/amplicon_regions.zh.png)
 
-
 ## 数据与复现
 
 - 简并方案：来自已独立复核的96个配对候选池；当前8套方案有21,036项检测结果一致性检查。
@@ -64,7 +64,6 @@
 - 当前参考包含1,848条目标、5,600条背景。Apodida不参与优化目标，但全部目标统计仍保留它；两条新增位点为同源推断并已核正方向，6条UNVERIFIED记录排除。
 - 设计与评估共用冻结参考库，无独立留出验证。穷举最优性只适用于指定候选池与目标函数。
 - 运行 `python scripts/check_release.py` 检查当前文件、映射及指纹；计算复现入口见[复现说明](docs/REPRODUCIBILITY.zh-CN.md)。
-
 
 ## 著作权
 

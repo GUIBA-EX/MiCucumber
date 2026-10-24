@@ -22,15 +22,15 @@ The WC models allow up to two, three or four mismatches per primer. GT≤2 uses 
 
 The selection allowance is at most five WC≤3 and five GT≤2 background accessions in the union of component pairs. This is an analyst-defined screening rule, not an experimental abundance threshold. WC≤4 is reported to expose relaxed residual risk. S-original is an unchanged control, not a candidate constrained by this gate, and has extensive background hits. All background counts are accession counts rather than species counts or read fractions.
 
-## Degenerate portfolios: D1 and D2
+## Degenerate portfolios: degenerate sets
 
-The final portfolios use a previously independently checked pool of 96 candidate pairs. Enumerate one- and two-pair subsets within each region. Apodida has no minimum coverage requirement and is excluded from the optimization objective. First maximize mean non-Apodida coverage across common and own-region panels. Then maximize mean exact matching while allowing a limited coverage loss relative to that coverage-first anchor **on each panel separately**: two percentage points for S-Degenerate-2pair and L-Degenerate-2pair; one point for the other portfolios. WC≤3 and GT≤2 accession unions must each remain ≤5.
+The final portfolios use a previously independently checked pool of 96 candidate pairs. Enumerate one- and two-pair subsets within each region. Apodida has no minimum coverage requirement and is excluded from the optimization objective. First maximize mean non-Apodida coverage across common and own-region panels. Then maximize mean exact matching while allowing a limited coverage loss relative to that coverage-first anchor **on each panel separately**: two percentage points for S-D-2pair and L-D-2pair; one point for the other portfolios. WC≤3 and GT≤2 accession unions must each remain ≤5.
 
 The selected eight portfolios passed 21,036 target-result consistency checks. Upstream round-two validation recorded 346,488 checks. Exhaustive selection is conditional on the supplied candidate pool and objective, not proof of a global primer-design optimum. Two-pair coverage is the union of two independent PCRs; arbitrary cross-pair combinations and mixed-tube interactions are not validated.
 
-## Nondegenerate portfolios: ND1 and ND2
+## Nondegenerate portfolios: nondegenerate sets
 
-Enumerate all concrete A/C/G/T variants of the eight parent pairs in the current two-pair degenerate portfolios: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: S-Nondegenerate-2pair and L-Nondegenerate-2pair use two points; all others one point.
+Enumerate all concrete A/C/G/T variants of the eight parent pairs in the current two-pair degenerate portfolios: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: S-2pair and L-2pair use two points; all others one point.
 
 Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, but this does not establish experimental specificity. Their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
 

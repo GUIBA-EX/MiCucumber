@@ -1,14 +1,12 @@
-# 方案名称 / Portfolio names
+# 命名 / Naming
 
-区域为 S、M、L、XL。每个区域按引物类型和配对数命名。
+四个区域为S、M、L、XL。**仅简并引物加D后缀**；无简并引物不加类型后缀，最后标明配对数。
 
-| 类型 | 中文示例 | English identifier |
+| 类型 / Type | 1对 / One pair | 2对 / Two pairs |
 |---|---|---|
-| 简并，1对 | S · 简并 · 1对 | MiCucumber-S-Degenerate-1pair |
-| 简并，2对 | S · 简并 · 2对 | MiCucumber-S-Degenerate-2pair |
-| 无简并，1对 | S · 无简并 · 1对 | MiCucumber-S-Nondegenerate-1pair |
-| 无简并，2对 | S · 无简并 · 2对 | MiCucumber-S-Nondegenerate-2pair |
+| 简并 / Degenerate | MiCucumber-S-D-1pair | MiCucumber-S-D-2pair |
+| 无简并 / Nondegenerate | MiCucumber-S-1pair | MiCucumber-S-2pair |
 
-S-original为独立保留的原始对照。序列均按5′→3′书写；两对方案对应两个独立PCR。
+M、L、XL采用相同规则。S-original为独立保留的原始对照。所有序列按5′→3′书写，两对方案对应两套独立PCR。
 
-Regions are S, M, L and XL. Names specify primer type and pair count. S-original is the original control. Sequences are written 5′→3′; two-pair portfolios use separate PCRs.
+Regions are S, M, L and XL. Only degenerate primers carry the D suffix; nondegenerate primers have no type suffix. Pair count follows the region/type name. S-original is the original control. Sequences are written 5′→3′; two-pair sets use separate PCRs.

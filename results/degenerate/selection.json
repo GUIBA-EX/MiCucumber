@@ -1,6 +1,6 @@
 [
   {
-    "name": "MiCucumber-S-Degenerate-1pair",
+    "name": "MiCucumber-S-D-1pair",
     "locus": "MiCucumber-S",
     "count": 1,
     "budget": 5,
@@ -11,7 +11,7 @@
     "enumerated_combinations": 28
   },
   {
-    "name": "MiCucumber-S-Degenerate-2pair",
+    "name": "MiCucumber-S-D-2pair",
     "locus": "MiCucumber-S",
     "count": 2,
     "budget": 5,
@@ -23,7 +23,7 @@
     "enumerated_combinations": 378
   },
   {
-    "name": "MiCucumber-M-Degenerate-1pair",
+    "name": "MiCucumber-M-D-1pair",
     "locus": "MiCucumber-M",
     "count": 1,
     "budget": 5,
@@ -34,7 +34,7 @@
     "enumerated_combinations": 23
   },
   {
-    "name": "MiCucumber-M-Degenerate-2pair",
+    "name": "MiCucumber-M-D-2pair",
     "locus": "MiCucumber-M",
     "count": 2,
     "budget": 5,
@@ -46,7 +46,7 @@
     "enumerated_combinations": 253
   },
   {
-    "name": "MiCucumber-L-Degenerate-1pair",
+    "name": "MiCucumber-L-D-1pair",
     "locus": "MiCucumber-L",
     "count": 1,
     "budget": 5,
@@ -57,7 +57,7 @@
     "enumerated_combinations": 21
   },
   {
-    "name": "MiCucumber-L-Degenerate-2pair",
+    "name": "MiCucumber-L-D-2pair",
     "locus": "MiCucumber-L",
     "count": 2,
     "budget": 5,
@@ -69,7 +69,7 @@
     "enumerated_combinations": 210
   },
   {
-    "name": "MiCucumber-XL-Degenerate-1pair",
+    "name": "MiCucumber-XL-D-1pair",
     "locus": "MiCucumber-XL",
     "count": 1,
     "budget": 5,
@@ -80,7 +80,7 @@
     "enumerated_combinations": 21
   },
   {
-    "name": "MiCucumber-XL-Degenerate-2pair",
+    "name": "MiCucumber-XL-D-2pair",
     "locus": "MiCucumber-XL",
     "count": 2,
     "budget": 5,

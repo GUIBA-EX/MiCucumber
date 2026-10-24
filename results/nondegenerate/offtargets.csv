@@ -1,9 +1,9 @@
 scheme,model,criterion,accession,organism,clade
-MiCucumber-S-Nondegenerate-1pair,WC,le4,JX312800.1,Heliometra glacialis,Crinoidea
-MiCucumber-S-Nondegenerate-1pair,WC,le4,KU519516.1,Crinoidea sp. NHM_056,Crinoidea
-MiCucumber-S-Nondegenerate-2pair,WC,le4,JX312800.1,Heliometra glacialis,Crinoidea
-MiCucumber-S-Nondegenerate-2pair,WC,le4,KU519516.1,Crinoidea sp. NHM_056,Crinoidea
-MiCucumber-XL-Nondegenerate-2pair,WC,le4,PQ424521.1,Cheiraster sp.,Asteroidea
+MiCucumber-S-1pair,WC,le4,JX312800.1,Heliometra glacialis,Crinoidea
+MiCucumber-S-1pair,WC,le4,KU519516.1,Crinoidea sp. NHM_056,Crinoidea
+MiCucumber-S-2pair,WC,le4,JX312800.1,Heliometra glacialis,Crinoidea
+MiCucumber-S-2pair,WC,le4,KU519516.1,Crinoidea sp. NHM_056,Crinoidea
+MiCucumber-XL-2pair,WC,le4,PQ424521.1,Cheiraster sp.,Asteroidea
 MiCucumber-S-original,WC,le3,AB084559.1,Archaster typicus,Asteroidea
 MiCucumber-S-original,WC,le3,AB084562.1,Leiaster leachi,Asteroidea
 MiCucumber-S-original,WC,le3,AB084565.1,Archaster angulatus,Asteroidea
