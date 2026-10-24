@@ -2,7 +2,7 @@
 
 ![Current binding positions](figures/binding_positions.svg)
 
-Ordinary, A, B and D variants within each region share identical F/R start and end coordinates. S/M/L/XL reference spans are 226/245/302/396 bp. The map uses current oligo coordinates on one linear scale; product lengths vary among taxa.
+Shared reference spans: S 226, M 245, L 302, XL 396 bp. Product lengths vary among taxa.
 
 # MiCucumber
 
@@ -21,19 +21,25 @@ Each region retains a degenerate single pair, an ordinary single pair and an ord
 
 **3′-terminal degeneracy is allowed.** Terminal matching uses IUPAC compatibility, and every concrete variant is checked: no terminal homotriplet, at least one G/C in the last three bases, 1–4 G/C in the last five, and no homopolymer longer than four. The final base need not be fixed or G/C. S-original is an unchanged control exempt from these selection rules.
 
+## Retention decisions
+
+Following Occam’s razor, retain one D portfolio per length: SD with modest degeneracy (2/8), MD under the strict background gate (64/4), LD for its coverage gain (32/1), and unchanged XLD (2/1). More aggressive SD, MD 128/4 and marginal-gain XLD variants remain comparisons. Ordinary, A, B and S-original are unchanged; all four variants in each length share identical F/R start/end coordinates. This is an explicit benefit–complexity judgment, not a preregistered threshold or experimentally established PCR optimum.
+
+[Before/after / 前后比较](docs/DECISIONS.md)
+
 ## Common-panel results
 
 Coverage and exact matching below are non-Apodida metrics. The common panel has 151 taxonomic name labels and 351 haplotypes, including 145 non-Apodida labels, weighted equally by label and within label. All-target metrics are in the CSV. Background contains 5,600 records.
 
 | Portfolio | Coverage | Exact | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| SD | 73.97% | 5.07% | 4 | 3 | 332 |
+| SD | 80.92% | 9.04% | 26 | 3 | 455 |
 | S | 66.85% | 3.35% | 4 | 3 | 331 |
 | SA+SB | 71.38% | 4.56% | 4 | 3 | 378 |
-| MD | 40.37% | 6.86% | 1 | 2 | 17 |
+| MD | 67.17% | 25.48% | 2 | 4 | 76 |
 | M | 33.56% | 5.52% | 1 | 2 | 13 |
 | MA+MB | 36.36% | 10.80% | 1 | 3 | 39 |
-| LD | 43.33% | 15.00% | 0 | 0 | 46 |
+| LD | 66.78% | 19.14% | 20 | 16 | 1168 |
 | L | 41.03% | 7.87% | 0 | 0 | 46 |
 | LA+LB | 43.33% | 15.00% | 0 | 0 | 46 |
 | XLD | 19.95% | 0.69% | 1 | 1 | 1309 |
@@ -43,9 +49,7 @@ Coverage and exact matching below are non-Apodida metrics. The common panel has 
 
 Coverage permits ≤2 mismatches per primer with exact terminal-three-base compatibility; exact matching requires zero mismatches in both primers. Background counts are accessions, not experimental amplification fractions. GT is a separate G–T tolerance sensitivity model.
 
-**Joint locus selection replaces independent optimization of each portfolio location.** At each candidate locus, select the best ordinary single, A/B union and degenerate single, then average their coverage-plus-exact scores equally to choose the shared locus. Some coverage is lost; XL A/B adds no benefit over its single pair and remains a comparator. SD reaches 73.97% coverage / 5.07% exact; LD and LA/LB both reach 43.33% / 15.00%.
-
-WC≤4 exposes substantial residual background risk, especially in S and XL; small WC≤3/GT≤2 counts do not establish low environmental off-target amplification. All schemes await wet-lab validation. [Before/after comparison and verification](docs/TERMINAL_VALIDATION.md).
+WC≤4 exposes substantial residual background risk, especially in L and XL; small WC≤3/GT≤2 counts do not establish low environmental off-target amplification. All schemes await wet-lab validation. [Before/after comparison and verification](docs/TERMINAL_VALIDATION.md).
 
 ## Sequences, coordinates and evidence
 
@@ -86,5 +90,3 @@ python scripts/check_release.py
 ## Copyright
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).
-
-[共同坐标 / Shared coordinates](results/current/joint_locus.csv) · [联合筛选复核 / Joint-locus validation](docs/TERMINAL_VALIDATION.md)

@@ -1,0 +1,8 @@
+{
+  "unique_pairs": 8,
+  "metric_checks": 40,
+  "disagreements": 0,
+  "coordinates_identical": true,
+  "all_terminal_variants_pass": true,
+  "thermal_scenarios_pass": true
+}

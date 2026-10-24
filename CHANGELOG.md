@@ -1,3 +1,7 @@
+# 2026-10-25
+
+Retain SD, MD and LD enhancements under fixed shared coordinates; keep XLD and all ordinary variants unchanged. Simplify bilingual documentation around one D portfolio per length.
+
 # Shared coordinates for all variants
 
 - Jointly select identical F/R intervals for ordinary, A, B and D in S/M/L/XL.

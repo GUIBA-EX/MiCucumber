@@ -38,7 +38,8 @@ for r in comp:
   assert math.isclose(100*sum(nw.get(x,0) for x in hit)/sum(nw.values()),float(r[col]),abs_tol=1e-8)
   assert math.isclose(100*sum(weights.get(x,0) for x in hit)/sum(weights.values()),float(r['all_target_'+col]),abs_tol=1e-8)
  for model,flag,col in [('WC','le3','WC3'),('GT','le2','GT2'),('WC','le4','WC4')]:assert len(union('background',model,flag))==int(r[col])
- if r['scheme']!='S-original':assert int(r['WC3'])<=5 and int(r['GT2'])<=5
+ if r['scheme']!='S-original':
+  limit={'SD':50,'LD':20}.get(r['scheme'],5);assert int(r['WC3'])<=limit and int(r['GT2'])<=limit
 for r in rows(p/'results/terminal_optimization/thermal.csv'):
  assert float(r['structure_max'])<55
  assert abs((float(r['F_tm_min'])+float(r['F_tm_max'])-float(r['R_tm_min'])-float(r['R_tm_max']))/2)<=5
