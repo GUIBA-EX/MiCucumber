@@ -1,6 +1,9 @@
 {
   "degenerate": "PASS",
   "nondegenerate": "PASS",
-  "scope": "Both current-name adapters rerun; sequence tables identical and metrics agree within 1e-8 percentage points. Round-two raw-reference bundle remains unchanged.",
-  "source_commit": "14f156fbcd8143b0a430dcd2ae2f1b39afbae755"
+  "scope": "Both current-name adapters rerun after retaining four single-pair degenerate portfolios; sequences match exactly and metrics agree within 1e-8 percentage points.",
+  "source_commit": "14f156fbcd8143b0a430dcd2ae2f1b39afbae755",
+  "degenerate_portfolios": 4,
+  "nondegenerate_portfolios": 8,
+  "original_controls": 1
 }

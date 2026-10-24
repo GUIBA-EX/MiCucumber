@@ -35,7 +35,7 @@ def main():
   run([sys.executable,work/'work/micucumber_compact/optimize.py'],work)
   source=work/'outputs/MiCucumber_compact';data=work/'work/micucumber_round2/optimization'
   schemes={s['name']:s for s in json.loads((source/'schemes.json').read_text())};pairs={s['name']:s for s in json.loads((data/'shortlist_fast.json').read_text())}
-  chosen=[schemes[f'MiCucumber-{loc}_N{n}_B5_T{2 if n==2 and loc in ("v4opt","M") else 1}'] for loc in ['v4opt','S','M','L'] for n in [1,2]]
+  chosen=[schemes[f'MiCucumber-{loc}_N{n}_B5_T{2 if n==2 and loc in ("v4opt","M") else 1}'] for loc in ['v4opt','S','M','L'] for n in [1]]
   comparisons=read(source/'all_tradeoffs.csv');seq=[];summary=[]
   for s in chosen:
    summary.extend(r for r in comparisons if r['scheme']==s['name'])

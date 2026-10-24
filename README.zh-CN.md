@@ -1,13 +1,17 @@
 ![MiCucumber overview](figures/MiCucumber_overview.png)
 
-当前配对名称：SD、S、SA、SB（其他长度同理）；简并仅保留单对。
-
 # MiCucumber
 
 海参线粒体16S计算候选引物。当前四个区域统一命名为 **S、M、L、XL**，简并方案仅保留1对，无简并方案保留1对和2对；另保留 **S-original** 原版对照，共13套方案。[English](README.md)
 
 ## 方案选择
 
+| 长度 | 简并单对 | 普通单对 | 普通两对 |
+|---|---|---|---|
+| S | SD | S | SA / SB |
+| M | MD | M | MA / MB |
+| L | LD | L | LA / LB |
+| XL | XLD | XL | XLA / XLB |
 
 - 两对表示两套独立PCR。四个区域为可比较的替代选择，不要求同一样本全部运行。
 - **建议优先实验验证SD。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。

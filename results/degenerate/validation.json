@@ -1,8 +1,7 @@
 {
   "status": "PASS",
-  "checks": 21036,
-  "schemes": 8,
-  "scope": "Exhaustive subset selection from previously independently verified 96-pair pool; Apodida excluded from objective; <=5 WC3 and GT2 background records; separate PCRs only; no new sequences and no wet-lab validation",
+  "schemes": 4,
+  "scope": "Four single-pair degenerate portfolios retained. Current sequences and metrics are checked against frozen independently validated source evidence; upstream_checks describes the broader source analysis.",
   "source_hashes": {
     "all_tradeoffs.csv": "4ead06ac896d299c908221a3463e30dc6787eac725bd6733465dbc0940e0e06c",
     "target_detail.tsv": "d17de88f579c4a28aaaffba09f61a50790b99c00d8cf846162ca3c5f9cbd4775",
@@ -10,5 +9,6 @@
   },
   "thermal_max_structure_C": 53.46310880154232,
   "thermal_unique_pairs": 8,
-  "naming_note": "Identifiers normalized to S/M/L/XL; source hashes refer to unchanged legacy inputs in reproducibility/frozen. No sequences or numerical results changed."
+  "naming_note": "Identifiers normalized to S/M/L/XL; source hashes refer to unchanged legacy inputs in reproducibility/frozen. No sequences or numerical results changed.",
+  "upstream_checks": 21036
 }

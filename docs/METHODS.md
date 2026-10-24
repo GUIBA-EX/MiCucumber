@@ -4,7 +4,7 @@
 
 ## Scope and reference data
 
-This document describes the current S/M/L/XL one-/two-pair portfolios. Earlier 6–9-pair sets are historical and are preserved in the archive. Original v4 is retained as S-original, with both sequences and all IUPAC symbols unchanged. Naming does not imply a new design run.
+Each region retains one degenerate pair (SD, MD, LD or XLD), a single nondegenerate pair (S, M, L or XL), and an A/B nondegenerate option. S-original is the separate original control.
 
 The round-two frozen dataset contains 1,848 target records and 5,600 background records. Two additional Apodida 16S regions were inferred by homology from unannotated mitogenomes; their orientation was corrected against AB525437.1. Six UNVERIFIED records were excluded. These inferred regions are not equivalent to curated annotations. The source sequences, accession metadata, orientation audit and reference provenance are in the round-two reproduction bundle. No new database acquisition is claimed for this renaming update.
 
@@ -14,7 +14,7 @@ The common panel comprises 151 binomial-format taxonomic name labels and 351 uni
 
 Target binding is scanned on both strands of the original sequences, not inferred solely from an alignment column. Target products must be 150–500 bp with at least 50 nt internal sequence. **Coverage** allows at most two mismatches in each primer, with the terminal three 3′ bases exactly compatible. **Exact matching** requires zero mismatches in both primers; for degenerate primers, IUPAC compatibility counts as matching. An ambiguous target binding base does not count as a confirmed hit. No binding-site indel model is fitted.
 
-The reference coordinate plot shows homologous seed windows on the extracted ungapped 16S sequence of AB525437.1. Window spans are not universal product sizes, and modified oligos may differ in length from the seed. The current plot does not reuse historical panel-conservation percentages or multi-pair counts.
+The reference coordinate plot shows homologous seed windows on the extracted ungapped 16S sequence of AB525437.1. Window spans are not universal product sizes, and modified oligos may differ in length from the seed.
 
 ## Background screening
 
@@ -28,7 +28,7 @@ Retain one pair per region from the verified candidate pool. First maximize mean
 
 ## Nondegenerate portfolios: nondegenerate sets
 
-Enumerate all concrete A/C/G/T variants of the eight parent pairs in the current two-pair degenerate portfolios: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: SA+SB and LA+LB use two points; all others one point.
+Enumerate all concrete A/C/G/T variants of eight frozen parent pairs in the design input: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: SA+SB and LA+LB use two points; all others one point.
 
 Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, but this does not establish experimental specificity. Their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
 
@@ -38,6 +38,6 @@ Primer3-py 2.3.1: 50 mM monovalent salt, 1.5 mM Mg²⁺ and 0.6 mM dNTP. Degener
 
 Nondegenerate candidates are evaluated at 50 and 200 nM per oligo; hairpin, homodimer and F/R heterodimer structural Tm must remain below 55°C. F/R melting-temperature differences are reported, not used to assert a validated annealing temperature. Original S-original is preserved as a historical control. These are computational checks, not a PCR recipe or whole-pool validation.
 
-## Limits and historical evidence
+## Evaluation scope
 
 References are incompletely sampled and reused for design and evaluation; no independent holdout validation, wet-lab sensitivity/specificity estimate, or finalized PCR recipe is supplied. Small mismatch-model background counts do not prove low environmental amplification. Historical methods, previous larger portfolios, earlier taxonomy and source identifiers are retained only as frozen evidence. See the naming map before comparing old and new documents.

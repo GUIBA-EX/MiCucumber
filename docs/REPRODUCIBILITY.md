@@ -24,9 +24,9 @@ python scripts/reproduce.py nondegenerate --work-dir reproduction-work
 
 The two modes use separate subdirectories. For a repeat run, provide a fresh `--work-dir`; existing reproduction folders are not overwritten. No network is required after installing dependencies. Original input bundles remain unchanged.
 
-- **Degenerate:** rerun exhaustive 1–4-pair subset calculations from frozen per-pair target/background evidence, select the eight current one-/two-pair portfolios, normalize names, and compare sequences and common/own-region metrics against published tables. This route does not rescan raw reference sequences or rediscover candidate sites. Current-name outputs are under `degenerate/current-results/`.
+- **Degenerate:** rerun exhaustive 1–4-pair subset calculations from frozen per-pair target/background evidence, export the four current single-pair degenerate portfolios, normalize names, and compare sequences and common/own-region metrics against published tables. This route does not rescan raw reference sequences or rediscover candidate sites. Current-name outputs are under `degenerate/current-results/`.
 - **Nondegenerate:** re-enumerate 2,644 concrete candidates; optimize one-/two-pair subsets; compile and run the independent whole-sequence target/background scanner; compare predictions; retain the original control; normalize final exports and check sequences and metrics. Current-name outputs are under `nondegenerate/current-results/`.
-- **Round-two upstream scan:** `python scripts/reproduce.py round2 --work-dir reproduction-work` runs the frozen independent reference revalidation. It retains source identifiers in intermediate evidence and does not itself emit the 17 current portfolios.
+- **Round-two upstream scan:** `python scripts/reproduce.py round2 --work-dir reproduction-work` runs the frozen independent reference revalidation. It retains source identifiers in intermediate evidence and does not itself emit the 13 current portfolios.
 
 The current-name degenerate and nondegenerate adapters were rerun during this reorganization. Their selected sequences and metrics agree with the pre-renaming results; see [reproduction checks](../results/reproduction_checks.json). The round-two frozen bundle retains its earlier revalidation evidence; its computation was not changed by this update.
 

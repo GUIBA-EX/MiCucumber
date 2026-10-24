@@ -1,13 +1,17 @@
 ![MiCucumber overview](figures/MiCucumber_overview.png)
 
-Current pair names: SD, S, SA and SB, with the same pattern for other lengths. One degenerate pair is retained per region.
-
 # MiCucumber
 
 Computational mitochondrial 16S primer candidates for sea cucumbers. The four regions are **S, M, L and XL**, each with one degenerate pair and one-/two-pair nondegenerate options. **S-original** preserves the original control: 13 portfolios in total. [中文](README.zh-CN.md)
 
 ## Portfolio selection
 
+| Region | Degenerate pair | Single nondegenerate pair | Two nondegenerate pairs |
+|---|---|---|---|
+| S | SD | S | SA / SB |
+| M | MD | M | MA / MB |
+| L | LD | L | LA / LB |
+| XL | XLD | XL | XLA / XLB |
 
 - Two pairs mean two independent PCRs. Regions are alternative comparisons; no requirement to run all portfolios on every sample.
 - **Prioritize SD for experimental evaluation.** Nondegenerate sets lose substantial coverage and exact matching and remain comparators. S-original has extensive background hits.
