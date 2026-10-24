@@ -1,5 +1,7 @@
 ![MiCucumber](figures/MiCucumber_overview.png)
 
+置顶图展示现生海参7个目的代表：Apodida、Dendrochirotida、Elasipodida、Holothuriida、Molpadida、Persiculida、Synallactida。分目匹配结果仍沿用当前参考面板标签。[图示说明](figures/overview_design.md)。
+
 ![Current binding positions](figures/binding_positions.svg)
 
 共同坐标参考跨度：S 226、M 245、L 302、XL 396 bp。实际产物随类群变化。

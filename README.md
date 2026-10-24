@@ -1,5 +1,7 @@
 ![MiCucumber](figures/MiCucumber_overview.png)
 
+The header illustrates seven extant sea-cucumber orders: Apodida, Dendrochirotida, Elasipodida, Holothuriida, Molpadida, Persiculida and Synallactida. Order-level matching results retain the current reference-panel labels. [Illustration notes](figures/overview_design.md).
+
 ![Current binding positions](figures/binding_positions.svg)
 
 Shared reference spans: S 226, M 245, L 302, XL 396 bp. Product lengths vary among taxa.
