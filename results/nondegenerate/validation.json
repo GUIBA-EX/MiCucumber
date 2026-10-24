@@ -16,5 +16,6 @@
     "compact_comparison.csv": "8128aedff87e1de612d64f1e8fe7ab44db91fed6f25ce9abaadb67f14020a103",
     "target.fasta": "fd1f1f0964999b15963c2963e0dd08f24e27d5063911c3659c92aef2e2d3d39d",
     "compact_parents.csv": "c83711c920c6676ec826d022fde9e5b76858802c5b92bc65d2685e6fb62cd94f"
-  }
+  },
+  "naming_note": "Identifiers normalized to S/M/L/XL; source hashes refer to unchanged legacy inputs in reproducibility/frozen. No sequences or numerical results changed."
 }

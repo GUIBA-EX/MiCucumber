@@ -1,96 +1,96 @@
 [
   {
-    "name": "MiCucumber-v4opt-ND-1pair",
-    "locus": "MiCucumber-v4opt",
+    "name": "MiCucumber-S-ND1",
+    "locus": "MiCucumber-S",
     "count": 1,
     "pair_names": [
-      "ND_v4opt_0003"
+      "ND_S_0003"
     ],
     "parent_panel_pair": "R2P060",
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-v4opt-ND-2pair",
-    "locus": "MiCucumber-v4opt",
+    "name": "MiCucumber-S-ND2",
+    "locus": "MiCucumber-S",
     "count": 2,
     "pair_names": [
-      "ND_v4opt_0003",
-      "ND_v4opt_0010"
+      "ND_S_0003",
+      "ND_S_0010"
     ],
     "parent_panel_pair": "R2P060",
     "tolerance_pp": 2
   },
   {
-    "name": "MiCucumber-S-ND-1pair",
-    "locus": "MiCucumber-S",
-    "count": 1,
-    "pair_names": [
-      "ND_S_0461"
-    ],
-    "parent_panel_pair": "R2P040",
-    "tolerance_pp": 1
-  },
-  {
-    "name": "MiCucumber-S-ND-2pair",
-    "locus": "MiCucumber-S",
-    "count": 2,
-    "pair_names": [
-      "ND_S_0446",
-      "ND_S_0461"
-    ],
-    "parent_panel_pair": "R2P040",
-    "tolerance_pp": 1
-  },
-  {
-    "name": "MiCucumber-M-ND-1pair",
+    "name": "MiCucumber-M-ND1",
     "locus": "MiCucumber-M",
     "count": 1,
     "pair_names": [
-      "ND_M_0459"
+      "ND_M_0461"
+    ],
+    "parent_panel_pair": "R2P040",
+    "tolerance_pp": 1
+  },
+  {
+    "name": "MiCucumber-M-ND2",
+    "locus": "MiCucumber-M",
+    "count": 2,
+    "pair_names": [
+      "ND_M_0446",
+      "ND_M_0461"
+    ],
+    "parent_panel_pair": "R2P040",
+    "tolerance_pp": 1
+  },
+  {
+    "name": "MiCucumber-L-ND1",
+    "locus": "MiCucumber-L",
+    "count": 1,
+    "pair_names": [
+      "ND_L_0459"
     ],
     "parent_panel_pair": "R2P020",
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-M-ND-2pair",
-    "locus": "MiCucumber-M",
+    "name": "MiCucumber-L-ND2",
+    "locus": "MiCucumber-L",
     "count": 2,
     "pair_names": [
-      "ND_M_0113",
-      "ND_M_0459"
+      "ND_L_0113",
+      "ND_L_0459"
     ],
     "parent_panel_pair": "R2P020",
     "tolerance_pp": 2
   },
   {
-    "name": "MiCucumber-L-ND-1pair",
-    "locus": "MiCucumber-L",
+    "name": "MiCucumber-XL-ND1",
+    "locus": "MiCucumber-XL",
     "count": 1,
     "pair_names": [
-      "ND_L_0357"
+      "ND_XL_0357"
     ],
     "parent_panel_pair": "R2P000",
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-L-ND-2pair",
-    "locus": "MiCucumber-L",
+    "name": "MiCucumber-XL-ND2",
+    "locus": "MiCucumber-XL",
     "count": 2,
     "pair_names": [
-      "ND_L_0142",
-      "ND_L_0357"
+      "ND_XL_0142",
+      "ND_XL_0357"
     ],
     "parent_panel_pair": "R2P000",
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-v4-original",
-    "locus": "original-v4",
+    "name": "MiCucumber-S-original",
+    "locus": "MiCucumber-S-original",
     "count": 1,
     "pair_names": [
-      "MiCucumber_v4"
+      "MiCucumber-S-original"
     ],
-    "parent_panel_pair": "MiCucumber_v4",
+    "parent_panel_pair": "MiCucumber-S-original",
     "tolerance_pp": null
   }
 ]

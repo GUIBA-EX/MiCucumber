@@ -1,5 +1,5 @@
-locus,F_start,F_end,R_start,R_end,reference_span_bp,reference_internal_bp,total_pairs,added_pairs,Apodida_hits
-v4opt,954,981,1133,1161,208,151,7,3,2
-S,924,945,1133,1154,231,187,7,3,3
-M,843,870,1132,1157,315,261,6,2,2
-L,774,799,1133,1160,387,333,9,5,4
+locus,F_start,F_end,R_start,R_end,reference_span_bp,reference_internal_bp
+S,954,981,1133,1161,208,151
+M,924,945,1133,1154,231,187
+L,843,870,1132,1157,315,261
+XL,774,799,1133,1160,387,333

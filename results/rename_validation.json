@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_commit": "14f156fbcd8143b0a430dcd2ae2f1b39afbae755",
+  "portfolios": 17,
+  "reaction_rows": 25,
+  "sequence_strings_compared": 50,
+  "sequence_changes": 0,
+  "numerical_changes": 0,
+  "scope": "Names, file layout and documentation only; design metrics and original oligos retained."
+}

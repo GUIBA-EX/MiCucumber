@@ -1,7 +1,7 @@
 [
   {
-    "name": "ND_v4opt_0003",
-    "locus": "MiCucumber-v4opt",
+    "name": "ND_S_0003",
+    "locus": "MiCucumber-S",
     "F": "AAAGAAAGACGAGAAGACCCTGTCGAGC",
     "R": "TCCCTGCGGTAACTTTTTCCGATTACCAG",
     "parent_ids": "R2P060;R2P070",
@@ -14,8 +14,8 @@
     "own_region_nonapo_exact_pct": 1.0059171597633136
   },
   {
-    "name": "ND_v4opt_0010",
-    "locus": "MiCucumber-v4opt",
+    "name": "ND_S_0010",
+    "locus": "MiCucumber-S",
     "F": "AAAGAAAGACGAGAAGACCCTGTCGAGC",
     "R": "TCCCTGCGGTAACTTTTTCCGTTTTCCAA",
     "parent_ids": "R2P060",
@@ -28,8 +28,8 @@
     "own_region_nonapo_exact_pct": 0.03944773175542406
   },
   {
-    "name": "ND_S_0446",
-    "locus": "MiCucumber-S",
+    "name": "ND_M_0446",
+    "locus": "MiCucumber-M",
     "F": "CTTCTATTTACGTGAAGAAGCG",
     "R": "GGTAACTTTTTCCGTTTTCCAA",
     "parent_ids": "R2P040",
@@ -42,8 +42,8 @@
     "own_region_nonapo_exact_pct": 3.701746970977741
   },
   {
-    "name": "ND_S_0461",
-    "locus": "MiCucumber-S",
+    "name": "ND_M_0461",
+    "locus": "MiCucumber-M",
     "F": "CTTCTATTTACGTGAAGAAGCG",
     "R": "GGTAACTTTTTCTGTTTACCAG",
     "parent_ids": "R2P040",
@@ -56,8 +56,8 @@
     "own_region_nonapo_exact_pct": 0.0
   },
   {
-    "name": "ND_M_0113",
-    "locus": "MiCucumber-M",
+    "name": "ND_L_0113",
+    "locus": "MiCucumber-L",
     "F": "GCATAATCACTTGTCTCTTAAATGGGGA",
     "R": "TGCGGTAACTTTTTCCGTTTTCCAGA",
     "parent_ids": "R2P020",
@@ -70,8 +70,8 @@
     "own_region_nonapo_exact_pct": 4.118895966029725
   },
   {
-    "name": "ND_M_0459",
-    "locus": "MiCucumber-M",
+    "name": "ND_L_0459",
+    "locus": "MiCucumber-L",
     "F": "GCATAATCATTTGTCTTTTAAATGGAGA",
     "R": "TGCGGTAACTTTTTCCGATTACCAGT",
     "parent_ids": "R2P020",
@@ -84,8 +84,8 @@
     "own_region_nonapo_exact_pct": 4.399454049135578
   },
   {
-    "name": "ND_L_0142",
-    "locus": "MiCucumber-L",
+    "name": "ND_XL_0142",
+    "locus": "MiCucumber-XL",
     "F": "CATAAGGGGTCAAGCCTGCCCAGTGG",
     "R": "CCCTGCGGTAACTTTTTCCGTTTTCCAA",
     "parent_ids": "R2P000",
@@ -98,8 +98,8 @@
     "own_region_nonapo_exact_pct": 2.2988505747126435
   },
   {
-    "name": "ND_L_0357",
-    "locus": "MiCucumber-L",
+    "name": "ND_XL_0357",
+    "locus": "MiCucumber-XL",
     "F": "TATAAAGGGTCCCGCCTGCCCAGTGG",
     "R": "CCCTGCGGTAACTTTTTCCGATTACCAG",
     "parent_ids": "R2P000",
@@ -112,10 +112,10 @@
     "own_region_nonapo_exact_pct": 2.9310344827586206
   },
   {
-    "name": "MiCucumber_v4",
+    "name": "MiCucumber-S-original",
     "F": "GWWAGACGARAAGACCCTG",
     "R": "CCCTRCGGTAACTWTTTCYG",
     "source": "MiStar.xlsx Primer_Cucumber!B30:C31",
-    "locus": "original-v4"
+    "locus": "MiCucumber-S-original"
   }
 ]

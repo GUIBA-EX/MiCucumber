@@ -4,5 +4,6 @@
   "primer_sequences_identical": true,
   "metrics_tolerance": 1e-08,
   "independent_scan_agreement": true,
-  "scope": "Complete portable runner executed locally; final later edit changes HTML interpretation wording only."
+  "scope": "Complete portable runner executed locally; final later edit changes HTML interpretation wording only.",
+  "naming_note": "Identifiers normalized to S/M/L/XL; source hashes refer to unchanged legacy inputs in reproducibility/frozen. No sequences or numerical results changed."
 }

@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "checks": 386492,
-  "target_records": 1846,
-  "background_records": 5600,
-  "scope": "Full original sequences, both strands, exhaustive all-position independent C++ scanner; target detail/sizes and background record counts checked for every shortlist and baseline.",
-  "wet_lab_validated": false
-}
