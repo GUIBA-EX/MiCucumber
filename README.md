@@ -29,6 +29,28 @@ Current eight portfolios passed **21,036 target consistency checks**, plus expan
 
 The former 6–9-pair portfolios and version v0.1.0 remain historical evidence: [previous overview](docs/HISTORICAL_README.md). Existing release tags are unchanged.
 
+## Nondegenerate comparators (2026-10-24)
+
+Added eight **A/C/G/T-only** one-/two-pair portfolios across four regions, while preserving the **original v4 unchanged**. Enumerated 2,644 concrete variants of the eight current parent pairs. Selected portfolios passed 31,428 detection-result agreement checks and a complete reproduction run.
+
+**Removing degeneracy substantially reduces coverage and exact matching; these are comparators, not replacements for the current degenerate portfolios.** Original v4 retains its degeneracies and higher target coverage but has extensive background hits. Below: non-Apodida common-panel metrics (145 name labels). All-target, own-region and change tables are supplied separately. Two pairs mean separate PCRs.
+
+| Portfolio | Non-Apodida coverage | Non-Apodida exact | WC≤3 | GT≤2 | WC≤4 |
+|---|---:|---:|---:|---:|---:|
+| MiCucumber-v4opt-ND-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-v4opt-ND-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-S-ND-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
+| MiCucumber-S-ND-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
+| MiCucumber-M-ND-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
+| MiCucumber-M-ND-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
+| MiCucumber-L-ND-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
+| MiCucumber-L-ND-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
+| MiCucumber-v4-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
+
+[Sequences / 序列](results/nondegenerate/primer_pairs.csv) · [Original v4 / 原版](results/nondegenerate/v4_original.fasta) · [Comparison / 比较](results/nondegenerate/comparison.csv) · [Changes / 与简并版差值](results/nondegenerate/change_vs_degenerate.csv) · [Bilingual report / 双语报告](results/nondegenerate/report.html) · [Reproduction / 完整复现包](results/nondegenerate/reproducibility.zip)
+
+Reproduction: extract the ZIP, install `requirements.txt` and a C++17 compiler, then run `python run_reproduction.py`. All input references, scripts and expected results are included. No wet-lab validation or independent holdout evaluation. / 解压复现包，安装依赖与C++17编译器，运行入口；含参考数据、脚本及预期结果，尚无湿实验或独立留出验证。
+
 ## Files / 文件
 
 - [Eight portfolios: primer sequences / 八套配对序列](results/compact/primer_pairs.csv) · [FASTA](results/compact/primers.fasta)

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "target_boolean_checks": 31428,
+  "concrete_candidate_count": 2644,
+  "nondegenerate_portfolios": 8,
+  "original_v4_unchanged": true,
+  "unique_nondegenerate_pairs": 8,
+  "method": "Python vectorized primer-hit pairing checked against independent exhaustive C++ both-strand full-sequence scan; all selected target coverage/exact accession sets agree.",
+  "scope": "Separate PCR unions only. Same reference data used for design and evaluation; no wet-lab validation. Global optimality not claimed.",
+  "source_sha256": {
+    "baselines.json": "b264f7b2862272ab814114832896fe6c9fbd4199b096b08d3fbe15cbf67ef276",
+    "metadata.tsv": "9eb15d7f540735020da9ef1e4fe47cc16ca56638ba277fea286a830337cbe0bd",
+    "target_taxonomy.tsv": "346f87fe9f8a409d6cc36b4a28dea0286de3f90e12f59608b8254fe51a980484",
+    "target_detail.tsv": "d17de88f579c4a28aaaffba09f61a50790b99c00d8cf846162ca3c5f9cbd4775",
+    "background.fasta": "1fdf5a27e5effa789e799834b46806858ec11ce03794996b8ab2429df2d11c10",
+    "compact_comparison.csv": "8128aedff87e1de612d64f1e8fe7ab44db91fed6f25ce9abaadb67f14020a103",
+    "target.fasta": "fd1f1f0964999b15963c2963e0dd08f24e27d5063911c3659c92aef2e2d3d39d",
+    "compact_parents.csv": "c83711c920c6676ec826d022fde9e5b76858802c5b92bc65d2685e6fb62cd94f"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "selection_identical": true,
+  "primer_sequences_identical": true,
+  "metrics_tolerance": 1e-08,
+  "independent_scan_agreement": true,
+  "scope": "Complete portable runner executed locally; final later edit changes HTML interpretation wording only."
+}

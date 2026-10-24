@@ -29,6 +29,28 @@ Coverage为每条引物≤2处错配且3′末端3碱基完全匹配；Exact为�
 
 旧6–9对组合和v0.1.0保留为历史证据：[历史概览](docs/HISTORICAL_README.zh-CN.md)。本次不移动既有发布标签。
 
+## 无简并对照版（2026-10-24）
+
+新增四区域各1对和2对的8套 **A/C/G/T-only** 候选，并将 **v4原版原样保留**。枚举当前8个亲本配对的2,644种具体序列组合；新方案通过31,428项检测结果一致性检查，完整复现已通过。
+
+**无简并化显著损失覆盖与完全匹配，这版作为对照，不替代当前简并版。** 原版v4仍含简并碱基，覆盖较高但有大量非目标命中。下表为共同面板的非Apodida指标（145个名称标签）；含Apodida、区域面板与差值另见结果表。两对仍为独立PCR。
+
+| Portfolio | Non-Apodida coverage | Non-Apodida exact | WC≤3 | GT≤2 | WC≤4 |
+|---|---:|---:|---:|---:|---:|
+| MiCucumber-v4opt-ND-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-v4opt-ND-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-S-ND-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
+| MiCucumber-S-ND-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
+| MiCucumber-M-ND-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
+| MiCucumber-M-ND-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
+| MiCucumber-L-ND-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
+| MiCucumber-L-ND-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
+| MiCucumber-v4-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
+
+[Sequences / 序列](results/nondegenerate/primer_pairs.csv) · [Original v4 / 原版](results/nondegenerate/v4_original.fasta) · [Comparison / 比较](results/nondegenerate/comparison.csv) · [Changes / 与简并版差值](results/nondegenerate/change_vs_degenerate.csv) · [Bilingual report / 双语报告](results/nondegenerate/report.html) · [Reproduction / 完整复现包](results/nondegenerate/reproducibility.zip)
+
+Reproduction: extract the ZIP, install `requirements.txt` and a C++17 compiler, then run `python run_reproduction.py`. All input references, scripts and expected results are included. No wet-lab validation or independent holdout evaluation. / 解压复现包，安装依赖与C++17编译器，运行入口；含参考数据、脚本及预期结果，尚无湿实验或独立留出验证。
+
 ## Files / 文件
 
 - [Eight portfolios: primer sequences / 八套配对序列](results/compact/primer_pairs.csv) · [FASTA](results/compact/primers.fasta)

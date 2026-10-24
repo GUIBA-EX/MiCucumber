@@ -1,0 +1,19 @@
+{
+  "COPYRIGHT.md": "ce5f8e1df41133ba261c5f53e0191da5f4add945bbe8ad6e298d5fadad8f2278",
+  "candidate_scores.csv": "c7ff473a2e295175e1430cccb177df85e83f6bf29453779f0487c954b1221179",
+  "change_vs_degenerate.csv": "57c8fb39cee7ccb80cba658ad6760f3fe971aa942703aec3f72c4abd717dc868",
+  "comparison.csv": "0df1fc4f8fe8b6c115c38387ce2ddb3f633d000287283f546780d98b7d6f819a",
+  "missed_taxa.csv": "dcb7b218b36d9af017e2216fc175e61d625fb675c642ae32c8f87e379cf6b1e6",
+  "offtargets.csv": "2336fc6f680404e8ece9e50ba56746b4b7f8e44e110747480128154575fd9407",
+  "primer_pairs.csv": "6210cc94c7b5dc360bfe0b9d9f1f4dc4cb49443daecfbe78ac4a2130ef122ebe",
+  "primers.fasta": "804ffe23ec06e29129a29b405e6704c8d088453a767aac5bad14c38e23d670e9",
+  "report.html": "7a22841849ec84a9147caddd49d63b8e16907913187c3d1be43f8d64581dbad9",
+  "reproducibility.zip": "8f02d54ab6b0cfe482f1f2805dadad85b35c0c2d1efb65412408d7b411187f56",
+  "reproduction_check.json": "d97c259a64e3ba88893399a49cf7e0ad2f77dc76db726611958602f4b9d1f01f",
+  "schemes.json": "4e01073f9dd08b815362166320ead17335eb4221e667746e197d3970097a4d02",
+  "selected_pairs.json": "660622913e0aa61bdf7f8cc28b43e9842471b4d3fdb82ba910979506c8e0b513",
+  "selection_audit.csv": "80f3d793bdd3e214b41bfcf17513364ee31f88f6e79bbefb118ff555a4637116",
+  "thermodynamics.csv": "26825f89c2cc1ee5d0b6c382d796533149f3f0a6a394c79aaff9a793c50e2c0c",
+  "v4_original.fasta": "50d06a44aea343e505c778b28ae32c0cab887bcc11c7deef035a56d5003d4bfc",
+  "validation.json": "640bac66a1c489fde0358ac88769a013eac7f80aef2e6e33e6bad10795218134"
+}

@@ -1,3 +1,7 @@
+## 2026-10-24 — Nondegenerate comparators / 无简并对照版
+
+- Added eight one-/two-pair concrete-sequence portfolios and unchanged original v4 control; published coverage losses, background scans, thermal results and a fully tested portable reproduction bundle. Current degenerate portfolios remain available.
+
 ## 2026-10-24 — Compact one-/two-pair portfolios / 精简方案
 
 Eight current computational portfolios; updated Apodida references, exact-match optimization, explicit missed taxa and off-target records, and frozen reproduction archives. Earlier 6–9-pair results retained as history. No wet-lab or pooled-tube claim.
