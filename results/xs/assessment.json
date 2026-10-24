@@ -1,0 +1,20 @@
+{
+  "name": "XS",
+  "coverage_pct": 88.8526827319931,
+  "exact_pct": 13.320907114010563,
+  "all_target_coverage_pct": 85.32211255721194,
+  "all_target_exact_pct": 12.791599546566434,
+  "strict_background_WC": 20,
+  "strict_background_GT": 20,
+  "exact_background_WC": 0,
+  "exact_background_GT": 0,
+  "WC3": 1396,
+  "GT2": 26,
+  "WC4": 2609,
+  "product_min": 186,
+  "product_max": 203,
+  "terminal_rules_pass": true,
+  "thermal_gate_pass": true,
+  "conservative_background_gate_pass": false,
+  "wet_lab_validated": false
+}

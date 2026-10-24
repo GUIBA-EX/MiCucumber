@@ -1,0 +1,19 @@
+{
+  "name": "XS",
+  "metrics": {
+    "coverage_pct": 88.85268273199307,
+    "all_target_coverage_pct": 85.3221125572119,
+    "exact_pct": 13.320907114010563,
+    "all_target_exact_pct": 12.791599546566434,
+    "WC3": 1396,
+    "GT2": 26,
+    "WC4": 2609,
+    "strict_background_WC": 20,
+    "strict_background_GT": 20,
+    "exact_background_WC": 0,
+    "exact_background_GT": 0
+  },
+  "target_checks": 702,
+  "background_checks": 4,
+  "disagreements": 0
+}

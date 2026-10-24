@@ -1,16 +1,15 @@
 # Names / 命名
 
-S, M, L and XL identify homologous design regions. D marks a degenerate single pair; the ordinary single pair has no suffix, and A/B identify the two ordinary components. / S、M、L、XL为同源设计区域；D标记简并单对，普通单对不加后缀，A/B为普通两对的组件。
+XS为固定简并单对，直接命名XS。S–XL各保留D简并单对、无后缀普通单对和普通A/B；每个长度内四者起止坐标完全相同。A/B分别进行PCR，双方均有独有贡献。S-original为原版对照。
+
+XS is a fixed degenerate pair named XS. S–XL each retain a D degenerate pair, an unsuffixed ordinary pair and ordinary A/B components, with identical within-region start/end coordinates. A/B use separate PCRs with unique contributions from both components. S-original is the original control.
 
 | Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
+| XS | XS | — | — |
 | S | SD | S | SA / SB |
 | M | MD | M | MA / MB |
 | L | LD | L | LA / LB |
 | XL | XLD | XL | XLA / XLB |
 
-S-original is the unchanged original control. A+B metrics mean separate-PCR unions. 3′-terminal degeneracy is allowed; it does not require a separate name. / S-original为不变的原始对照；A+B表示独立PCR并集。允许3′端简并，不额外增加命名类型。
-
-[Current sequences](../sequences/primer_pairs.csv) · [Methods](METHODS.md)
-
-Within each length group, ordinary/A/B/D share identical F/R start/end coordinates; only sequence and degeneracy differ. S-original remains separate. / 每个长度组内普通、A、B、D的F/R起止坐标完全相同，仅序列和简并状态不同；S-original独立保留。
+[Current sequences](../sequences/primer_pairs.csv) · [XS](XS.md)

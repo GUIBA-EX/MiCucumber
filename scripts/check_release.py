@@ -3,13 +3,13 @@ from pathlib import Path
 import csv,json,hashlib,zipfile,re,math,itertools,collections,subprocess
 p=Path(__file__).resolve().parents[1];I=dict(A='A',C='C',G='G',T='T',R='AG',Y='CT',S='CG',W='AT',K='GT',M='AC',B='CGT',D='AGT',H='ACT',V='ACG',N='ACGT')
 def rows(f):return list(csv.DictReader(f.open()))
-a=rows(p/'sequences/primer_pairs.csv');assert len(a)==17
-expected={reg+s for reg in ['S','M','L','XL'] for s in ['D','','A+'+reg+'B']}|{'MiCucumber-S-original'};assert {r['scheme'] for r in a}==expected
+a=rows(p/'sequences/primer_pairs.csv');assert len(a)==18
+expected={reg+s for reg in ['S','M','L','XL'] for s in ['D','','A+'+reg+'B']}|{'MiCucumber-S-original','XS'};assert {r['scheme'] for r in a}==expected
 fasta={};key=None
 for line in (p/'sequences/primers.fasta').read_text().splitlines():
  if line.startswith('>'):key=line[1:];assert key not in fasta;fasta[key]=''
  else:fasta[key]+=line
-assert len(fasta)==34
+assert len(fasta)==36
 for r in a:
  for side in ['F','R']:
   q=r[side];assert fasta[f"{r['pair_name']}|{side}|{r['pair_id']}"]==q
@@ -20,8 +20,8 @@ for r in a:
     assert len(set(s[-3:]))>1 and any(c in 'GC' for c in s[-3:])
     assert 1<=sum(c in 'GC' for c in s[-5:])<=4 and not any(c*5 in s for c in 'ACGT')
  if r['chemistry']=='original':assert r['F']=='GWWAGACGARAAGACCCTG' and r['R']=='CCCTRCGGTAACTWTTTCYG'
-for reg in ['S','M','L','XL']:assert rows(p/f'sequences/MiCucumber-{reg}.csv')==[r for r in a if r['region']==reg]
-sel=json.loads((p/'results/terminal_optimization/selection.json').read_text());sd={r['name']:r for r in sel};pairs=rows(p/'results/current/primer_pairs.csv');assert len(pairs)==17
+for reg in ['XS','S','M','L','XL']:assert rows(p/f'sequences/MiCucumber-{reg}.csv')==[r for r in a if r['region']==reg]
+sel=json.loads((p/'results/terminal_optimization/selection.json').read_text());sd={r['name']:r for r in sel};sd['XS']=json.loads((p/'results/xs/selection.json').read_text());pairs=rows(p/'results/current/primer_pairs.csv');assert len(pairs)==18
 for r in pairs:
  if r['name']!='S-original':assert (r['F'],r['R'])==(sd[r['name']]['F'],sd[r['name']]['R'])
 assert {r['name']:(r['F'],r['R']) for r in pairs}=={('S-original' if r['chemistry']=='original' else r['pair_name']):(r['F'],r['R']) for r in a}
@@ -29,7 +29,10 @@ h=collections.defaultdict(set)
 for r in csv.DictReader((p/'results/terminal_optimization/independent_hits.tsv').open(),delimiter='\t'):
  for flag in ['exact','le2last3','le2','le3','le4']:
   if r[flag]=='1':h[r['name'],r['role'],r['model'],flag].add(r['accession'])
-panel=rows(p/'results/matching/panel.csv');weights={r['accession']:float(r['weight']) for r in panel};nw={r['accession']:float(r['weight']) for r in panel if r['order']!='Apodida'};comp=rows(p/'results/current/comparison.csv');assert len(comp)==13 and comp==rows(p/'results/comparison.csv')
+for r in csv.DictReader((p/'results/xs/independent_hits.tsv').open(),delimiter='\t'):
+ for flag in ['exact','le2last3','le2','le3','le4']:
+  if r[flag]=='1':h[r['name'],r['role'],r['model'],flag].add(r['accession'])
+panel=rows(p/'results/matching/panel.csv');weights={r['accession']:float(r['weight']) for r in panel};nw={r['accession']:float(r['weight']) for r in panel if r['order']!='Apodida'};comp=rows(p/'results/current/comparison.csv');assert len(comp)==14 and comp==rows(p/'results/comparison.csv')
 for r in comp:
  pp=[x for x in pairs if x['scheme']==r['scheme']];assert len(pp)==int(r['pairs'])
  def union(role,model,flag):return set().union(*(h[x['name'],role,model,flag] for x in pp))
@@ -38,9 +41,9 @@ for r in comp:
   assert math.isclose(100*sum(nw.get(x,0) for x in hit)/sum(nw.values()),float(r[col]),abs_tol=1e-8)
   assert math.isclose(100*sum(weights.get(x,0) for x in hit)/sum(weights.values()),float(r['all_target_'+col]),abs_tol=1e-8)
  for model,flag,col in [('WC','le3','WC3'),('GT','le2','GT2'),('WC','le4','WC4')]:assert len(union('background',model,flag))==int(r[col])
- if r['scheme']!='S-original':
+ if r['scheme'] not in ['S-original','XS']:
   limit={'SD':50,'LD':20}.get(r['scheme'],5);assert int(r['WC3'])<=limit and int(r['GT2'])<=limit
-for r in rows(p/'results/terminal_optimization/thermal.csv'):
+for r in rows(p/'results/terminal_optimization/thermal.csv')+ [r for r in rows(p/'results/xs/thermal.csv') if r['name']=='XS']:
  assert float(r['structure_max'])<55
  assert abs((float(r['F_tm_min'])+float(r['F_tm_max'])-float(r['R_tm_min'])-float(r['R_tm_max']))/2)<=5
 v=json.loads((p/'results/terminal_optimization/verification.json').read_text());assert v['checks']==11200 and v['disagreements']==0 and v['background_checks']==32 and v['background_disagreements']==0
@@ -53,7 +56,7 @@ for line in lines:
  if line.startswith('>'):collect=line[1:].split()[0]=='AB525437.1'
  elif collect:ref+=line.upper().replace('-','')
 assert ref
-coords=rows(p/'results/current/binding_positions.csv');assert len(coords)==16 and {r['name'] for r in coords}==set(sd)
+coords=rows(p/'results/current/binding_positions.csv');assert len(coords)==17 and {r['name'] for r in coords}==set(sd)
 for r in coords:
  for side in ['F','R']:
   a0,b=int(r[side+'_start']),int(r[side+'_end']);q=sd[r['name']][side];assert b-a0+1==len(q)
@@ -70,10 +73,21 @@ for reg in ['S','M','L','XL']:
 for r in rows(p/'results/current/joint_locus.csv'):
  q=next(x for x in coords if x['name']==r['region'])
  assert all(r[k]==q[k] for k in ['F_start','F_end','R_start','R_end','reference_span_bp'])
+xv=json.loads((p/'results/xs/verification.json').read_text());assert xv['target_checks']==702 and xv['background_checks']==4 and xv['disagreements']==0
+reproduced=json.loads((p/'results/xs/reproduction_check.json').read_text());assert reproduced['target_checks']==702 and reproduced['background_checks']==4 and reproduced['disagreements']==0
+xa=json.loads((p/'results/xs/assessment.json').read_text());assert xa['thermal_gate_pass'] and xa['terminal_rules_pass'] and not xa['conservative_background_gate_pass'] and not xa['wet_lab_validated']
+for model in ['WC','GT']:
+ assert len(h['XS','background',model,'le2last3'])==20 and len(h['XS','background',model,'exact'])==0
+for n in ['README.md','README.zh-CN.md']:
+ text=(p/n).read_text();assert 'figures/base_matching_XS.svg' in text
+ for r in comp:
+  line=next(l for l in text.splitlines() if l.startswith('| '+r['scheme']+' |') and '%' in l)
+  assert f"{float(r['coverage_pct']):.2f}%" in line and f"{float(r['exact_pct']):.2f}%" in line
+assert {r['locus']:r['reference_span_bp'] for r in rows(p/'figures/region_coordinates.csv')}=={'XS':'191','S':'226','M':'245','L':'302','XL':'396'}
 manifest=json.loads((p/'SHA256SUMS.json').read_text())
 for name,digest in manifest.items():assert hashlib.sha256((p/name).read_bytes()).hexdigest()==digest,name
 for doc in [p/n for n in manifest if n.endswith('.md')]:
  for link in re.findall(r'\]\(([^)]+)\)',doc.read_text()):
   if not link.startswith(('http:','https:','#')):assert (doc.parent/link.split('#')[0]).exists(),(doc,link)
 for link in re.findall(r'(?:href|src)="([^"]+)"',(p/'report.html').read_text()):assert (p/link).exists(),link
-print('PASS: 13 portfolios, 17 pairs, 34 sequences, all-variant terminal rules, both thermal scenarios, raw metrics, 16 reference intervals, original control, links and hashes')
+print('PASS: 14 portfolios, 18 pairs, 36 sequences; terminal rules, thermal scenarios, raw metrics, 17 intervals, XS risk flags, bilingual tables, original control, links and hashes')

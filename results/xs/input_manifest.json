@@ -1,0 +1,8 @@
+{
+  "bundle": "reproducibility/frozen/xs_inputs.zip",
+  "sha256": {
+    "target.fasta": "fd1f1f0964999b15963c2963e0dd08f24e27d5063911c3659c92aef2e2d3d39d",
+    "background.fasta": "1fdf5a27e5effa789e799834b46806858ec11ce03794996b8ab2429df2d11c10",
+    "panel.csv": "2cac91a289aa97ce25fce12fdbb5390f68107c2675a15d69dd528e2c1f5263a2"
+  }
+}

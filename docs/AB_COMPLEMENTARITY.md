@@ -25,3 +25,6 @@ Search includes observed binding haplotypes, concrete variants of retained prime
 | M | 36.36 → 36.36 | 10.80 → 10.80 |
 | L | 43.33 → 43.33 | 15.00 → 15.00 |
 | XL | 15.81 → 24.29 | 0.69 → 0.69 |
+
+
+当前XS方案 / Current XS assay: [sequences, matching, background and reproduction / 序列、匹配、背景与复现](XS.md). XS is a fixed single assay; within-region ordinary/A/B/D coordinate rules apply to S–XL. / XS为固定单对；普通、A、B、D同坐标规则适用于S–XL。

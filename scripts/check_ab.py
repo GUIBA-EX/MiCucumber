@@ -25,7 +25,7 @@ for a in ab:
 for f in ['README.md','README.zh-CN.md']:
  s=(p/f).read_text();assert s.startswith('![')
  for x in comp.values():
-  line=next(l for l in s.splitlines() if l.startswith('| '+x['scheme']+' |'))
+  line=next(l for l in s.splitlines() if l.startswith('| '+x['scheme']+' |') and '%' in l)
   assert f"{float(x['coverage_pct']):.2f}" in line and f"{float(x['exact_pct']):.2f}" in line
  if len(pairs)==16:
   for x in pairs:assert f"| {x['name']} | `{x['F']}` | `{x['R']}` |" in s

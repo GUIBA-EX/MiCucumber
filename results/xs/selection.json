@@ -1,0 +1,33 @@
+{
+  "name": "XS",
+  "F_id": "XS_F",
+  "R_id": "XS_R",
+  "F": "RGYTTTGGTTGGGGCAAC",
+  "R": "TTDCCCCAATCCAACATCGA",
+  "degeneracy_F": 4,
+  "degeneracy_R": 3,
+  "F_start": 1042,
+  "F_end": 1059,
+  "R_start": 1213,
+  "R_end": 1232,
+  "reference_span": 191,
+  "thermal_gate_pass": true,
+  "thermal": [
+    {
+      "scenario": "50_per_variant",
+      "F_tm_min": 55.97174927062326,
+      "F_tm_max": 59.57440817379819,
+      "R_tm_min": 56.52080853609982,
+      "R_tm_max": 59.96111048033731,
+      "structure_max": 42.889909799765576
+    },
+    {
+      "scenario": "200_per_direction",
+      "F_tm_min": 55.97174927062326,
+      "F_tm_max": 59.57440817379819,
+      "R_tm_min": 56.93494831527113,
+      "R_tm_max": 60.37646850336051,
+      "structure_max": 42.889909799765576
+    }
+  ]
+}

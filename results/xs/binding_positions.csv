@@ -1,0 +1,2 @@
+name,region,reference,F_start,F_end,F_sequence,F_reference_5to3,F_reference_mismatches,R_start,R_end,R_sequence,R_reference_5to3,R_reference_mismatches,reference_span_bp
+XS,XS,AB525437.1,1042,1059,RGYTTTGGTTGGGGCAAC,AGTTTTGGTTGGGGCAAC,0,1213,1232,TTDCCCCAATCCAACATCGA,TTACCCCAATCCAACATCGA,0,191

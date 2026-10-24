@@ -1,0 +1,44 @@
+{
+  "name": "XS",
+  "methods": [
+    "C++ full-sequence exhaustive scan",
+    "Python bit-parallel full-sequence scan"
+  ],
+  "target_checks": 702,
+  "background_checks": 4,
+  "disagreements": 0,
+  "background_details": [
+    {
+      "role": "background",
+      "model": "WC",
+      "flag": "exact",
+      "agree": true,
+      "predicted": 0,
+      "full_scan": 0
+    },
+    {
+      "role": "background",
+      "model": "WC",
+      "flag": "le2last3",
+      "agree": true,
+      "predicted": 20,
+      "full_scan": 20
+    },
+    {
+      "role": "background",
+      "model": "GT",
+      "flag": "exact",
+      "agree": true,
+      "predicted": 0,
+      "full_scan": 0
+    },
+    {
+      "role": "background",
+      "model": "GT",
+      "flag": "le2last3",
+      "agree": true,
+      "predicted": 20,
+      "full_scan": 20
+    }
+  ]
+}

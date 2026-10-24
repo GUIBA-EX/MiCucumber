@@ -14,3 +14,14 @@ python work/micucumber_terminal/end_audit.py
 Release check / 发布检查：`python scripts/check_release.py`。探索候选全集位于`results/degenerate_expansion`，保留理由见`docs/DECISIONS.md`。
 
 Expanded A/B search / 扩大A/B搜索：`work/ab_expanded/search.py PROJECT` → `refine.py` → `install.py`, followed by each project’s `verify.py`, `summarize.py` and figure scripts. The bundle contains the preceding selection, expanded candidates and final selection. Run `python scripts/check_ab.py` to check mutual contributions and current README values. The search scripts use the multi-project workspace layout; to reproduce only this release, use its frozen selection and per-project verification pipeline. / 搜索脚本依赖三个项目的共同工作目录；单独复核本发布时使用冻结选配结果及项目独立扫描流程。
+
+
+当前XS方案 / Current XS assay: [sequences, matching, background and reproduction / 序列、匹配、背景与复现](XS.md). XS is a fixed single assay; within-region ordinary/A/B/D coordinate rules apply to S–XL. / XS为固定单对；普通、A、B、D同坐标规则适用于S–XL。
+
+## XS
+
+```bash
+python scripts/verify_xs.py --output /tmp/MiCucumber-XS-check
+```
+
+Frozen standalone inputs, C++ exhaustive scan and independent Python raw-sequence verification. The terminal-optimization bundle above reproduces S–XL; XS uses its separate frozen bundle and script. / 上述terminal_optimization冻结包对应S–XL；XS使用独立冻结输入与脚本，复核702项目标判断及4组背景集合。

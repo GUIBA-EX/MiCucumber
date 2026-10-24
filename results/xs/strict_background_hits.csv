@@ -1,0 +1,22 @@
+name,accession,organism,clade,status,length,location,role
+XS,GU327872.1,Thalassocrinus sp. GWR-2010,Crinoidea,annotated,354,[<0:>354](+),background
+XS,GU327898.1,Himerometra robustipinna,Crinoidea,annotated,363,[<0:>363](+),background
+XS,GU327907.1,Zygometra microdiscus,Crinoidea,annotated,355,[<0:>355](+),background
+XS,KC616739.1,Calamocrinus sp. Pti289,Crinoidea,annotated,297,[<0:>297](+),background
+XS,KC626622.1,Clarkcomanthus luteofuscum,Crinoidea,annotated,302,[<0:>302](+),background
+XS,KC626646.1,Homalometra crenulata,Crinoidea,annotated,301,[<0:>301](+),background
+XS,KC626647.1,Himerometra cf. robustipinna HROB42,Crinoidea,annotated,302,[<0:>302](+),background
+XS,KC626649.1,Homalometra denticulata,Crinoidea,annotated,301,[<0:>301](+),background
+XS,KC626656.1,Mariametra subcarinata,Crinoidea,annotated,300,[<0:>300](+),background
+XS,KC626689.1,Zygometra andromeda,Crinoidea,annotated,301,[<0:>301](+),background
+XS,KJ875029.1,Clarkcomanthus albinotus,Crinoidea,annotated,570,[<0:>570](+),background
+XS,KJ875045.1,Comanthus sp. 1 MS-2014,Crinoidea,annotated,562,[<0:>562](+),background
+XS,KM014338.1,Antedon sp. MMS-2014,Crinoidea,annotated,550,[<0:>550](+),background
+XS,KU519515.1,Crinoidea sp. NHM_055,Crinoidea,annotated,473,[<0:>473](+),background
+XS,MW376476.1,Anneissia intermedia,Crinoidea,annotated,1551,[12087:13638](-),background
+XS,NC_059908.1,Anneissia intermedia,Crinoidea,annotated,1551,[12087:13638](-),background
+XS,NC_061054.1,Cenometra bella,Crinoidea,annotated,1524,[6218:7742](-),background
+XS,NC_069919.1,Zygometra comata,Crinoidea,annotated,1514,[14310:15824](-),background
+XS,OK509084.1,Cenometra bella,Crinoidea,annotated,1524,[6218:7742](-),background
+XS,ON585667.1,Zygometra comata,Crinoidea,annotated,1514,[14310:15824](-),background
+SD,AJ639816.1,Metalia nobilis,Echinoidea,annotated,586,[<0:>586](+),background

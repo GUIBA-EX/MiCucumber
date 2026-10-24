@@ -1,3 +1,7 @@
+# XS integration · 2026-10-25
+
+Add MiCucumber-XS, its frozen references, independent scan, base matching and five-region overview. Synchronize bilingual README, current sequences, metrics and reference coordinates. XS background trade-offs remain explicit.
+
 # 2026-10-25
 
 Retain SD, MD and LD enhancements under fixed shared coordinates; keep XLD and all ordinary variants unchanged. Simplify bilingual documentation around one D portfolio per length.

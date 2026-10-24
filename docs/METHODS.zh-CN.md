@@ -1,11 +1,27 @@
-# MiCucumber
+# 设计与评估方法
 
-按奥卡姆剃刀原则，每个长度仅保留一个正式D方案：SD采用低简并增强（2/8），MD采用严格背景档（64/4），LD采用覆盖增强（32/1），XLD保留原方案（2/1）。SD更激进档、MD 128/4档和XLD小增益档不进入正式序列。普通单对及S-original不变，A/B已重新选配，每组四套F/R起止坐标完全相同。这是基于收益与复杂度的人工取舍，不是预设统计阈值或已验证PCR最优条件。
+## 参考面板与匹配规则
 
-非Apodida共同面板按名称标签等权、标签内单倍型等权。覆盖允许每条引物≤2处错配且末端3位IUPAC相容；完全匹配要求两端零错配。所有实际变体均无末端三连同碱基、末端3位至少1个GC、末端5位1–4个GC，全序列同碱基连续不超过4。
+共同面板包含351个单倍型、151个分类名称标签，其中非Apodida为145个标签。标签等权，标签内单倍型等权。主表排除Apodida，全目标指标保留于结果CSV；分目沿用冻结标签，不重新解释分类。设计和评估使用同一面板。
 
-Primer3: 50 mM monovalent salt, 1.5 mM Mg, 0.6 mM dNTP; 50 nM per variant and 200 nM per direction. Hairpin/dimer Tm <55°C; F/R Tm-range midpoint difference ≤5°C. Background gates: SD ≤50, LD ≤20, others ≤5 accessions under both WC≤3 and GT≤2. S-original is an unchanged control. WC≤4 is a sensitivity analysis, not a selection gate.
+覆盖要求每条引物≤2错配且末端3 nt与IUPAC兼容，完全匹配要求两条引物均零错配。非目标库为5,600条记录。WC为标准配对，GT额外容许G–T配对。WC≤3、GT≤2、WC≤4背景列不强制末端兼容；严格背景采用目标覆盖规则。所有计数均为登录记录数，不是实际扩增比例。
 
-原共同位点保持固定；扩展碱基采用参考支持率≥1%，测试不同简并上限，保留上述取舍。M每方向总浓度200 nM时F变体浓度3.125 nM。L的WC≤4命中1168条背景记录，代价明显。设计与评估共享参考集，尚无湿实验验证。
+## 方案与复杂度
 
-Current A/B selection / 当前A/B筛选：[expanded same-coordinate search and independent verification / 扩大同坐标搜索与独立复核](AB_COMPLEMENTARITY.md).
+XS为固定简并单对，AB525437.1提取的无缺口16S坐标F 1042–1059、R 1213–1232；参考跨度191 bp，预测产物186–203 bp。围绕MiLily-XS同源区进行的有边界搜索见[XS分析](XS.md)。
+
+S–XL各保留普通单对、互补普通A/B及一个D方案；每个长度内四者F/R起止坐标完全相同。A/B采用独立PCR并集，双方均有独有贡献，见[互补性证据](AB_COMPLEMENTARITY.md)。D方案基于≥1%参考支持率及多档简并上限，按覆盖收益与复杂度取舍：SD为2/8、MD为64/4、LD为32/1、XLD为2/1。S-original保留为不变的原版对照。
+
+## 末端与热力学
+
+允许3′末端简并，逐个实际变体检查：末端无同碱基三连，末端3 nt至少1个G/C，末端5 nt有1–4个G/C，全长无超过4个碱基的同聚物。S-original作为对照豁免。
+
+Primer3参数为50 mM单价盐、1.5 mM Mg、0.6 mM dNTP；分别评估50 nM/实际变体与200 nM/方向。两种条件均要求最高发卡/二聚体Tm<55°C、F/R Tm区间中点温差≤5°C。XS及当前S–XL均通过。每方向200 nM时，MD每个正向变体浓度为3.125 nM。
+
+## 非目标取舍与独立复核
+
+S–XL在WC≤3与GT≤2两种背景模型下的门槛为SD≤50、LD≤20，其余当前方案≤5条；S-original不参与筛选。XS明确放宽背景限制，单独保留：严格WC/GT各20条，宽松WC≤3为1396条、GT≤2为26条，未通过S–XL原有保守门槛。WC≤4作为敏感性分析，可暴露更多背景风险。
+
+XS最终指标来自双向扫描原始FASTA：目标产物70–500 bp、内部长度≥20 bp，背景内部距离0–1000 bp。S–XL保留其冻结流程中的产物参数。XS的C++穷举与Python位并行全序列扫描核对702项目标判断和4组严格/完全背景集合，全部一致；宽松背景指标由C++重算。S–XL另有11,200项目标判断与32组背景集合独立复核，全部一致。代表碱基图辅助阅读，不替代全体统计。
+
+设计与评估共享参考库；Apodida仍是缺口，全部方案待湿实验验证。XS比SD更短、覆盖更高，但背景命中更多，且共有标签上的已观察条码区分能力略低。[XS评估](XS.md) · [复现](REPRODUCIBILITY.zh-CN.md)。

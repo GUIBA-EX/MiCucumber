@@ -1,0 +1,16 @@
+name,order,coverage_pct,exact_pct,labels
+XS,Apodida,0.0,0.0,6
+XS,Aspidochirotida,84.96709053774272,14.835487661574618,92
+XS,Dendrochirotida,96.875,3.1250000000000004,32
+XS,Elasipodida,91.66666666666667,16.666666666666664,16
+XS,Molpadida,100.0,40.0,5
+SD,Apodida,0.0,0.0,6
+SD,Aspidochirotida,91.66841530971966,14.24689440993789,92
+SD,Dendrochirotida,96.875,0.0,32
+SD,Elasipodida,0.0,0.0,16
+SD,Molpadida,40.0,0.0,5
+S,Apodida,0.0,0.0,6
+S,Aspidochirotida,76.01106541323932,5.279503105590062,92
+S,Dendrochirotida,78.12500000000001,0.0,32
+S,Elasipodida,0.0,0.0,16
+S,Molpadida,40.0,0.0,5
