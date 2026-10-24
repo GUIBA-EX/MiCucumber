@@ -1,13 +1,13 @@
 # MiCucumber
 
-Computational mitochondrial 16S primer candidates for sea cucumbers. The four regions are **S, M, L and XL**, each with one-/two-pair degenerate and nondegenerate options. **S-original** preserves the original control: 17 portfolios in total. [中文](README.zh-CN.md)
+Computational mitochondrial 16S primer candidates for sea cucumbers. The four regions are **S, M, L and XL**, each with one degenerate pair and one-/two-pair nondegenerate options. **S-original** preserves the original control: 13 portfolios in total. [中文](README.zh-CN.md)
 
 ## Portfolio selection
 
-Degenerate sets use **S-D, M-D, L-D and XL-D**; nondegenerate sets use **S, M, L and XL**. The final `1pair` / `2pair` indicates pair count.
+Degenerate sets use **S-D, M-D, L-D and XL-D**; nondegenerate sets use **S, M, L and XL**. Nondegenerate component pairs are named `1pair`, or `2pairA` and `2pairB`.
 
 - Two pairs mean two independent PCRs. Regions are alternative comparisons; no requirement to run all portfolios on every sample.
-- **Prioritize S-D-2pair for experimental evaluation.** Nondegenerate sets lose substantial coverage and exact matching and remain comparators. S-original has extensive background hits.
+- **Prioritize S-D-1pair for experimental evaluation.** Nondegenerate sets lose substantial coverage and exact matching and remain comparators. S-original has extensive background hits.
 - No portfolio has wet-lab validation or a validated single-tube multiplex recipe.
 
 ## Downloads and documentation
@@ -24,13 +24,9 @@ The tables below report **non-Apodida common-panel** metrics. The full common pa
 | Portfolio | Non-Apodida coverage | Exact matching | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
 | MiCucumber-S-D-1pair | 87.45% | 27.48% | 2 | 0 | 742 |
-| MiCucumber-S-D-2pair | 88.53% | 40.84% | 2 | 0 | 742 |
 | MiCucumber-M-D-1pair | 56.90% | 9.43% | 0 | 0 | 130 |
-| MiCucumber-M-D-2pair | 62.42% | 14.25% | 0 | 0 | 131 |
 | MiCucumber-L-D-1pair | 70.26% | 33.63% | 4 | 0 | 109 |
-| MiCucumber-L-D-2pair | 74.06% | 35.01% | 4 | 0 | 109 |
 | MiCucumber-XL-D-1pair | 48.34% | 9.71% | 0 | 0 | 486 |
-| MiCucumber-XL-D-2pair | 55.27% | 11.78% | 0 | 4 | 492 |
 
 ## Nondegenerate comparators
 
@@ -59,7 +55,6 @@ Coverage permits ≤2 mismatches per primer with the terminal 3 nt exact; exact 
 
 ## Data and reproduction
 
-- Degenerate sets: selected from 96 independently checked candidate pairs; 21,036 target agreement checks for the eight current portfolios.
 - Nondegenerate sets: 2,644 concrete candidate pairs enumerated; 31,428 agreement checks for the selected portfolios and original control, with complete reproduction tested.
 - Current references: 1,848 target and 5,600 background records. Apodida is excluded from optimization but retained in all-target reporting. Two added loci are direction-corrected homology inferences; six UNVERIFIED records were excluded.
 - Design and evaluation reuse frozen references; no independent holdout validation. Exhaustive optimality is conditional on the candidate pool and objective.

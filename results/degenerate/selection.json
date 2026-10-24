@@ -11,18 +11,6 @@
     "enumerated_combinations": 28
   },
   {
-    "name": "MiCucumber-S-D-2pair",
-    "locus": "MiCucumber-S",
-    "count": 2,
-    "budget": 5,
-    "tolerance_pp": 2,
-    "pair_names": [
-      "R2P060",
-      "R2P070"
-    ],
-    "enumerated_combinations": 378
-  },
-  {
     "name": "MiCucumber-M-D-1pair",
     "locus": "MiCucumber-M",
     "count": 1,
@@ -32,18 +20,6 @@
       "R2P040"
     ],
     "enumerated_combinations": 23
-  },
-  {
-    "name": "MiCucumber-M-D-2pair",
-    "locus": "MiCucumber-M",
-    "count": 2,
-    "budget": 5,
-    "tolerance_pp": 1,
-    "pair_names": [
-      "R2P040",
-      "R2P052"
-    ],
-    "enumerated_combinations": 253
   },
   {
     "name": "MiCucumber-L-D-1pair",
@@ -57,18 +33,6 @@
     "enumerated_combinations": 21
   },
   {
-    "name": "MiCucumber-L-D-2pair",
-    "locus": "MiCucumber-L",
-    "count": 2,
-    "budget": 5,
-    "tolerance_pp": 2,
-    "pair_names": [
-      "R2P020",
-      "R2P035"
-    ],
-    "enumerated_combinations": 210
-  },
-  {
     "name": "MiCucumber-XL-D-1pair",
     "locus": "MiCucumber-XL",
     "count": 1,
@@ -78,17 +42,5 @@
       "R2P000"
     ],
     "enumerated_combinations": 21
-  },
-  {
-    "name": "MiCucumber-XL-D-2pair",
-    "locus": "MiCucumber-XL",
-    "count": 2,
-    "budget": 5,
-    "tolerance_pp": 1,
-    "pair_names": [
-      "R2P000",
-      "R2P002"
-    ],
-    "enumerated_combinations": 210
   }
 ]

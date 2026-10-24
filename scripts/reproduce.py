@@ -1,7 +1,7 @@
 """Reproduce frozen computations and normalize current exports without changing source evidence."""
 from pathlib import Path
 import argparse,csv,json,subprocess,sys,zipfile,math
-from naming import normalize
+from naming import normalize, current
 ROOT=Path(__file__).resolve().parents[1]
 def read(path):return list(csv.DictReader(path.open()))
 def write(path,rows):
@@ -28,7 +28,7 @@ def main():
  if args.mode=='nondegenerate':
   run([sys.executable,work/'run_reproduction.py'],work)
   source=work/'rebuild/results'
-  for path in source.glob('*.csv'):write(result/path.name,normalize(read(path)))
+  for path in source.glob('*.csv'):write(result/path.name,current(normalize(read(path))))
   for path in source.glob('*.json'):(result/path.name).write_text(json.dumps(normalize(json.loads(path.read_text())),indent=2)+'\n')
   for n in ['primer_pairs.csv','comparison.csv']:equal(result/n,ROOT/'results/nondegenerate'/n)
  elif args.mode=='degenerate':
@@ -40,8 +40,8 @@ def main():
   for s in chosen:
    summary.extend(r for r in comparisons if r['scheme']==s['name'])
    for j,n in enumerate(s['pair_names'],1):seq.append(dict(version=s['locus'],pairs=str(s['count']),reaction=str(j),pair_id=n,F=pairs[n]['F'],R=pairs[n]['R'],scheme=s['name']))
-  write(result/'primer_pairs.csv',normalize(seq));write(result/'comparison.csv',normalize(summary))
-  (result/'selection.json').write_text(json.dumps(normalize(chosen),indent=2)+'\n')
+  write(result/'primer_pairs.csv',current(normalize(seq)));write(result/'comparison.csv',current(normalize(summary)))
+  (result/'selection.json').write_text(json.dumps(current(normalize(chosen)),indent=2)+'\n')
   for n in ['primer_pairs.csv','comparison.csv']:equal(result/n,ROOT/'results/degenerate'/n)
  else:
   run([sys.executable,work/'run_revalidation.py'],work)
@@ -49,6 +49,6 @@ def main():
   return
  with (result/'primers.fasta').open('w') as f:
   for r in read(result/'primer_pairs.csv'):
-   for d in ('F','R'):f.write(f">{r['scheme']}|PCR{r['reaction']}|{d}|{r['pair_id']}\n{r[d]}\n")
+   for d in ('F','R'):f.write(f">{r['pair_name']}|{d}|{r['pair_id']}\n{r[d]}\n")
  print('PASS: current names, primer sequences and comparison metrics reproduced:',result)
 if __name__=='__main__':main()

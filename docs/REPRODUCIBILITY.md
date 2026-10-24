@@ -10,7 +10,7 @@ From the repository root:
 python scripts/check_release.py
 ```
 
-This requires only the Python standard library. It checks 17 portfolios, region/type/count consistency, 25 reaction rows, 50 FASTA records, A/C/G/T-only nondegenerate sequences, the unchanged original control, source-to-current name/sequence/metric invariance, expected screening limits, Markdown/HTML links, ZIP integrity and file hashes. It does not rerun binding scans.
+This requires only the Python standard library. It checks 13 portfolios, region/type/count consistency, 17 reaction rows, 34 FASTA records, A/C/G/T-only nondegenerate sequences, the unchanged original control, source-to-current name/sequence/metric invariance, expected screening limits, Markdown/HTML links, ZIP integrity and file hashes. It does not rerun binding scans.
 
 ## Computational reproduction
 

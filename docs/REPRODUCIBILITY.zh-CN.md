@@ -10,7 +10,7 @@
 python scripts/check_release.py
 ```
 
-仅需Python标准库。检查17套方案、区域/类型/对数、25条配对记录、50条FASTA记录、无简并序列仅含A/C/G/T、原版对照不变、旧名到新名的序列和数值一致性、筛选阈值、Markdown/HTML链接、ZIP完整性及文件指纹。此步骤不重新扫描结合位点。
+仅需Python标准库。检查13套方案、区域/类型/对数、17条配对记录、34条FASTA记录、无简并序列仅含A/C/G/T、原版对照不变、旧名到新名的序列和数值一致性、筛选阈值、Markdown/HTML链接、ZIP完整性及文件指纹。此步骤不重新扫描结合位点。
 
 ## 计算复现
 
@@ -26,7 +26,7 @@ python scripts/reproduce.py nondegenerate --work-dir reproduction-work
 
 - **简并方案：**从冻结逐配对目标/背景证据重算1–4对穷举，选出当前8套1对/2对方案，转换命名，并与发布序列及共同/区域面板指标比较。此入口不重新扫描原始参考，也不重新发现结合位点。新名输出在`degenerate/current-results/`。
 - **无简并方案：**重新枚举2,644个具体候选、优化1对/2对方案、编译并执行独立全序列目标/背景扫描、核对预测及原版对照，然后转换新名并校验序列与指标。新名输出在`nondegenerate/current-results/`。
-- **第二轮上游扫描：**运行`python scripts/reproduce.py round2 --work-dir reproduction-work`，执行冻结参考的独立复核。中间证据保留源标识，此入口本身不导出当前17套方案。
+- **第二轮上游扫描：**运行`python scripts/reproduce.py round2 --work-dir reproduction-work`，执行冻结参考的独立复核。中间证据保留源标识，此入口本身不导出当前13套方案。
 
 本次整理已经重新运行简并与无简并的新名适配入口，序列及指标与改名前一致；见[复现检查](../results/reproduction_checks.json)。第二轮冻结包保留此前的复核证据，其计算没有因本次更名而改变。
 

@@ -1,10 +1,10 @@
 {
   "status": "PASS",
   "source_commit": "14f156fbcd8143b0a430dcd2ae2f1b39afbae755",
-  "portfolios": 17,
-  "reaction_rows": 25,
-  "sequence_strings_compared": 50,
+  "portfolios": 13,
+  "reaction_rows": 17,
+  "sequence_strings_compared": 34,
   "sequence_changes": 0,
   "numerical_changes": 0,
-  "scope": "Names, file layout and documentation only; design metrics and original oligos retained."
+  "scope": "Retained single-pair degenerate portfolios and one-/two-pair nondegenerate portfolios; A/B names identify the two component pairs. Retained sequences and numerical metrics unchanged."
 }

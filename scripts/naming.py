@@ -20,3 +20,17 @@ def normalize(value):
  if isinstance(value,list):return [normalize(x) for x in value]
  if isinstance(value,dict):return {text(k):normalize(v) for k,v in value.items()}
  return value
+
+
+def current(rows):
+ result=[]
+ for r in rows:
+  name=r.get('scheme',r.get('name',r.get('new_scheme','')))
+  if '-D-2pair' in name:continue
+  if not name and 'version' in r and str(r.get('pairs',''))=='2':continue
+  r=dict(r)
+  if 'scheme' in r and 'F' in r and 'R' in r:
+   suffix=('A' if str(r['reaction'])=='1' else 'B') if r['scheme'].endswith('-2pair') else ''
+   r['pair_name']=r['scheme']+suffix
+  result.append(r)
+ return result

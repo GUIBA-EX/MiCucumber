@@ -22,11 +22,9 @@ The WC models allow up to two, three or four mismatches per primer. GT≤2 uses 
 
 The selection allowance is at most five WC≤3 and five GT≤2 background accessions in the union of component pairs. This is an analyst-defined screening rule, not an experimental abundance threshold. WC≤4 is reported to expose relaxed residual risk. S-original is an unchanged control, not a candidate constrained by this gate, and has extensive background hits. All background counts are accession counts rather than species counts or read fractions.
 
-## Degenerate portfolios: degenerate sets
+## Degenerate portfolios
 
-The final portfolios use a previously independently checked pool of 96 candidate pairs. Enumerate one- and two-pair subsets within each region. Apodida has no minimum coverage requirement and is excluded from the optimization objective. First maximize mean non-Apodida coverage across common and own-region panels. Then maximize mean exact matching while allowing a limited coverage loss relative to that coverage-first anchor **on each panel separately**: two percentage points for S-D-2pair and L-D-2pair; one point for the other portfolios. WC≤3 and GT≤2 accession unions must each remain ≤5.
-
-The selected eight portfolios passed 21,036 target-result consistency checks. Upstream round-two validation recorded 346,488 checks. Exhaustive selection is conditional on the supplied candidate pool and objective, not proof of a global primer-design optimum. Two-pair coverage is the union of two independent PCRs; arbitrary cross-pair combinations and mixed-tube interactions are not validated.
+Retain one pair per region from the verified candidate pool. First maximize mean non-Apodida coverage across common and own-region panels, then maximize mean exact matching within one percentage point of the coverage-first anchor on each panel separately. WC≤3 and GT≤2 background counts must each remain ≤5.
 
 ## Nondegenerate portfolios: nondegenerate sets
 
