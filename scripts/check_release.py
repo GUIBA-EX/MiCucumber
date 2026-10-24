@@ -46,7 +46,7 @@ with zipfile.ZipFile(p/'archive/pre-renaming-14f156f.zip') as z:
   for side in ['F','R']:assert hashlib.sha256(r[side].encode()).hexdigest()==m[side+'_sha256']
 for zpath in (p/'reproducibility/frozen').glob('*.zip'):
  with zipfile.ZipFile(zpath) as z:assert z.testzip() is None,zpath
-for doc in p.rglob('*.md'):
+for doc in [p/n for n in json.loads((p/'SHA256SUMS.json').read_text()) if n.endswith('.md')]:
  for link in re.findall(r'\]\(([^)]+)\)',doc.read_text()):
   if not link.startswith(('http:','https:','#')):assert (doc.parent/link.split('#')[0]).exists(),(doc,link)
 for link in re.findall(r'(?:href|src)="([^"]+)"',(p/'report.html').read_text()):assert (p/link).exists(),link

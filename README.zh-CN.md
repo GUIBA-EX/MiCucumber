@@ -1,3 +1,7 @@
+![MiCucumber overview](figures/MiCucumber_overview.png)
+
+当前配对名称：SD、S、SA、SB（其他长度同理）；简并仅保留单对。
+
 # MiCucumber
 
 海参线粒体16S计算候选引物。当前四个区域统一命名为 **S、M、L、XL**，简并方案仅保留1对，无简并方案保留1对和2对；另保留 **S-original** 原版对照，共13套方案。[English](README.md)
@@ -66,9 +70,9 @@
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. 公开访问不等于开源许可；未经许可不得转载或再分发受保护的原创内容，法定例外、GitHub平台权利及第三方数据权利除外。[完整声明](COPYRIGHT.md)
 ## 匹配可视化 / Matching profiles
 
-每列为共同面板中的一个单倍型，按目与物种排列。绿色为完全匹配，黄色为允许错配命中，灰色为未命中。柱图采用标签及标签内单倍型等权。A+B为独立PCR结果并集。
+每列为共同面板中的一个单倍型，按目与物种排列。蓝绿色为完全匹配，金黄色为允许错配命中，浅灰色为未命中。柱图采用标签及标签内单倍型等权。A+B为独立PCR结果并集。
 
-Each column is one common-panel haplotype, ordered by order and species. Green: exact; yellow: mismatch-tolerant hit; gray: missed. Bars use equal label and within-label haplotype weights. A+B is the union of separate PCRs.
+Each column is one common-panel haplotype, ordered by order and species. Teal: exact; gold: mismatch-tolerant hit; light gray: missed. Bars use equal label and within-label haplotype weights. A+B is the union of separate PCRs.
 
 ![S matching](figures/matching_S.png)
 

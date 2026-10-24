@@ -1,3 +1,7 @@
+![MiCucumber overview](figures/MiCucumber_overview.png)
+
+Current pair names: SD, S, SA and SB, with the same pattern for other lengths. One degenerate pair is retained per region.
+
 # MiCucumber
 
 Computational mitochondrial 16S primer candidates for sea cucumbers. The four regions are **S, M, L and XL**, each with one degenerate pair and one-/two-pair nondegenerate options. **S-original** preserves the original control: 13 portfolios in total. [中文](README.zh-CN.md)
@@ -66,9 +70,9 @@ Coverage permits ≤2 mismatches per primer with the terminal 3 nt exact; exact 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. Public access is not an open-source license. Unauthorized republication and redistribution of protected original materials are prohibited, subject to statutory exceptions, GitHub platform rights and third-party data rights. [Full notice](COPYRIGHT.md)
 ## 匹配可视化 / Matching profiles
 
-每列为共同面板中的一个单倍型，按目与物种排列。绿色为完全匹配，黄色为允许错配命中，灰色为未命中。柱图采用标签及标签内单倍型等权。A+B为独立PCR结果并集。
+每列为共同面板中的一个单倍型，按目与物种排列。蓝绿色为完全匹配，金黄色为允许错配命中，浅灰色为未命中。柱图采用标签及标签内单倍型等权。A+B为独立PCR结果并集。
 
-Each column is one common-panel haplotype, ordered by order and species. Green: exact; yellow: mismatch-tolerant hit; gray: missed. Bars use equal label and within-label haplotype weights. A+B is the union of separate PCRs.
+Each column is one common-panel haplotype, ordered by order and species. Teal: exact; gold: mismatch-tolerant hit; light gray: missed. Bars use equal label and within-label haplotype weights. A+B is the union of separate PCRs.
 
 ![S matching](figures/matching_S.png)
 
