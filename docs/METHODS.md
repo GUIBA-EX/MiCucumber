@@ -6,7 +6,7 @@
 
 Each region retains one degenerate pair (SD, MD, LD or XLD), a single nondegenerate pair (S, M, L or XL), and an A/B nondegenerate option. S-original is the separate original control.
 
-The round-two frozen dataset contains 1,848 target records and 5,600 background records. Two additional Apodida 16S regions were inferred by homology from unannotated mitogenomes; their orientation was corrected against AB525437.1. Six UNVERIFIED records were excluded. These inferred regions are not equivalent to curated annotations. The source sequences, accession metadata, orientation audit and reference provenance are in the round-two reproduction bundle. No new database acquisition is claimed for this renaming update.
+The round-two frozen dataset contains 1,848 target records and 5,600 background records. Two additional Apodida 16S regions were inferred by homology from unannotated mitogenomes; their orientation was corrected against AB525437.1. Six UNVERIFIED records were excluded. These inferred regions are not equivalent to curated annotations. The source sequences, accession metadata, orientation audit and reference provenance are in the round-two reproduction bundle.
 
 ## Panels and metrics
 
@@ -26,18 +26,18 @@ The selection allowance is at most five WC≤3 and five GT≤2 background access
 
 Retain one pair per region from the verified candidate pool. First maximize mean non-Apodida coverage across common and own-region panels, then maximize mean exact matching within one percentage point of the coverage-first anchor on each panel separately. WC≤3 and GT≤2 background counts must each remain ≤5.
 
-## Nondegenerate portfolios: nondegenerate sets
+## Nondegenerate portfolios
 
 Enumerate all concrete A/C/G/T variants of eight frozen parent pairs in the design input: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: SA+SB and LA+LB use two points; all others one point.
 
-Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, but this does not establish experimental specificity. Their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
+Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, and their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
 
 ## Thermodynamics
 
 Primer3-py 2.3.1: 50 mM monovalent salt, 1.5 mM Mg²⁺ and 0.6 mM dNTP. Degenerate checks expand IUPAC symbols, using 50 nM per concrete variant and a 200 nM total per direction divided among variants. Within-side and opposite-side interactions are evaluated. For unequal strand concentrations, the larger concentration is used as an approximate scalar input to Primer3.
 
-Nondegenerate candidates are evaluated at 50 and 200 nM per oligo; hairpin, homodimer and F/R heterodimer structural Tm must remain below 55°C. F/R melting-temperature differences are reported, not used to assert a validated annealing temperature. Original S-original is preserved as a historical control. These are computational checks, not a PCR recipe or whole-pool validation.
+Nondegenerate candidates are evaluated at 50 and 200 nM per oligo; hairpin, homodimer and F/R heterodimer structural Tm must remain below 55°C. F/R melting-temperature differences are reported, not used to assert a validated annealing temperature. S-original is retained as the original control. These are computational checks, not a PCR recipe or whole-pool validation.
 
 ## Evaluation scope
 
-References are incompletely sampled and reused for design and evaluation; no independent holdout validation, wet-lab sensitivity/specificity estimate, or finalized PCR recipe is supplied. Small mismatch-model background counts do not prove low environmental amplification. Historical methods, previous larger portfolios, earlier taxonomy and source identifiers are retained only as frozen evidence. See the naming map before comparing old and new documents.
+References are incompletely sampled and reused for design and evaluation; no independent holdout validation, wet-lab sensitivity/specificity estimate, or finalized PCR recipe is supplied. Small mismatch-model background counts do not prove low environmental amplification.

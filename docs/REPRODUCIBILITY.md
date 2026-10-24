@@ -28,13 +28,9 @@ The two modes use separate subdirectories. For a repeat run, provide a fresh `--
 - **Nondegenerate:** re-enumerate 2,644 concrete candidates; optimize one-/two-pair subsets; compile and run the independent whole-sequence target/background scanner; compare predictions; retain the original control; normalize final exports and check sequences and metrics. Current-name outputs are under `nondegenerate/current-results/`.
 - **Round-two upstream scan:** `python scripts/reproduce.py round2 --work-dir reproduction-work` runs the frozen independent reference revalidation. It retains source identifiers in intermediate evidence and does not itself emit the 13 current portfolios.
 
-The current-name degenerate and nondegenerate adapters were rerun during this reorganization. Their selected sequences and metrics agree with the pre-renaming results; see [reproduction checks](../results/reproduction_checks.json). The round-two frozen bundle retains its earlier revalidation evidence; its computation was not changed by this update.
+## Inputs and outputs
 
-## Historical identifiers and archives
-
-Files in `reproducibility/frozen/` retain the source identifiers required by the original pipelines. `scripts/naming.py` maps exported identifiers exactly once; it does not modify reference sequences, risk models or scores. Legacy intermediate reports produced inside reproduction folders are historical working outputs; use `current-results/` and the repository's current report for renamed results.
-
-`archive/pre-renaming-14f156f.zip` is the complete prior tracked repository. Its `revalidate.py`, historical check scripts and original multi-pair recommendations are scoped to that archived snapshot. They are not current root-level commands. Existing Git tags are unchanged.
+Frozen bundles supply reference data and analysis inputs. `scripts/naming.py` maps output identifiers to current names. Analysis results are written to the degenerate and nondegenerate modes’ `current-results/` directories; sequence and metric verification is recorded in [reproduction checks](../results/reproduction_checks.json).
 
 ## Region figures
 
@@ -44,11 +40,7 @@ python scripts/plot_regions.py
 python scripts/plot_regions.py --cjk-font /path/to/CJK-font.ttf
 ```
 
-The first command generates English PNG/SVG/PDF. Supplying a suitable installed Chinese font generates both languages. Coordinate inputs are in `figures/region_coordinates.csv`; the figure shows seed windows, not empirical product-length distributions. A figure regeneration may change binary hashes across fonts or plotting environments; do not treat regenerated binaries as the original frozen release without refreshing its manifest.
-
-## Scientific limits
-
-Reproduction verifies computation from frozen inputs, not biological accuracy, independent holdout performance or wet-lab PCR performance. No fresh database retrieval, complete de novo rediscovery, or validated single-tube multiplex recipe is implied.
+Running `plot_regions.py` without a font option generates English PNG/SVG/PDF. Supplying a suitable installed Chinese font generates both languages. Coordinate inputs are in `figures/region_coordinates.csv`; the figure shows seed windows, not empirical product-length distributions. Refresh the file-hash manifest when publishing regenerated figures.
 
 ## Matching plots
 

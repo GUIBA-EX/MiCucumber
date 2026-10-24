@@ -2,6 +2,9 @@
 
 ## 2026-10-24
 
+- 按相同结构整合中英文README，统一结果表、图示说明与文档导航；补齐中文版命名及文件索引，修正参考数据来源入口。
+- Consolidated both READMEs with parallel result tables, figure descriptions and navigation; added Chinese naming and file-index pages and corrected reference-data links.
+
 - 顶部插画使用SD/S/SA/SB、MD/M/MA/MB、LD/L/LA/LB、XLD/XL/XLA/XLB。
 - 当前简并方案每个区域仅保留单对；普通方案保留单对及A/B组合。
 - 同步修正双语README、方法、复现说明、文件索引和结果报告。

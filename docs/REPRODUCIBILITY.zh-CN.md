@@ -1,6 +1,6 @@
 # 复现
 
-[English](REPRODUCIBILITY.md) · [方法](METHODS.zh-CN.md) · [命名规范](NAMING.md)
+[English](REPRODUCIBILITY.md) · [方法](METHODS.zh-CN.md) · [命名规范](NAMING.zh-CN.md)
 
 ## 检查发布文件
 
@@ -28,13 +28,9 @@ python scripts/reproduce.py nondegenerate --work-dir reproduction-work
 - **无简并方案：**重新枚举2,644个具体候选、优化1对/2对方案、编译并执行独立全序列目标/背景扫描、核对预测及原版对照，然后转换新名并校验序列与指标。新名输出在`nondegenerate/current-results/`。
 - **第二轮上游扫描：**运行`python scripts/reproduce.py round2 --work-dir reproduction-work`，执行冻结参考的独立复核。中间证据保留源标识，此入口本身不导出当前13套方案。
 
-本次整理已经重新运行简并与无简并的新名适配入口，序列及指标与改名前一致；见[复现检查](../results/reproduction_checks.json)。第二轮冻结包保留此前的复核证据，其计算没有因本次更名而改变。
+## 输入与输出
 
-## 历史标识与归档
-
-`reproducibility/frozen/`保留原流程需要的源标识。`scripts/naming.py`只对导出标识执行一次映射，不修改参考序列、风险模型或评分。复现目录内部生成的旧名报告属于历史工作输出；当前命名请以`current-results/`及仓库统一报告为准。
-
-`archive/pre-renaming-14f156f.zip`完整保留此前受Git管理的仓库。其中的`revalidate.py`、旧检查脚本及历史多对推荐只适用于该归档，不再作为当前根目录入口。既有Git发布标签未移动。
+冻结包提供参考数据及计算输入；`scripts/naming.py`将输出标识映射为当前命名。分析结果位于简并与普通引物两种模式的`current-results/`子目录，序列与指标校验记录见[复现检查](../results/reproduction_checks.json)。
 
 ## 扩增区域图
 
@@ -44,11 +40,7 @@ python scripts/plot_regions.py
 python scripts/plot_regions.py --cjk-font /path/to/CJK-font.ttf
 ```
 
-默认生成英文PNG/SVG/PDF，指定已安装的中文字体后生成两种语言。坐标来源为`figures/region_coordinates.csv`，表示种子窗口，不是实验产物长度分布。不同字体或绘图环境可能改变二进制文件指纹；如重新生成发布图，需更新清单，不能将新文件冒充原冻结文件。
-
-## 科学边界
-
-复现证明冻结输入下的计算可重现，不等于生物学准确性、独立留出性能或湿实验表现。没有宣称重新抓取数据库、完整从头发现候选或验证单管混合配方。
+默认生成英文PNG/SVG/PDF，指定已安装的中文字体后生成两种语言。坐标来源为`figures/region_coordinates.csv`，表示种子窗口，不是实验产物长度分布。重新生成发布图后，需更新文件指纹清单。
 
 ## 匹配图
 
