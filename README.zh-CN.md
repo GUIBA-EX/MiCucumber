@@ -2,23 +2,12 @@
 
 海参线粒体16S计算候选引物。当前四个区域统一命名为 **S、M、L、XL**，分别保留1对、2对简并方案及无简并方案；另保留 **S-original** 原版对照，共17套方案。[English](README.md)
 
-## 命名与选择
+## 方案选择
 
-- `D1` / `D2`：1对 / 2对简并引物；`ND1` / `ND2`：1对 / 2对仅含A/C/G/T的引物。
-- `S-original`：原始v4配对，序列与简并位点原样保留，不等同于优化后的S-D1。
 - 两对表示两套独立PCR。四个区域为可比较的替代选择，不要求同一样本全部运行。
 - **建议优先实验验证S-D2。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。
 - 所有方案尚未完成湿实验验证，尚无经验证的单管混池配方。
 
-| Previous name / 旧名 | Current name / 新名 |
-|---|---|
-| v4opt (optimized v4 region) | S |
-| S | M |
-| M | L |
-| L | XL |
-| Original v4 / v4原版 | S-original |
-
-本次仅改名、整理目录与修正文档，**未改变任何引物序列或已有指标**。[命名规则与逐条映射](docs/NAMING.md)
 
 ## 下载与文档
 
@@ -33,27 +22,27 @@
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-D1 | 87.45% | 27.48% | 2 | 0 | 742 |
-| MiCucumber-S-D2 | 88.53% | 40.84% | 2 | 0 | 742 |
-| MiCucumber-M-D1 | 56.90% | 9.43% | 0 | 0 | 130 |
-| MiCucumber-M-D2 | 62.42% | 14.25% | 0 | 0 | 131 |
-| MiCucumber-L-D1 | 70.26% | 33.63% | 4 | 0 | 109 |
-| MiCucumber-L-D2 | 74.06% | 35.01% | 4 | 0 | 109 |
-| MiCucumber-XL-D1 | 48.34% | 9.71% | 0 | 0 | 486 |
-| MiCucumber-XL-D2 | 55.27% | 11.78% | 0 | 4 | 492 |
+| MiCucumber-S-Degenerate-1pair | 87.45% | 27.48% | 2 | 0 | 742 |
+| MiCucumber-S-Degenerate-2pair | 88.53% | 40.84% | 2 | 0 | 742 |
+| MiCucumber-M-Degenerate-1pair | 56.90% | 9.43% | 0 | 0 | 130 |
+| MiCucumber-M-Degenerate-2pair | 62.42% | 14.25% | 0 | 0 | 131 |
+| MiCucumber-L-Degenerate-1pair | 70.26% | 33.63% | 4 | 0 | 109 |
+| MiCucumber-L-Degenerate-2pair | 74.06% | 35.01% | 4 | 0 | 109 |
+| MiCucumber-XL-Degenerate-1pair | 48.34% | 9.71% | 0 | 0 | 486 |
+| MiCucumber-XL-Degenerate-2pair | 55.27% | 11.78% | 0 | 4 | 492 |
 
 ## 无简并对照
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-ND1 | 56.78% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-S-ND2 | 71.96% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-M-ND1 | 14.05% | 0.00% | 0 | 0 | 0 |
-| MiCucumber-M-ND2 | 23.70% | 3.91% | 0 | 0 | 0 |
-| MiCucumber-L-ND1 | 35.24% | 3.97% | 0 | 0 | 0 |
-| MiCucumber-L-ND2 | 46.68% | 8.00% | 0 | 0 | 0 |
-| MiCucumber-XL-ND1 | 22.88% | 2.93% | 0 | 0 | 0 |
-| MiCucumber-XL-ND2 | 28.86% | 5.23% | 0 | 0 | 1 |
+| MiCucumber-S-Nondegenerate-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-S-Nondegenerate-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
+| MiCucumber-M-Nondegenerate-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
+| MiCucumber-M-Nondegenerate-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
+| MiCucumber-L-Nondegenerate-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
+| MiCucumber-L-Nondegenerate-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
+| MiCucumber-XL-Nondegenerate-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
+| MiCucumber-XL-Nondegenerate-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
 
 ## 原版对照
 
@@ -67,9 +56,8 @@
 
 ![S、M、L、XL参考设计窗口](figures/amplicon_regions.zh.png)
 
-图示AB525437.1的同源种子窗口。变体引物长度可能不同，参考窗口跨度不等于所有分类群的实际产物长度。图中不再使用历史7/7/6/9对组合的标注。
 
-## 证据与复现范围
+## 数据与复现
 
 - 简并方案：来自已独立复核的96个配对候选池；当前8套方案有21,036项检测结果一致性检查。
 - 无简并方案：枚举2,644个具体配对候选；8套方案与原版对照有31,428项一致性检查，完整复现已通过。
@@ -77,7 +65,6 @@
 - 设计与评估共用冻结参考库，无独立留出验证。穷举最优性只适用于指定候选池与目标函数。
 - 运行 `python scripts/check_release.py` 检查当前文件、映射及指纹；计算复现入口见[复现说明](docs/REPRODUCIBILITY.zh-CN.md)。
 
-全部旧文档、历史序列和分析实现收进[历史归档](archive/README.md)。冻结证据内部保留旧标识，当前导出经映射转为新名称，既有发布标签不移动。
 
 ## 著作权
 

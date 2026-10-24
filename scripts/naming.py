@@ -4,8 +4,8 @@ REGIONS={'v4opt':'S','S':'M','M':'L','L':'XL'}
 TOKENS={f'MiCucumber-{old}':f'MiCucumber-{new}' for old,new in REGIONS.items()}
 for old,new in REGIONS.items():
  for n in (1,2):
-  for t in (1,2):TOKENS[f'MiCucumber-{old}_N{n}_B5_T{t}']=f'MiCucumber-{new}-D{n}'
-  TOKENS[f'MiCucumber-{old}-ND-{n}pair']=f'MiCucumber-{new}-ND{n}'
+  for t in (1,2):TOKENS[f'MiCucumber-{old}_N{n}_B5_T{t}']=f'MiCucumber-{new}-Degenerate-{n}pair'
+  TOKENS[f'MiCucumber-{old}-ND-{n}pair']=f'MiCucumber-{new}-Nondegenerate-{n}pair'
 TOKENS.update({'MiCucumber-v4-original':'MiCucumber-S-original','MiCucumber_v4':'MiCucumber-S-original','original-v4':'MiCucumber-S-original'})
 # ND identifiers are renamed in the same regex substitution, never through successive S->M->L steps.
 PATTERN=re.compile('|'.join(map(re.escape,sorted(TOKENS,key=len,reverse=True)))+r'|ND_(?:v4opt|S|M|L)_\d+')
