@@ -1,0 +1,86 @@
+[
+  {
+    "scheme": "SD",
+    "eligible": 4855,
+    "thermal_rejections": 0,
+    "coverage": 0.797570230329,
+    "exact": 0.03275862069
+  },
+  {
+    "scheme": "S",
+    "eligible": 6008,
+    "thermal_rejections": 0,
+    "coverage": 0.679814050504,
+    "exact": 0.029310344828
+  },
+  {
+    "scheme": "SA+SB",
+    "eligible": 6008,
+    "thermal_rejections": 0,
+    "coverage": 0.747055429814,
+    "exact": 0.070689655172
+  },
+  {
+    "scheme": "MD",
+    "eligible": 3259,
+    "thermal_rejections": 0,
+    "coverage": 0.474154351396,
+    "exact": 0.064367816092
+  },
+  {
+    "scheme": "M",
+    "eligible": 2655,
+    "thermal_rejections": 0,
+    "coverage": 0.335632183908,
+    "exact": 0.055172413793
+  },
+  {
+    "scheme": "MA+MB",
+    "eligible": 2655,
+    "thermal_rejections": 0,
+    "coverage": 0.576436781609,
+    "exact": 0.087931034483
+  },
+  {
+    "scheme": "LD",
+    "eligible": 5671,
+    "thermal_rejections": 0,
+    "coverage": 0.654022988506,
+    "exact": 0.065517241379
+  },
+  {
+    "scheme": "L",
+    "eligible": 1926,
+    "thermal_rejections": 0,
+    "coverage": 0.410344827586,
+    "exact": 0.078735632184
+  },
+  {
+    "scheme": "LA+LB",
+    "eligible": 1926,
+    "thermal_rejections": 0,
+    "coverage": 0.551444547996,
+    "exact": 0.160065237651
+  },
+  {
+    "scheme": "XLD",
+    "eligible": 284,
+    "thermal_rejections": 0,
+    "coverage": 0.240886699507,
+    "exact": 0.006896551724
+  },
+  {
+    "scheme": "XL",
+    "eligible": 59,
+    "thermal_rejections": 0,
+    "coverage": 0.213300492611,
+    "exact": 0.006896551724
+  },
+  {
+    "scheme": "XLA+XLB",
+    "eligible": 59,
+    "thermal_rejections": 0,
+    "coverage": 0.213300492611,
+    "exact": 0.006896551724
+  }
+]

@@ -1,47 +1,26 @@
-# Reproduction
+# Reproduction / 复现
 
-[中文](REPRODUCIBILITY.zh-CN.md) · [Methods](METHODS.md) · [Naming](NAMING.md)
+Install Python 3.12 dependencies from `requirements.txt`, then extract [the current source bundle](../results/terminal_optimization/reproduction_sources.zip) into a fresh directory. / 安装依赖并将当前源码包解压到新目录。
 
-## Check the published files
+```sh
+python -m pip install -r requirements.txt
+OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python work/micucumber_terminal/choose.py
+mkdir -p work/micucumber_nondegenerate
+c++ -O3 -std=c++17 work/micucumber_nondegenerate/independent_scan.cpp -o work/micucumber_nondegenerate/independent_scan
+python work/micucumber_terminal/verify.py
+python work/micucumber_terminal/summarize.py
+python work/micucumber_terminal/end_audit.py
+python work/micucumber_terminal/figures.py
+```
 
-From the repository root:
+Outputs: `work/micucumber_terminal/release/`. This route repeats selection from frozen feasible states, full-product verification, terminal audit and figures without new database retrieval. It requires installed dependencies and a C++17 compiler. / 从冻结可行候选状态重算选择、全产物复核、末端审计和图件，不重新下载数据库。
 
-```bash
+For upstream discovery, the bundle also includes `discover.py`, `scan_sites.cpp`, `optimize.py`, `neighbors.py` and `merge_neighbors.py`. Run discovery, compile the site scanner, scan `work/micucumber_terminal/sites`, run `optimize.py`, build neighbors, scan `neighbor_sites`, merge neighbors, then execute the commands above. The site scanner writes all candidate background sites; these intermediate files can be large. / 源码包也包含完整上游候选搜索及背景扫描代码；按上述顺序重算，中间背景位点文件较大。
+
+```sh
 python scripts/check_release.py
 ```
 
-This requires only the Python standard library. It checks 13 portfolios, region/type/count consistency, 17 reaction rows, 34 FASTA records, A/C/G/T-only nondegenerate sequences, the unchanged original control, source-to-current name/sequence/metric invariance, expected screening limits, Markdown/HTML links, ZIP integrity and file hashes. It does not rerun binding scans.
+The release checker uses the standard library to verify exported sequences, all concrete-variant terminal rules, both concentration scenarios, recomputed panel/background metrics, original-control invariance, reference coordinates, local links, bundle integrity and SHA-256 hashes. / 发布检查器使用标准库验证序列、末端规则、双浓度热力学、指标、原始对照不变性、坐标、链接、压缩包与哈希。
 
-## Computational reproduction
-
-Use Python 3.12 and install the frozen analysis dependencies. The nondegenerate and round-two routes also need a C++17 compiler (`c++`, or `CXX` where the underlying runner supports it).
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/reproduce.py degenerate --work-dir reproduction-work
-python scripts/reproduce.py nondegenerate --work-dir reproduction-work
-```
-
-The two modes use separate subdirectories. For a repeat run, provide a fresh `--work-dir`; existing reproduction folders are not overwritten. No network is required after installing dependencies. Original input bundles remain unchanged.
-
-- **Degenerate:** rerun exhaustive 1–4-pair subset calculations from frozen per-pair target/background evidence, export the four current single-pair degenerate portfolios, normalize names, and compare sequences and common/own-region metrics against published tables. This route does not rescan raw reference sequences or rediscover candidate sites. Current-name outputs are under `degenerate/current-results/`.
-- **Nondegenerate:** re-enumerate 2,644 concrete candidates; optimize one-/two-pair subsets; compile and run the independent whole-sequence target/background scanner; compare predictions; retain the original control; normalize final exports and check sequences and metrics. Current-name outputs are under `nondegenerate/current-results/`.
-- **Round-two upstream scan:** `python scripts/reproduce.py round2 --work-dir reproduction-work` runs the frozen independent reference revalidation. It retains source identifiers in intermediate evidence and does not itself emit the 13 current portfolios.
-
-## Inputs and outputs
-
-Frozen bundles supply reference data and analysis inputs. `scripts/naming.py` maps output identifiers to current names. Analysis results are written to the degenerate and nondegenerate modes’ `current-results/` directories; sequence and metric verification is recorded in [reproduction checks](../results/reproduction_checks.json).
-
-## Region figures
-
-```bash
-python -m pip install -r requirements-plot.txt
-python scripts/plot_regions.py
-python scripts/plot_regions.py --cjk-font /path/to/CJK-font.ttf
-```
-
-Running `plot_regions.py` without a font option generates English PNG/SVG/PDF. Supplying a suitable installed Chinese font generates both languages. Coordinate inputs are in `figures/region_coordinates.csv`; the figure shows seed windows, not empirical product-length distributions. Refresh the file-hash manifest when publishing regenerated figures.
-
-## Matching plots
-
-Run `python scripts/plot_matching.py` after installing `requirements-plot.txt`. It uses frozen `results/matching/panel.csv` and `pair_hits.csv`, generates per-reference states and weighted summaries, and verifies all common-panel portfolio metrics.
+Earlier workflows in `scripts/reproduce.py` and `reproducibility/frozen/` describe the retained pre-terminal analysis; they are not the current design entry point. / 早期脚本和冻结包为保留分析，不是本轮设计入口。

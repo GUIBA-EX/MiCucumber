@@ -1,94 +1,88 @@
 ![MiCucumber](figures/MiCucumber_overview.png)
 
+![Current binding positions](figures/binding_positions.svg)
+
+徽标为SD、MD、LD、XLD的参考跨度：223、247、310、394 bp。位置图直接使用当前引物坐标，全部按同一线性比例绘制；实际产物长度随类群变化。
+
 # MiCucumber
 
 海参线粒体16S引物的计算设计与匹配评估。[English](README.md)
 
-## 方案与命名
+## 命名与方案
 
-四个长度各保留简并单对、普通单对和普通两对组合，另保留S-original对照，共 **13套方案、17条配对记录**。
+每个长度保留一对简并引物、一对普通引物及普通A/B两对方案；另保留S-original原始对照，共13套方案、17条配对记录、34条FASTA序列。D仅标记简并配对；A/B表示两次独立PCR的组件。
 
-| 长度 | 简并单对 | 普通单对 | 普通两对 |
+| Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
 | S | SD | S | SA / SB |
 | M | MD | M | MA / MB |
 | L | LD | L | LA / LB |
 | XL | XLD | XL | XLA / XLB |
 
-D仅表示简并；A、B分别标识具体配对，SA+SB等表示两个独立PCR结果的并集。S-original为原始对照。序列均按5′→3′书写。
-
-**优先以SD开展实验验证。** 普通引物保留作比较，S-original的非目标命中较多。目前尚无湿实验验证。
-
-## 序列与文档
-
-- [全部配对 CSV](sequences/primer_pairs.csv) · [全部序列 FASTA](sequences/primers.fasta) · [S-original](sequences/MiCucumber-S-original.fasta)
-- [S](sequences/MiCucumber-S.csv) · [M](sequences/MiCucumber-M.csv) · [L](sequences/MiCucumber-L.csv) · [XL](sequences/MiCucumber-XL.csv)
-- [命名](docs/NAMING.zh-CN.md) · [方法](docs/METHODS.zh-CN.md) · [复现](docs/REPRODUCIBILITY.zh-CN.md) · [文件索引](docs/FILES.zh-CN.md)
-- [双语报告](report.html)（下载后打开） · [完整比较表](results/comparison.csv)
+**3′末端允许简并。** 按IUPAC相容性判定末端匹配，并逐一检查全部实际变体。每个变体均无末端三连同碱基，末端3位至少含1个G/C、末端5位含1–4个G/C，整条序列连续同碱基不超过4个。最后一位不强制固定，也不强制为G/C。S-original为不参与上述筛选的原始对照。
 
 ## 共同面板结果
 
-下表的覆盖率和完全匹配率均为**非Apodida指标**。共同面板包含151个分类名称标签、351个标签内单倍型，其中非Apodida为145个标签；计算采用标签等权、标签内单倍型等权。包含Apodida的结果及各区域面板分母见完整比较表。
+下表覆盖与完全匹配均为非Apodida指标。共同面板151个分类名称标签、351个单倍型，其中非Apodida为145个标签；标签及标签内单倍型等权。全部目标指标见CSV。背景为5,600条记录。
 
 | 方案 | 覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| SD | 87.45% | 27.48% | 2 | 0 | 742 |
-| MD | 56.90% | 9.43% | 0 | 0 | 130 |
-| LD | 70.26% | 33.63% | 4 | 0 | 109 |
-| XLD | 48.34% | 9.71% | 0 | 0 | 486 |
-| S | 56.78% | 0.34% | 0 | 0 | 2 |
-| SA+SB | 71.96% | 0.34% | 0 | 0 | 2 |
-| M | 14.05% | 0.00% | 0 | 0 | 0 |
-| MA+MB | 23.70% | 3.91% | 0 | 0 | 0 |
-| L | 35.24% | 3.97% | 0 | 0 | 0 |
-| LA+LB | 46.68% | 8.00% | 0 | 0 | 0 |
-| XL | 22.88% | 2.93% | 0 | 0 | 0 |
-| XLA+XLB | 28.86% | 5.23% | 0 | 0 | 1 |
+| SD | 79.76% | 3.28% | 4 | 5 | 312 |
+| S | 67.98% | 2.93% | 4 | 3 | 451 |
+| SA+SB | 74.71% | 7.07% | 4 | 3 | 451 |
+| MD | 47.42% | 6.44% | 2 | 1 | 137 |
+| M | 33.56% | 5.52% | 1 | 2 | 13 |
+| MA+MB | 57.64% | 8.79% | 2 | 3 | 40 |
+| LD | 65.40% | 6.55% | 5 | 0 | 1157 |
+| L | 41.03% | 7.87% | 0 | 0 | 46 |
+| LA+LB | 55.14% | 16.01% | 5 | 5 | 436 |
+| XLD | 24.09% | 0.69% | 5 | 4 | 1357 |
+| XL | 21.33% | 0.69% | 5 | 4 | 1357 |
+| XLA+XLB | 21.33% | 0.69% | 5 | 4 | 1359 |
 | S-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
 
-覆盖允许每条引物≤2处错配，且3′末端3 nt完全相容；完全匹配要求正反均0错配。背景列为5,600条参考记录中的命中accession数。WC采用Watson–Crick配对，GT为容许G–T配对的敏感性模型；数字表示每条引物允许的最大错配数，详见[模型定义](docs/METHODS.zh-CN.md#非目标筛选)。
+覆盖允许每条引物≤2处错配且末端3位完全相容；完全匹配要求F/R均零错配。背景数为accession数，不是实验扩增比例。GT为单独的G–T容忍敏感性模型。
 
-## 碱基匹配与新候选
+**这是严格末端约束下的候选比较，不是全面性能提升。** 普通S、M、L较上一版改善；简并方案的完全匹配率下降，XL覆盖较低，A/B两对也未增加其共同面板覆盖或完全匹配，不建议为此增加PCR对数。SD覆盖79.76%，但完全匹配仅3.28%。优先比较普通M单对与MA+MB，并结合样品目的选择SD或普通S。
 
-按MiFish设计思路，在邻近窗口调整位置与长度，并加入3′端匹配、背景命中和热力学约束。S、M新候选改善普通引物覆盖；L、XL继续采用现版。下表为共同面板非Apodida结果，新候选作为试验方案保留。
+WC≤4下仍存在明显背景风险，特别是L与XL；小的WC≤3/GT≤2数字不能证明环境样本中的低非目标扩增。所有方案均待实验验证。[修正前后比较与复核](docs/TERMINAL_VALIDATION.md)。
 
-| Option | Current coverage | Trial coverage | Trial exact | WC≤3 / GT≤2 |
-|---|---:|---:|---:|---:|
-| S single | 56.78% | 68.67% | 2.93% | 4 / 3 |
-| S A+B | 71.96% | 74.02% | 2.93% | 4 / 4 |
-| M single | 14.05% | 29.77% | 5.52% | 1 / 3 |
-| M A+B | 23.70% | 40.60% | 9.70% | 1 / 3 |
+## 序列、坐标与证据
 
-S试验单对/两对在WC≤4下分别命中451/485条背景，覆盖改善伴随宽松条件下的非目标风险增加。两对按独立PCR并集计算。
+[Primer pairs](sequences/primer_pairs.csv) · [FASTA](sequences/primers.fasta) · [Comparison](results/current/comparison.csv) · [Coordinates](results/current/binding_positions.csv) · [Missed references](results/terminal_optimization/missed_references.csv) · [Terminal audit](results/terminal_optimization/terminal_audit.csv) · [Verification](results/terminal_optimization/verification.json)
 
-图中显示实际碱基：蓝色为相同，橙色为错配，紫色为可能的G–T配对；方框标出3′末端3 nt。引物与同向参考均按5′→3′显示，R参考已反向互补。每目展示加权频率最高的结合序列。S/M为新两对候选，L为保留的现版单对，XL为不推荐替换现版的试验候选。
+[Methods](docs/METHODS.md) · [中文方法](docs/METHODS.zh-CN.md) · [Reproduction](docs/REPRODUCIBILITY.md) · [文件索引 / File index](docs/FILES.md) · [Bilingual report](report.html)
+
+## 碱基匹配图
+
+蓝色为IUPAC相容，橙色为错配，紫色为可能的G–T配对；方框标出末端3位。简并图显示单对，普通图显示A/B。各目展示加权最常见的结合序列；完整网页包含所有方案与参考变体。
+
+![SD base matching](figures/base_matching_SD.svg)
 
 ![S base matching](figures/base_matching_S.svg)
 
+![MD base matching](figures/base_matching_MD.svg)
+
 ![M base matching](figures/base_matching_M.svg)
+
+![LD base matching](figures/base_matching_LD.svg)
 
 ![L base matching](figures/base_matching_L.svg)
 
+![XLD base matching](figures/base_matching_XLD.svg)
+
 ![XL base matching](figures/base_matching_XL.svg)
 
-[Sequences](results/mifish_trial/specific_candidates.csv) · [Verified comparison](results/mifish_trial/verified_comparison.csv) · [Full alignment HTML](results/mifish_trial/base_matching.html) · [Reproduction](results/mifish_trial/REPRODUCE.md)
+[Full base alignment](results/terminal_optimization/base_matching.html)
 
-## 参考区域
+## 复核与范围
 
-![S M L XL](figures/amplicon_regions.zh.png)
-
-图示为AB525437.1的同源种子窗口，参考跨度分别为208、231、315、387 bp；各分类群的实际产物长度可以不同。
-
-## 数据与复现
-
-参考库包括1,848条目标和5,600条背景记录。Apodida不参与筛选目标，但保留在全部目标统计中。设计与评估使用同一冻结参考库。
+11,200项目标状态与32项背景集合独立复核全部一致。参考数据同时用于设计与评估；Apodida不参与选择目标，但保留在全部目标报告。两对结果为独立PCR并集，不代表混池实验。
 
 ```bash
 python scripts/check_release.py
 ```
 
-完整计算流程、依赖与绘图入口见 [复现说明](docs/REPRODUCIBILITY.zh-CN.md)。
+## Copyright
 
-## 著作权
-
-Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. 使用与转载规则见[完整声明](COPYRIGHT.md)。
+Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).

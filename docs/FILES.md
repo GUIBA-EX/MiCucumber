@@ -1,27 +1,19 @@
-# File index
+# File index / 文件索引
 
-[中文](FILES.zh-CN.md) · [Overview](../README.md) · [Naming](NAMING.md) · [Methods](METHODS.md) · [Reproduction](REPRODUCIBILITY.md)
-
-Obtain primers from `sequences/`, compare performance in `results/`, and follow the reproduction guide to rerun calculations.
-
-| Path | Contents |
+| File | Contents / 内容 |
 |---|---|
-| [sequences/primer_pairs.csv](../sequences/primer_pairs.csv) | All 17 paired reaction entries, covering 13 portfolios |
-| [sequences/primers.fasta](../sequences/primers.fasta) | 34 forward/reverse sequence entries |
-| [sequences/](../sequences/) | CSV and FASTA exports by region, plus S-original |
-| [results/comparison.csv](../results/comparison.csv) | 13 portfolios × common and own-region panels (26 rows) |
-| [results/degenerate/](../results/degenerate/) | Single-pair selection, missed taxa, background hits and thermodynamics |
-| [results/nondegenerate/](../results/nondegenerate/) | Concrete candidates, selection audit, matching and validation |
-| [results/matching/](../results/matching/) | 21 matching profiles and 7,371 per-reference states |
-| [results/reproduction_checks.json](../results/reproduction_checks.json) | Computational reproduction results |
-| [figures/](../figures/) | Overview illustration, matching heatmaps, region plots and coordinates |
-| [report.html](../report.html) | Bilingual report; download and open locally |
-| [scripts/check_release.py](../scripts/check_release.py) | Check exported sequences, metrics, links and hashes |
-| [scripts/reproduce.py](../scripts/reproduce.py) | Run the frozen analysis workflows |
-| [scripts/plot_matching.py](../scripts/plot_matching.py) | Generate matching summaries and heatmaps |
-| [scripts/plot_regions.py](../scripts/plot_regions.py) | Generate reference-region plots |
-| [reproducibility/frozen/](../reproducibility/frozen/) | Reference data and analysis input bundles |
-| [docs/name_mapping.csv](../docs/name_mapping.csv) | Sequence provenance and identifier mapping |
-| [archive/](../archive/) | Archived analysis snapshot |
-| [SHA256SUMS.json](../SHA256SUMS.json) | Published file SHA-256 fingerprints |
-| [COPYRIGHT.md](../COPYRIGHT.md) | Copyright and reuse terms |
+| [Primer pairs](../sequences/primer_pairs.csv) | Current 13 portfolios / 17 paired rows |
+| [FASTA](../sequences/primers.fasta) | Current 34 oligos, including original control |
+| [Comparison](../results/current/comparison.csv) | Non-Apodida and all-target metrics |
+| [Coordinates](../results/current/binding_positions.csv) | Current intervals and oriented reference bases |
+| [Terminal analysis](../results/terminal_optimization/) | Current evidence, previous comparison, thermodynamics and reproduction bundle |
+| [Base matching](../results/terminal_optimization/base_matching.html) | Actual bases for all current candidates |
+| [Position map](../figures/binding_positions.svg) | Shared linear reference coordinate axis |
+| [Report](../report.html) | Bilingual browser overview |
+| [Validation](TERMINAL_VALIDATION.md) | Trade-offs and independent checks |
+| [Reproduction](REPRODUCIBILITY.md) | Current rerun instructions |
+| [Original control](../sequences/MiCucumber-S-original.fasta) | Unchanged S-original |
+| [Frozen earlier data](../reproducibility/frozen/) | Earlier analysis inputs |
+| [Copyright](../COPYRIGHT.md) | Rights and reuse terms |
+
+`results/degenerate/`, `results/nondegenerate/`, `results/matching/` and `results/mifish_trial/` retain earlier analysis evidence. Current sequence and performance entry points are the files above. / 这些目录保留早期证据，当前序列与性能以本表入口为准。

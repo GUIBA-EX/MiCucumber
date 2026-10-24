@@ -1,94 +1,88 @@
 ![MiCucumber](figures/MiCucumber_overview.png)
 
+![Current binding positions](figures/binding_positions.svg)
+
+Badges show reference spans of SD, MD, LD and XLD: 223, 247, 310 and 394 bp. The map uses current oligo coordinates on one linear scale; product lengths vary among taxa.
+
 # MiCucumber
 
 Computational design and matching assessment of mitochondrial 16S primers for sea cucumbers. [中文](README.zh-CN.md)
 
-## Portfolios and names
+## Names and portfolios
 
-Each region has a degenerate single pair, a nondegenerate single pair and a nondegenerate A/B option. Including S-original, there are **13 portfolios and 17 paired-reaction entries**.
+Each region retains a degenerate single pair, an ordinary single pair and an ordinary A/B option. With the unchanged S-original control, there are 13 portfolios, 17 paired rows and 34 FASTA records. D denotes degeneracy; A/B are components of separate PCRs.
 
-| Region | Degenerate pair | Nondegenerate single pair | Nondegenerate A/B pairs |
+| Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
 | S | SD | S | SA / SB |
 | M | MD | M | MA / MB |
 | L | LD | L | LA / LB |
 | XL | XLD | XL | XLA / XLB |
 
-D denotes degeneracy. A and B identify component pairs; SA+SB denotes the union of two separate PCRs. S-original is the original control. All sequences are written 5′→3′.
-
-**Prioritize SD for experimental evaluation.** Nondegenerate sets are retained for comparison; S-original has extensive background hits. Wet-lab validation is pending.
-
-## Sequences and documentation
-
-- [All primer pairs, CSV](sequences/primer_pairs.csv) · [All sequences, FASTA](sequences/primers.fasta) · [S-original](sequences/MiCucumber-S-original.fasta)
-- [S](sequences/MiCucumber-S.csv) · [M](sequences/MiCucumber-M.csv) · [L](sequences/MiCucumber-L.csv) · [XL](sequences/MiCucumber-XL.csv)
-- [Naming](docs/NAMING.md) · [Methods](docs/METHODS.md) · [Reproduction](docs/REPRODUCIBILITY.md) · [File index](docs/FILES.md)
-- [Bilingual report](report.html) (download to view) · [Full comparison table](results/comparison.csv)
+**3′-terminal degeneracy is allowed.** Terminal matching uses IUPAC compatibility, and every concrete variant is checked: no terminal homotriplet, at least one G/C in the last three bases, 1–4 G/C in the last five, and no homopolymer longer than four. The final base need not be fixed or G/C. S-original is an unchanged control exempt from these selection rules.
 
 ## Common-panel results
 
-Coverage and exact matching below both refer to **non-Apodida**. The common panel contains 151 taxonomic name labels and 351 within-label haplotypes, including 145 non-Apodida labels. Labels and haplotypes within each label receive equal weights. All-target results including Apodida and own-region denominators are in the full comparison table.
+Coverage and exact matching below are non-Apodida metrics. The common panel has 151 taxonomic name labels and 351 haplotypes, including 145 non-Apodida labels, weighted equally by label and within label. All-target metrics are in the CSV. Background contains 5,600 records.
 
-| Portfolio | Coverage | Exact matching | WC≤3 | GT≤2 | WC≤4 |
+| Portfolio | Coverage | Exact | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| SD | 87.45% | 27.48% | 2 | 0 | 742 |
-| MD | 56.90% | 9.43% | 0 | 0 | 130 |
-| LD | 70.26% | 33.63% | 4 | 0 | 109 |
-| XLD | 48.34% | 9.71% | 0 | 0 | 486 |
-| S | 56.78% | 0.34% | 0 | 0 | 2 |
-| SA+SB | 71.96% | 0.34% | 0 | 0 | 2 |
-| M | 14.05% | 0.00% | 0 | 0 | 0 |
-| MA+MB | 23.70% | 3.91% | 0 | 0 | 0 |
-| L | 35.24% | 3.97% | 0 | 0 | 0 |
-| LA+LB | 46.68% | 8.00% | 0 | 0 | 0 |
-| XL | 22.88% | 2.93% | 0 | 0 | 0 |
-| XLA+XLB | 28.86% | 5.23% | 0 | 0 | 1 |
+| SD | 79.76% | 3.28% | 4 | 5 | 312 |
+| S | 67.98% | 2.93% | 4 | 3 | 451 |
+| SA+SB | 74.71% | 7.07% | 4 | 3 | 451 |
+| MD | 47.42% | 6.44% | 2 | 1 | 137 |
+| M | 33.56% | 5.52% | 1 | 2 | 13 |
+| MA+MB | 57.64% | 8.79% | 2 | 3 | 40 |
+| LD | 65.40% | 6.55% | 5 | 0 | 1157 |
+| L | 41.03% | 7.87% | 0 | 0 | 46 |
+| LA+LB | 55.14% | 16.01% | 5 | 5 | 436 |
+| XLD | 24.09% | 0.69% | 5 | 4 | 1357 |
+| XL | 21.33% | 0.69% | 5 | 4 | 1357 |
+| XLA+XLB | 21.33% | 0.69% | 5 | 4 | 1359 |
 | S-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
 
-Coverage permits ≤2 mismatches per primer with the terminal 3 nt exactly compatible; exact matching requires zero mismatches in both primers. Background columns count hit accessions among 5,600 reference records. WC denotes Watson–Crick matching; GT permits G–T pairing as a sensitivity model. The numbers specify the maximum mismatches per primer; see [model definitions](docs/METHODS.md#background-screening).
+Coverage permits ≤2 mismatches per primer with exact terminal-three-base compatibility; exact matching requires zero mismatches in both primers. Background counts are accessions, not experimental amplification fractions. GT is a separate G–T tolerance sensitivity model.
 
-## Base matching and new candidates
+**This is a strict-terminal candidate comparison, not a uniform performance upgrade.** Ordinary S/M/L improve over the preceding release; degenerate exact matching falls, and XL coverage remains low. XL A/B adds no common-panel coverage or exact matching, so it does not justify another PCR on these metrics. SD covers 79.76% but has only 3.28% exact matching. Prioritize comparisons of ordinary M versus MA+MB, and assess SD versus ordinary S for the sample context.
 
-The MiFish-inspired trial adjusts nearby binding windows and primer lengths, with terminal matching, background and thermodynamic constraints. New S and M candidates improve nondegenerate coverage; current L and XL remain preferred. The trial is retained separately from the released primers. Metrics below use the common non-Apodida panel.
+WC≤4 exposes substantial residual background risk, especially in L and XL; small WC≤3/GT≤2 counts do not establish low environmental off-target amplification. All schemes await wet-lab validation. [Before/after comparison and verification](docs/TERMINAL_VALIDATION.md).
 
-| Option | Current coverage | Trial coverage | Trial exact | WC≤3 / GT≤2 |
-|---|---:|---:|---:|---:|
-| S single | 56.78% | 68.67% | 2.93% | 4 / 3 |
-| S A+B | 71.96% | 74.02% | 2.93% | 4 / 4 |
-| M single | 14.05% | 29.77% | 5.52% | 1 / 3 |
-| M A+B | 23.70% | 40.60% | 9.70% | 1 / 3 |
+## Sequences, coordinates and evidence
 
-Trial S single/two-pair options hit 451/485 background accessions under WC≤4, showing increased risk under relaxed matching. Two-pair options represent separate PCR unions.
+[Primer pairs](sequences/primer_pairs.csv) · [FASTA](sequences/primers.fasta) · [Comparison](results/current/comparison.csv) · [Coordinates](results/current/binding_positions.csv) · [Missed references](results/terminal_optimization/missed_references.csv) · [Terminal audit](results/terminal_optimization/terminal_audit.csv) · [Verification](results/terminal_optimization/verification.json)
 
-Letters show actual bases: blue = match, orange = mismatch, purple = possible G–T pairing; boxes mark the terminal three bases. Primers and same-sense references are shown 5′→3′, with reverse-reference sites reverse-complemented. Each order is represented by its most frequent weighted binding sequence. S/M show trial two-pair candidates, L the retained current single pair, and XL the trial candidates that did not outperform the current version.
+[Methods](docs/METHODS.md) · [中文方法](docs/METHODS.zh-CN.md) · [Reproduction](docs/REPRODUCIBILITY.md) · [文件索引 / File index](docs/FILES.md) · [Bilingual report](report.html)
+
+## Base matching
+
+Blue: IUPAC-compatible; orange: mismatch; purple: possible G–T pairing. Boxes mark the final three bases. Degenerate plots show the single pair; ordinary plots show A/B. Each order is represented by its most frequent weighted binding sequence; the full page includes all schemes and reference variants.
+
+![SD base matching](figures/base_matching_SD.svg)
 
 ![S base matching](figures/base_matching_S.svg)
 
+![MD base matching](figures/base_matching_MD.svg)
+
 ![M base matching](figures/base_matching_M.svg)
+
+![LD base matching](figures/base_matching_LD.svg)
 
 ![L base matching](figures/base_matching_L.svg)
 
+![XLD base matching](figures/base_matching_XLD.svg)
+
 ![XL base matching](figures/base_matching_XL.svg)
 
-[Sequences](results/mifish_trial/specific_candidates.csv) · [Verified comparison](results/mifish_trial/verified_comparison.csv) · [Full alignment HTML](results/mifish_trial/base_matching.html) · [Reproduction](results/mifish_trial/REPRODUCE.md)
+[Full base alignment](results/terminal_optimization/base_matching.html)
 
-## Reference windows
+## Verification and scope
 
-![S M L XL](figures/amplicon_regions.en.png)
-
-Homologous seed windows on AB525437.1 span 208, 231, 315 and 387 bp. Actual product lengths can differ among taxa.
-
-## Data and reproduction
-
-The reference database contains 1,848 target and 5,600 background records. Apodida is excluded from the selection objective but retained in all-target reporting. Design and evaluation share the frozen reference set.
+All 11,200 target-state and 32 background-set checks agree. References are reused for design and evaluation. Apodida is excluded from selection but retained in all-target reporting. Two-pair results represent separate-PCR unions, not a multiplex experiment.
 
 ```bash
 python scripts/check_release.py
 ```
 
-For computational workflows, dependencies and plotting commands, see [Reproduction](docs/REPRODUCIBILITY.md).
-
 ## Copyright
 
-Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. See the [full notice](COPYRIGHT.md) for use and redistribution terms.
+Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).

@@ -1,3 +1,11 @@
+# Terminal-constrained comparison
+
+- Allow 3′-terminal IUPAC degeneracy, testing every actual variant.
+- Apply the MiUrchin terminal and two-concentration thermodynamic rules.
+- Independently verify 11,200 target states and 32 background accession sets.
+- Publish all current sequences, actual-coordinate and base-matching diagrams, bilingual documentation and reproduction sources.
+- Explicitly retain losses in degenerate exact matching, low XL coverage and relaxed-model background risks.
+
 # 更新记录 / Changelog
 
 ## 2026-10-24

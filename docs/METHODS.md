@@ -1,43 +1,35 @@
 # Methods
 
-[中文](METHODS.zh-CN.md) · [Naming](NAMING.md) · [Reproduction](REPRODUCIBILITY.md)
+[中文](METHODS.zh-CN.md) · [Reproduction](REPRODUCIBILITY.md)
 
-## Scope and reference data
+## Panel and scope
 
-Each region retains one degenerate pair (SD, MD, LD or XLD), a single nondegenerate pair (S, M, L or XL), and an A/B nondegenerate option. S-original is the separate original control.
+Frozen references contain 1,848 target and 5,600 background records. The common panel has 151 name labels / 351 haplotypes; 145 labels are non-Apodida. Selection weights labels equally, then haplotypes within each label, excluding Apodida and renormalizing. Final whole-sequence results also report all-target metrics. One Apodida accession, LC704718.1, is absent from the alignment: it remains in final full-sequence evaluation but has no alignment-based prediction or plotted bases. Taxonomic names are not synonym-resolved.
 
-The round-two frozen dataset contains 1,848 target records and 5,600 background records. Two additional Apodida 16S regions were inferred by homology from unannotated mitogenomes; their orientation was corrected against AB525437.1. Six UNVERIFIED records were excluded. These inferred regions are not equivalent to curated annotations. The source sequences, accession metadata, orientation audit and reference provenance are in the round-two reproduction bundle.
+## Candidate construction
 
-## Panels and metrics
+Reference coordinates use extracted, ungapped AB525437.1 16S. Search forward starts around S 954, M 924, L 843 and XL 774, and reverse starts around 1133: offsets −15 to +25 in steps of two, lengths 18–32 in steps of two. Gap-free observed windows with ≥40% non-Apodida weight contribute their three most frequent sequences and weighted majority consensus. IUPAC alternatives with ≥8% positional support are added greedily at degeneracy caps 4/8/16/32. Previously generated ordinary MiFish-window oligos are also included. All generated candidates passing the oligo structure gate are background-screened; no coverage-only shortlist is used for final selection.
 
-The common panel comprises 151 binomial-format taxonomic name labels and 351 unique within-label haplotypes, with 145 non-Apodida labels. Own-region eligibility is evaluated separately for each design window; its denominators are supplied in `results/comparison.csv`. Names are not reconciled for synonyms or changes in order taxonomy. Equal weights are assigned to labels, then to haplotypes within a label. Non-Apodida metrics are renormalized after excluding Apodida; all-target metrics include it.
+A second bounded search uses up to 12 distinct coordinate combinations among the strongest ordinary pairs per region. Each one-position IUPAC extension adds an observed alternative with ≥1% panel weight. Up to eight neighbor oligos per side are retained by coverage-plus-exact score, together with the ordinary parent, before testing these pair combinations. This includes 3′ positions. It is a finite search, not proof of a global optimum.
 
-Target binding is scanned on both strands of the original sequences, not inferred solely from an alignment column. Target products must be 150–500 bp with at least 50 nt internal sequence. **Coverage** allows at most two mismatches in each primer, with the terminal three 3′ bases exactly compatible. **Exact matching** requires zero mismatches in both primers; for degenerate primers, IUPAC compatibility counts as matching. An ambiguous target binding base does not count as a confirmed hit. No binding-site indel model is fitted.
+## Terminal rules and thermodynamics
 
-The reference coordinate plot shows homologous seed windows on the extracted ungapped 16S sequence of AB525437.1. Window spans are not universal product sizes, and modified oligos may differ in length from the seed.
+3′-terminal degeneracy is allowed. For every concrete IUPAC variant: no terminal homotriplet; at least one G/C among the last three bases; 1–4 G/C among the last five; and no homopolymer longer than four anywhere. The final base need not be fixed or G/C. These project rules follow the same MiUrchin round, informed by [Thermo Fisher guidance](https://www.thermofisher.com/blog/behindthebench/pcr-primer-design-tips/) and [Primer3 parameters](https://primer3.org/manual.html). They are conservative design choices, not experimentally calibrated success thresholds.
 
-## Background screening
+Primer3-py 2.4.0: 50 mM monovalent salt, 1.5 mM Mg²⁺ and 0.6 mM dNTP. Expand all variants under 50 nM per variant and 200 nM total per direction divided among variants. Hairpin, homodimer, within-side heterodimer and F/R heterodimer Tm must all be <55°C. F/R Tm-range midpoint differences must be ≤5°C in both scenarios; this is not a bound on every cross-variant Tm difference. Unequal-concentration heterodimers use the larger concentration as an approximation.
 
-The WC models allow up to two, three or four mismatches per primer. GT≤2 uses the inherited G–T tolerance transformation plus up to two mismatches per primer as a sensitivity model; it is not a complete PCR/polymerase model. Background products allow 0–1,000 nt internal sequence. Ambiguous binding hits are recorded separately in source evidence.
+Terminal audit additionally reports 5-mer end-stability ΔG at 37°C against the perfect reverse complement, using the stated salts and 200 nM, in kcal/mol across concrete variants. This descriptive calculation has no fitted yield/pass threshold. S-original remains unchanged and is exempt from selection filters.
 
-The selection allowance is at most five WC≤3 and five GT≤2 background accessions in the union of component pairs. This is an analyst-defined screening rule, not an experimental abundance threshold. WC≤4 is reported to expose relaxed residual risk. S-original is an unchanged control, not a candidate constrained by this gate, and has extensive background hits. All background counts are accession counts rather than species counts or read fractions.
+## Selection and verification
 
-## Degenerate portfolios
+Coverage permits ≤2 mismatches per primer with exact IUPAC compatibility in the last three bases. Exact matching requires zero mismatches in F and R. Both-strand target products are 150–500 bp with ≥50 internal bases; ambiguous binding bases do not establish a hit. Background products require correct orientation and 0–1,000 internal bases. Each selected portfolio permits ≤5 WC≤3 and ≤5 GT≤2 background accessions. WC≤4 is also reported; substantial residual counts remain in several schemes.
 
-Retain one pair per region from the verified candidate pool. First maximize mean non-Apodida coverage across common and own-region panels, then maximize mean exact matching within one percentage point of the coverage-first anchor on each panel separately. WC≤3 and GT≤2 background counts must each remain ≤5.
+For each region, select one degenerate pair, one ordinary pair and an ordinary two-pair comparator. Rank by non-Apodida coverage + exact matching with equal weight, then coverage, exact matching, lower total degeneracy and fewer background accessions. Cross-pair multiplex interactions are not asserted because the two-pair metric is a separate-PCR union. XL A/B is retained only for comparison: it adds no common-panel coverage or exact matching over XL single.
 
-## Nondegenerate portfolios
+An independent C++ all-window scanner re-evaluates the selected full products without the background prefilter. All 11,200 alignment-based target-state checks and 32 background-accession-set checks agree. The absent Apodida alignment record is excluded from prediction comparisons but not from final evaluation. Wet-lab and independent-holdout validation remain pending.
 
-Enumerate all concrete A/C/G/T variants of eight frozen parent pairs in the design input: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: SA+SB and LA+LB use two points; all others one point.
+## Figures and interpretation
 
-Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, and their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
+Reference intervals are drawn on one linear axis; interval lengths and oriented reference bases are checked against selected oligos. Representative SD/MD/LD/XLD spans are 223/247/310/394 bp. These are reference intervals, not universal product sizes or guaranteed amplification of every reference variant. Base-matching figures show actual 5′→3′ bases, not heatmaps.
 
-## Thermodynamics
-
-Primer3-py 2.3.1: 50 mM monovalent salt, 1.5 mM Mg²⁺ and 0.6 mM dNTP. Degenerate checks expand IUPAC symbols, using 50 nM per concrete variant and a 200 nM total per direction divided among variants. Within-side and opposite-side interactions are evaluated. For unequal strand concentrations, the larger concentration is used as an approximate scalar input to Primer3.
-
-Nondegenerate candidates are evaluated at 50 and 200 nM per oligo; hairpin, homodimer and F/R heterodimer structural Tm must remain below 55°C. F/R melting-temperature differences are reported, not used to assert a validated annealing temperature. S-original is retained as the original control. These are computational checks, not a PCR recipe or whole-pool validation.
-
-## Evaluation scope
-
-References are incompletely sampled and reused for design and evaluation; no independent holdout validation, wet-lab sensitivity/specificity estimate, or finalized PCR recipe is supplied. Small mismatch-model background counts do not prove low environmental amplification.
+Ordinary S/M/L improve over the preceding release, but strict removal of homopolymers reduces degenerate exact matching and XL coverage. Published before/after tables retain these losses. Background counts are accession counts, not experimental read fractions. Design context: [Miya et al. 2015](https://doi.org/10.1098/rsos.150088).

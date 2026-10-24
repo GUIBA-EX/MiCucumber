@@ -1,56 +1,70 @@
-"""Validate current exports and exact sequence/metric preservation from the frozen prior commit."""
+"""Validate the terminal-constrained release against raw paired-product evidence."""
 from pathlib import Path
-import csv,json,hashlib,zipfile,io,re
-from collections import Counter
-from naming import normalize, current
-p=Path(__file__).resolve().parents[1]
-def rows(path):return list(csv.DictReader(path.open()))
-def zrows(z,name):return list(csv.DictReader(io.StringIO(z.read(name).decode('utf-8-sig'))))
+import csv,json,hashlib,zipfile,re,math,itertools,collections,subprocess
+p=Path(__file__).resolve().parents[1];I=dict(A='A',C='C',G='G',T='T',R='AG',Y='CT',S='CG',W='AT',K='GT',M='AC',B='CGT',D='AGT',H='ACT',V='ACG',N='ACGT')
+def rows(f):return list(csv.DictReader(f.open()))
 a=rows(p/'sequences/primer_pairs.csv');assert len(a)==17
-schemes={r['scheme'] for r in a};expected={region+suffix for region in ['S','M','L','XL'] for suffix in ['D','','A+'+region+'B']}|{'MiCucumber-S-original'}
-assert schemes==expected
-fasta={}
+expected={reg+s for reg in ['S','M','L','XL'] for s in ['D','','A+'+reg+'B']}|{'MiCucumber-S-original'};assert {r['scheme'] for r in a}==expected
+fasta={};key=None
 for line in (p/'sequences/primers.fasta').read_text().splitlines():
- if line.startswith('>'):
-  key=line[1:];assert key not in fasta;fasta[key]=''
+ if line.startswith('>'):key=line[1:];assert key not in fasta;fasta[key]=''
  else:fasta[key]+=line
 assert len(fasta)==34
-for s in schemes:
- rr=[r for r in a if r['scheme']==s];assert len(rr)==int(rr[0]['pairs']);assert len({r['reaction'] for r in rr})==len(rr)
 for r in a:
- for d in ['F','R']:
-  assert fasta[f"{r['pair_name']}|{d}|{r['pair_id']}"]==r[d]
-  assert set(r[d])<=set('ACGT' if r['chemistry']=='ND' else 'ACGTRYSWKMBDHVN')
+ for side in ['F','R']:
+  q=r[side];assert fasta[f"{r['pair_name']}|{side}|{r['pair_id']}"]==q
+  assert int(r['degeneracy_'+side])==math.prod(len(I[c]) for c in q)
+  if r['chemistry']=='ordinary':assert set(q)<=set('ACGT')
+  if r['chemistry']!='original':
+   for s in map(''.join,itertools.product(*(I[c] for c in q))):
+    assert len(set(s[-3:]))>1 and any(c in 'GC' for c in s[-3:])
+    assert 1<=sum(c in 'GC' for c in s[-5:])<=4 and not any(c*5 in s for c in 'ACGT')
  if r['chemistry']=='original':assert r['F']=='GWWAGACGARAAGACCCTG' and r['R']=='CCCTRCGGTAACTWTTTCYG'
- else:assert r['scheme']==r['region']+('D' if r['chemistry']=='D' else ('A+'+r['region']+'B' if r['pairs']=='2' else ''))
 for reg in ['S','M','L','XL']:assert rows(p/f'sequences/MiCucumber-{reg}.csv')==[r for r in a if r['region']==reg]
-combined=rows(p/'results/comparison.csv');assert len(combined)==26
-assert Counter(r['scheme'] for r in combined)==Counter({s:2 for s in schemes})
-for r in combined:
- assert 0<=float(r['exact_pct'])<=float(r['coverage_pct'])<=100
- assert 0<=float(r['non_Apodida_exact_pct'])<=float(r['non_Apodida_coverage_pct'])<=100
- if r['chemistry']!='original':assert int(r['WC_le3'])<=5 and int(r['GT_le2'])<=5
-# All current row values originate from the preserved source snapshot; only identifiers differ.
-with zipfile.ZipFile(p/'archive/pre-renaming-14f156f.zip') as z:
+sel=json.loads((p/'results/terminal_optimization/selection.json').read_text());sd={r['name']:r for r in sel};pairs=rows(p/'results/current/primer_pairs.csv');assert len(pairs)==17
+for r in pairs:
+ if r['name']!='S-original':assert (r['F'],r['R'])==(sd[r['name']]['F'],sd[r['name']]['R'])
+assert {r['name']:(r['F'],r['R']) for r in pairs}=={('S-original' if r['chemistry']=='original' else r['pair_name']):(r['F'],r['R']) for r in a}
+h=collections.defaultdict(set)
+for r in csv.DictReader((p/'results/terminal_optimization/independent_hits.tsv').open(),delimiter='\t'):
+ for flag in ['exact','le2last3','le2','le3','le4']:
+  if r[flag]=='1':h[r['name'],r['role'],r['model'],flag].add(r['accession'])
+panel=rows(p/'results/matching/panel.csv');weights={r['accession']:float(r['weight']) for r in panel};nw={r['accession']:float(r['weight']) for r in panel if r['order']!='Apodida'};comp=rows(p/'results/current/comparison.csv');assert len(comp)==13 and comp==rows(p/'results/comparison.csv')
+for r in comp:
+ pp=[x for x in pairs if x['scheme']==r['scheme']];assert len(pp)==int(r['pairs'])
+ def union(role,model,flag):return set().union(*(h[x['name'],role,model,flag] for x in pp))
+ for flag,col in [('le2last3','coverage_pct'),('exact','exact_pct')]:
+  hit=union('target','WC',flag)
+  assert math.isclose(100*sum(nw.get(x,0) for x in hit)/sum(nw.values()),float(r[col]),abs_tol=1e-8)
+  assert math.isclose(100*sum(weights.get(x,0) for x in hit)/sum(weights.values()),float(r['all_target_'+col]),abs_tol=1e-8)
+ for model,flag,col in [('WC','le3','WC3'),('GT','le2','GT2'),('WC','le4','WC4')]:assert len(union('background',model,flag))==int(r[col])
+ if r['scheme']!='S-original':assert int(r['WC3'])<=5 and int(r['GT2'])<=5
+for r in rows(p/'results/terminal_optimization/thermal.csv'):
+ assert float(r['structure_max'])<55
+ assert abs((float(r['F_tm_min'])+float(r['F_tm_max'])-float(r['R_tm_min'])-float(r['R_tm_max']))/2)<=5
+v=json.loads((p/'results/terminal_optimization/verification.json').read_text());assert v['checks']==11200 and v['disagreements']==0 and v['background_checks']==32 and v['background_disagreements']==0
+# Read frozen source reference to check the map independently of rendered text.
+with zipfile.ZipFile(p/'results/terminal_optimization/reproduction_sources.zip') as z:
  assert z.testzip() is None
- for old,new in [('compact','degenerate'),('nondegenerate','nondegenerate')]:
-  for name in ['primer_pairs.csv','comparison.csv','missed_taxa.csv','offtargets.csv']:
-   assert current(normalize(zrows(z,f'results/{old}/{name}')))==rows(p/f'results/{new}/{name}'),(old,name)
- expectedseq=[]
- for old in ['compact','nondegenerate']:
-  for r in current(normalize(zrows(z,f'results/{old}/primer_pairs.csv'))):expectedseq.append((r['scheme'],r['reaction'],r['F'],r['R']))
- assert expectedseq==[(r['scheme'],r['reaction'],r['F'],r['R']) for r in a]
- mappings=rows(p/'docs/name_mapping.csv');assert len(mappings)==17
- for m,r in zip(mappings,a):
-  assert m['new_scheme']==r['scheme'] and m['new_pair_id']==r['pair_id']
-  for side in ['F','R']:assert hashlib.sha256(r[side].encode()).hexdigest()==m[side+'_sha256']
-for zpath in (p/'reproducibility/frozen').glob('*.zip'):
- with zipfile.ZipFile(zpath) as z:assert z.testzip() is None,zpath
-for doc in [p/n for n in json.loads((p/'SHA256SUMS.json').read_text()) if n.endswith('.md')]:
+ lines=z.read('work/micucumber_terminal/target_aligned.fasta').decode().splitlines()
+ref='';collect=False
+for line in lines:
+ if line.startswith('>'):collect=line[1:].split()[0]=='AB525437.1'
+ elif collect:ref+=line.upper().replace('-','')
+assert ref
+coords=rows(p/'results/current/binding_positions.csv');assert len(coords)==16 and {r['name'] for r in coords}==set(sd)
+for r in coords:
+ for side in ['F','R']:
+  a0,b=int(r[side+'_start']),int(r[side+'_end']);q=sd[r['name']][side];assert b-a0+1==len(q)
+  t=ref[a0-1:b]
+  if side=='R':t=t.translate(str.maketrans('ACGT','TGCA'))[::-1]
+  assert t==r[side+'_reference_5to3'] and q==r[side+'_sequence']
+  assert sum(c not in I[n] for n,c in zip(q,t))==int(r[side+'_reference_mismatches'])
+ assert int(r['reference_span_bp'])==int(r['R_end'])-int(r['F_start'])+1
+manifest=json.loads((p/'SHA256SUMS.json').read_text())
+for name,digest in manifest.items():assert hashlib.sha256((p/name).read_bytes()).hexdigest()==digest,name
+for doc in [p/n for n in manifest if n.endswith('.md')]:
  for link in re.findall(r'\]\(([^)]+)\)',doc.read_text()):
   if not link.startswith(('http:','https:','#')):assert (doc.parent/link.split('#')[0]).exists(),(doc,link)
 for link in re.findall(r'(?:href|src)="([^"]+)"',(p/'report.html').read_text()):assert (p/link).exists(),link
-assert json.loads((p/'results/rename_validation.json').read_text())['sequence_changes']==0
-q=json.loads((p/'results/reproduction_checks.json').read_text());assert q['degenerate']=='PASS' and q['nondegenerate']=='PASS'
-for name,h in json.loads((p/'SHA256SUMS.json').read_text()).items():assert hashlib.sha256((p/name).read_bytes()).hexdigest()==h,name
-print('PASS: 13 portfolios, 17 paired rows, 34 sequence strings, source invariance, risks, links, archive integrity and SHA256')
+print('PASS: 13 portfolios, 17 pairs, 34 sequences, all-variant terminal rules, both thermal scenarios, raw metrics, 16 reference intervals, original control, links and hashes')

@@ -1,16 +1,14 @@
-# Naming
+# Names / 命名
 
-[中文](NAMING.zh-CN.md) · [Overview](../README.md)
+S, M, L and XL identify homologous design regions. D marks a degenerate single pair; the ordinary single pair has no suffix, and A/B identify the two ordinary components. / S、M、L、XL为同源设计区域；D标记简并单对，普通单对不加后缀，A/B为普通两对的组件。
 
-| Region | Degenerate pair | Nondegenerate single pair | Nondegenerate A/B pairs |
+| Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
 | S | SD | S | SA / SB |
 | M | MD | M | MA / MB |
 | L | LD | L | LA / LB |
 | XL | XLD | XL | XLA / XLB |
 
-D denotes degeneracy; A and B identify the component pairs of the two-pair option. SA+SB denotes the union of two separate PCRs. Single-pair names have no suffix. S-original is the separate original control.
+S-original is the unchanged original control. A+B metrics mean separate-PCR unions. 3′-terminal degeneracy is allowed; it does not require a separate name. / S-original为不变的原始对照；A+B表示独立PCR并集。允许3′端简并，不额外增加命名类型。
 
-In CSV files, `scheme` identifies the evaluated portfolio, `pair_name` identifies its component pair, and `pair_id` is the candidate sequence identifier. Different names may reuse identical sequences, such as S and SA; use the F/R sequences to identify the pair. All sequences are written 5′→3′.
-
-There are 13 portfolios, 17 paired-reaction entries and 34 FASTA entries. These counts include reuse across portfolios, not 34 unique oligos.
+[Current sequences](../sequences/primer_pairs.csv) · [Methods](METHODS.md)

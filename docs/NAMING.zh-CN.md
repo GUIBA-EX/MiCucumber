@@ -1,16 +1,14 @@
-# 命名
+# Names / 命名
 
-[English](NAMING.md) · [返回首页](../README.zh-CN.md)
+S, M, L and XL identify homologous design regions. D marks a degenerate single pair; the ordinary single pair has no suffix, and A/B identify the two ordinary components. / S、M、L、XL为同源设计区域；D标记简并单对，普通单对不加后缀，A/B为普通两对的组件。
 
-| 长度 | 简并单对 | 普通单对 | 普通两对 |
+| Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
 | S | SD | S | SA / SB |
 | M | MD | M | MA / MB |
 | L | LD | L | LA / LB |
 | XL | XLD | XL | XLA / XLB |
 
-D仅表示简并；A、B表示两对中的具体配对。SA+SB等为两次独立PCR的合并统计，单对名称不加后缀。S-original为单独保留的原始对照。
+S-original is the unchanged original control. A+B metrics mean separate-PCR unions. 3′-terminal degeneracy is allowed; it does not require a separate name. / S-original为不变的原始对照；A+B表示独立PCR并集。允许3′端简并，不额外增加命名类型。
 
-CSV的`scheme`为统计方案，`pair_name`为具体配对名，`pair_id`为候选序列标识。不同名称可复用相同序列，例如S与SA；应以F/R序列确认配对。全部序列均按5′→3′书写。
-
-当前共13套方案、17条配对记录与34条FASTA记录；这些数量包含方案间复用，并非34条唯一寡核苷酸。
+[Current sequences](../sequences/primer_pairs.csv) · [Methods](METHODS.md)

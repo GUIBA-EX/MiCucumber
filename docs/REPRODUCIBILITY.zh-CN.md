@@ -1,47 +1,26 @@
-# 复现
+# Reproduction / 复现
 
-[English](REPRODUCIBILITY.md) · [方法](METHODS.zh-CN.md) · [命名规范](NAMING.zh-CN.md)
+Install Python 3.12 dependencies from `requirements.txt`, then extract [the current source bundle](../results/terminal_optimization/reproduction_sources.zip) into a fresh directory. / 安装依赖并将当前源码包解压到新目录。
 
-## 检查发布文件
+```sh
+python -m pip install -r requirements.txt
+OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python work/micucumber_terminal/choose.py
+mkdir -p work/micucumber_nondegenerate
+c++ -O3 -std=c++17 work/micucumber_nondegenerate/independent_scan.cpp -o work/micucumber_nondegenerate/independent_scan
+python work/micucumber_terminal/verify.py
+python work/micucumber_terminal/summarize.py
+python work/micucumber_terminal/end_audit.py
+python work/micucumber_terminal/figures.py
+```
 
-在仓库根目录运行：
+Outputs: `work/micucumber_terminal/release/`. This route repeats selection from frozen feasible states, full-product verification, terminal audit and figures without new database retrieval. It requires installed dependencies and a C++17 compiler. / 从冻结可行候选状态重算选择、全产物复核、末端审计和图件，不重新下载数据库。
 
-```bash
+For upstream discovery, the bundle also includes `discover.py`, `scan_sites.cpp`, `optimize.py`, `neighbors.py` and `merge_neighbors.py`. Run discovery, compile the site scanner, scan `work/micucumber_terminal/sites`, run `optimize.py`, build neighbors, scan `neighbor_sites`, merge neighbors, then execute the commands above. The site scanner writes all candidate background sites; these intermediate files can be large. / 源码包也包含完整上游候选搜索及背景扫描代码；按上述顺序重算，中间背景位点文件较大。
+
+```sh
 python scripts/check_release.py
 ```
 
-仅需Python标准库。检查13套方案、区域/类型/对数、17条配对记录、34条FASTA记录、无简并序列仅含A/C/G/T、原版对照不变、旧名到新名的序列和数值一致性、筛选阈值、Markdown/HTML链接、ZIP完整性及文件指纹。此步骤不重新扫描结合位点。
+The release checker uses the standard library to verify exported sequences, all concrete-variant terminal rules, both concentration scenarios, recomputed panel/background metrics, original-control invariance, reference coordinates, local links, bundle integrity and SHA-256 hashes. / 发布检查器使用标准库验证序列、末端规则、双浓度热力学、指标、原始对照不变性、坐标、链接、压缩包与哈希。
 
-## 计算复现
-
-使用Python 3.12，并安装冻结分析依赖。无简并及第二轮扫描流程还需C++17编译器（`c++`，底层入口支持时可使用`CXX`）。
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/reproduce.py degenerate --work-dir reproduction-work
-python scripts/reproduce.py nondegenerate --work-dir reproduction-work
-```
-
-两种模式使用不同子目录。再次运行时请指定新的`--work-dir`；程序不会覆盖已有复现目录。依赖安装后无需联网，原始输入包保持不变。
-
-- **简并方案：**从冻结逐配对目标/背景证据重算1–4对穷举，导出当前4套简并单对方案，转换命名，并与发布序列及共同/区域面板指标比较。此入口不重新扫描原始参考，也不重新发现结合位点。新名输出在`degenerate/current-results/`。
-- **无简并方案：**重新枚举2,644个具体候选、优化1对/2对方案、编译并执行独立全序列目标/背景扫描、核对预测及原版对照，然后转换新名并校验序列与指标。新名输出在`nondegenerate/current-results/`。
-- **第二轮上游扫描：**运行`python scripts/reproduce.py round2 --work-dir reproduction-work`，执行冻结参考的独立复核。中间证据保留源标识，此入口本身不导出当前13套方案。
-
-## 输入与输出
-
-冻结包提供参考数据及计算输入；`scripts/naming.py`将输出标识映射为当前命名。分析结果位于简并与普通引物两种模式的`current-results/`子目录，序列与指标校验记录见[复现检查](../results/reproduction_checks.json)。
-
-## 扩增区域图
-
-```bash
-python -m pip install -r requirements-plot.txt
-python scripts/plot_regions.py
-python scripts/plot_regions.py --cjk-font /path/to/CJK-font.ttf
-```
-
-默认生成英文PNG/SVG/PDF，指定已安装的中文字体后生成两种语言。坐标来源为`figures/region_coordinates.csv`，表示种子窗口，不是实验产物长度分布。重新生成发布图后，需更新文件指纹清单。
-
-## 匹配图
-
-安装绘图依赖后运行 `python scripts/plot_matching.py`。使用冻结的面板及逐配对命中数据，导出逐条状态和加权汇总，并核对共同面板方案指标。
+Earlier workflows in `scripts/reproduce.py` and `reproducibility/frozen/` describe the retained pre-terminal analysis; they are not the current design entry point. / 早期脚本和冻结包为保留分析，不是本轮设计入口。

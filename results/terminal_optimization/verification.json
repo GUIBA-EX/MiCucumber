@@ -1,0 +1,11 @@
+{
+  "checks": 11200,
+  "disagreements": 0,
+  "details": [],
+  "background_checks": 32,
+  "background_disagreements": 0,
+  "background_details": [],
+  "alignment_missing": [
+    "LC704718.1"
+  ]
+}
