@@ -49,3 +49,7 @@ python scripts/plot_regions.py --cjk-font /path/to/CJK-font.ttf
 ## 科学边界
 
 复现证明冻结输入下的计算可重现，不等于生物学准确性、独立留出性能或湿实验表现。没有宣称重新抓取数据库、完整从头发现候选或验证单管混合配方。
+
+## 匹配图
+
+安装绘图依赖后运行 `python scripts/plot_matching.py`。使用冻结的面板及逐配对命中数据，导出逐条状态和加权汇总，并核对共同面板方案指标。

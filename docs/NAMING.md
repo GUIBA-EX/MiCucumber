@@ -1,14 +1,12 @@
 # 命名 / Naming
 
-简并引物只保留单对方案，使用D后缀。普通（无简并）引物保留1对及2对方案：单对不加字母后缀，两对分别加A、B。
+| 长度 | 简并 | 普通单对 | 普通两对 |
+|---|---|---|---|
+| S | SD | S | SA、SB |
+| M | MD | M | MA、MB |
+| L | LD | L | LA、LB |
+| XL | XLD | XL | XLA、XLB |
 
-| 类型 | 配对名称 / Pair name |
-|---|---|
-| 简并，单对 | MiCucumber-S-D-1pair |
-| 普通，单对 | MiCucumber-S-1pair |
-| 普通，两对中的第一对 | MiCucumber-S-2pairA |
-| 普通，两对中的第二对 | MiCucumber-S-2pairB |
+A、B分别表示两对中的具体配对，合并统计标为SA+SB、MA+MB等。单对名称不加数字或字母后缀。S-original保留为原始对照。所有序列按5′→3′书写。
 
-M、L、XL同样命名。S-original为单独保留的原始对照。`scheme`表示统计方案，`pair_name`表示具体配对；2pair的统计仍为A、B两个独立PCR结果的并集。序列均按5′→3′书写。
-
-Only single-pair degenerate sets are retained. Nondegenerate single pairs have no letter suffix; the two component pairs are named 2pairA and 2pairB. The same rules apply to M, L and XL. `scheme` identifies the evaluated portfolio; `pair_name` identifies its component pair. Two-pair statistics remain the union of separate A/B PCRs.
+D identifies degenerate primers. A/B identify the component pairs of the two-pair option; SA+SB denotes their union. Single nondegenerate pairs use the region name alone. S-original is retained as the original control.

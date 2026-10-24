@@ -22,7 +22,7 @@ def normalize(value):
  return value
 
 
-def current(rows):
+def legacy_current(rows):
  result=[]
  for r in rows:
   name=r.get('scheme',r.get('name',r.get('new_scheme','')))
@@ -34,3 +34,9 @@ def current(rows):
    r['pair_name']=r['scheme']+suffix
   result.append(r)
  return result
+
+PUBLIC_PATTERN=re.compile(r'MiCucumber-(XL|S|M|L)-(D-1pair|2pairA|2pairB|2pair|1pair)')
+def public_name(s):
+ return PUBLIC_PATTERN.sub(lambda m:m[1]+{'D-1pair':'D','2pairA':'A','2pairB':'B','2pair':'A+'+m[1]+'B','1pair':''}[m[2]],s)
+def current(rows):
+ return [{k:public_name(v) if isinstance(v,str) else v for k,v in r.items()} for r in legacy_current(rows)]

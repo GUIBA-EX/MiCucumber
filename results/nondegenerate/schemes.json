@@ -1,6 +1,6 @@
 [
   {
-    "name": "MiCucumber-S-1pair",
+    "name": "S",
     "locus": "MiCucumber-S",
     "count": 1,
     "pair_names": [
@@ -10,7 +10,7 @@
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-S-2pair",
+    "name": "SA+SB",
     "locus": "MiCucumber-S",
     "count": 2,
     "pair_names": [
@@ -21,7 +21,7 @@
     "tolerance_pp": 2
   },
   {
-    "name": "MiCucumber-M-1pair",
+    "name": "M",
     "locus": "MiCucumber-M",
     "count": 1,
     "pair_names": [
@@ -31,7 +31,7 @@
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-M-2pair",
+    "name": "MA+MB",
     "locus": "MiCucumber-M",
     "count": 2,
     "pair_names": [
@@ -42,7 +42,7 @@
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-L-1pair",
+    "name": "L",
     "locus": "MiCucumber-L",
     "count": 1,
     "pair_names": [
@@ -52,7 +52,7 @@
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-L-2pair",
+    "name": "LA+LB",
     "locus": "MiCucumber-L",
     "count": 2,
     "pair_names": [
@@ -63,7 +63,7 @@
     "tolerance_pp": 2
   },
   {
-    "name": "MiCucumber-XL-1pair",
+    "name": "XL",
     "locus": "MiCucumber-XL",
     "count": 1,
     "pair_names": [
@@ -73,7 +73,7 @@
     "tolerance_pp": 1
   },
   {
-    "name": "MiCucumber-XL-2pair",
+    "name": "XLA+XLB",
     "locus": "MiCucumber-XL",
     "count": 2,
     "pair_names": [

@@ -1,7 +1,7 @@
 """Reproduce frozen computations and normalize current exports without changing source evidence."""
 from pathlib import Path
 import argparse,csv,json,subprocess,sys,zipfile,math
-from naming import normalize, current
+from naming import normalize, current, public_name
 ROOT=Path(__file__).resolve().parents[1]
 def read(path):return list(csv.DictReader(path.open()))
 def write(path,rows):
@@ -29,7 +29,7 @@ def main():
   run([sys.executable,work/'run_reproduction.py'],work)
   source=work/'rebuild/results'
   for path in source.glob('*.csv'):write(result/path.name,current(normalize(read(path))))
-  for path in source.glob('*.json'):(result/path.name).write_text(json.dumps(normalize(json.loads(path.read_text())),indent=2)+'\n')
+  for path in source.glob('*.json'):(result/path.name).write_text(public_name(json.dumps(normalize(json.loads(path.read_text())),indent=2))+'\n')
   for n in ['primer_pairs.csv','comparison.csv']:equal(result/n,ROOT/'results/nondegenerate'/n)
  elif args.mode=='degenerate':
   run([sys.executable,work/'work/micucumber_compact/optimize.py'],work)

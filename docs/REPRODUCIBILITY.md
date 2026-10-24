@@ -49,3 +49,7 @@ The first command generates English PNG/SVG/PDF. Supplying a suitable installed 
 ## Scientific limits
 
 Reproduction verifies computation from frozen inputs, not biological accuracy, independent holdout performance or wet-lab PCR performance. No fresh database retrieval, complete de novo rediscovery, or validated single-tube multiplex recipe is implied.
+
+## Matching plots
+
+Run `python scripts/plot_matching.py` after installing `requirements-plot.txt`. It uses frozen `results/matching/panel.csv` and `pair_hits.csv`, generates per-reference states and weighted summaries, and verifies all common-panel portfolio metrics.

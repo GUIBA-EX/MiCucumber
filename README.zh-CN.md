@@ -4,11 +4,12 @@
 
 ## 方案选择
 
-简并方案以 **S-D、M-D、L-D、XL-D** 命名，无简并方案使用 **S、M、L、XL**；普通单对命名为 `1pair`，两对的具体配对分别为 `2pairA`、`2pairB`。
 
 - 两对表示两套独立PCR。四个区域为可比较的替代选择，不要求同一样本全部运行。
-- **建议优先实验验证S-D-1pair。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。
+- **建议优先实验验证SD。** 无简并版的覆盖与完全匹配损失较大，保留为对照；S-original的非目标命中很多。
 - 所有方案尚未完成湿实验验证，尚无经验证的单管混池配方。
+
+命名：SD为简并；S为普通单对；SA、SB为普通两对。M、L、XL同理。
 
 ## 下载与文档
 
@@ -23,23 +24,23 @@
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-D-1pair | 87.45% | 27.48% | 2 | 0 | 742 |
-| MiCucumber-M-D-1pair | 56.90% | 9.43% | 0 | 0 | 130 |
-| MiCucumber-L-D-1pair | 70.26% | 33.63% | 4 | 0 | 109 |
-| MiCucumber-XL-D-1pair | 48.34% | 9.71% | 0 | 0 | 486 |
+| SD | 87.45% | 27.48% | 2 | 0 | 742 |
+| MD | 56.90% | 9.43% | 0 | 0 | 130 |
+| LD | 70.26% | 33.63% | 4 | 0 | 109 |
+| XLD | 48.34% | 9.71% | 0 | 0 | 486 |
 
 ## 无简并对照
 
 | 方案 | 非Apodida覆盖率 | 完全匹配率 | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| MiCucumber-S-1pair | 56.78% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-S-2pair | 71.96% | 0.34% | 0 | 0 | 2 |
-| MiCucumber-M-1pair | 14.05% | 0.00% | 0 | 0 | 0 |
-| MiCucumber-M-2pair | 23.70% | 3.91% | 0 | 0 | 0 |
-| MiCucumber-L-1pair | 35.24% | 3.97% | 0 | 0 | 0 |
-| MiCucumber-L-2pair | 46.68% | 8.00% | 0 | 0 | 0 |
-| MiCucumber-XL-1pair | 22.88% | 2.93% | 0 | 0 | 0 |
-| MiCucumber-XL-2pair | 28.86% | 5.23% | 0 | 0 | 1 |
+| S | 56.78% | 0.34% | 0 | 0 | 2 |
+| SA+SB | 71.96% | 0.34% | 0 | 0 | 2 |
+| M | 14.05% | 0.00% | 0 | 0 | 0 |
+| MA+MB | 23.70% | 3.91% | 0 | 0 | 0 |
+| L | 35.24% | 3.97% | 0 | 0 | 0 |
+| LA+LB | 46.68% | 8.00% | 0 | 0 | 0 |
+| XL | 22.88% | 2.93% | 0 | 0 | 0 |
+| XLA+XLB | 28.86% | 5.23% | 0 | 0 | 1 |
 
 ## 原版对照
 
@@ -63,3 +64,18 @@
 ## 著作权
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. 公开访问不等于开源许可；未经许可不得转载或再分发受保护的原创内容，法定例外、GitHub平台权利及第三方数据权利除外。[完整声明](COPYRIGHT.md)
+## 匹配可视化 / Matching profiles
+
+每列为共同面板中的一个单倍型，按目与物种排列。绿色为完全匹配，黄色为允许错配命中，灰色为未命中。柱图采用标签及标签内单倍型等权。A+B为独立PCR结果并集。
+
+Each column is one common-panel haplotype, ordered by order and species. Green: exact; yellow: mismatch-tolerant hit; gray: missed. Bars use equal label and within-label haplotype weights. A+B is the union of separate PCRs.
+
+![S matching](figures/matching_S.png)
+
+![M matching](figures/matching_M.png)
+
+![L matching](figures/matching_L.png)
+
+![XL matching](figures/matching_XL.png)
+
+[逐条匹配数据 / Per-reference results](results/matching/detection.csv) · [汇总 / Summary](results/matching/summary.csv)

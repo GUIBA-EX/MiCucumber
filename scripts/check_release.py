@@ -7,7 +7,7 @@ p=Path(__file__).resolve().parents[1]
 def rows(path):return list(csv.DictReader(path.open()))
 def zrows(z,name):return list(csv.DictReader(io.StringIO(z.read(name).decode('utf-8-sig'))))
 a=rows(p/'sequences/primer_pairs.csv');assert len(a)==17
-schemes={r['scheme'] for r in a};expected={f'MiCucumber-{region}-{'D-' if kind=='D' else ''}{n}pair' for region in ['S','M','L','XL'] for kind in ['D','ND'] for n in ([1] if kind=='D' else [1,2])}|{'MiCucumber-S-original'}
+schemes={r['scheme'] for r in a};expected={region+suffix for region in ['S','M','L','XL'] for suffix in ['D','','A+'+region+'B']}|{'MiCucumber-S-original'}
 assert schemes==expected
 fasta={}
 for line in (p/'sequences/primers.fasta').read_text().splitlines():
@@ -22,7 +22,7 @@ for r in a:
   assert fasta[f"{r['pair_name']}|{d}|{r['pair_id']}"]==r[d]
   assert set(r[d])<=set('ACGT' if r['chemistry']=='ND' else 'ACGTRYSWKMBDHVN')
  if r['chemistry']=='original':assert r['F']=='GWWAGACGARAAGACCCTG' and r['R']=='CCCTRCGGTAACTWTTTCYG'
- else:assert r['scheme']==f"MiCucumber-{r['region']}-{'D-' if r['chemistry']=='D' else ''}{r['pairs']}pair"
+ else:assert r['scheme']==r['region']+('D' if r['chemistry']=='D' else ('A+'+r['region']+'B' if r['pairs']=='2' else ''))
 for reg in ['S','M','L','XL']:assert rows(p/f'sequences/MiCucumber-{reg}.csv')==[r for r in a if r['region']==reg]
 combined=rows(p/'results/comparison.csv');assert len(combined)==26
 assert Counter(r['scheme'] for r in combined)==Counter({s:2 for s in schemes})

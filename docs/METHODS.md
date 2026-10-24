@@ -28,7 +28,7 @@ Retain one pair per region from the verified candidate pool. First maximize mean
 
 ## Nondegenerate portfolios: nondegenerate sets
 
-Enumerate all concrete A/C/G/T variants of the eight parent pairs in the current two-pair degenerate portfolios: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: S-2pair and L-2pair use two points; all others one point.
+Enumerate all concrete A/C/G/T variants of the eight parent pairs in the current two-pair degenerate portfolios: 2,644 distinct pair candidates within their respective regions. Do not create arbitrary F/R combinations across different parent pairs or search new binding locations. Apply the structural threshold below, then exhaustively compare one- and two-pair subsets using the same coverage/exact objective and tolerances: SA+SB and LA+LB use two points; all others one point.
 
 Python vectorized binding predictions were compared against an independently implemented C++ exhaustive full-window, both-strand scan. Coverage and exact-match accession sets agreed for all selected pairs; original-control panel predictions were also checked, totaling 31,428 Boolean comparisons. Selected nondegenerate portfolios have no WC≤3 or GT≤2 hits in this frozen background set, but this does not establish experimental specificity. Their loss of target coverage and exact matching is substantial, so they remain comparators rather than replacements for the degenerate sets.
 
