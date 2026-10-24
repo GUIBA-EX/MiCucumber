@@ -48,19 +48,30 @@ Coverage and exact matching below both refer to **non-Apodida**. The common pane
 
 Coverage permits ≤2 mismatches per primer with the terminal 3 nt exactly compatible; exact matching requires zero mismatches in both primers. Background columns count hit accessions among 5,600 reference records. WC denotes Watson–Crick matching; GT permits G–T pairing as a sensitivity model. The numbers specify the maximum mismatches per primer; see [model definitions](docs/METHODS.md#background-screening).
 
-## Matching by region
+## Base matching and new candidates
 
-Each heatmap column is one common-panel haplotype, ordered by order and species. Bars show non-Apodida weighted percentages, labelled “coverage / exact matching”. Teal means exact, gold means a mismatch-tolerant hit, and light gray means missed. A and B are shown separately alongside their combined A+B result.
+The MiFish-inspired trial adjusts nearby binding windows and primer lengths, with terminal matching, background and thermodynamic constraints. New S and M candidates improve nondegenerate coverage; current L and XL remain preferred. The trial is retained separately from the released primers. Metrics below use the common non-Apodida panel.
 
-![S matching](figures/matching_S.png)
+| Option | Current coverage | Trial coverage | Trial exact | WC≤3 / GT≤2 |
+|---|---:|---:|---:|---:|
+| S single | 56.78% | 68.67% | 2.93% | 4 / 3 |
+| S A+B | 71.96% | 74.02% | 2.93% | 4 / 4 |
+| M single | 14.05% | 29.77% | 5.52% | 1 / 3 |
+| M A+B | 23.70% | 40.60% | 9.70% | 1 / 3 |
 
-![M matching](figures/matching_M.png)
+Trial S single/two-pair options hit 451/485 background accessions under WC≤4, showing increased risk under relaxed matching. Two-pair options represent separate PCR unions.
 
-![L matching](figures/matching_L.png)
+Letters show actual bases: blue = match, orange = mismatch, purple = possible G–T pairing; boxes mark the terminal three bases. Primers and same-sense references are shown 5′→3′, with reverse-reference sites reverse-complemented. Each order is represented by its most frequent weighted binding sequence. S/M show trial two-pair candidates, L the retained current single pair, and XL the trial candidates that did not outperform the current version.
 
-![XL matching](figures/matching_XL.png)
+![S base matching](figures/base_matching_S.svg)
 
-[Matching summary](results/matching/summary.csv) · [Per-reference matching states](results/matching/detection.csv). Includes 21 profiles and 7,371 per-reference records.
+![M base matching](figures/base_matching_M.svg)
+
+![L base matching](figures/base_matching_L.svg)
+
+![XL base matching](figures/base_matching_XL.svg)
+
+[Sequences](results/mifish_trial/specific_candidates.csv) · [Verified comparison](results/mifish_trial/verified_comparison.csv) · [Full alignment HTML](results/mifish_trial/base_matching.html) · [Reproduction](results/mifish_trial/REPRODUCE.md)
 
 ## Reference windows
 

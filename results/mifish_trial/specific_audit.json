@@ -1,0 +1,22 @@
+[
+  {
+    "region": "S",
+    "tested": 48470,
+    "eligible": 2384
+  },
+  {
+    "region": "M",
+    "tested": 988,
+    "eligible": 521
+  },
+  {
+    "region": "L",
+    "tested": 6274,
+    "eligible": 0
+  },
+  {
+    "region": "XL",
+    "tested": 3238,
+    "eligible": 33
+  }
+]

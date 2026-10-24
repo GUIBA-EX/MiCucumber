@@ -48,19 +48,30 @@ D仅表示简并；A、B分别标识具体配对，SA+SB等表示两个独立PCR
 
 覆盖允许每条引物≤2处错配，且3′末端3 nt完全相容；完全匹配要求正反均0错配。背景列为5,600条参考记录中的命中accession数。WC采用Watson–Crick配对，GT为容许G–T配对的敏感性模型；数字表示每条引物允许的最大错配数，详见[模型定义](docs/METHODS.zh-CN.md#非目标筛选)。
 
-## 各长度匹配图
+## 碱基匹配与新候选
 
-左图每列为一个共同面板单倍型，按目和物种排序；右图为非Apodida加权比例，标注“覆盖率 / 完全匹配率”。蓝绿色为完全匹配，金黄色为允许错配命中，浅灰色为未命中。A、B单独显示，并给出A+B的合用结果。
+按MiFish设计思路，在邻近窗口调整位置与长度，并加入3′端匹配、背景命中和热力学约束。S、M新候选改善普通引物覆盖；L、XL继续采用现版。下表为共同面板非Apodida结果，新候选作为试验方案保留。
 
-![S matching](figures/matching_S.png)
+| Option | Current coverage | Trial coverage | Trial exact | WC≤3 / GT≤2 |
+|---|---:|---:|---:|---:|
+| S single | 56.78% | 68.67% | 2.93% | 4 / 3 |
+| S A+B | 71.96% | 74.02% | 2.93% | 4 / 4 |
+| M single | 14.05% | 29.77% | 5.52% | 1 / 3 |
+| M A+B | 23.70% | 40.60% | 9.70% | 1 / 3 |
 
-![M matching](figures/matching_M.png)
+S试验单对/两对在WC≤4下分别命中451/485条背景，覆盖改善伴随宽松条件下的非目标风险增加。两对按独立PCR并集计算。
 
-![L matching](figures/matching_L.png)
+图中显示实际碱基：蓝色为相同，橙色为错配，紫色为可能的G–T配对；方框标出3′末端3 nt。引物与同向参考均按5′→3′显示，R参考已反向互补。每目展示加权频率最高的结合序列。S/M为新两对候选，L为保留的现版单对，XL为不推荐替换现版的试验候选。
 
-![XL matching](figures/matching_XL.png)
+![S base matching](figures/base_matching_S.svg)
 
-[匹配汇总](results/matching/summary.csv) · [逐参考匹配状态](results/matching/detection.csv)。共21组匹配概况、7,371条逐参考记录。
+![M base matching](figures/base_matching_M.svg)
+
+![L base matching](figures/base_matching_L.svg)
+
+![XL base matching](figures/base_matching_XL.svg)
+
+[Sequences](results/mifish_trial/specific_candidates.csv) · [Verified comparison](results/mifish_trial/verified_comparison.csv) · [Full alignment HTML](results/mifish_trial/base_matching.html) · [Reproduction](results/mifish_trial/REPRODUCE.md)
 
 ## 参考区域
 
