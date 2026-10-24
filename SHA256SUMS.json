@@ -2,8 +2,8 @@
   ".gitignore": "0fb7146fd5437c53ff09c07a4c1da12e259d1137ae46debc6912db59b3902102",
   "CHANGELOG.md": "37a6e1d82647e0c886671fc4c743e62a803ba83dcccaeba481182c0b3a010ca8",
   "COPYRIGHT.md": "45738052f6fad0e18217bd06b2a4243d9da1aceb0d30b9d2bb45efe3659347cb",
-  "README.md": "a5b4a8c4f48c3594a3309e58f31561f1370bf094f0a353f60e78cb99184e2862",
-  "README.zh-CN.md": "59196b6f4c4942ba75114f8f4a603248052df009cdc760c9f6dcff424eeb58f9",
+  "README.md": "b5554f8bb8321066d2d497ae2de4c9d813649f249c4a76e57313fe62f3e4adb2",
+  "README.zh-CN.md": "e9219509354b2bb5abf7d173b656a5b6dfd678d5f942e9e32c906a5fd7ec1364",
   "archive/README.md": "f915030e7591d92df4c11f25e7d5f13fabb76614b5b4113f6c3bac1a9a4778de",
   "archive/pre-renaming-14f156f.zip": "528463fc9a05411b17ad9b2823388c3d00ea72c0d8a3d36647783825ce57f2ce",
   "docs/DECISIONS.md": "842744a60416925d069e33d936214a9a65c150d3f36093603a24e9556ed0ca5e",
@@ -143,5 +143,8 @@
   "sequences/MiCucumber-XL.csv": "2ea24d3c8943d1a8649e4d47e9e457c8dd7314f907099a1c4f6493b627df5d06",
   "sequences/MiCucumber-XL.fasta": "56d6d34ed2445d5164cf1f507af27289e93151a5aadd12f578f140d2ba55af7e",
   "sequences/primer_pairs.csv": "441d01f8816b574ce7a71f4e2ffe997c01a1ab9f3cf53a79c0122adb98cba0a4",
-  "sequences/primers.fasta": "8f9c45e6c427a276b00b9f31245c32189e9c7f09a3305513cd2e2d940514f074"
+  "sequences/primers.fasta": "8f9c45e6c427a276b00b9f31245c32189e9c7f09a3305513cd2e2d940514f074",
+  "results/ab_complementarity/summary.csv": "d693f12b3a2664453c6003055078979dcaf53f30021650a52246627ef7eb6019",
+  "results/ab_complementarity/reselection.csv": "94805d648ac5514e1b977c38c6d2e73cad51a19b502262e9bc537dfc7ad21503",
+  "docs/AB_COMPLEMENTARITY.md": "0d7dd12e1da8036bf9b136f7fae422ce6d92f6f4ad89ffa566606c4a5c7fbabb"
 }

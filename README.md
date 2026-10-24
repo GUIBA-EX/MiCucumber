@@ -90,3 +90,5 @@ python scripts/check_release.py
 ## Copyright
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).
+
+A/B complementarity is evaluated from unique coverage and exact-match contributions; two pairs do not necessarily improve on one. [A/B complementarity / 互补性复核](docs/AB_COMPLEMENTARITY.md)

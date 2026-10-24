@@ -90,3 +90,5 @@ python scripts/check_release.py
 ## Copyright
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).
+
+A/B按覆盖和完全匹配的独有贡献评估互补性，双对并非必然优于单对。 [A/B complementarity / 互补性复核](docs/AB_COMPLEMENTARITY.md)
