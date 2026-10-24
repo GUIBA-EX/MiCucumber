@@ -2,7 +2,7 @@
 
 ![Current binding positions](figures/binding_positions.svg)
 
-Badges show reference spans of SD, MD, LD and XLD: 223, 247, 310 and 394 bp. The map uses current oligo coordinates on one linear scale; product lengths vary among taxa.
+Ordinary, A, B and D variants within each region share identical F/R start and end coordinates. S/M/L/XL reference spans are 226/245/302/396 bp. The map uses current oligo coordinates on one linear scale; product lengths vary among taxa.
 
 # MiCucumber
 
@@ -27,25 +27,25 @@ Coverage and exact matching below are non-Apodida metrics. The common panel has 
 
 | Portfolio | Coverage | Exact | WC≤3 | GT≤2 | WC≤4 |
 |---|---:|---:|---:|---:|---:|
-| SD | 79.76% | 3.28% | 4 | 5 | 312 |
-| S | 67.98% | 2.93% | 4 | 3 | 451 |
-| SA+SB | 74.71% | 7.07% | 4 | 3 | 451 |
-| MD | 47.42% | 6.44% | 2 | 1 | 137 |
+| SD | 73.97% | 5.07% | 4 | 3 | 332 |
+| S | 66.85% | 3.35% | 4 | 3 | 331 |
+| SA+SB | 71.38% | 4.56% | 4 | 3 | 378 |
+| MD | 40.37% | 6.86% | 1 | 2 | 17 |
 | M | 33.56% | 5.52% | 1 | 2 | 13 |
-| MA+MB | 57.64% | 8.79% | 2 | 3 | 40 |
-| LD | 65.40% | 6.55% | 5 | 0 | 1157 |
+| MA+MB | 36.36% | 10.80% | 1 | 3 | 39 |
+| LD | 43.33% | 15.00% | 0 | 0 | 46 |
 | L | 41.03% | 7.87% | 0 | 0 | 46 |
-| LA+LB | 55.14% | 16.01% | 5 | 5 | 436 |
-| XLD | 24.09% | 0.69% | 5 | 4 | 1357 |
-| XL | 21.33% | 0.69% | 5 | 4 | 1357 |
-| XLA+XLB | 21.33% | 0.69% | 5 | 4 | 1359 |
+| LA+LB | 43.33% | 15.00% | 0 | 0 | 46 |
+| XLD | 19.95% | 0.69% | 1 | 1 | 1309 |
+| XL | 15.81% | 0.69% | 1 | 1 | 756 |
+| XLA+XLB | 15.81% | 0.69% | 4 | 4 | 757 |
 | S-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
 
 Coverage permits ≤2 mismatches per primer with exact terminal-three-base compatibility; exact matching requires zero mismatches in both primers. Background counts are accessions, not experimental amplification fractions. GT is a separate G–T tolerance sensitivity model.
 
-**This is a strict-terminal candidate comparison, not a uniform performance upgrade.** Ordinary S/M/L improve over the preceding release; degenerate exact matching falls, and XL coverage remains low. XL A/B adds no common-panel coverage or exact matching, so it does not justify another PCR on these metrics. SD covers 79.76% but has only 3.28% exact matching. Prioritize comparisons of ordinary M versus MA+MB, and assess SD versus ordinary S for the sample context.
+**Joint locus selection replaces independent optimization of each portfolio location.** At each candidate locus, select the best ordinary single, A/B union and degenerate single, then average their coverage-plus-exact scores equally to choose the shared locus. Some coverage is lost; XL A/B adds no benefit over its single pair and remains a comparator. SD reaches 73.97% coverage / 5.07% exact; LD and LA/LB both reach 43.33% / 15.00%.
 
-WC≤4 exposes substantial residual background risk, especially in L and XL; small WC≤3/GT≤2 counts do not establish low environmental off-target amplification. All schemes await wet-lab validation. [Before/after comparison and verification](docs/TERMINAL_VALIDATION.md).
+WC≤4 exposes substantial residual background risk, especially in S and XL; small WC≤3/GT≤2 counts do not establish low environmental off-target amplification. All schemes await wet-lab validation. [Before/after comparison and verification](docs/TERMINAL_VALIDATION.md).
 
 ## Sequences, coordinates and evidence
 
@@ -86,3 +86,5 @@ python scripts/check_release.py
 ## Copyright
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).
+
+[共同坐标 / Shared coordinates](results/current/joint_locus.csv) · [联合筛选复核 / Joint-locus validation](docs/TERMINAL_VALIDATION.md)

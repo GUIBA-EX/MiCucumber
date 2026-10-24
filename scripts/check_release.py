@@ -61,6 +61,14 @@ for r in coords:
   assert t==r[side+'_reference_5to3'] and q==r[side+'_sequence']
   assert sum(c not in I[n] for n,c in zip(q,t))==int(r[side+'_reference_mismatches'])
  assert int(r['reference_span_bp'])==int(r['R_end'])-int(r['F_start'])+1
+for reg in ['S','M','L','XL']:
+ group=[r for r in coords if r['name'] in {reg,reg+'A',reg+'B',reg+'D'}]
+ assert len(group)==4
+ assert len({tuple(r[k] for k in ['F_start','F_end','R_start','R_end']) for r in group})==1,reg
+ assert (sd[reg+'A']['F'],sd[reg+'A']['R'])!=(sd[reg+'B']['F'],sd[reg+'B']['R']),reg
+for r in rows(p/'results/current/joint_locus.csv'):
+ q=next(x for x in coords if x['name']==r['region'])
+ assert all(r[k]==q[k] for k in ['F_start','F_end','R_start','R_end','reference_span_bp'])
 manifest=json.loads((p/'SHA256SUMS.json').read_text())
 for name,digest in manifest.items():assert hashlib.sha256((p/name).read_bytes()).hexdigest()==digest,name
 for doc in [p/n for n in manifest if n.endswith('.md')]:

@@ -1,86 +1,158 @@
 [
   {
     "scheme": "SD",
-    "eligible": 4855,
+    "eligible": 16,
     "thermal_rejections": 0,
-    "coverage": 0.797570230329,
-    "exact": 0.03275862069
+    "coverage": 0.739666267252,
+    "exact": 0.050738916256,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
   },
   {
     "scheme": "S",
-    "eligible": 6008,
+    "eligible": 16,
     "thermal_rejections": 0,
-    "coverage": 0.679814050504,
-    "exact": 0.029310344828
+    "coverage": 0.668484001243,
+    "exact": 0.033497536946,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
   },
   {
     "scheme": "SA+SB",
-    "eligible": 6008,
+    "eligible": 16,
     "thermal_rejections": 0,
-    "coverage": 0.747055429814,
-    "exact": 0.070689655172
+    "coverage": 0.713804198287,
+    "exact": 0.045566502463,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
   },
   {
     "scheme": "MD",
-    "eligible": 3259,
+    "eligible": 21,
     "thermal_rejections": 0,
-    "coverage": 0.474154351396,
-    "exact": 0.064367816092
+    "coverage": 0.403727865797,
+    "exact": 0.068637110016,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
   },
   {
     "scheme": "M",
-    "eligible": 2655,
+    "eligible": 21,
     "thermal_rejections": 0,
     "coverage": 0.335632183908,
-    "exact": 0.055172413793
+    "exact": 0.055172413793,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
   },
   {
     "scheme": "MA+MB",
-    "eligible": 2655,
+    "eligible": 21,
     "thermal_rejections": 0,
-    "coverage": 0.576436781609,
-    "exact": 0.087931034483
+    "coverage": 0.363563218391,
+    "exact": 0.108045977011,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
   },
   {
     "scheme": "LD",
-    "eligible": 5671,
+    "eligible": 18,
     "thermal_rejections": 0,
-    "coverage": 0.654022988506,
-    "exact": 0.065517241379
+    "coverage": 0.433333333333,
+    "exact": 0.15,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
   },
   {
     "scheme": "L",
-    "eligible": 1926,
+    "eligible": 18,
     "thermal_rejections": 0,
     "coverage": 0.410344827586,
-    "exact": 0.078735632184
+    "exact": 0.078735632184,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
   },
   {
     "scheme": "LA+LB",
-    "eligible": 1926,
+    "eligible": 18,
     "thermal_rejections": 0,
-    "coverage": 0.551444547996,
-    "exact": 0.160065237651
+    "coverage": 0.433333333333,
+    "exact": 0.15,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
   },
   {
     "scheme": "XLD",
-    "eligible": 284,
+    "eligible": 17,
     "thermal_rejections": 0,
-    "coverage": 0.240886699507,
-    "exact": 0.006896551724
+    "coverage": 0.199507389163,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
   },
   {
     "scheme": "XL",
-    "eligible": 59,
+    "eligible": 17,
     "thermal_rejections": 0,
-    "coverage": 0.213300492611,
-    "exact": 0.006896551724
+    "coverage": 0.158128078818,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
   },
   {
     "scheme": "XLA+XLB",
-    "eligible": 59,
+    "eligible": 17,
     "thermal_rejections": 0,
-    "coverage": 0.213300492611,
-    "exact": 0.006896551724
+    "coverage": 0.158128078818,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
   }
 ]

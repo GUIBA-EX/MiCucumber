@@ -1,3 +1,9 @@
+# Shared coordinates for all variants
+
+- Jointly select identical F/R intervals for ordinary, A, B and D in S/M/L/XL.
+- Recompute full-sequence metrics and plots; preserve S-original.
+- Update common spans to 226/245/302/396 bp and report coverage trade-offs.
+
 # Terminal-constrained comparison
 
 - Allow 3′-terminal IUPAC degeneracy, testing every actual variant.

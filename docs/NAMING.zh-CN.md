@@ -12,3 +12,5 @@ S, M, L and XL identify homologous design regions. D marks a degenerate single p
 S-original is the unchanged original control. A+B metrics mean separate-PCR unions. 3′-terminal degeneracy is allowed; it does not require a separate name. / S-original为不变的原始对照；A+B表示独立PCR并集。允许3′端简并，不额外增加命名类型。
 
 [Current sequences](../sequences/primer_pairs.csv) · [Methods](METHODS.md)
+
+Within each length group, ordinary/A/B/D share identical F/R start/end coordinates; only sequence and degeneracy differ. S-original remains separate. / 每个长度组内普通、A、B、D的F/R起止坐标完全相同，仅序列和简并状态不同；S-original独立保留。

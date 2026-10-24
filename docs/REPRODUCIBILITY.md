@@ -24,3 +24,5 @@ python scripts/check_release.py
 The release checker uses the standard library to verify exported sequences, all concrete-variant terminal rules, both concentration scenarios, recomputed panel/background metrics, original-control invariance, reference coordinates, local links, bundle integrity and SHA-256 hashes. / 发布检查器使用标准库验证序列、末端规则、双浓度热力学、指标、原始对照不变性、坐标、链接、压缩包与哈希。
 
 Earlier workflows in `scripts/reproduce.py` and `reproducibility/frozen/` describe the retained pre-terminal analysis; they are not the current design entry point. / 早期脚本和冻结包为保留分析，不是本轮设计入口。
+
+`choose.py` now selects one shared locus jointly for ordinary, A, B and D variants in each length group. `joint_locus.csv` records the selected intervals and scoring. / 当前选择脚本按每组普通、A、B、D共同坐标联合优化，坐标与评分记录在joint_locus.csv。
