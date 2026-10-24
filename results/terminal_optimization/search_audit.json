@@ -1,10 +1,158 @@
-{
-  "policy": "Occam retention at frozen shared loci",
-  "retained": {
-    "SD": "SMXL limit50",
-    "MD": "SMXL limit5",
-    "LD": "LD limit20",
-    "XLD": "unchanged"
+[
+  {
+    "scheme": "SD",
+    "eligible": 16,
+    "thermal_rejections": 0,
+    "coverage": 0.739666267252,
+    "exact": 0.050738916256,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
   },
-  "decision_document": "docs/DECISIONS.md"
-}
+  {
+    "scheme": "S",
+    "eligible": 16,
+    "thermal_rejections": 0,
+    "coverage": 0.668484001243,
+    "exact": 0.033497536946,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
+  },
+  {
+    "scheme": "SA+SB",
+    "eligible": 16,
+    "thermal_rejections": 0,
+    "coverage": 0.713804198287,
+    "exact": 0.045566502463,
+    "common_locus": [
+      954,
+      977,
+      1156,
+      1179
+    ]
+  },
+  {
+    "scheme": "MD",
+    "eligible": 21,
+    "thermal_rejections": 0,
+    "coverage": 0.403727865797,
+    "exact": 0.068637110016,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
+  },
+  {
+    "scheme": "M",
+    "eligible": 21,
+    "thermal_rejections": 0,
+    "coverage": 0.335632183908,
+    "exact": 0.055172413793,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
+  },
+  {
+    "scheme": "MA+MB",
+    "eligible": 21,
+    "thermal_rejections": 0,
+    "coverage": 0.363563218391,
+    "exact": 0.108045977011,
+    "common_locus": [
+      921,
+      942,
+      1148,
+      1165
+    ]
+  },
+  {
+    "scheme": "LD",
+    "eligible": 18,
+    "thermal_rejections": 0,
+    "coverage": 0.433333333333,
+    "exact": 0.15,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
+  },
+  {
+    "scheme": "L",
+    "eligible": 18,
+    "thermal_rejections": 0,
+    "coverage": 0.410344827586,
+    "exact": 0.078735632184,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
+  },
+  {
+    "scheme": "LA+LB",
+    "eligible": 18,
+    "thermal_rejections": 0,
+    "coverage": 0.433333333333,
+    "exact": 0.15,
+    "common_locus": [
+      868,
+      891,
+      1152,
+      1169
+    ]
+  },
+  {
+    "scheme": "XLD",
+    "eligible": 17,
+    "thermal_rejections": 0,
+    "coverage": 0.199507389163,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
+  },
+  {
+    "scheme": "XL",
+    "eligible": 17,
+    "thermal_rejections": 0,
+    "coverage": 0.158128078818,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
+  },
+  {
+    "scheme": "XLA+XLB",
+    "eligible": 17,
+    "thermal_rejections": 0,
+    "coverage": 0.158128078818,
+    "exact": 0.006896551724,
+    "common_locus": [
+      781,
+      800,
+      1147,
+      1176
+    ]
+  }
+]

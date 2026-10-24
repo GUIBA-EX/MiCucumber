@@ -14,16 +14,16 @@ Each region retains a degenerate single pair, an ordinary single pair and an ord
 
 | Region | Degenerate | Ordinary | Ordinary A/B |
 |---|---|---|---|
-| S | SD | S | SA / SB |
-| M | MD | M | MA / MB |
-| L | LD | L | LA / LB |
-| XL | XLD | XL | XLA / XLB |
+| S | 66.85% | 3.35% | 4 | 3 | 331 |
+| M | 33.56% | 5.52% | 1 | 2 | 13 |
+| L | 41.03% | 7.87% | 0 | 0 | 46 |
+| XL | 15.81% | 0.69% | 1 | 1 | 756 |
 
 **3′-terminal degeneracy is allowed.** Terminal matching uses IUPAC compatibility, and every concrete variant is checked: no terminal homotriplet, at least one G/C in the last three bases, 1–4 G/C in the last five, and no homopolymer longer than four. The final base need not be fixed or G/C. S-original is an unchanged control exempt from these selection rules.
 
 ## Retention decisions
 
-Following Occam’s razor, retain one D portfolio per length: SD with modest degeneracy (2/8), MD under the strict background gate (64/4), LD for its coverage gain (32/1), and unchanged XLD (2/1). More aggressive SD, MD 128/4 and marginal-gain XLD variants remain comparisons. Ordinary, A, B and S-original are unchanged; all four variants in each length share identical F/R start/end coordinates. This is an explicit benefit–complexity judgment, not a preregistered threshold or experimentally established PCR optimum.
+Following Occam’s razor, retain one D portfolio per length: SD with modest degeneracy (2/8), MD under the strict background gate (64/4), LD for its coverage gain (32/1), and unchanged XLD (2/1). More aggressive SD, MD 128/4 and marginal-gain XLD variants remain comparisons. Ordinary single pairs, D and S-original are unchanged in the A/B re-selection; all four variants in each length share identical F/R start/end coordinates. This is an explicit benefit–complexity judgment, not a preregistered threshold or experimentally established PCR optimum.
 
 [Before/after / 前后比较](docs/DECISIONS.md)
 
@@ -35,7 +35,7 @@ Coverage and exact matching below are non-Apodida metrics. The common panel has 
 |---|---:|---:|---:|---:|---:|
 | SD | 80.92% | 9.04% | 26 | 3 | 455 |
 | S | 66.85% | 3.35% | 4 | 3 | 331 |
-| SA+SB | 71.38% | 4.56% | 4 | 3 | 378 |
+| SA+SB | 73.49% | 5.53% | 4 | 3 | 378 |
 | MD | 67.17% | 25.48% | 2 | 4 | 76 |
 | M | 33.56% | 5.52% | 1 | 2 | 13 |
 | MA+MB | 36.36% | 10.80% | 1 | 3 | 39 |
@@ -44,7 +44,7 @@ Coverage and exact matching below are non-Apodida metrics. The common panel has 
 | LA+LB | 43.33% | 15.00% | 0 | 0 | 46 |
 | XLD | 19.95% | 0.69% | 1 | 1 | 1309 |
 | XL | 15.81% | 0.69% | 1 | 1 | 756 |
-| XLA+XLB | 15.81% | 0.69% | 4 | 4 | 757 |
+| XLA+XLB | 24.29% | 0.69% | 1 | 1 | 756 |
 | S-original | 89.84% | 76.75% | 3248 | 3401 | 3923 |
 
 Coverage permits ≤2 mismatches per primer with exact terminal-three-base compatibility; exact matching requires zero mismatches in both primers. Background counts are accessions, not experimental amplification fractions. GT is a separate G–T tolerance sensitivity model.
@@ -91,4 +91,5 @@ python scripts/check_release.py
 
 Copyright © 2026 Fei Xia (GUIBA-EX). All rights reserved. [Terms / 使用声明](COPYRIGHT.md).
 
-A/B complementarity is evaluated from unique coverage and exact-match contributions; two pairs do not necessarily improve on one. [A/B complementarity / 互补性复核](docs/AB_COMPLEMENTARITY.md)
+
+Expanded fixed-coordinate search yields mutual A/B contributions at every length without reducing either union metric. Ordinary single pairs and D are unchanged. Choose a single pair or complementary A/B according to the sample objective. [Complementarity and unique hits](docs/AB_COMPLEMENTARITY.md)

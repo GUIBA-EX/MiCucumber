@@ -12,3 +12,5 @@ python work/micucumber_terminal/end_audit.py
 ```
 
 Release check / 发布检查：`python scripts/check_release.py`。探索候选全集位于`results/degenerate_expansion`，保留理由见`docs/DECISIONS.md`。
+
+Expanded A/B search / 扩大A/B搜索：`work/ab_expanded/search.py PROJECT` → `refine.py` → `install.py`, followed by each project’s `verify.py`, `summarize.py` and figure scripts. The bundle contains the preceding selection, expanded candidates and final selection. Run `python scripts/check_ab.py` to check mutual contributions and current README values. The search scripts use the multi-project workspace layout; to reproduce only this release, use its frozen selection and per-project verification pipeline. / 搜索脚本依赖三个项目的共同工作目录；单独复核本发布时使用冻结选配结果及项目独立扫描流程。
