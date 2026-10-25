@@ -1,22 +1,29 @@
 # Reproduction / 复现
 
-Extract `results/terminal_optimization/reproduction_sources.zip` into an empty directory. The frozen `work/micucumber_terminal/selected.json` is the current Occam-retained release; the earlier joint-locus selector describes the baseline and does not reproduce the final editorial retention decisions.
+## Current D assays / 当前D方案
 
-从冻结的当前选择重新执行以下独立验证、统计与图件步骤：
+Extract [the candidate reproduction bundle](../results/taxon_optimization/reproduction_sources.zip) into an empty directory, then run:
 
 ```bash
-python work/micucumber_terminal/verify.py
-python work/micucumber_terminal/summarize.py
-python work/micucumber_terminal/figures.py
-python work/micucumber_terminal/end_audit.py
+python verify.py
 ```
 
-Release check / 发布检查：`python scripts/check_release.py`。探索候选全集位于`results/degenerate_expansion`，保留理由见`docs/DECISIONS.md`。
+Requires Python 3.10+ and a C++17 compiler; no network or Python packages are needed. The script reproduces ten fixed candidates from original FASTA. Current SD/MD/LD/XLD correspond to SD-T10/MD-T4/LD-T7/XLD-T8 in [the selection policy](../results/current/D_selection_policy.json). / 将冻结包解压至空目录，运行上面命令；使用原始FASTA复核10个候选，正式四个D方案由选择规则映射。
 
-Expanded A/B search / 扩大A/B搜索：`work/ab_expanded/search.py PROJECT` → `refine.py` → `install.py`, followed by each project’s `verify.py`, `summarize.py` and figure scripts. The bundle contains the preceding selection, expanded candidates and final selection. Run `python scripts/check_ab.py` to check mutual contributions and current README values. The search scripts use the multi-project workspace layout; to reproduce only this release, use its frozen selection and per-project verification pipeline. / 搜索脚本依赖三个项目的共同工作目录；单独复核本发布时使用冻结选配结果及项目独立扫描流程。
+[Standalone reproduction check](../results/taxon_optimization/frozen_reproduction_check.json) · [Current paired hits](../results/current/independent_hits.tsv) · [Current thermal reports](../results/current/thermal.csv).
 
+## Taxonomic coverage / 分类群覆盖
 
-当前XS方案 / Current XS assay: [sequences, matching, background and reproduction / 序列、匹配、背景与复现](XS.md). XS is a fixed single assay; within-region ordinary/A/B/D coordinate rules apply to S–XL. / XS为固定单对；普通、A、B、D同坐标规则适用于S–XL。
+From the repository root / 在项目根目录执行：
+
+```bash
+python scripts/taxon_coverage.py
+python scripts/check_release.py
+python scripts/check_ab.py
+python scripts/check_taxon_optimization.py
+```
+
+Taxonomic coverage aggregates paired raw-sequence hits, includes Apodida, and balances the five frozen order groups equally. Within-label matching is reported separately. / 以原始配对命中汇总，包含Apodida，对5个冻结目标签等权；种内平均匹配率另列。
 
 ## XS
 
@@ -24,4 +31,10 @@ Expanded A/B search / 扩大A/B搜索：`work/ab_expanded/search.py PROJECT` →
 python scripts/verify_xs.py --output /tmp/MiCucumber-XS-check
 ```
 
-Frozen standalone inputs, C++ exhaustive scan and independent Python raw-sequence verification. The terminal-optimization bundle above reproduces S–XL; XS uses its separate frozen bundle and script. / 上述terminal_optimization冻结包对应S–XL；XS使用独立冻结输入与脚本，复核702项目标判断及4组背景集合。
+Uses its standalone frozen inputs and independent C++/Python scans. / 使用XS的独立冻结输入与双算法扫描。
+
+## Ordinary/A-B and baseline evidence / 普通A/B与基线证据
+
+`results/terminal_optimization/reproduction_sources.zip` preserves the preceding selection and its verification/figure scripts. It reproduces the frozen baseline, including the preceding D sequences. Current D sequences use the new bundle above. Ordinary/A/B and S-original retain their frozen sequences and evidence; A/B are separate-PCR unions. / 该旧冻结包用于复核基线及未改变的普通/A/B与原版对照；当前D方案使用本页首个新冻结包。
+
+[Metric definitions](TAXONOMIC_COVERAGE.md) · [Selection decisions](D_OPTIMIZATION.md).

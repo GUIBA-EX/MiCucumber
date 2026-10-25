@@ -1,5 +1,8 @@
 # MiCucumber-XS
 
+本页原有D方案及百分比对应更新前的冻结基线；新的分类群覆盖以[分层统计](TAXONOMIC_COVERAGE.md)为准。/ Original D assays and percentages on this page describe the frozen pre-update baseline; current taxonomic breadth uses the [hierarchical summary](TAXONOMIC_COVERAGE.md).
+
+
 XS是一对固定简并引物，不另设A/B/D分支。F `RGYTTTGGTTGGGGCAAC`，R `TTDCCCCAATCCAACATCGA`（5′→3′），简并度4/3。AB525437.1提取的无缺口16S坐标F 1042–1059、R 1213–1232；含引物参考跨度191 bp，原始目标序列预测产物186–203 bp。
 
 XS is one fixed degenerate assay without A/B/D branches. F `RGYTTTGGTTGGGGCAAC`, R `TTDCCCCAATCCAACATCGA` (5′→3′), degeneracy 4/3. Extracted ungapped 16S coordinates on AB525437.1 are F 1042–1059 and R 1213–1232. The primer-inclusive reference span is 191 bp; predicted raw-sequence products are 186–203 bp.
@@ -51,3 +54,6 @@ python scripts/verify_xs.py --output /tmp/MiCucumber-XS-check
 分目名称沿用冻结面板，包括旧标签Aspidochirotida；插画中的现生七目不能替代分目评估。已覆盖代表行来自独立复核的原始结合模板，未覆盖代表展示比对位点。/ Order names follow the frozen panel, including the legacy label Aspidochirotida; the seven extant orders in the illustration do not replace order-level assessment. Covered rows use independently verified raw binding templates; uncovered rows show aligned sites.
 
 [Assessment](../results/xs/assessment.json) · [Independent checks](../results/xs/verification.json) · [Raw hits](../results/xs/independent_hits.tsv) · [Missed references](../results/xs/missed_references.csv) · [By order](../results/xs/by_order.csv) · [Background hits](../results/xs/strict_background_hits.csv) · [Thermodynamics](../results/xs/thermal.csv) · [Common-label resolution](../results/xs/common_label_resolution.csv) · [Verified templates](../results/xs/verified_base_templates.csv)
+
+
+当前D方案 / Current D selection: [SD, MD, LD, XLD](D_OPTIMIZATION.md).

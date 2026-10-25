@@ -1,0 +1,15 @@
+{
+  "selected": {
+    "SD": "SD-T10",
+    "MD": "MD-T4",
+    "LD": "LD-T7",
+    "XLD": "XLD-T8"
+  },
+  "source": "results/taxon_optimization/verification.json",
+  "source_target_checks": 7020,
+  "source_background_set_checks": 40,
+  "source_disagreements": 0,
+  "selected_pair_target_checks": 2808,
+  "selected_pair_background_set_checks": 16,
+  "scope": "Unchanged ordinary/A-B/control assays retain their frozen verification; four selected D pairs use the new raw scans"
+}

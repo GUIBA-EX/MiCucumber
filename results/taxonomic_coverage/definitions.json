@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "taxon_unit": "Frozen organism/name label; not necessarily a validated species",
+  "taxon_coverage": "100 * labels with at least one covered reference / all labels in scope",
+  "taxon_exact": "100 * labels with at least one paired zero-mismatch reference / all labels in scope",
+  "order_balanced_coverage": "Arithmetic mean of within-order taxon coverage percentages, including zero-covered represented orders",
+  "order_balanced_exact": "Arithmetic mean of within-order taxon exact percentages",
+  "coverage_hit": "Both primers on the same accession: <=2 mismatches each, terminal 3 nt IUPAC-compatible",
+  "exact_hit": "Both primers on the same accession: zero mismatches",
+  "scope_all_target": "All frozen labels, including Apodida",
+  "scope_non_Apodida": "Secondary comparison only; excludes Apodida",
+  "legacy_coverage_pct": "Mean within-label haplotype matching percentage; retained in original CSV for reproduction compatibility",
+  "taxonomy_limit": "Frozen order labels include Aspidochirotida; they do not establish seven-order modern taxonomic coverage"
+}

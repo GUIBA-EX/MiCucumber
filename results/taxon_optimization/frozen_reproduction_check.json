@@ -1,0 +1,12 @@
+{
+  "candidates": 10,
+  "target_checks": 7020,
+  "background_set_checks": 40,
+  "disagreements": 0,
+  "results_identical": true,
+  "runs": [
+    9,
+    1
+  ],
+  "note": "Unchanged frozen verifier: original nine candidates plus one appended S union, all reproduced outside the original workspace"
+}

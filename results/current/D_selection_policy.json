@@ -1,0 +1,21 @@
+{
+  "primary": "Order-balanced taxon detection over all five frozen order labels, including Apodida",
+  "eligibility": {
+    "broad_WC3_max": 100,
+    "broad_GT2_max": 100,
+    "strict_WC_max": 20,
+    "strict_GT_max": 20,
+    "per_direction_degeneracy_max": 128,
+    "terminal_rules": true,
+    "thermal_both_scenarios": true
+  },
+  "tie_break": "For equal order coverage, lower summed F/R degeneracy; then order-balanced exact matching",
+  "scope": "Best among the independently verified candidates in this bounded search; not a global optimum",
+  "selected": {
+    "SD": "SD-T10",
+    "MD": "MD-T4",
+    "LD": "LD-T7",
+    "XLD": "XLD-T8"
+  },
+  "XS": "Retain fixed XS assay; assessed separately with its documented background relaxation"
+}

@@ -1,5 +1,8 @@
 # A/B complementarity / A/B互补性
 
+本页原有D方案及百分比对应更新前的冻结基线；新的分类群覆盖以[分层统计](TAXONOMIC_COVERAGE.md)为准。/ Original D assays and percentages on this page describe the frozen pre-update baseline; current taxonomic breadth uses the [hierarchical summary](TAXONOMIC_COVERAGE.md).
+
+
 Expanded fixed-coordinate search has been applied to the released sequences. Ordinary single pairs and D are unchanged. All four A/B combinations have contributions from both components, with neither union coverage nor union exact matching below the preceding selection. / 扩大同坐标搜索已落实到正式序列；普通单对和D不变。四个长度的A/B均有双方独有贡献，并集覆盖与完全匹配均不低于此前方案。
 
 Changed pairs / 序列更新：SA, SB, XLA, XLB.
@@ -28,3 +31,6 @@ Search includes observed binding haplotypes, concrete variants of retained prime
 
 
 当前XS方案 / Current XS assay: [sequences, matching, background and reproduction / 序列、匹配、背景与复现](XS.md). XS is a fixed single assay; within-region ordinary/A/B/D coordinate rules apply to S–XL. / XS为固定单对；普通、A、B、D同坐标规则适用于S–XL。
+
+
+当前D方案 / Current D selection: [SD, MD, LD, XLD](D_OPTIMIZATION.md).

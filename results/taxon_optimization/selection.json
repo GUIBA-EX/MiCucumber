@@ -1,0 +1,379 @@
+[
+  {
+    "region": "S",
+    "F": "CAAGAAAGACGAGAAGACCCTGTC",
+    "R": "RAGRAGATDACGCTGTTATCCCTG",
+    "F_id": "T0037",
+    "R_id": "T0068",
+    "degeneracy_F": 1,
+    "degeneracy_R": 12,
+    "pred_order_coverage": 62.03260869565218,
+    "pred_order_exact": 1.4673913043478262,
+    "pred_taxon_coverage": 87.41721854304636,
+    "pred_taxon_exact": 1.9867549668874174,
+    "WC3": 50,
+    "GT2": 5,
+    "WC4": 306,
+    "strict_WC": 2,
+    "strict_GT": 4,
+    "background_limit": 100,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 61.08892678141973,
+        "F_tm_max": 61.08892678141973,
+        "R_tm_min": 58.639408943967,
+        "R_tm_max": 62.58052052950529,
+        "structure_max": 34.86566557726002
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 62.73032522980128,
+        "F_tm_max": 62.73032522980128,
+        "R_tm_min": 57.33851053883342,
+        "R_tm_max": 61.27820439399113,
+        "structure_max": 34.86566557726002
+      }
+    ],
+    "name": "SD-T1"
+  },
+  {
+    "region": "S",
+    "F": "ACAGAAAGACGAGAAGACCCTGTC",
+    "R": "RAGRAGATDACGCTGTTATCCCTG",
+    "F_id": "T0036",
+    "R_id": "T0068",
+    "degeneracy_F": 1,
+    "degeneracy_R": 12,
+    "pred_order_coverage": 64.56521739130436,
+    "pred_order_exact": 2.1739130434782608,
+    "pred_taxon_coverage": 86.09271523178808,
+    "pred_taxon_exact": 6.622516556291391,
+    "WC3": 136,
+    "GT2": 31,
+    "WC4": 934,
+    "strict_WC": 19,
+    "strict_GT": 29,
+    "background_limit": 500,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 62.05738492151312,
+        "F_tm_max": 62.05738492151312,
+        "R_tm_min": 58.639408943967,
+        "R_tm_max": 62.58052052950529,
+        "structure_max": 34.86566557726002
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 63.72344000186263,
+        "F_tm_max": 63.72344000186263,
+        "R_tm_min": 57.33851053883342,
+        "R_tm_max": 61.27820439399113,
+        "structure_max": 34.86566557726002
+      }
+    ],
+    "name": "SD-T2"
+  },
+  {
+    "region": "M",
+    "F": "AAACTYCTAYYNRYGTGAAGAA",
+    "R": "GTTATCCCTGCGGTARCT",
+    "F_id": "T0120",
+    "R_id": "T0148",
+    "degeneracy_F": 128,
+    "degeneracy_R": 2,
+    "pred_order_coverage": 68.9945652173913,
+    "pred_order_exact": 38.94021739130435,
+    "pred_taxon_coverage": 78.80794701986756,
+    "pred_taxon_exact": 30.4635761589404,
+    "WC3": 11,
+    "GT2": 16,
+    "WC4": 296,
+    "strict_WC": 0,
+    "strict_GT": 15,
+    "background_limit": 20,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 49.10369296896499,
+        "F_tm_max": 61.92351938947388,
+        "R_tm_min": 53.600048427070305,
+        "R_tm_max": 56.074232764220994,
+        "structure_max": 45.41557484966205
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 44.73028033274005,
+        "F_tm_max": 57.4596964079596,
+        "R_tm_min": 54.67770702123727,
+        "R_tm_max": 57.15797534988434,
+        "structure_max": 45.41557484966205
+      }
+    ],
+    "name": "MD-T3"
+  },
+  {
+    "region": "M",
+    "F": "AAAYTYCTAYYNRCGTGAAGAA",
+    "R": "GTTATCCCTGCGGTARCT",
+    "F_id": "T0092",
+    "R_id": "T0148",
+    "degeneracy_F": 128,
+    "degeneracy_R": 2,
+    "pred_order_coverage": 73.17934782608695,
+    "pred_order_exact": 29.722826086956523,
+    "pred_taxon_coverage": 82.11920529801324,
+    "pred_taxon_exact": 25.82781456953642,
+    "WC3": 58,
+    "GT2": 9,
+    "WC4": 536,
+    "strict_WC": 2,
+    "strict_GT": 9,
+    "background_limit": 100,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 49.82105207184196,
+        "F_tm_max": 61.92351938947388,
+        "R_tm_min": 53.600048427070305,
+        "R_tm_max": 56.074232764220994,
+        "structure_max": 45.41557484966205
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 45.48659381730681,
+        "F_tm_max": 57.4596964079596,
+        "R_tm_min": 54.67770702123727,
+        "R_tm_max": 57.15797534988434,
+        "structure_max": 45.41557484966205
+      }
+    ],
+    "name": "MD-T4"
+  },
+  {
+    "region": "M",
+    "F": "AAAYTYCTAYYYRYGTGAAGAA",
+    "R": "GTTATCCCTRCGGTARCT",
+    "F_id": "T0087",
+    "R_id": "T0147",
+    "degeneracy_F": 128,
+    "degeneracy_R": 4,
+    "pred_order_coverage": 75.32608695652175,
+    "pred_order_exact": 29.184782608695652,
+    "pred_taxon_coverage": 86.75496688741721,
+    "pred_taxon_exact": 21.85430463576159,
+    "WC3": 252,
+    "GT2": 9,
+    "WC4": 805,
+    "strict_WC": 3,
+    "strict_GT": 7,
+    "background_limit": 500,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 47.41841350098019,
+        "F_tm_max": 61.92351938947388,
+        "R_tm_min": 49.776307769907135,
+        "R_tm_max": 56.074232764220994,
+        "structure_max": 45.41557484966205
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 43.06100249844866,
+        "F_tm_max": 57.4596964079596,
+        "R_tm_min": 49.776307769907135,
+        "R_tm_max": 56.074232764220994,
+        "structure_max": 45.41557484966205
+      }
+    ],
+    "name": "MD-T5"
+  },
+  {
+    "region": "L",
+    "F": "RRACYWGTATGAAYGGCWTTACMT",
+    "R": "CGCTGTTATCCCTRYRGT",
+    "F_id": "T0179",
+    "R_id": "T0228",
+    "degeneracy_F": 128,
+    "degeneracy_R": 8,
+    "pred_order_coverage": 55.347826086956516,
+    "pred_order_exact": 17.027173913043477,
+    "pred_taxon_coverage": 54.966887417218544,
+    "pred_taxon_exact": 7.28476821192053,
+    "WC3": 20,
+    "GT2": 5,
+    "WC4": 484,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "background_limit": 20,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 54.32201541740011,
+        "F_tm_max": 62.49165375318012,
+        "R_tm_min": 49.976027239272014,
+        "R_tm_max": 59.81309674285461,
+        "structure_max": 45.41660825105106
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 50.22966762304742,
+        "F_tm_max": 58.36535255034198,
+        "R_tm_min": 48.91275157006487,
+        "R_tm_max": 58.74351668008637,
+        "structure_max": 45.41660825105106
+      }
+    ],
+    "name": "LD-T6"
+  },
+  {
+    "region": "L",
+    "F": "RRACYWGTATGAAYGGCATWACMT",
+    "R": "CGCTGTTATCCCTRCRGW",
+    "F_id": "T0170",
+    "R_id": "T0222",
+    "degeneracy_F": 128,
+    "degeneracy_R": 8,
+    "pred_order_coverage": 61.62500000000001,
+    "pred_order_exact": 15.994565217391305,
+    "pred_taxon_coverage": 73.50993377483444,
+    "pred_taxon_exact": 7.28476821192053,
+    "WC3": 21,
+    "GT2": 21,
+    "WC4": 485,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "background_limit": 100,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 54.38220488499144,
+        "F_tm_max": 62.49165375318012,
+        "R_tm_min": 52.987618434529,
+        "R_tm_max": 59.81309674285461,
+        "structure_max": 45.41660825105106
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 50.288362005764554,
+        "F_tm_max": 58.36535255034198,
+        "R_tm_min": 51.922575535737906,
+        "R_tm_max": 58.74351668008637,
+        "structure_max": 45.41660825105106
+      }
+    ],
+    "name": "LD-T7"
+  },
+  {
+    "region": "XL",
+    "F": "RGTCACGCCTGCCCAGTGGA",
+    "R": "RAGATDACGCTGTTATCCCTGCGGTAACTN",
+    "F_id": "T0282",
+    "R_id": "T0300",
+    "degeneracy_F": 2,
+    "degeneracy_R": 24,
+    "pred_order_coverage": 35.951086956521735,
+    "pred_order_exact": 4.0,
+    "pred_taxon_coverage": 24.503311258278146,
+    "pred_taxon_exact": 0.6622516556291391,
+    "WC3": 13,
+    "GT2": 10,
+    "WC4": 1392,
+    "strict_WC": 0,
+    "strict_GT": 7,
+    "background_limit": 20,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 66.10035278403734,
+        "F_tm_max": 67.0253472200227,
+        "R_tm_min": 65.62495051945064,
+        "R_tm_max": 68.42841253147344,
+        "structure_max": 50.8451626932266
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 67.11559558351905,
+        "F_tm_max": 68.03068842224462,
+        "R_tm_min": 63.8818147342119,
+        "R_tm_max": 66.71202972477494,
+        "structure_max": 50.8451626932266
+      }
+    ],
+    "name": "XLD-T8"
+  },
+  {
+    "region": "XL",
+    "F": "RGTCACGCCTGCCCAGTGGA",
+    "R": "RRGATDACGCTGTTATCCCTGCGGTAACTN",
+    "F_id": "T0282",
+    "R_id": "T0299",
+    "degeneracy_F": 2,
+    "degeneracy_R": 48,
+    "pred_order_coverage": 35.951086956521735,
+    "pred_order_exact": 4.6521739130434785,
+    "pred_taxon_coverage": 24.503311258278146,
+    "pred_taxon_exact": 2.6490066225165565,
+    "WC3": 18,
+    "GT2": 27,
+    "WC4": 1402,
+    "strict_WC": 0,
+    "strict_GT": 20,
+    "background_limit": 100,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 66.10035278403734,
+        "F_tm_max": 67.0253472200227,
+        "R_tm_min": 65.62495051945064,
+        "R_tm_max": 70.08381239276264,
+        "structure_max": 54.21674113659145
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 67.11559558351905,
+        "F_tm_max": 68.03068842224462,
+        "R_tm_min": 63.212280221221704,
+        "R_tm_max": 67.6850579809198,
+        "structure_max": 54.21674113659145
+      }
+    ],
+    "name": "XLD-T9"
+  },
+  {
+    "region": "S",
+    "name": "SD-T10",
+    "F": "CMAGAAAGACGAGAAGACCCYGTC",
+    "degeneracy_F": 4,
+    "R": "RAGRAGATDACGCTGTTATCCCTG",
+    "degeneracy_R": 12,
+    "thermal": [
+      {
+        "scenario": "50_per_variant",
+        "F_tm_min": 61.08892678141973,
+        "F_tm_max": 64.68745731326987,
+        "R_tm_min": 58.639408943967,
+        "R_tm_max": 62.58052052950529,
+        "structure_max": 49.02155292066425
+      },
+      {
+        "scenario": "200_per_direction",
+        "F_tm_min": 61.08892678141973,
+        "F_tm_max": 64.68745731326987,
+        "R_tm_min": 57.33851053883342,
+        "R_tm_max": 61.27820439399113,
+        "structure_max": 49.02155292066425
+      }
+    ],
+    "thermal_pass": true,
+    "background_limit": 100,
+    "pred_order_coverage": 66.03260869565216,
+    "pred_order_exact": 4.945652173913043,
+    "WC3": 71,
+    "GT2": 7,
+    "WC4": 475,
+    "strict_WC": 3,
+    "strict_GT": 6
+  }
+]

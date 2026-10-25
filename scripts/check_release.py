@@ -21,12 +21,12 @@ for r in a:
     assert 1<=sum(c in 'GC' for c in s[-5:])<=4 and not any(c*5 in s for c in 'ACGT')
  if r['chemistry']=='original':assert r['F']=='GWWAGACGARAAGACCCTG' and r['R']=='CCCTRCGGTAACTWTTTCYG'
 for reg in ['XS','S','M','L','XL']:assert rows(p/f'sequences/MiCucumber-{reg}.csv')==[r for r in a if r['region']==reg]
-sel=json.loads((p/'results/terminal_optimization/selection.json').read_text());sd={r['name']:r for r in sel};sd['XS']=json.loads((p/'results/xs/selection.json').read_text());pairs=rows(p/'results/current/primer_pairs.csv');assert len(pairs)==18
+sel=json.loads((p/'results/current/selection.json').read_text());sd={r['name']:r for r in sel};sd['XS']=json.loads((p/'results/xs/selection.json').read_text());pairs=rows(p/'results/current/primer_pairs.csv');assert len(pairs)==18
 for r in pairs:
  if r['name']!='S-original':assert (r['F'],r['R'])==(sd[r['name']]['F'],sd[r['name']]['R'])
 assert {r['name']:(r['F'],r['R']) for r in pairs}=={('S-original' if r['chemistry']=='original' else r['pair_name']):(r['F'],r['R']) for r in a}
 h=collections.defaultdict(set)
-for r in csv.DictReader((p/'results/terminal_optimization/independent_hits.tsv').open(),delimiter='\t'):
+for r in csv.DictReader((p/'results/current/independent_hits.tsv').open(),delimiter='\t'):
  for flag in ['exact','le2last3','le2','le3','le4']:
   if r[flag]=='1':h[r['name'],r['role'],r['model'],flag].add(r['accession'])
 for r in csv.DictReader((p/'results/xs/independent_hits.tsv').open(),delimiter='\t'):
@@ -41,9 +41,9 @@ for r in comp:
   assert math.isclose(100*sum(nw.get(x,0) for x in hit)/sum(nw.values()),float(r[col]),abs_tol=1e-8)
   assert math.isclose(100*sum(weights.get(x,0) for x in hit)/sum(weights.values()),float(r['all_target_'+col]),abs_tol=1e-8)
  for model,flag,col in [('WC','le3','WC3'),('GT','le2','GT2'),('WC','le4','WC4')]:assert len(union('background',model,flag))==int(r[col])
- if r['scheme'] not in ['S-original','XS']:
+ if r['scheme'] not in ['S-original','XS','SD','MD','LD','XLD']:
   limit={'SD':50,'LD':20}.get(r['scheme'],5);assert int(r['WC3'])<=limit and int(r['GT2'])<=limit
-for r in rows(p/'results/terminal_optimization/thermal.csv')+ [r for r in rows(p/'results/xs/thermal.csv') if r['name']=='XS']:
+for r in rows(p/'results/current/thermal.csv')+ [r for r in rows(p/'results/xs/thermal.csv') if r['name']=='XS']:
  assert float(r['structure_max'])<55
  assert abs((float(r['F_tm_min'])+float(r['F_tm_max'])-float(r['R_tm_min'])-float(r['R_tm_max']))/2)<=5
 v=json.loads((p/'results/terminal_optimization/verification.json').read_text());assert v['checks']==11200 and v['disagreements']==0 and v['background_checks']==32 and v['background_disagreements']==0
@@ -73,6 +73,11 @@ for reg in ['S','M','L','XL']:
 for r in rows(p/'results/current/joint_locus.csv'):
  q=next(x for x in coords if x['name']==r['region'])
  assert all(r[k]==q[k] for k in ['F_start','F_end','R_start','R_end','reference_span_bp'])
+policy=json.loads((p/'results/current/D_selection_policy.json').read_text())
+for name,source in policy['selected'].items():
+ assert sd[name]['source_candidate']==source
+ assert len(h[name,'background','WC','le3'])<=100 and len(h[name,'background','GT','le2'])<=100
+ assert len(h[name,'background','WC','le2last3'])<=20 and len(h[name,'background','GT','le2last3'])<=20
 xv=json.loads((p/'results/xs/verification.json').read_text());assert xv['target_checks']==702 and xv['background_checks']==4 and xv['disagreements']==0
 reproduced=json.loads((p/'results/xs/reproduction_check.json').read_text());assert reproduced['target_checks']==702 and reproduced['background_checks']==4 and reproduced['disagreements']==0
 xa=json.loads((p/'results/xs/assessment.json').read_text());assert xa['thermal_gate_pass'] and xa['terminal_rules_pass'] and not xa['conservative_background_gate_pass'] and not xa['wet_lab_validated']
@@ -81,8 +86,8 @@ for model in ['WC','GT']:
 for n in ['README.md','README.zh-CN.md']:
  text=(p/n).read_text();assert 'figures/base_matching_XS.svg' in text
  for r in comp:
-  line=next(l for l in text.splitlines() if l.startswith('| '+r['scheme']+' |') and '%' in l)
-  assert f"{float(r['coverage_pct']):.2f}%" in line and f"{float(r['exact_pct']):.2f}%" in line
+  lines=[l for l in text.splitlines() if l.startswith('| '+r['scheme']+' |')]
+  assert any(f"{float(r['coverage_pct']):.2f}%" in line and f"{float(r['exact_pct']):.2f}%" in line for line in lines)
 assert {r['locus']:r['reference_span_bp'] for r in rows(p/'figures/region_coordinates.csv')}=={'XS':'191','S':'226','M':'245','L':'302','XL':'396'}
 manifest=json.loads((p/'SHA256SUMS.json').read_text())
 for name,digest in manifest.items():assert hashlib.sha256((p/name).read_bytes()).hexdigest()==digest,name

@@ -1,0 +1,32 @@
+{
+  "seed": 20261025,
+  "orders": [
+    "Apodida",
+    "Aspidochirotida",
+    "Dendrochirotida",
+    "Elasipodida",
+    "Molpadida"
+  ],
+  "taxon_labels": 151,
+  "haplotypes": 351,
+  "objective": "lexicographic: order-balanced taxon detection, order-balanced exact, overall label detection, lower degeneracy",
+  "degeneracy_caps_per_direction": [
+    8,
+    32,
+    128
+  ],
+  "minimum_order_balanced_base_support": 0.002,
+  "retained_oligos": 337,
+  "pairs_evaluated": 6796,
+  "background_broad_tiers": [
+    20,
+    100,
+    500
+  ],
+  "strict_background_ceiling": 50,
+  "coordinates": "fixed to current ordinary/A/B/D endpoints",
+  "selection_status": "experimental candidates, released primers unchanged",
+  "post_search_union_pairs": 1,
+  "verified_candidates": 10,
+  "priority_S": "SD-T10: IUPAC union of current SD and the breadth-oriented candidate"
+}
