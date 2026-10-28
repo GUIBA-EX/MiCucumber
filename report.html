@@ -176,19 +176,115 @@
 <h1 class="title">primers</h1>
 </header>
 <p><img src="figures/MiCucumber_overview.png" alt="MiCucumber" /></p>
-<h1
-id="micucumber-a-set-of-universal-pcr-primers-for-metabarcoding-environmental-dna-from-sea-cucumbers">MiCucumber,
-a set of universal PCR primers for metabarcoding environmental DNA from
-sea cucumbers</h1>
+<h1 id="micucumber">MiCucumber</h1>
 <p><a href="README.md">English</a></p>
-<h2 id="新版引物53">新版引物（5′→3′）</h2>
-<p>保留每个长度的全部新版候选。候选属于计算预测方案，需实验验证。</p>
+<p>MiCucumber 是面向海参类环境 DNA 的线粒体 16S rRNA 候选引物，覆盖
+XS、S、M、L、XL
+五个长度。每个长度保留最新筛选的单对候选；同一长度的正反向引物使用相同参考坐标。
+主要指标按<strong>可评价物种等权</strong>：每个物种选一条参考序列，计算预测覆盖与完全匹配比例。参考面板包含
+174 个具名物种；数据库中的物种数量不能代表各目的全球丰富度。 海参
+XS、S–L、XL 分别有 166、174、152
+个物种可评价；缺少结合区域的物种不计作漏检。</p>
+<p><a href="results/species_qc/panel.csv">参考面板 / Reference panel</a>
+· <a href="results/species_refine/by_order.csv">分类与覆盖 / Coverage by
+order</a> · <a href="results/species_qc/README.md">参考序列审核 /
+Reference curation</a></p>
+<p><img src="figures/amplicon_regions.en.svg"
+alt="Binding positions" /></p>
+<h2 id="当前表现">当前表现</h2>
+<table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th style="text-align: right;">Species coverage</th>
+<th style="text-align: right;">Exact</th>
+<th style="text-align: right;">Strict WC / GT</th>
+<th style="text-align: right;">WC≤3 / GT≤2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XS-R100-coverage</td>
+<td style="text-align: right;">75/166 (45.18%)</td>
+<td style="text-align: right;">0/166 (0.00%)</td>
+<td style="text-align: right;">0 / 0</td>
+<td style="text-align: right;">33 / 2</td>
+</tr>
+<tr>
+<td>S-R20-coverage</td>
+<td style="text-align: right;">124/174 (71.26%)</td>
+<td style="text-align: right;">0/174 (0.00%)</td>
+<td style="text-align: right;">0 / 3</td>
+<td style="text-align: right;">4 / 4</td>
+</tr>
+<tr>
+<td>S-R100-coverage</td>
+<td style="text-align: right;">130/174 (74.71%)</td>
+<td style="text-align: right;">0/174 (0.00%)</td>
+<td style="text-align: right;">0 / 5</td>
+<td style="text-align: right;">58 / 6</td>
+</tr>
+<tr>
+<td>S-R100-exact</td>
+<td style="text-align: right;">124/174 (71.26%)</td>
+<td style="text-align: right;">1/174 (0.57%)</td>
+<td style="text-align: right;">0 / 5</td>
+<td style="text-align: right;">54 / 6</td>
+</tr>
+<tr>
+<td>M-R20-coverage</td>
+<td style="text-align: right;">89/174 (51.15%)</td>
+<td style="text-align: right;">24/174 (13.79%)</td>
+<td style="text-align: right;">0 / 15</td>
+<td style="text-align: right;">3 / 15</td>
+</tr>
+<tr>
+<td>L-R20-coverage</td>
+<td style="text-align: right;">85/174 (48.85%)</td>
+<td style="text-align: right;">1/174 (0.57%)</td>
+<td style="text-align: right;">0 / 0</td>
+<td style="text-align: right;">15 / 19</td>
+</tr>
+<tr>
+<td>L-R20-exact</td>
+<td style="text-align: right;">82/174 (47.13%)</td>
+<td style="text-align: right;">29/174 (16.67%)</td>
+<td style="text-align: right;">0 / 0</td>
+<td style="text-align: right;">0 / 0</td>
+</tr>
+<tr>
+<td>XL-R20-coverage</td>
+<td style="text-align: right;">43/152 (28.29%)</td>
+<td style="text-align: right;">3/152 (1.97%)</td>
+<td style="text-align: right;">0 / 10</td>
+<td style="text-align: right;">1 / 13</td>
+</tr>
+<tr>
+<td>XL-R100-coverage</td>
+<td style="text-align: right;">45/152 (29.61%)</td>
+<td style="text-align: right;">3/152 (1.97%)</td>
+<td style="text-align: right;">0 / 10</td>
+<td style="text-align: right;">48 / 13</td>
+</tr>
+</tbody>
+</table>
+<p>预测覆盖要求每条引物最多 2 个错配且末端 3
+个碱基兼容；完全匹配要求两条引物均无错配。严格 WC/GT
+为上述规则下的非目标记录数；WC≤3 和 GT≤2
+是不施加末端约束的宽松筛查。</p>
+<h2 id="筛选与取舍">筛选与取舍</h2>
+<p>新版候选每条引物简并度不超过 8，简并位点限于 3′
+半段；覆盖优先和完全匹配优先候选分别保留。指标为计算预测，需通过实验验证。</p>
+<p><a href="results/species_refine/README.md">筛选结果与复核 / Screening
+and verification</a> · <a href="sequences/primer_pairs.csv">引物序列 /
+Primer sequences</a></p>
+<h2 id="xs">XS</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>F</th>
-<th>R</th>
+<th>F (5′→3′)</th>
+<th>R (5′→3′)</th>
 </tr>
 </thead>
 <tbody>
@@ -197,6 +293,21 @@ sea cucumbers</h1>
 <td><code>AACTTTGGTTGGGGYAAC</code></td>
 <td><code>TTTCCCCAATCCAACATCGA</code></td>
 </tr>
+</tbody>
+</table>
+<p><img
+src="results/species_refine/XS/base_matching_XS-R100-coverage.svg"
+alt="XS-R100-coverage base matching" /></p>
+<h2 id="s">S</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>F (5′→3′)</th>
+<th>R (5′→3′)</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>S-R20-coverage</td>
 <td><code>CAAGAAAGACGARAAGACCCTGTC</code></td>
@@ -212,11 +323,43 @@ sea cucumbers</h1>
 <td><code>TAAGAAAGACGAGAAGACCCTRTC</code></td>
 <td><code>GAGGAGATAACGCTGTTATCCCTG</code></td>
 </tr>
+</tbody>
+</table>
+<p><img src="results/species_refine/S/base_matching_S-R20-coverage.svg"
+alt="S-R20-coverage base matching" /></p>
+<p><img src="results/species_refine/S/base_matching_S-R100-coverage.svg"
+alt="S-R100-coverage base matching" /></p>
+<p><img src="results/species_refine/S/base_matching_S-R100-exact.svg"
+alt="S-R100-exact base matching" /></p>
+<h2 id="m">M</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>F (5′→3′)</th>
+<th>R (5′→3′)</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>M-R20-coverage</td>
 <td><code>AAACTTCTATTHAYGTGAAGAA</code></td>
 <td><code>GTTATCCCTGCGGTAACT</code></td>
 </tr>
+</tbody>
+</table>
+<p><img src="results/species_refine/M/base_matching_M-R20-coverage.svg"
+alt="M-R20-coverage base matching" /></p>
+<h2 id="l">L</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>F (5′→3′)</th>
+<th>R (5′→3′)</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>L-R20-coverage</td>
 <td><code>AGACTTGTATGAAYGGCATWACMT</code></td>
@@ -227,6 +370,22 @@ sea cucumbers</h1>
 <td><code>AGACTTGTATGAAYGGCRAAACMT</code></td>
 <td><code>CGCTGTTATCCCTGCRGT</code></td>
 </tr>
+</tbody>
+</table>
+<p><img src="results/species_refine/L/base_matching_L-R20-coverage.svg"
+alt="L-R20-coverage base matching" /></p>
+<p><img src="results/species_refine/L/base_matching_L-R20-exact.svg"
+alt="L-R20-exact base matching" /></p>
+<h2 id="xl">XL</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>F (5′→3′)</th>
+<th>R (5′→3′)</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>XL-R20-coverage</td>
 <td><code>GGTAACGCCTGCCCARTGGA</code></td>
@@ -239,9 +398,15 @@ sea cucumbers</h1>
 </tr>
 </tbody>
 </table>
-<p><a href="results/species_refine/README.md">筛选结果与碱基匹配图</a> ·
-<a href="results/species_refine/by_order.csv">各目覆盖</a> · <a
-href="results/species_qc/README.md">参考序列整理</a> · <a
-href="COPYRIGHT.md">著作权</a></p>
+<p><img
+src="results/species_refine/XL/base_matching_XL-R20-coverage.svg"
+alt="XL-R20-coverage base matching" /></p>
+<p><img
+src="results/species_refine/XL/base_matching_XL-R100-coverage.svg"
+alt="XL-R100-coverage base matching" /></p>
+<h2 id="方法与数据">方法与数据</h2>
+<p><a href="results/species_qc/README.md">参考数据及物种去重</a> · <a
+href="results/species_refine/comparison.csv">筛选比较</a> · <a
+href="COPYRIGHT.md">著作权声明</a></p>
 </body>
 </html>
