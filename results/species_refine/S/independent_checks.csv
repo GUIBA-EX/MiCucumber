@@ -2,4 +2,3 @@ name,target_checks,background_set_checks,disagreements
 S-R20-coverage,348,4,0
 S-R100-coverage,348,4,0
 S-R100-exact,348,4,0
-S-baseline,348,4,0

@@ -10,7 +10,6 @@ Coverage allows ≤2 mismatches per primer and IUPAC-compatible final three base
 
 XS is one fixed degenerate assay at F 1042–1059 and R 1213–1232 on extracted ungapped AB525437.1 16S. Reference span is 191 bp, with predicted products 186–203 bp. Its bounded search around the homologous MiLily-XS region is described in [XS](XS.md).
 
-S–XL each retain an ordinary single pair, complementary ordinary A/B and one D pair. Within each length, all four variants share identical start/end coordinates. A/B represent separate-PCR unions; both contribute unique hits. [Complementarity evidence](AB_COMPLEMENTARITY.md). The current D selection uses the order-balanced search and policy in [D selection](D_OPTIMIZATION.md): SD 4/12, MD 128/2, LD 128/8 and XLD 2/24. S-original is retained as an unchanged control.
 
 ## Terminal and thermal rules
 
@@ -20,7 +19,6 @@ Primer3 uses 50 mM monovalent salt, 1.5 mM Mg and 0.6 mM dNTP, under 50 nM per c
 
 ## Background trade-off and verification
 
-Current D gates are broad WC≤3/GT≤2 each ≤100 and strict WC/GT each ≤20, with ≤128 variants per direction. Ordinary/A/B retain their ≤5 broad-background gates. S-original is exempt. XS is retained separately under relaxed background limits: strict WC/GT hits 20 each, broad WC≤3 hits 1396 and GT≤2 hits 26. It does not pass the original conservative S–XL gate. WC≤4 is a sensitivity analysis and exposes additional background risk.
 
 XS metrics use full original-FASTA scans in both orientations: targets require 70–500 bp products and ≥20 bp internal sequence; background internal spacing is 0–1000 bp. The existing S–XL pipeline retains its frozen product settings. Independent C++/Python full-sequence checks for XS agree on 702 target decisions and four strict/exact background sets; its broader background metrics are recalculated by C++. S–XL verification separately agrees on 11,200 target decisions and 32 background sets. Representative base plots supplement full-panel statistics.
 
