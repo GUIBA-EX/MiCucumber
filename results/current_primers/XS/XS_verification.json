@@ -1,0 +1,11 @@
+{
+  "methods": [
+    "C++ exhaustive raw-sequence paired scan",
+    "Python bit-parallel raw-sequence paired scan"
+  ],
+  "target_checks": 332,
+  "background_set_checks": 4,
+  "background_metric_checks": 5,
+  "disagreements": 0,
+  "background_disagreements": 0
+}

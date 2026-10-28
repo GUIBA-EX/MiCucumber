@@ -1,0 +1,8 @@
+name,order,labels,covered_labels,exact_labels
+MD,Apodida,5,1,0
+MD,Dendrochirotida,36,33,10
+MD,Elasipodida,22,7,0
+MD,Holothuriida,77,16,0
+MD,Molpadida,4,3,1
+MD,Persiculida,4,4,0
+MD,Synallactida,26,25,13

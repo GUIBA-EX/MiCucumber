@@ -4,88 +4,104 @@
 
 [English](README.md)
 
-MiCucumber 是面向海参类环境 DNA 的线粒体 16S rRNA 候选引物，覆盖 XS、S、M、L、XL 五个长度。每个长度保留最新筛选的单对候选；同一长度的正反向引物使用相同参考坐标。
-主要指标按**可评价物种等权**：每个物种选一条参考序列，计算预测覆盖与完全匹配比例。参考面板包含 174 个具名物种；数据库中的物种数量不能代表各目的全球丰富度。
-海参 XS、S–L、XL 分别有 166、174、152 个物种可评价；缺少结合区域的物种不计作漏检。
+线粒体 16S rRNA 环境 DNA 候选引物，包含 XS、S、M、L、XL。S–XL 各保留普通单对及简并单对 D，同长度共享参考坐标；XS 为固定单对。
+每个物种保留一条参考序列；主指标对可评价物种等权，各目单列。
+海参面板有 174 个物种；XS、S–L、XL 分别可评价 166、174、152 个物种。
 
-[参考面板 / Reference panel](results/species_qc/panel.csv) · [分类与覆盖 / Coverage by order](results/species_refine/by_order.csv) · [参考序列审核 / Reference curation](results/species_qc/README.md)
+[参考面板 / Reference panel](results/species_qc/panel.csv) · [参考序列审核 / Reference curation](results/species_qc/README.md)
 
 ![Binding positions](figures/amplicon_regions.en.svg)
 
-## 当前表现
+## 预测表现
 
-| Candidate | Species coverage | Exact | Strict WC / GT | WC≤3 / GT≤2 |
+| Name | Coverage | Exact | Strict WC / GT | WC≤3 / GT≤2 |
 |---|---:|---:|---:|---:|
-| XS-R100-coverage | 75/166 (45.18%) | 0/166 (0.00%) | 0 / 0 | 33 / 2 |
-| S-R20-coverage | 124/174 (71.26%) | 0/174 (0.00%) | 0 / 3 | 4 / 4 |
-| S-R100-coverage | 130/174 (74.71%) | 0/174 (0.00%) | 0 / 5 | 58 / 6 |
-| S-R100-exact | 124/174 (71.26%) | 1/174 (0.57%) | 0 / 5 | 54 / 6 |
-| M-R20-coverage | 89/174 (51.15%) | 24/174 (13.79%) | 0 / 15 | 3 / 15 |
-| L-R20-coverage | 85/174 (48.85%) | 1/174 (0.57%) | 0 / 0 | 15 / 19 |
-| L-R20-exact | 82/174 (47.13%) | 29/174 (16.67%) | 0 / 0 | 0 / 0 |
-| XL-R20-coverage | 43/152 (28.29%) | 3/152 (1.97%) | 0 / 10 | 1 / 13 |
-| XL-R100-coverage | 45/152 (29.61%) | 3/152 (1.97%) | 0 / 10 | 48 / 13 |
+| XS | 75/166 (45.18%) | 0/166 (0.00%) | 0 / 0 | 33 / 2 |
+| S | 110/174 (63.22%) | 5/174 (2.87%) | 1 / 3 | 4 / 3 |
+| SD | 130/174 (74.71%) | 0/174 (0.00%) | 0 / 5 | 58 / 6 |
+| M | 55/174 (31.61%) | 9/174 (5.17%) | 0 / 2 | 1 / 2 |
+| MD | 89/174 (51.15%) | 24/174 (13.79%) | 0 / 15 | 3 / 15 |
+| L | 65/174 (37.36%) | 13/174 (7.47%) | 0 / 0 | 0 / 0 |
+| LD | 82/174 (47.13%) | 29/174 (16.67%) | 0 / 0 | 0 / 0 |
+| XL | 23/152 (15.13%) | 1/152 (0.66%) | 0 / 0 | 1 / 1 |
+| XLD | 43/152 (28.29%) | 3/152 (1.97%) | 0 / 10 | 1 / 13 |
 
-预测覆盖要求每条引物最多 2 个错配且末端 3 个碱基兼容；完全匹配要求两条引物均无错配。严格 WC/GT 为上述规则下的非目标记录数；WC≤3 和 GT≤2 是不施加末端约束的宽松筛查。
+覆盖要求每条引物最多 2 个错配且末端 3 nt 兼容；完全匹配要求两条引物均无错配。严格 WC/GT 含末端约束；WC≤3 / GT≤2 为宽松非目标筛查。
 
-## 筛选与取舍
+D 引物每条最多 8 个具体变体，简并位点限于 3′ 半段。XS 是固定命名的特殊单对。计算预测仍需实验验证。
 
-新版候选每条引物简并度不超过 8，简并位点限于 3′ 半段；覆盖优先和完全匹配优先候选分别保留。指标为计算预测，需通过实验验证。
-
-[筛选结果与复核 / Screening and verification](results/species_refine/README.md) · [引物序列 / Primer sequences](sequences/primer_pairs.csv)
+SD 在当前面板上没有双引物完全匹配；LD 主要覆盖 Holothuriida（71/77），对 Dendrochirotida 为 8/36、Elasipodida 为 0/22。
 
 ## XS
 
 | Name | F (5′→3′) | R (5′→3′) |
 |---|---|---|
-| XS-R100-coverage | `AACTTTGGTTGGGGYAAC` | `TTTCCCCAATCCAACATCGA` |
+| XS | `AACTTTGGTTGGGGYAAC` | `TTTCCCCAATCCAACATCGA` |
 
-![XS-R100-coverage base matching](results/species_refine/XS/base_matching_XS-R100-coverage.svg)
+![XS base matching](results/current_primers/XS/base_matching_XS.svg)
+
+[XS · 各目](results/current_primers/XS/XS_by_order.csv) · [各物种](results/current_primers/XS/XS_by_taxon.csv)
 
 ## S
 
 | Name | F (5′→3′) | R (5′→3′) |
 |---|---|---|
-| S-R20-coverage | `CAAGAAAGACGARAAGACCCTGTC` | `GAGGAGATAACGCTGTTATCCCTG` |
-| S-R100-coverage | `TAAGAAAGACGARAAGACCCTRTC` | `GAGAAGATGACGCTGTTATCCCTR` |
-| S-R100-exact | `TAAGAAAGACGAGAAGACCCTRTC` | `GAGGAGATAACGCTGTTATCCCTG` |
+| S | `CCAGAAAGACGAGAAGACCCTGTC` | `GAGGAGATAACGCTGTTATCCCTG` |
+| SD | `TAAGAAAGACGARAAGACCCTRTC` | `GAGAAGATGACGCTGTTATCCCTR` |
 
-![S-R20-coverage base matching](results/species_refine/S/base_matching_S-R20-coverage.svg)
+![S base matching](results/current_primers/S/base_matching_S.svg)
 
-![S-R100-coverage base matching](results/species_refine/S/base_matching_S-R100-coverage.svg)
+![SD base matching](results/current_primers/S/base_matching_SD.svg)
 
-![S-R100-exact base matching](results/species_refine/S/base_matching_S-R100-exact.svg)
+[S · 各目](results/current_primers/S/S_by_order.csv) · [各物种](results/current_primers/S/S_by_taxon.csv)
+
+[SD · 各目](results/current_primers/S/SD_by_order.csv) · [各物种](results/current_primers/S/SD_by_taxon.csv)
 
 ## M
 
 | Name | F (5′→3′) | R (5′→3′) |
 |---|---|---|
-| M-R20-coverage | `AAACTTCTATTHAYGTGAAGAA` | `GTTATCCCTGCGGTAACT` |
+| M | `AAACTTCTATTAACGTGAAGAA` | `GTTATCCCTGCGGTAACT` |
+| MD | `AAACTTCTATTHAYGTGAAGAA` | `GTTATCCCTGCGGTAACT` |
 
-![M-R20-coverage base matching](results/species_refine/M/base_matching_M-R20-coverage.svg)
+![M base matching](results/current_primers/M/base_matching_M.svg)
+
+![MD base matching](results/current_primers/M/base_matching_MD.svg)
+
+[M · 各目](results/current_primers/M/M_by_order.csv) · [各物种](results/current_primers/M/M_by_taxon.csv)
+
+[MD · 各目](results/current_primers/M/MD_by_order.csv) · [各物种](results/current_primers/M/MD_by_taxon.csv)
 
 ## L
 
 | Name | F (5′→3′) | R (5′→3′) |
 |---|---|---|
-| L-R20-coverage | `AGACTTGTATGAAYGGCATWACMT` | `CGCTGTTATCCCTGCGGT` |
-| L-R20-exact | `AGACTTGTATGAAYGGCRAAACMT` | `CGCTGTTATCCCTGCRGT` |
+| L | `AGACTCGTATGAACGGCAAAACCT` | `CGCTGTTATCCCTGCGGT` |
+| LD | `AGACTTGTATGAAYGGCRAAACMT` | `CGCTGTTATCCCTGCRGT` |
 
-![L-R20-coverage base matching](results/species_refine/L/base_matching_L-R20-coverage.svg)
+![L base matching](results/current_primers/L/base_matching_L.svg)
 
-![L-R20-exact base matching](results/species_refine/L/base_matching_L-R20-exact.svg)
+![LD base matching](results/current_primers/L/base_matching_LD.svg)
+
+[L · 各目](results/current_primers/L/L_by_order.csv) · [各物种](results/current_primers/L/L_by_taxon.csv)
+
+[LD · 各目](results/current_primers/L/LD_by_order.csv) · [各物种](results/current_primers/L/LD_by_taxon.csv)
 
 ## XL
 
 | Name | F (5′→3′) | R (5′→3′) |
 |---|---|---|
-| XL-R20-coverage | `GGTAACGCCTGCCCARTGGA` | `GAGATTACGCTGTTATCCCTGCGGTAACTD` |
-| XL-R100-coverage | `GGTAACGCCTGCCCARTGRA` | `GAGATTACGCTGTTATCCCTGCGGTAACTD` |
+| XL | `GGTCACGCCTGCCCAGTGGA` | `AAGATAACGCTGTTATCCCTGCGGTAACTT` |
+| XLD | `GGTAACGCCTGCCCARTGGA` | `GAGATTACGCTGTTATCCCTGCGGTAACTD` |
 
-![XL-R20-coverage base matching](results/species_refine/XL/base_matching_XL-R20-coverage.svg)
+![XL base matching](results/current_primers/XL/base_matching_XL.svg)
 
-![XL-R100-coverage base matching](results/species_refine/XL/base_matching_XL-R100-coverage.svg)
+![XLD base matching](results/current_primers/XL/base_matching_XLD.svg)
 
-## 方法与数据
+[XL · 各目](results/current_primers/XL/XL_by_order.csv) · [各物种](results/current_primers/XL/XL_by_taxon.csv)
 
-[参考数据及物种去重](results/species_qc/README.md) · [筛选比较](results/species_refine/comparison.csv) · [著作权声明](COPYRIGHT.md)
+[XLD · 各目](results/current_primers/XL/XLD_by_order.csv) · [各物种](results/current_primers/XL/XLD_by_taxon.csv)
+
+[Methods / 方法](docs/METHODS.zh-CN.md)
+
+[Validation / 验证](docs/VALIDATION.md) · [Copyright / 著作权](COPYRIGHT.md)
