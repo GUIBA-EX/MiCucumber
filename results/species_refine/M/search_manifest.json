@@ -1,0 +1,18 @@
+{
+  "M_F": {
+    "observed_binding_templates": 97,
+    "concrete_seeds": 1405,
+    "generated_oligos": 20221,
+    "retained_oligos": 338,
+    "primer_length": 22,
+    "ambiguous_allowed_start_1based": 12
+  },
+  "M_R": {
+    "observed_binding_templates": 9,
+    "concrete_seeds": 97,
+    "generated_oligos": 1385,
+    "retained_oligos": 297,
+    "primer_length": 18,
+    "ambiguous_allowed_start_1based": 10
+  }
+}

@@ -6,6 +6,10 @@ The header illustrates seven extant sea-cucumber orders. Badges show extracted u
 
 Sea-cucumber mitochondrial 16S primers, taxonomic coverage and reproducible evidence. [中文](README.zh-CN.md)
 
+## Latest species-based screening
+
+The latest candidates and their comparison with the existing assays use one reference per identified species and weight evaluable species equally. See the [latest screening and base-matching figures](results/species_refine/README.md), [sequences](results/species_refine/sequences.csv), [per-order results](results/species_refine/by_order.csv), and [reference curation](results/species_qc/README.md). Existing assay sequences remain available for comparison; the legacy statistics below use the earlier reference panel.
+
 ## Current degenerate assays
 
 One degenerate pair is retained per length. XS keeps its fixed assay name; S–XL D pairs are newly selected for taxonomic breadth. Ordinary/A/B/D share identical F/R endpoints within each length.

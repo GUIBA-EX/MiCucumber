@@ -1,0 +1,175 @@
+accession,organism,order,closest_congener,other_accession,overlap,identity,review
+MH208310.1,Benthodytes marianensis,Elasipodida,Benthodytes gosarsi,MK617317.1,426,0.971831,0
+MK477991.1,Holothuria viridiaurantia,Holothuriida,Holothuria hilla,MN163001.1,365,0.887671,0
+OQ564504.1,Psychropotes verrucicaudatus,Elasipodida,Psychropotes longicauda,MK617312.1,437,0.967963,0
+LC333904.1,Notostichopus ludwigi,Synallactida,Notostichopus ellipes,LC333903.1,419,0.952267,0
+LC333903.1,Notostichopus ellipes,Synallactida,Notostichopus ludwigi,LC333904.1,419,0.952267,0
+EU822453.1,Astichopus multifidus,Synallactida,,,0,,not_evaluable
+AB525437.1,Apostichopus japonicus,Synallactida,Apostichopus parvimensis,KU168761.1,452,0.977876,0
+PV804723.1,Parastichopus tremulus,Synallactida,Parastichopus regalis,KM048323.1,439,0.931663,0
+AB525762.1,Parastichopus nigripunctatus,Synallactida,Parastichopus regalis,KM048323.1,435,0.841379,0
+JN207501.1,Holothuria surinamensis,Holothuriida,Holothuria imitans,JN207530.1,436,0.949541,0
+FN562582.1,Holothuria forskali,Holothuriida,Holothuria austrinabassa,EU220797.1,443,0.884876,0
+JN207555.1,Holothuria tubulosa,Holothuriida,Holothuria mammata,OP895172.1,433,0.993072,0
+JN207524.1,Holothuria glaberrima,Holothuriida,Holothuria poli,LR694133.1,428,0.918224,0
+JN207535.1,Holothuria arenicola,Holothuriida,Holothuria grisea,EU220800.1,428,0.904206,0
+EU220802.1,Holothuria mexicana,Holothuriida,Holothuria floridana,EU220803.1,437,0.993135,0
+JN207557.1,Holothuria lentiginosa,Holothuriida,Holothuria zacae,JN207516.1,433,0.983834,0
+PV998923.1,Holothuria atra,Holothuriida,Holothuria kefersteini,EU220801.1,434,0.894009,0
+KP257577.1,Holothuria scabra,Holothuriida,Holothuria lessoni,MF139544.1,419,0.97852,0
+EU220800.1,Holothuria grisea,Holothuriida,Holothuria kefersteini,EU220801.1,433,0.935335,0
+LR694133.1,Holothuria poli,Holothuriida,Holothuria lentiginosa,JN207557.1,431,0.939675,0
+EU220803.1,Holothuria floridana,Holothuriida,Holothuria mexicana,EU220802.1,437,0.993135,0
+LC853288.1,Holothuria impatiens,Holothuriida,Holothuria dura,LC853290.1,411,0.875912,0
+EU191979.1,Holothuria dakarensis,Holothuriida,Holothuria arguinensis,GU797647.1,368,0.970109,0
+MN793975.1,Actinopyga echinites,Holothuriida,Actinopyga spinea,EU822447.1,436,0.919725,0
+EU822441.1,Holothuria nobilis,Holothuriida,Holothuria whitmaei,PZ522129.1,451,0.95122,0
+MW218894.1,Actinopyga lecanora,Holothuriida,Actinopyga miliaris,EU822466.1,408,0.901961,0
+JN207497.1,Holothuria lubrica,Holothuriida,Holothuria theeli,JN207520.1,434,0.9447,0
+MZ463652.1,Thyonella gemmata,Dendrochirotida,,,0,,not_evaluable
+KX856771.1,Sclerodactyla briareus,Dendrochirotida,Sclerodactyla multipes,LC577887.1,430,0.818605,0
+KX856779.1,Echinocucumis hispida,Dendrochirotida,,,0,,not_evaluable
+KX856780.1,Afrocucumis africana,Dendrochirotida,,,0,,not_evaluable
+KX856775.1,Lissothuria nutriens,Dendrochirotida,,,0,,not_evaluable
+KX856766.1,Psolidium dorsipes,Dendrochirotida,,,0,,not_evaluable
+KX856765.1,Heterothyone alba,Dendrochirotida,,,0,,not_evaluable
+KX856770.1,Pachythyone rubra,Dendrochirotida,,,0,,not_evaluable
+MK617314.1,Laetmogone violacea,Elasipodida,Laetmogone wyvillethomsoni,PP835353.1,358,0.958101,0
+KX856731.1,Pannychia moseleyi,Elasipodida,,,0,,not_evaluable
+KX856744.1,Deima validum,Synallactida,,,0,,not_evaluable
+PQ010491.1,Scotoplanes clarki,Elasipodida,Scotoplanes hanseni,MZ563452.1,323,0.987616,0
+MK617313.1,Enypniastes eximia,Elasipodida,,,0,,not_evaluable
+KX856742.1,Paracaudina chilensis,Molpadida,,,0,,not_evaluable
+MW357261.1,Chiridota hydrothermica,Apodida,Chiridota laevis,U15596.1,416,0.692308,1
+LC704718.1,Euapta godeffroyi,Apodida,,,0,,not_evaluable
+PP853087.1,Protankyra bidentata,Apodida,Protankyra verrilli,ON018239.1,424,0.801887,0
+ON018239.1,Protankyra verrilli,Apodida,Protankyra bidentata,PP853087.1,424,0.801887,0
+MZ305459.1,Phyrella fragilis,Dendrochirotida,Phyrella mookiei,KX856777.1,442,0.925339,0
+MT108721.1,Colochirus quadrangularis,Dendrochirotida,Colochirus robustus,KX856781.1,439,0.906606,0
+KX856781.1,Colochirus robustus,Dendrochirotida,Colochirus quadrangularis,MT108721.1,439,0.906606,0
+LC577887.1,Sclerodactyla multipes,Dendrochirotida,Sclerodactyla briareus,KX856771.1,430,0.818605,0
+JX133923.1,Heterocucumis steineni,Dendrochirotida,,,0,,not_evaluable
+MW044622.1,Cercodemas anceps,Dendrochirotida,,,0,,not_evaluable
+KX856767.1,Abyssocucumis abyssorum,Dendrochirotida,,,0,,not_evaluable
+JX133920.1,Staurocucumis liouvillei,Dendrochirotida,,,0,,not_evaluable
+KX856743.1,Acaudina molpadioides,Molpadida,,,0,,not_evaluable
+MK617312.1,Psychropotes longicauda,Elasipodida,Psychropotes verrucicaudatus,OQ564504.1,437,0.967963,0
+MK617317.1,Benthodytes gosarsi,Elasipodida,Benthodytes marianensis,MH208310.1,426,0.971831,0
+KX856725.1,Peniagone diaphana,Elasipodida,Peniagone islandica,MZ563456.1,326,0.917178,0
+MZ563451.1,Peniagone azorica,Elasipodida,Peniagone islandica,MZ563456.1,326,0.996933,0
+MZ563456.1,Peniagone islandica,Elasipodida,Peniagone azorica,MZ563451.1,326,0.996933,0
+MZ563448.1,Peniagone purpurea,Elasipodida,Peniagone islandica,MZ563456.1,316,0.914557,0
+PP835353.1,Laetmogone wyvillethomsoni,Elasipodida,Laetmogone violacea,MK617314.1,358,0.958101,0
+KX856746.1,Orphnurgus glaber,Synallactida,,,0,,not_evaluable
+KX856745.1,Oneirophanta setigera,Synallactida,,,0,,not_evaluable
+AY338420.1,Labidodemas semperianum,Holothuriida,,,0,,not_evaluable
+FJ223866.1,Holothuria coluber,Holothuriida,Holothuria pardalis,FJ223861.1,401,0.900249,0
+FJ223861.1,Holothuria pardalis,Holothuriida,Holothuria coluber,FJ223866.1,401,0.900249,0
+PZ522129.1,Holothuria whitmaei,Holothuriida,Holothuria nobilis,EU822441.1,451,0.95122,0
+MZ305460.1,Holothuria fuscogilva,Holothuriida,Holothuria nobilis,EU822441.1,430,0.823256,0
+JN207552.1,Holothuria cinerascens,Holothuriida,Holothuria parva,KC905166.1,435,0.894253,0
+JN207530.1,Holothuria imitans,Holothuriida,Holothuria surinamensis,JN207501.1,436,0.949541,0
+KF479392.1,Holothuria flavomaculata,Holothuriida,Holothuria surinamensis,JN207501.1,433,0.91224,0
+JN207529.1,Holothuria languens,Holothuriida,Holothuria surinamensis,JN207501.1,433,0.942263,0
+JN543430.1,Holothuria difficilis,Holothuriida,Holothuria dura,LC853290.1,409,0.850856,0
+LC176883.1,Holothuria sanctori,Holothuriida,Holothuria difficilis,JN543430.1,445,0.838202,0
+EU220796.1,Holothuria excellens,Holothuriida,Holothuria difficilis,JN543430.1,430,0.839535,0
+KF479396.1,Holothuria notabilis,Holothuriida,Holothuria imitans,JN207530.1,435,0.866667,0
+MN816440.1,Holothuria spinifera,Holothuriida,Holothuria fuscocinerea,MN542416.1,444,0.997748,0
+JN207516.1,Holothuria zacae,Holothuriida,Holothuria lentiginosa,JN207557.1,433,0.983834,0
+JN207513.1,Holothuria portovallartensis,Holothuriida,Holothuria glaberrima,JN207524.1,432,0.916667,0
+KC905166.1,Holothuria parva,Holothuriida,Holothuria bacilla,KF479394.1,437,0.956522,0
+JN207514.1,Holothuria moebii,Holothuriida,Holothuria languens,JN207529.1,432,0.895833,0
+KF479394.1,Holothuria bacilla,Holothuriida,Holothuria mactanensis,JN207510.1,438,0.993151,0
+JN207510.1,Holothuria mactanensis,Holothuriida,Holothuria bacilla,KF479394.1,438,0.993151,0
+JN207520.1,Holothuria theeli,Holothuriida,Holothuria lubrica,JN207497.1,434,0.9447,0
+JN207508.1,Holothuria erinacea,Holothuriida,Holothuria parva,KC905166.1,433,0.928406,0
+GU797647.1,Holothuria arguinensis,Holothuriida,Holothuria dakarensis,EU191979.1,368,0.970109,0
+MT084774.1,Holothuria edulis,Holothuriida,Holothuria nigralutea,EU220805.1,439,0.997722,0
+EU220812.1,Holothuria signata,Holothuriida,Holothuria nigralutea,EU220805.1,439,0.954442,0
+LC853290.1,Holothuria dura,Holothuriida,Holothuria scabra,KP257577.1,416,0.889423,0
+LC853289.1,Holothuria inhabilis,Holothuriida,Holothuria poli,LR694133.1,433,0.877598,0
+MN163001.1,Holothuria hilla,Holothuriida,Holothuria viridiaurantia,MK477991.1,365,0.887671,0
+MK940237.1,Holothuria leucospilota,Holothuriida,Holothuria viridiaurantia,MK477991.1,362,0.875691,0
+MN542416.1,Holothuria fuscocinerea,Holothuriida,Holothuria spinifera,MN816440.1,444,0.997748,0
+MK328500.1,Holothuria pervicax,Holothuriida,Holothuria pluricuriosa,JN207559.1,442,0.9819,0
+OP895172.1,Holothuria mammata,Holothuriida,Holothuria tubulosa,JN207555.1,433,0.993072,0
+EU822440.1,Pearsonothuria graeffei,Holothuriida,,,0,,not_evaluable
+EU822447.1,Actinopyga spinea,Holothuriida,Actinopyga echinites,MN793975.1,436,0.919725,0
+EU220794.1,Actinopyga obesa,Holothuriida,Actinopyga palauensis,EU822432.1,434,0.988479,0
+EU822466.1,Actinopyga miliaris,Holothuriida,Actinopyga lecanora,MW218894.1,408,0.901961,0
+EU822432.1,Actinopyga palauensis,Holothuriida,Actinopyga caerulea,EU822430.1,433,0.990762,0
+EU822430.1,Actinopyga caerulea,Holothuriida,Actinopyga palauensis,EU822432.1,433,0.990762,0
+KX856787.1,Actinopyga mauritiana,Holothuriida,Actinopyga spinea,EU822447.1,435,0.896552,0
+KX856738.1,Gephyrothuria alcocki,Persiculida,,,0,,not_evaluable
+PP835372.1,Mesothuria carnosa,Holothuriida,Mesothuria oktaknemus,KX856734.1,361,0.927978,0
+KX856734.1,Mesothuria oktaknemus,Holothuriida,Mesothuria carnosa,PP835372.1,361,0.927978,0
+KX856737.1,Paroriza prouhoi,Persiculida,,,0,,not_evaluable
+MW548268.1,Thelenota ananas,Synallactida,Thelenota anax,PZ510019.1,449,0.886414,0
+EU822452.1,Thelenota rubralineata,Synallactida,Thelenota ananas,MW548268.1,449,0.884187,0
+PZ510019.1,Thelenota anax,Synallactida,Thelenota ananas,MW548268.1,449,0.886414,0
+MZ292734.1,Stichopus ocellatus,Synallactida,Stichopus hermanni,EU822450.1,455,1.0,0
+MW218897.1,Stichopus chloronotus,Synallactida,Stichopus naso,MZ469138.1,452,0.867257,0
+HQ000092.1,Stichopus horrens,Synallactida,Stichopus monotuberculatus,MN276189.1,456,0.95614,0
+MZ469138.1,Stichopus naso,Synallactida,Stichopus vastus,KX856754.1,452,0.913717,0
+MN276189.1,Stichopus monotuberculatus,Synallactida,Stichopus horrens,HQ000092.1,456,0.95614,0
+KX856754.1,Stichopus vastus,Synallactida,Stichopus ocellatus,MZ292734.1,455,0.98022,0
+MZ188901.1,Isostichopus badionotus,Synallactida,Isostichopus fuscus,PV946926.1,456,0.936404,0
+KM048323.1,Parastichopus regalis,Synallactida,Parastichopus tremulus,PV804723.1,439,0.931663,0
+KX856762.1,Paracucumis turricata,Dendrochirotida,,,0,,not_evaluable
+MZ305458.1,Neocucumis proteus,Dendrochirotida,,,0,,not_evaluable
+PQ010492.1,Protelpidia murrayi,Elasipodida,,,0,,not_evaluable
+KX856728.1,Amperima robusta,Elasipodida,,,0,,not_evaluable
+KX856736.1,Molpadiodemas involutus,Persiculida,Molpadiodemas villosus,DQ777098.1,445,0.991011,0
+DQ777098.1,Molpadiodemas villosus,Persiculida,Molpadiodemas involutus,KX856736.1,445,0.991011,0
+NC_061402.1,Bohadschia argus,Holothuriida,Bohadschia atra,JN543398.1,457,0.984683,0
+KX856773.1,Pentamera calcigera,Dendrochirotida,,,0,,not_evaluable
+AY182376.1,Cucumaria miniata,Dendrochirotida,Cucumaria frondosa,MZ321055.1,443,0.981941,0
+MZ321055.1,Cucumaria frondosa,Dendrochirotida,Cucumaria miniata,AY182376.1,443,0.981941,0
+HM543159.1,Psolus phantapus,Dendrochirotida,Psolus fabricii,U15597.1,440,0.959091,0
+U15597.1,Psolus fabricii,Dendrochirotida,Psolus phantapus,HM543159.1,440,0.959091,0
+KX856741.1,Caudina arenicola,Molpadida,,,0,,not_evaluable
+PV842034.1,Psolus eximius,Dendrochirotida,Psolus phantapus,HM543159.1,372,0.938172,0
+MT587564.1,Pseudocolochirus violaceus,Dendrochirotida,,,0,,not_evaluable
+NC_082941.1,Ocnus glacialis,Dendrochirotida,,,0,,not_evaluable
+JX133921.1,Cucumaria georgiana,Dendrochirotida,Cucumaria miniata,AY182376.1,431,0.795824,1
+MZ563445.1,Elpidia kurilensis,Elasipodida,,,0,,not_evaluable
+KX856785.1,Bohadschia koellikeri,Holothuriida,Bohadschia cousteaui,JN543401.1,454,0.944934,0
+AY574872.1,Bohadschia vitiensis,Holothuriida,Bohadschia marmorata,AY338417.1,455,0.997802,0
+AY338417.1,Bohadschia marmorata,Holothuriida,Bohadschia vitiensis,AY574872.1,455,0.997802,0
+JN543398.1,Bohadschia atra,Holothuriida,Bohadschia argus,NC_061402.1,457,0.984683,0
+JN543409.1,Bohadschia paradoxa,Holothuriida,Bohadschia cousteaui,JN543401.1,455,0.96044,0
+JN543401.1,Bohadschia cousteaui,Holothuriida,Bohadschia argus,NC_061402.1,455,0.978022,0
+EU856667.1,Australostichopus mollis,Synallactida,,,0,,not_evaluable
+JX133924.1,Cucamba psolidiformis,Dendrochirotida,,,0,,not_evaluable
+KX856760.1,Crucella scotiae,Dendrochirotida,,,0,,not_evaluable
+JN207498.1,Holothuria inornata,Holothuriida,Holothuria kefersteini,EU220801.1,439,0.990888,0
+JN207559.1,Holothuria pluricuriosa,Holothuriida,Holothuria pervicax,MK328500.1,442,0.9819,0
+AY338415.1,Isostichopus macroparentheses,Synallactida,Isostichopus badionotus,MZ188901.1,449,0.797327,1
+PV946926.1,Isostichopus fuscus,Synallactida,Isostichopus badionotus,MZ188901.1,456,0.936404,0
+KX856740.1,Heteromolpadia tridens,Molpadida,,,0,,not_evaluable
+KX856774.1,Aslia pygmaea,Dendrochirotida,,,0,,not_evaluable
+KX856778.1,Massinium magnum,Dendrochirotida,,,0,,not_evaluable
+MZ563452.1,Scotoplanes hanseni,Elasipodida,Scotoplanes clarki,PQ010491.1,323,0.987616,0
+KX856729.1,Rhipidothuria racovitzai,Elasipodida,,,0,,not_evaluable
+PQ299060.1,Pelagothuria natatrix,Elasipodida,,,0,,not_evaluable
+KX856733.1,Benthogone abstrusa,Elasipodida,,,0,,not_evaluable
+EU220805.1,Holothuria nigralutea,Holothuriida,Holothuria edulis,MT084774.1,439,0.997722,0
+OQ731944.1,Bohadschia ocellata,Holothuriida,Bohadschia vitiensis,AY574872.1,418,0.837321,0
+EU220797.1,Holothuria austrinabassa,Holothuriida,Holothuria forskali,FN562582.1,443,0.884876,0
+MF139544.1,Holothuria lessoni,Holothuriida,Holothuria scabra,KP257577.1,419,0.97852,0
+JN207496.1,Actinopyga agassizii,Holothuriida,Actinopyga miliaris,EU822466.1,410,0.87561,0
+KU168761.1,Apostichopus parvimensis,Synallactida,Apostichopus californicus,KP398509.1,454,0.995595,0
+KP398509.1,Apostichopus californicus,Synallactida,Apostichopus parvimensis,KU168761.1,454,0.995595,0
+EU822438.1,Athyonidium chilensis,Dendrochirotida,,,0,,not_evaluable
+JX133922.1,Echinopsolus charcoti,Dendrochirotida,,,0,,not_evaluable
+KX856768.1,Pentactella leonina,Dendrochirotida,,,0,,not_evaluable
+MN198190.1,Phyllophorella liuwutiensis,Dendrochirotida,,,0,,not_evaluable
+KX856777.1,Phyrella mookiei,Dendrochirotida,Phyrella fragilis,MZ305459.1,442,0.925339,0
+JN207548.1,Holothuria carere,Holothuriida,Holothuria lubrica,JN207497.1,434,0.921659,0
+MZ563446.1,Peniagone coccinea,Elasipodida,Peniagone islandica,MZ563456.1,326,0.981595,0
+MZ563447.1,Peniagone mus,Elasipodida,Peniagone islandica,MZ563456.1,326,0.990798,0
+KX856735.1,Zygothuria oxysclera,Holothuriida,,,0,,not_evaluable
+U15596.1,Chiridota laevis,Apodida,Chiridota hydrothermica,MW357261.1,416,0.692308,1
+EU220801.1,Holothuria kefersteini,Holothuriida,Holothuria inornata,JN207498.1,439,0.990888,0
+EU822450.1,Stichopus hermanni,Synallactida,Stichopus ocellatus,MZ292734.1,455,1.0,0

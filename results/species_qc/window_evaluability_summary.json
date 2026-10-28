@@ -1,0 +1,67 @@
+{
+  "XS": {
+    "evaluable_species": 166,
+    "unknown_species": 8,
+    "evaluable_by_order": {
+      "Elasipodida": 15,
+      "Holothuriida": 77,
+      "Synallactida": 25,
+      "Dendrochirotida": 36,
+      "Molpadida": 4,
+      "Apodida": 5,
+      "Persiculida": 4
+    }
+  },
+  "S": {
+    "evaluable_species": 174,
+    "unknown_species": 0,
+    "evaluable_by_order": {
+      "Elasipodida": 22,
+      "Holothuriida": 77,
+      "Synallactida": 26,
+      "Dendrochirotida": 36,
+      "Molpadida": 4,
+      "Apodida": 5,
+      "Persiculida": 4
+    }
+  },
+  "M": {
+    "evaluable_species": 174,
+    "unknown_species": 0,
+    "evaluable_by_order": {
+      "Elasipodida": 22,
+      "Holothuriida": 77,
+      "Synallactida": 26,
+      "Dendrochirotida": 36,
+      "Molpadida": 4,
+      "Apodida": 5,
+      "Persiculida": 4
+    }
+  },
+  "L": {
+    "evaluable_species": 174,
+    "unknown_species": 0,
+    "evaluable_by_order": {
+      "Elasipodida": 22,
+      "Holothuriida": 77,
+      "Synallactida": 26,
+      "Dendrochirotida": 36,
+      "Molpadida": 4,
+      "Apodida": 5,
+      "Persiculida": 4
+    }
+  },
+  "XL": {
+    "evaluable_species": 152,
+    "unknown_species": 22,
+    "evaluable_by_order": {
+      "Elasipodida": 13,
+      "Synallactida": 24,
+      "Holothuriida": 68,
+      "Dendrochirotida": 34,
+      "Molpadida": 4,
+      "Apodida": 5,
+      "Persiculida": 4
+    }
+  }
+}

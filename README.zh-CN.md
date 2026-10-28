@@ -6,6 +6,10 @@
 
 海参线粒体16S引物、分类群覆盖评估与复现资料。[English](README.md)
 
+## 最新物种参考面板筛选
+
+最新候选采用每物种一条参考序列，对可评价物种等权。详见[最新筛选及碱基匹配图](results/species_refine/README.md)、[引物序列](results/species_refine/sequences.csv)、[各目结果](results/species_refine/by_order.csv)和[参考序列整理](results/species_qc/README.md)。原引物保留供对照；下文原有统计使用此前的参考面板。
+
 ## 当前简并方案
 
 每个长度仅保留一对简并方案。XS沿用固定单对名称；S–XL的D已按目间覆盖重新选定，普通、A、B与D在各长度内的F/R起止坐标完全相同。

@@ -1,0 +1,25 @@
+{
+  "project": "MiCucumber",
+  "original_sequences": 1848,
+  "retained_species": 174,
+  "retained_by_order": {
+    "Elasipodida": 22,
+    "Holothuriida": 77,
+    "Synallactida": 26,
+    "Dendrochirotida": 36,
+    "Molpadida": 4,
+    "Apodida": 5,
+    "Persiculida": 4
+  },
+  "statuses": {
+    "excluded_duplicate_species": 1332,
+    "excluded_unidentified_or_non_species": 253,
+    "retained": 174,
+    "excluded_taxon_unresolved": 6,
+    "excluded_no_evaluable_primer_window": 83
+  },
+  "additional_alignment_anchor": false,
+  "reference": "AB525437.1",
+  "quality_policy": "full bound windows, ambiguous bases, aligned position extent and source consistency; no primer-match used for representative selection",
+  "taxonomy": "GBIF exact species/accepted usage; clearly marked NCBI fallback; unassigned higher-taxon records excluded from species panel; Neogymnocrinus and Holopus order cross-checked against NCBI and literature"
+}

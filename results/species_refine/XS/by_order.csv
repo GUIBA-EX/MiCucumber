@@ -1,0 +1,15 @@
+name,order,labels,covered_labels,exact_labels
+XS-R100-coverage,Apodida,5,0,0
+XS-R100-coverage,Dendrochirotida,36,22,0
+XS-R100-coverage,Elasipodida,15,11,0
+XS-R100-coverage,Holothuriida,77,13,0
+XS-R100-coverage,Molpadida,4,4,0
+XS-R100-coverage,Persiculida,4,0,0
+XS-R100-coverage,Synallactida,25,25,0
+XS-baseline,Apodida,5,1,0
+XS-baseline,Dendrochirotida,36,34,1
+XS-baseline,Elasipodida,15,12,2
+XS-baseline,Holothuriida,77,62,0
+XS-baseline,Molpadida,4,4,2
+XS-baseline,Persiculida,4,3,0
+XS-baseline,Synallactida,25,25,16
