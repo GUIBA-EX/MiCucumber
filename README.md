@@ -4,6 +4,8 @@
 
 [中文](README.zh-CN.md)
 
+Preprint: [PDF](publications/MiCucumber_preprint.pdf) · [Markdown](publications/MiCucumber_preprint.md) · [Provenance](publications/preprint_provenance.json)
+
 ## Abstract
 
 Candidate mitochondrial 16S rRNA primers for environmental DNA across XS, S, M, L and XL. Each S–XL window retains an ordinary pair and a degenerate D pair at shared reference coordinates; XS is a single retained pair.

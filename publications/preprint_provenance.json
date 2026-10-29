@@ -1,0 +1,28 @@
+{
+  "author": "Fei Xia",
+  "date": "2026-10-30",
+  "project": "MiCucumber",
+  "source_commit": "f03393ece74aea32dcb301b2dfd88210e055f591",
+  "common_species": 151,
+  "inputs": {
+    "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48",
+    "figures/current_region_coordinates.csv": "a94a75fd6dfabb270d0929905bcf2ed05640c527d4e4925c3b3dcc542694439e",
+    "results/current_primers/comparison.csv": "20c03762ea79111aa813b6c42fc04eaba594d0cc5606f44a23ffddb30d8b65df",
+    "results/computational_evaluation/results/barcode_collisions.csv": "85e89bee797d7141c00e340d2e43304a1e23bb688adebac044f0eed770bc6e1a",
+    "results/computational_evaluation/results/barcodes.csv": "4df0f209c919ccb329214c74ae876c897cfe37333ebb38037dede5b02c308783",
+    "results/computational_evaluation/results/by_order.csv": "6477aa1677e120d1f6312ebf0af6c1e8657faa962ab642b861ada4bc023436be",
+    "results/computational_evaluation/results/conflict_exclusion_sensitivity.csv": "403aa26c3bc55280e7f20e8a0f126915816a2877ff13f1025826c947a1d462ea",
+    "results/computational_evaluation/results/cv_folds.csv": "f790fe11c18c40c740cd9afae14f269382e823fbbba637085733339ceeb5de38",
+    "results/computational_evaluation/results/cv_predictions.csv": "1967eb4c0907db95647e00b4af8a93765e494cd5c9576f1d4f26e20680dba4aa",
+    "results/computational_evaluation/results/cv_summary.csv": "fe4962d8658d99cd6bf475e86da9136b9091d7160392c0a2c1ebeb7cf91c9dc7",
+    "results/computational_evaluation/results/nearest_neighbors.csv": "c56292986c9fdf2e8757ad0f89a766ffb48ca909e6e3958ea4c8075fa20c9aac",
+    "results/computational_evaluation/results/new_curated_XS_hits.csv": "175055510bba584fdbec28463a9b1dfd759e6b7452c68c422bf7e490721104ea",
+    "results/computational_evaluation/results/panel_comparison.csv": "aa97498aa132d7e3469305e17c7b796dc0545856e8991073cd681066f6cde663",
+    "results/computational_evaluation/results/resolution.csv": "4c7f45ea8daaa95c269798e114dcd0af127028cba014328e4acdb688df8d38a2",
+    "results/computational_evaluation/results/manifest.json": "94e0e5d708991cfbe1c67abee5428176e7e90ddee7104cf134e528b7cae5975c"
+  },
+  "artifacts": {
+    "MiCucumber_preprint.pdf": "5cccc07aa151374bd6ef9a0f97def86c43c949e542d0e93a6bdea3c2ee32d76a",
+    "MiCucumber_preprint.md": "b8bb9d3cfe6557995d8a7068ac62b56c84c117223c841e675fc5fa081642d47b"
+  }
+}

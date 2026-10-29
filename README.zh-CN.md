@@ -4,6 +4,8 @@
 
 [English](README.md)
 
+预印本: [PDF](publications/MiCucumber_preprint.pdf) · [Markdown](publications/MiCucumber_preprint.md) · [Provenance](publications/preprint_provenance.json)
+
 ## 摘要
 
 线粒体 16S rRNA 环境 DNA 候选引物，包含 XS、S、M、L、XL。S–XL 各保留普通单对及简并单对 D，同长度共享参考坐标；XS 为固定单对。
