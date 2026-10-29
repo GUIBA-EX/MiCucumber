@@ -12,6 +12,8 @@
 
 在清理后的面板中，SD 覆盖 130/174 个可评价物种，LD 覆盖 82/174 个，对应完全匹配数分别为 0 和 29。上述计算结果可用于后续实验评价。
 
+五窗口共同面板包含151个物种。本轮增加统一分母比较、去引物条码唯一性与最近邻分析，以及属级条件性选配测试。正式引物序列保持不变。
+
 ## 引言
 
 环境 DNA 宏条形码分析需要引物能够在目标类群中扩增具有分类信息的区域。MiCucumber 比较海参线粒体 16S 不同长度窗口的普通与简并引物，并结合参考序列代表性、引物匹配和非目标序列进行评价。 海洋环境 DNA 宏条形码研究显示，标记和参考数据库的选择会影响检测结果（Gold 等，2022）；MiFish 则提供了基于序列比对设计鱼类引物的实例（Miya 等，2015）。线粒体 16S 也曾用于分析海参组织样品的遗传变异（Hamamoto 等，2021）。
@@ -32,7 +34,15 @@
 
 ### 计算评价
 
-预测覆盖要求每条引物最多 2 个错配，且末端 3 nt 与模板按 IUPAC 规则兼容；完全匹配要求两个结合位点均无错配。S–XL 目标双引物扫描要求产物长 150–500 bp、双引物之间的内部长度至少 50 bp；非目标扫描允许内部距离 0–1,000 bp。严格 Watson–Crick（WC）和 G–T 模型保留末端约束；WC≤3 和 GT≤2 为不施加末端约束的宽松筛查。覆盖率和完全匹配率对可评价物种等权，并分别汇总各目结果；非目标数字为参考记录数。使用 C++ 与 Python 对同一参考数据的目标及严格非目标命中集合进行独立算法复核。结果为计算预测，仍需实验验证。
+预测覆盖要求每条引物最多 2 个错配，且末端 3 nt 与模板按 IUPAC 规则兼容；完全匹配要求两个结合位点均无错配。S–XL 目标双引物扫描要求产物长 150–500 bp、双引物之间的内部长度至少 50 bp；非目标扫描允许内部距离 0–1,000 bp。严格 Watson–Crick（WC）和 G–T 模型保留末端约束；WC≤3 和 GT≤2 为不施加末端约束的宽松筛查。覆盖率和完全匹配率对可评价物种等权，并分别汇总各目结果；非目标数字为参考记录数。使用 C++ 与 Python 对同一参考数据的目标及严格非目标命中集合进行独立算法复核。结果为计算兼容性预测。
+
+### 共同面板、条码分辨率与属级留出测试
+
+按accession对五个窗口取交集，得到151个共同物种，用于统一长度比较的分母；各窗口完整面板另报。条码提取自正反向结合窗口之间的同源比对列，去除空位并排除内部模糊碱基。唯一性相对于该窗口全部可用明确条码判断，包括共同面板以外的物种。单位代价Levenshtein编辑距离用于寻找最近的其他物种参考。这将引物兼容性与条码区分能力分开评价（Riaz等，2011）。
+
+属级五折选配使用种子20261030；完整代表序列相同的跨属记录绑定成同一分组，避免重复序列泄漏。每折只用训练物种生成F/R，不以正式引物或全数据候选池为种子。确定性贪心搜索每端最多使用24个符合要求的高频普通序列种子，简并限于3′半段，每条≤8种变体，固定寡核苷酸长度，允许在既定结合区间附近±5个比对列内搜索。留出物种使用完整原始序列成对扫描，沿用各窗口的产物长度和错配规则。窗口发现早于划分，且折内候选未执行正式热力学/背景筛查，因此属于条件性序列选配测试，不是完整设计流程的外部独立验证；折内序列不纳入正式引物集。
+
+[分析方法与复现](results/computational_evaluation/README.zh-CN.md)
 
 [详细方法](docs/METHODS.zh-CN.md) · [验证](docs/VALIDATION.md)
 
@@ -57,6 +67,56 @@
 D 引物每条最多 8 个具体变体，简并位点限于 3′ 半段。XS 是固定命名的特殊单对。计算预测仍需实验验证。
 
 SD 在当前面板上没有双引物完全匹配；LD 主要覆盖 Holothuriida（71/77），对 Dendrochirotida 为 8/36、Elasipodida 为 0/22。
+
+### 共同物种面板比较
+
+| Name | Coverage | Exact | Covered + identity-unique |
+| --- | --- | --- | --- |
+| XS | 69/151 | 0/151 | 63/151 |
+| S | 99/151 | 5/151 | 95/151 |
+| SD | 115/151 | 0/151 | 109/151 |
+| M | 51/151 | 9/151 | 47/151 |
+| MD | 79/151 | 22/151 | 73/151 |
+| L | 59/151 | 13/151 | 59/151 |
+| LD | 73/151 | 23/151 | 73/151 |
+| XL | 23/151 | 1/151 | 23/151 |
+| XLD | 43/151 | 3/151 | 43/151 |
+
+此表全部引物使用相同151物种分母。末列为同时匹配引物且内部条码不与该窗口其他可用物种重复的物种数。缺失窗口不计为漏检。
+
+![共同面板比较](results/computational_evaluation/figures/common_panel.svg)
+
+### 去除引物后的条码分辨率
+
+| Window | Unambiguous inserts | Identity-unique species | Insert length (bp) |
+| --- | --- | --- | --- |
+| XS | 166 | 154/166 | 148–165 |
+| S | 174 | 168/174 | 148–191 |
+| M | 174 | 168/174 | 175–218 |
+| L | 174 | 168/174 | 230–274 |
+| XL | 152 | 146/152 | 313–361 |
+
+长度不含两端引物。唯一性描述每种一条代表的参考集合，不等同于种群范围的分辨率或实测鉴定准确率。跨物种同条码列为待核查参考冲突，需结合来源与分类解释。共同面板的唯一性仍对该窗口全部可用条码判断，因此共同子集内不重复的序列也可能在子集外有竞争条码。
+
+![参考条码唯一性](results/computational_evaluation/figures/resolution.svg)
+
+[同条码冲突](results/computational_evaluation/results/barcode_collisions.csv) · [最近邻编辑距离](results/computational_evaluation/results/nearest_neighbors.csv) · [剔除冲突记录的敏感性结果](results/computational_evaluation/results/conflict_exclusion_sensitivity.csv)
+
+### 属级条件性留出测试
+
+| Window | Held-out coverage | Held-out exact |
+| --- | --- | --- |
+| XS | 156/166 (93.98%) | 64/166 (38.55%) |
+| S | 170/174 (97.70%) | 39/174 (22.41%) |
+| M | 85/174 (48.85%) | 23/174 (13.22%) |
+| L | 43/174 (24.71%) | 9/174 (5.17%) |
+| XL | 73/152 (48.03%) | 0/152 (0.00%) |
+
+此表汇总25组逐折训练选配候选的预测，不是正式普通/D引物的性能表。每个窗口内每种物种仅测试一次。折内候选未执行热力学与背景门槛，不能仅凭兼容性分数替换正式方案。逐折规模和逐物种预测均公开，以显示属间采样不均衡。
+
+![属级条件性留出](results/computational_evaluation/figures/holdout.svg)
+
+[逐折候选](results/computational_evaluation/results/cv_folds.csv) · [逐物种留出预测](results/computational_evaluation/results/cv_predictions.csv) · [共同/各自面板完整结果](results/computational_evaluation/results/panel_comparison.csv)
 
 ### XS
 
@@ -145,3 +205,5 @@ SD 在当前面板上没有双引物完全匹配；LD 主要覆盖 Holothuriida�
 4. Katoh, K., & Standley, D. M. (2013). MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Molecular Biology and Evolution*, 30, 772–780. https://doi.org/10.1093/molbev/mst010
 
 5. Untergasser, A., Cutcutache, I., Koressaar, T., et al. (2012). Primer3—new capabilities and interfaces. *Nucleic Acids Research*, 40, e115. https://doi.org/10.1093/nar/gks596
+
+6. Riaz, T., Shehzad, W., Viari, A., et al. (2011). ecoPrimers: inference of new DNA barcode markers from whole genome sequence analysis. *Nucleic Acids Research*, 39, e145. https://doi.org/10.1093/nar/gkr732

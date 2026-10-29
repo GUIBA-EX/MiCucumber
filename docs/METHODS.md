@@ -9,3 +9,8 @@ Coverage requires at most two mismatches per primer with IUPAC-compatible final 
 D oligos have at most eight concrete variants with ambiguity confined to the 3′ half. Terminal checks exclude terminal homotriplets and homopolymers longer than four bases and require GC in the final 3 nt. Primer3 evaluates 50 mM monovalent salt, 1.5 mM Mg²⁺, 0.6 mM dNTP, 50 nM per variant and 200 nM per direction; structure Tm must be below 55°C and the forward/reverse duplex-Tm midpoint difference at most 5°C. XS target scans use 70–500 bp products and at least 20 bp between primer sites.
 
 Independent C++ and Python scans evaluate the same reference data; they are algorithmic verification, not independent biological validation. Computational predictions require experimental validation.
+
+
+## Additional computational evaluation
+
+[Common panels, barcode discrimination and genus-blocked testing](../results/computational_evaluation/README.md). Released primer sequences remain unchanged.

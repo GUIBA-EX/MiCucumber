@@ -10,7 +10,9 @@ Candidate mitochondrial 16S rRNA primers for environmental DNA across XS, S, M, 
 One reference per species is retained. Primary metrics weight evaluable species equally, with order-level results reported separately.
 The sea-cucumber panel contains 174 species; XS, S–L and XL have 166, 174 and 152 evaluable species, respectively.
 
-On the curated panel, SD covers 130/174 evaluable species and LD covers 82/174; the corresponding exact matches are 0 and 29. These are in-silico estimates for subsequent experimental testing.
+On the curated panel, SD covers 130/174 evaluable species and LD covers 82/174; the corresponding exact matches are 0 and 29. These are computational compatibility estimates.
+
+The common five-window panel contains 151 species. This release adds equal-denominator comparisons, primer-free barcode identity and nearest-neighbor analysis, and genus-blocked conditional sequence-selection tests. Released primer sequences remain unchanged.
 
 ## Introduction
 
@@ -32,7 +34,15 @@ Ordinary and degenerate candidates were compared within fixed forward and revers
 
 ### In-silico evaluation
 
-Target coverage required at most two mismatches per primer and IUPAC-compatible final 3 nt; exact matching required zero mismatches at both sites. For S–XL, paired target scans required an amplicon of 150–500 bp and an internal distance of at least 50 bp. Background searches allowed an internal distance of 0–1,000 bp. Strict Watson–Crick (WC) and G–T models retained the terminal constraint; WC≤3 and GT≤2 were additional permissive screens without that constraint. Coverage and exact-match percentages weighted evaluable species equally, with results also summarized by order; non-target counts represent reference records. C++ and Python scans were compared on the same sequence data to verify target and strict background hit sets. These are computational predictions and require experimental validation.
+Target coverage required at most two mismatches per primer and IUPAC-compatible final 3 nt; exact matching required zero mismatches at both sites. For S–XL, paired target scans required an amplicon of 150–500 bp and an internal distance of at least 50 bp. Background searches allowed an internal distance of 0–1,000 bp. Strict Watson–Crick (WC) and G–T models retained the terminal constraint; WC≤3 and GT≤2 were additional permissive screens without that constraint. Coverage and exact-match percentages weighted evaluable species equally, with results also summarized by order; non-target counts represent reference records. C++ and Python scans were compared on the same sequence data to verify target and strict background hit sets. These results describe computational template compatibility.
+
+### Common panel, barcode discrimination and genus-blocked holdout
+
+The accession intersection of all five windows contains 151 species and provides a common denominator for length comparisons. Own-window results are reported separately. Primer-free inserts were extracted strictly between the aligned binding windows, with gaps removed and ambiguous inserts excluded. Identity uniqueness was assessed against every available unambiguous insert for that window, including species outside the common panel. Unit-cost Levenshtein distances identified each species' nearest other-species neighbor. These analyses separate primer compatibility from barcode discrimination (Riaz et al., 2011).
+
+Five-fold genus-blocked selection used seed 20261030. Genera sharing identical complete representative sequences were linked into one block, preventing duplicate-sequence leakage. Each fold selected new F/R sequences using training species only, without released primers or global candidate pools as seeds. A deterministic greedy search used up to 24 admissible frequent concrete seeds per side, 3′-half ambiguity, ≤8 variants per oligonucleotide and fixed oligonucleotide lengths, allowing local offsets within five alignment columns of the previously chosen binding intervals. Held-out species were assessed by raw-sequence paired scans with the existing window-specific size and mismatch rules. Region discovery preceded splitting, and fold candidates were not screened with the formal thermal/background gates; this is conditional sequence-selection testing rather than external validation of the complete design pipeline. Fold sequences are diagnostic candidates, not released replacement primers.
+
+[Analysis methods and reproduction](results/computational_evaluation/README.md)
 
 [Detailed methods](docs/METHODS.md) · [Validation](docs/VALIDATION.md)
 
@@ -54,9 +64,59 @@ Target coverage required at most two mismatches per primer and IUPAC-compatible 
 
 Coverage allows at most two mismatches per primer with compatible terminal 3 nt; exact matching requires zero mismatches in both primers. Strict WC/GT retain the terminal constraint; WC≤3 / GT≤2 are permissive background screens.
 
-Each D primer has at most eight variants, with ambiguity confined to its 3′ half. XS is a single pair with a fixed name. Computational predictions require experimental validation.
+Each D primer has at most eight variants, with ambiguity confined to its 3′ half. XS is a single pair with a fixed name. Results describe computational compatibility.
 
 SD has no exact paired matches in the current panel. LD primarily covers Holothuriida (71/77), with 8/36 Dendrochirotida and 0/22 Elasipodida.
+
+### Common-panel comparison
+
+| Name | Coverage | Exact | Covered + identity-unique |
+| --- | --- | --- | --- |
+| XS | 69/151 | 0/151 | 63/151 |
+| S | 99/151 | 5/151 | 95/151 |
+| SD | 115/151 | 0/151 | 109/151 |
+| M | 51/151 | 9/151 | 47/151 |
+| MD | 79/151 | 22/151 | 73/151 |
+| L | 59/151 | 13/151 | 59/151 |
+| LD | 73/151 | 23/151 | 73/151 |
+| XL | 23/151 | 1/151 | 23/151 |
+| XLD | 43/151 | 3/151 | 43/151 |
+
+All assay denominators in this table are 151. The last column counts species both covered by the primers and carrying an insert not shared by any other available species in the same window. Unavailable windows are excluded rather than counted as failures.
+
+![Common-panel comparison](results/computational_evaluation/figures/common_panel.svg)
+
+### Primer-free barcode discrimination
+
+| Window | Unambiguous inserts | Identity-unique species | Insert length (bp) |
+| --- | --- | --- | --- |
+| XS | 166 | 154/166 | 148–165 |
+| S | 174 | 168/174 | 148–191 |
+| M | 174 | 168/174 | 175–218 |
+| L | 174 | 168/174 | 230–274 |
+| XL | 152 | 146/152 | 313–361 |
+
+Insert lengths exclude both primers. Identity uniqueness describes one representative per species and does not establish population-wide resolution or identification accuracy. Cross-species identical inserts are reported as reference conflicts requiring source and taxonomic review. Common-panel uniqueness is assessed against the full available barcode set, so a sequence unique within the common subset can still have a competitor outside it.
+
+![Reference-barcode uniqueness](results/computational_evaluation/figures/resolution.svg)
+
+[Identical-barcode conflicts](results/computational_evaluation/results/barcode_collisions.csv) · [Nearest-neighbor edit distances](results/computational_evaluation/results/nearest_neighbors.csv) · [Conflict-exclusion sensitivity](results/computational_evaluation/results/conflict_exclusion_sensitivity.csv)
+
+### Genus-blocked conditional holdout
+
+| Window | Held-out coverage | Held-out exact |
+| --- | --- | --- |
+| XS | 156/166 (93.98%) | 64/166 (38.55%) |
+| S | 170/174 (97.70%) | 39/174 (22.41%) |
+| M | 85/174 (48.85%) | 23/174 (13.22%) |
+| L | 43/174 (24.71%) | 9/174 (5.17%) |
+| XL | 73/152 (48.03%) | 0/152 (0.00%) |
+
+These are pooled predictions from 25 fold-specific training-selected pairs, not performance estimates for the released ordinary/D primers. Each species is tested once within its window. Thermal and background gates were not applied to fold candidates, so compatibility scores alone cannot justify replacing released assays. Fold sizes and per-species predictions are supplied to expose unequal genus sampling.
+
+![Conditional genus-blocked holdout](results/computational_evaluation/figures/holdout.svg)
+
+[Fold candidates](results/computational_evaluation/results/cv_folds.csv) · [Held-out predictions](results/computational_evaluation/results/cv_predictions.csv) · [Own/common-panel tables](results/computational_evaluation/results/panel_comparison.csv)
 
 ### XS
 
@@ -145,3 +205,5 @@ Performance varies among windows and taxa. In the current reference panel, SD co
 4. Katoh, K., & Standley, D. M. (2013). MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Molecular Biology and Evolution*, 30, 772–780. https://doi.org/10.1093/molbev/mst010
 
 5. Untergasser, A., Cutcutache, I., Koressaar, T., et al. (2012). Primer3—new capabilities and interfaces. *Nucleic Acids Research*, 40, e115. https://doi.org/10.1093/nar/gks596
+
+6. Riaz, T., Shehzad, W., Viari, A., et al. (2011). ecoPrimers: inference of new DNA barcode markers from whole genome sequence analysis. *Nucleic Acids Research*, 39, e145. https://doi.org/10.1093/nar/gkr732
