@@ -194,6 +194,14 @@ SD 在当前面板上没有双引物完全匹配；LD 主要覆盖 Holothuriida�
 
 [Copyright / 著作权](COPYRIGHT.md)
 
+## 引用方式
+
+使用本项目引物、参考数据或分析代码时，请引用：
+
+Xia, F. (2026). *MiCucumber: candidate mitochondrial 16S rRNA primers for sea-cucumber environmental DNA metabarcoding*. GitHub. https://github.com/GUIBA-EX/MiCucumber
+
+[CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib)
+
 ## 参考文献
 
 1. Gold, Z., Wall, A. R., Schweizer, T. M., et al. (2022). A manager’s guide to using eDNA metabarcoding in marine ecosystems. *PeerJ*, 10, e14071. https://doi.org/10.7717/peerj.14071
