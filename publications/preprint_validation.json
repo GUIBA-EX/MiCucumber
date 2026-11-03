@@ -1,7 +1,7 @@
 {
   "project": "MiCucumber",
   "author": "Fei Xia",
-  "pages": 8,
+  "pages": 12,
   "checks": [
     "source input hashes",
     "artifact hashes",

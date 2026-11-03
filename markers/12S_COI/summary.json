@@ -1,0 +1,47 @@
+{
+  "source": "NCBI Nucleotide",
+  "date": "2026-11-04",
+  "unique_accessions": 6168,
+  "genes": {
+    "12S": {
+      "eligible": 344,
+      "representative_species": 90,
+      "genera": 56,
+      "reference": "AB525437.1",
+      "length_range": [
+        253,
+        926
+      ],
+      "source_orders": {
+        "Aspidochirotida": 38,
+        "Molpadida": 5,
+        "Elasipodida": 14,
+        "Dendrochirotida": 25,
+        "Apodida": 8
+      },
+      "alignment_columns": 1162,
+      "reverse_oriented": 13,
+      "background_representatives": 438
+    },
+    "COI": {
+      "eligible": 5681,
+      "representative_species": 357,
+      "genera": 110,
+      "reference": "AB525437.1",
+      "length_range": [
+        213,
+        1596
+      ],
+      "source_orders": {
+        "Aspidochirotida": 136,
+        "Dendrochirotida": 131,
+        "Elasipodida": 51,
+        "Molpadida": 9,
+        "Apodida": 30
+      },
+      "alignment_columns": 2093,
+      "reverse_oriented": 4,
+      "background_representatives": 1675
+    }
+  }
+}

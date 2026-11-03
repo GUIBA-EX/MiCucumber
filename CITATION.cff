@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this project's primers, data or analysis code, please cite this repository."
 type: software
-title: "MiCucumber: candidate mitochondrial 16S rRNA primers for sea-cucumber environmental DNA metabarcoding"
+title: "MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber"
 authors:
   - family-names: "Xia"
     given-names: "Fei"
-date-released: "2026-10-30"
+date-released: "2026-11-04"
 url: "https://github.com/GUIBA-EX/MiCucumber"
 repository-code: "https://github.com/GUIBA-EX/MiCucumber"

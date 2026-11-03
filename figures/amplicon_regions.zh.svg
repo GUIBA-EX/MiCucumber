@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-29T02:41:59.944187</dc:date>
+    <dc:date>2026-11-04T01:18:51.730725</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -42,16 +42,16 @@ z
      <g id="line2d_1">
       <path d="M 163.413743 313.2
 L 163.413743 96.048
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m34c8bb8f6a" d="M 0 0
+       <path id="mce6f23c73c" d="M 0 0
 L 0 3.5
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m34c8bb8f6a" x="163.413743" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mce6f23c73c" x="163.413743" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -124,11 +124,11 @@ z
      <g id="line2d_3">
       <path d="M 306.031785 313.2
 L 306.031785 96.048
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m34c8bb8f6a" x="306.031785" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mce6f23c73c" x="306.031785" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -171,11 +171,11 @@ z
      <g id="line2d_5">
       <path d="M 448.649827 313.2
 L 448.649827 96.048
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m34c8bb8f6a" x="448.649827" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mce6f23c73c" x="448.649827" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -203,11 +203,11 @@ z
      <g id="line2d_7">
       <path d="M 591.267869 313.2
 L 591.267869 96.048
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m34c8bb8f6a" x="591.267869" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mce6f23c73c" x="591.267869" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -224,11 +224,11 @@ L 591.267869 96.048
      <g id="line2d_9">
       <path d="M 733.885912 313.2
 L 733.885912 96.048
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m34c8bb8f6a" x="733.885912" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mce6f23c73c" x="733.885912" y="313.2" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -1521,27 +1521,27 @@ z
    <g id="line2d_16">
     <path d="M 532.794472 117.7632
 L 752.426257 117.7632
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #65a544; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #65a544; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_17">
     <path d="M 415.847678 161.1936
 L 671.133973 161.1936
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #087e8b; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #087e8b; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_18">
     <path d="M 365.931363 204.624
 L 659.72453 204.624
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #c28b29; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #c28b29; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_19">
     <path d="M 293.196161 248.0544
 L 665.429251 248.0544
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #386eaf; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #386eaf; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_20">
     <path d="M 163.413743 291.4848
 L 658.298349 291.4848
-" clip-path="url(#pec3b51e2b2)" style="fill: none; stroke: #8653a1; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p91cac827d9)" style="fill: none; stroke: #8653a1; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 86.4 313.2
@@ -2157,7 +2157,7 @@ z
    </g>
   </g>
   <g id="text_27">
-   <!-- MiCucumber · XS / S / M / L / XL -->
+   <!-- MiCucumber · 16S · XS / S / M / L / XL -->
    <g style="fill: #174c3b" transform="translate(51.84 25.056) scale(0.21 -0.21)">
     <defs>
      <path id="STHeitiTC-Medium-4b" d="M 640 5184
@@ -2337,78 +2337,37 @@ z
     <use xlink:href="#STHeitiTC-Medium-3" transform="translate(636.59375 0)"/>
     <use xlink:href="#STHeitiTC-Medium-c871" transform="translate(661.59375 0)"/>
     <use xlink:href="#STHeitiTC-Medium-3" transform="translate(761.59375 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3a" transform="translate(786.59375 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-35" transform="translate(847.5 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(897.296875 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(922.296875 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(966 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-35" transform="translate(991 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1040.796875 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1065.796875 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1109.5 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-2f" transform="translate(1134.5 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1226.40625 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1251.40625 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1295.109375 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-2e" transform="translate(1320.109375 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1366.3125 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1391.3125 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1435.015625 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3a" transform="translate(1460.015625 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-2e" transform="translate(1520.921875 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-13" transform="translate(786.59375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-18" transform="translate(842 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-35" transform="translate(897.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(947.203125 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-c871" transform="translate(972.203125 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1072.203125 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3a" transform="translate(1097.203125 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-35" transform="translate(1158.109375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1207.90625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1232.90625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1276.609375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-35" transform="translate(1301.609375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1351.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1376.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1420.109375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-2f" transform="translate(1445.109375 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1537.015625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1562.015625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1605.71875 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-2e" transform="translate(1630.71875 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1676.921875 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-11" transform="translate(1701.921875 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(1745.625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3a" transform="translate(1770.625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-2e" transform="translate(1831.53125 0)"/>
    </g>
   </g>
   <g id="text_28">
-   <!-- 五个参考设计窗口 -->
+   <!-- 5 个参考设计窗口 -->
    <g style="fill: #50655e" transform="translate(51.84 54.288) scale(0.11 -0.11)">
     <defs>
-     <path id="STHeitiTC-Medium-345" d="M 4378 2349
-L 3034 2349
-L 2701 307
-L 4269 307
-L 4378 2349
-z
-M 2701 4045
-Q 2106 4038 1648 4025
-Q 1190 4013 826 3981
-L 826 4621
-Q 1267 4589 1852 4573
-Q 2438 4557 3238 4557
-Q 4038 4557 4627 4569
-Q 5216 4582 5658 4621
-L 5658 3981
-Q 5229 4013 4656 4029
-Q 4083 4045 3309 4045
-L 3110 2835
-Q 3494 2835 3772 2838
-Q 4051 2842 4265 2845
-Q 4480 2848 4646 2857
-Q 4813 2867 4973 2880
-L 4845 314
-Q 5024 314 5197 317
-Q 5370 320 5523 326
-Q 5677 333 5798 342
-Q 5920 352 5997 365
-L 5997 -262
-Q 5882 -250 5722 -237
-Q 5562 -224 5254 -217
-Q 4947 -211 4444 -208
-Q 3942 -205 3149 -205
-Q 2022 -205 1350 -217
-Q 678 -230 397 -262
-L 397 365
-Q 896 307 2099 307
-L 2426 2342
-Q 2074 2336 1754 2320
-Q 1434 2304 1107 2285
-L 1107 2880
-Q 1242 2867 1379 2860
-Q 1517 2854 1680 2851
-Q 1843 2848 2044 2841
-Q 2246 2835 2509 2835
-L 2701 4045
-z
-" transform="scale(0.015625)"/>
      <path id="STHeitiTC-Medium-10b" d="M 3450 3142
 Q 3571 3142 3587 3107
 Q 3603 3072 3494 3008
@@ -2813,14 +2772,15 @@ L 1619 294
 z
 " transform="scale(0.015625)"/>
     </defs>
-    <use xlink:href="#STHeitiTC-Medium-345"/>
-    <use xlink:href="#STHeitiTC-Medium-10b" transform="translate(100 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-3e8" transform="translate(200 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-4a8" transform="translate(300 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-472" transform="translate(400 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-374" transform="translate(500 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-722" transform="translate(600 0)"/>
-    <use xlink:href="#STHeitiTC-Medium-2cd" transform="translate(700 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-17"/>
+    <use xlink:href="#STHeitiTC-Medium-3" transform="translate(55.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-10b" transform="translate(80.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-3e8" transform="translate(180.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-4a8" transform="translate(280.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-472" transform="translate(380.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-374" transform="translate(480.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-722" transform="translate(580.40625 0)"/>
+    <use xlink:href="#STHeitiTC-Medium-2cd" transform="translate(680.40625 0)"/>
    </g>
   </g>
   <g id="text_29">
@@ -6089,7 +6049,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pec3b51e2b2">
+  <clipPath id="p91cac827d9">
    <rect x="86.4" y="96.048" width="743.04" height="217.152"/>
   </clipPath>
  </defs>

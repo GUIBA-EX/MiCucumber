@@ -1,18 +1,22 @@
-# MiCucumber: in silico design and evaluation of mitochondrial 16S rRNA primers for environmental DNA metabarcoding of sea cucumbers
+# MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber
 
 Fei Xia
 
-Computational preprint · 30 October 2026
+Computational preprint · 4 November 2026
 
 ## Abstract
 
-Taxon-focused metabarcoding requires a balance between primer compatibility, marker discrimination and non-target susceptibility. We evaluated five mitochondrial 16S rRNA windows (XS, S, M, L and XL) for sea cucumbers using a curated frozen panel of 174 species. Each S–XL region contains an ordinary and low-degeneracy D pair at shared reference endpoints. XS is a retained single pair. On the common 151-species panel, the largest predicted coverage was 115/151 (SD), and the largest number of exact paired matches was 23/151 (LD). We extracted primer-free homologous inserts, recorded interspecific identity conflicts and nearest-neighbor edit distances, and performed five-fold genus-blocked sequence selection. Each fold used training species only, with identical complete representatives bound to the same genus block. Region discovery preceded splitting, so the test estimates sequence-selection generalization conditional on the chosen regions. Fold candidates were not screened against formal thermal and background gates and do not replace released assays. The resulting data resource separates coverage, exact compatibility and reference-barcode discrimination while exposing lineage and reference-data limitations.
+Taxon-focused metabarcoding requires a balance between primer compatibility, marker discrimination and non-target susceptibility. We screened mitochondrial 12S and COI independently and evaluated five mitochondrial 16S rRNA windows (XS, S, M, L and XL) for sea cucumbers using a curated frozen panel of 174 species. Each S–XL region contains an ordinary and low-degeneracy D pair at shared reference endpoints. XS is a retained single pair. On the common 151-species panel, the largest predicted coverage was 115/151 (SD), and the largest number of exact paired matches was 23/151 (LD). We extracted primer-free homologous inserts, recorded interspecific identity conflicts and nearest-neighbor edit distances, and performed five-fold genus-blocked sequence selection. Each fold used training species only, with identical complete representatives bound to the same genus block. Region discovery preceded splitting, so the test estimates sequence-selection generalization conditional on the chosen regions. Fold candidates were not screened against formal thermal and background gates and do not replace released assays. The resulting data resource separates coverage, exact compatibility and reference-barcode discrimination while exposing lineage and reference-data limitations.
+
+The 12S MD candidate covered 28/90 species with four exact matches. COI LD covered 103/283 with eleven exact matches. Background counts and reference completeness are reported per marker.
 
 Keywords: Holothuroidea; environmental DNA; mitochondrial 16S; primer degeneracy; barcode discrimination; grouped holdout
 
 ## 中文摘要
 
 本研究对MiCucumber五个线粒体16S窗口进行纯计算评价，使用每个物种一条代表的冻结参考面板。共同面板包含151个物种，覆盖最多的方案为SD（115/151），双端完全匹配最多的方案为LD（23/151）。分析区分引物兼容性、去引物内部条码唯一性及属级条件性留出表现。折内候选不作为正式替换方案，跨物种相同条码保留来源待核查。
+
+补充的12S与COI各自建库。12S MD覆盖28/90种，其中4种完全匹配；COI LD覆盖103/283种，其中11种完全匹配。以下共同面板和属级留出结果专属16S。
 
 ## 1. Introduction
 
@@ -46,7 +50,7 @@ Within S–XL, ordinary and D sequences share reference start and end positions.
 
 Coverage requires no more than two mismatches per primer and IUPAC compatibility in each terminal three nucleotides. Exact matching requires zero mismatches at both binding sites. S–XL paired target scans allow total products of 150–500 bp with at least 50 bp between primers. XS scans allow 70–500 bp products with at least 20 bp between primers. Both sequence orientations are considered. Species contribute equally; per-order counts accompany aggregate values.
 
-Released background screens allow an internal spacing of 0–1,000 bp. Strict WC and G–T models retain the terminal constraint; permissive WC≤3 and GT≤2 screens omit it. These counts describe reference records, not experimental amplification frequencies. C++ and Python implementations were previously compared on the same frozen data to check target and strict-background hit sets. Such implementation agreement is distinct from held-out reference evaluation.
+Released background screens allow an internal spacing of 0–1,000 bp. Strict screens retain the terminal constraint for both models. Permissive screens allow up to three mismatches per primer with Watson–Crick pairing alone and up to two when guanine–thymine pairing is also allowed. These counts describe reference records, not experimental amplification frequencies. C++ and Python implementations were previously compared on the same frozen data to check target and strict-background hit sets. Such implementation agreement is distinct from held-out reference evaluation.
 
 ### 2.4 Primer-free barcode discrimination
 
@@ -60,7 +64,7 @@ For each window, genera are sorted and linked when they share an identical compl
 
 Within each training fold, observed local sequences within five alignment columns of the frozen binding intervals supply candidates of fixed oligonucleotide lengths. Up to 24 frequent admissible concrete seeds per side enter deterministic greedy growth with at most three ambiguity-expansion steps. Ambiguity is confined to the 3′ half, degeneracy is limited to eight variants per oligonucleotide, a concrete G/C is required within the final three positions, and literal five-nucleotide homopolymers are excluded. Training paired coverage is maximized, followed by exact matching and lower summed degeneracy, with lexical tie-breaking. Released primer sequences and global candidate pools do not seed this training step.
 
-Held-out species are scored by full raw-sequence paired scans with the same target size, mismatch and terminal rules. Each available species is tested once per window. Fold candidate construction failure would yield zero detections for that fold and empty sequence fields. This diagnostic selector does not repeat the original thermal or background selection gates. Region discovery and source-panel curation preceded splitting; accordingly, the test is conditional on predetermined regions and does not externally validate complete window discovery. Its fold sequences are not replacement recommendations. 
+Held-out species are scored by full raw-sequence paired scans with the same target size, mismatch and terminal rules. Each available species is tested once per window. Fold candidate construction failure would yield zero detections for that fold and empty sequence fields. This diagnostic selector does not repeat the original thermal or background selection gates. Region discovery and source-panel curation preceded splitting; accordingly, the test is conditional on predetermined regions and does not externally validate complete window discovery. Its fold sequences are not replacement recommendations.
 
 ### 2.6 Data integrity and reproducibility
 
@@ -70,9 +74,9 @@ The frozen computational bundle contains input hashes, source sequences, window 
 
 ### 3.1 Released assays on their available panels
 
-Table 2. Frozen own-panel target results and inherited strict background counts. 
+Table 2. Frozen own-panel target results and inherited strict background counts. ¹ Counts give Watson–Crick pairing alone first, followed by the model that also allows guanine–thymine pairing.
 
-| Assay | Own-panel N | Covered | Exact | Strict WC / GT |
+| Assay | Own-panel N | Covered | Exact | Strict background hits¹ |
 | --- | --- | --- | --- | --- |
 | XS | 166 | 75 | 0 | 0 / 0 |
 | S | 174 | 110 | 5 | 1 / 3 |
@@ -138,6 +142,41 @@ Each row pools five folds. Fold membership, genus counts, candidate sequences an
 
 ![Figure 3. Conditional genus-blocked test predictions. Fold-specific training sequences differ from the released ordinary/D assays.](figures/holdout.png)
 
+### 3.5 Independent 12S and COI screens
+
+The search of NCBI Nucleotide retrieved 6,168 distinct accessions across both loci. Annotated features were extracted in strand orientation and screened for length, ambiguity and nuclear or pseudogene annotations. Independent design panels contained 90 named species for 12S and 357 for COI. Candidate binding windows were evaluated on each gene's own alignment. Ordinary primers were chosen from the concrete variants of each retained D pair at the same reference endpoints. Each oligonucleotide has degeneracy ≤8. Within each size class, 12S prioritized exact matches among candidates covering at least 80% of the best eligible coverage count. COI maximized coverage among candidates retaining at least 95% of the largest evaluable panel. Raw paired scans allowed 100–500 bp target products with an internal insert of at least 50 bp. The near-relative background consisted of 438 species for 12S and 1,675 for COI. Thresholds were ≤10 strict hits per model and ≤50 relaxed hits per model. Independent seed-and-extend matching verified 46,730 record/model comparisons across 20 primer pairs.
+
+Table 6. Predicted compatibility and strict background-species counts (¹ Watson–Crick pairing alone / also allowing guanine–thymine pairing) in the independent 12S and COI panels.
+
+| Gene | Assay | Span bp | Covered/N | Exact/N | Strict background hits¹ |
+| --- | --- | --- | --- | --- | --- |
+| 12S | XS | 176 | 15/74 | 0/74 | 0/0 |
+| 12S | XSD | 176 | 21/74 | 9/74 | 0/0 |
+| 12S | S | 207 | 13/88 | 2/88 | 0/0 |
+| 12S | SD | 207 | 27/88 | 7/88 | 0/0 |
+| 12S | M | 228 | 8/90 | 0/90 | 0/0 |
+| 12S | MD | 228 | 28/90 | 4/90 | 0/5 |
+| 12S | L | 346 | 14/83 | 1/83 | 0/0 |
+| 12S | LD | 346 | 19/83 | 12/83 | 0/0 |
+| 12S | XL | 354 | 31/53 | 5/53 | 0/1 |
+| 12S | XLD | 354 | 33/53 | 7/53 | 0/1 |
+| COI | XS | 165 | 11/57 | 1/57 | 0/0 |
+| COI | XSD | 165 | 41/57 | 1/57 | 2/4 |
+| COI | S | 193 | 10/55 | 0/55 | 0/0 |
+| COI | SD | 193 | 30/55 | 0/55 | 0/0 |
+| COI | M | 218 | 9/55 | 0/55 | 0/0 |
+| COI | MD | 218 | 25/55 | 3/55 | 0/0 |
+| COI | L | 293 | 30/283 | 0/283 | 0/0 |
+| COI | LD | 293 | 103/283 | 11/283 | 0/2 |
+| COI | XL | 415 | 11/62 | 0/62 | 0/0 |
+| COI | XLD | 415 | 37/62 | 1/62 | 0/2 |
+
+The 12S M window gains coverage from 8 to 28 compatible species and exact matching from zero to four. In COI, the L window has 283 evaluable species compared with 55–57 for XS through M. Degeneracy raises L coverage from 30 to 103 species and exact matching from zero to eleven. Thus access to more complete reference windows and primer compatibility both contribute to the larger count. These values still leave many evaluable species without compatible primer sites. The common-panel discrimination and genus-blocked sequence-selection tests in Sections 3.2–3.4 were performed for 16S.
+
+![Figure 4a. Ordinary and degenerate primer windows on the 12S reference.](figures/12S_positions.png)
+
+![Figure 4b. Ordinary and degenerate primer windows on the COI reference.](figures/COI_positions.png)
+
 ## 4. Discussion
 
 The analysis separates three questions: whether a primer pair matches the target reference, whether the paired sites match exactly, and whether the internal sequence distinguishes that reference from other named species. On the common 151-species panel, the largest predicted coverage was 115/151 (SD), and the largest number of exact paired matches was 23/151 (LD). These properties need not favor the same design. Coverage improvements from controlled degeneracy should therefore be interpreted alongside exact matches, lineage changes and non-target susceptibility rather than a single aggregate percentage.
@@ -158,7 +197,7 @@ All primer sequences, frozen reference inputs, analyses and this preprint are av
 
 ## Computational assistance
 
-OpenAI Codex assisted with analysis code, manuscript organization and PDF production. Fei Xia is the sole named author. 
+OpenAI Codex assisted with analysis code, manuscript organization and PDF production. Fei Xia is the sole named author.
 
 ## Appendix. Released primer sequences
 
@@ -175,6 +214,31 @@ All sequences are written 5′ to 3′. Deg F/R gives the number of concrete var
 | LD | AGACTTGTATGAAYGGCRAAACMT | CGCTGTTATCCCTGCRGT | 8/2 |
 | XL | GGTCACGCCTGCCCAGTGGA | AAGATAACGCTGTTATCCCTGCGGTAACTT | 1/1 |
 | XLD | GGTAACGCCTGCCCARTGGA | GAGATTACGCTGTTATCCCTGCGGTAACTD | 2/3 |
+
+### Additional mitochondrial primer sequences
+
+| Assay | F, 5′–3′ | R, 5′–3′ | Deg F/R |
+| --- | --- | --- | --- |
+| 12S XS | AGATACCCTACTATACCCTTC | CGACGATGGTATACAAACTG | 1/1 |
+| 12S XSD | AGATACCCTACTATACYYTTC | CGACGATGGTATACWRRCTG | 4/8 |
+| 12S S | AACACCAGAGCAGTACAGCT | CTGCACCTTGATCTGACGT | 1/1 |
+| 12S SD | AACACCAGAGYAGTACARCY | CTGCACCTTGATCTGRHGT | 8/6 |
+| 12S M | AGGAGCTTGTCATTAAATTGAT | TTACTATCGAATCCTCTTTCAT | 1/1 |
+| 12S MD | AGGAGCTTGTCATYRAATYGAT | TTACTATCGAATCCTCTTTCWD | 8/6 |
+| 12S L | AACACCAGAGCAGTACGGCT | GCGATGTGTGCGCATTCTAGAG | 1/1 |
+| 12S LD | AACACCAGAGYAGTACRGYT | GCGATGTGTGCRYATTYTAGAG | 8/8 |
+| 12S XL | GGTGGTTAATAACGTGCCAG | CGACGATGGTATACAGGCTG | 1/1 |
+| 12S XLD | GGTGGTTAATAACGTGCCAG | CGACGATGGTATACWRRCTG | 1/8 |
+| COI XS | ACTATAGAGGAAAGCAAGAA | GTACTGCTATAATCATTGT | 1/1 |
+| COI XSD | ACTATAGAGGWAAGMAAGAR | GTACTGCTATWATCATDGT | 8/6 |
+| COI S | GAATGGTATACGCTATGGT | GTTTCTCAGACTAGCTTTG | 1/1 |
+| COI SD | GAATGGTATAYGCWATGRT | GTTTCTCAGAYTARCTTKG | 8/8 |
+| COI M | CACTATAGAGGAAAGCAAGAACC | AACTTTGATCCTTGTAGGGT | 1/1 |
+| COI MD | CACTATAGAGGWAAGMAAGARCC | AACTTTGATCCTTGTARNGT | 8/8 |
+| COI L | AAAATGCGAACCCCAGGAGTAAC | GGTTCTTGCTTTCCTCTGTAGTG | 1/1 |
+| COI LD | AAAATGCGAACYCCAGGARTWAC | GGTTCTTGCTTWCCTCTRTARTG | 8/8 |
+| COI XL | ATGAACCTAAACCGCTGAT | CGTGGGCTATATTTCTTGA | 1/1 |
+| COI XLD | ATGAACCTAAAMCGYTGAY | CGTGGGCTATRTTTCTNGA | 8/8 |
 
 ## References
 

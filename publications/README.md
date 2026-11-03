@@ -1,13 +1,13 @@
 # MiCucumber computational preprint
 
-Author / 作者: **Fei Xia**. Updated / 更新: **30 October 2026**.
+Author / 作者: **Fei Xia**. Updated / 更新: **4 November 2026**.
 
 - [PDF](MiCucumber_preprint.pdf)
 - [Editable Markdown / Markdown稿](MiCucumber_preprint.md)
 - [Input provenance / 输入来源与校验](preprint_provenance.json)
 - [Validation / 验证](preprint_validation.json)
 
-The manuscript uses the latest frozen computational evaluation. Released primer sequences are unchanged. Genus-blocked fold candidates are diagnostic sequences, not replacement recommendations.
+The manuscript covers mitochondrial 16S, 12S and COI on independent reference panels. Released primer sequences are unchanged. Genus-blocked fold candidates are diagnostic sequences, not replacement recommendations.
 稿件使用最新版冻结计算结果，正式引物不变。属级折内候选为诊断序列，不作为替换推荐。
 
 From the repository root / 在仓库根目录运行：

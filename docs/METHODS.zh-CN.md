@@ -14,3 +14,13 @@ C++ 与 Python 独立扫描使用同一参考数据，属于算法复核，不�
 ## 补充计算评价
 
 [共同面板、条码区分能力与属级分组测试](../results/computational_evaluation/README.zh-CN.md)。正式引物序列不变。
+
+
+### 12S 与 COI
+
+[独立参考面板和成对扫描复核](../markers/12S_COI/README.md)。上述章节描述 16S 评价。
+
+
+### 12S 与 COI
+
+上文的共同面板和属级留出测试仅适用于 16S。[独立基因面板与复核方法](../markers/12S_COI/README.md)。

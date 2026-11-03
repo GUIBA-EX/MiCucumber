@@ -14,3 +14,13 @@ Independent C++ and Python scans evaluate the same reference data; they are algo
 ## Additional computational evaluation
 
 [Common panels, barcode discrimination and genus-blocked testing](../results/computational_evaluation/README.md). Released primer sequences remain unchanged.
+
+
+### 12S and COI
+
+[Independent reference panels and raw paired-scan verification](../markers/12S_COI/README.md). The preceding sections describe the 16S analysis.
+
+
+### 12S and COI
+
+The common-panel and genus holdout analyses above apply to 16S. See the [independent marker panels and verification method](../markers/12S_COI/README.md).

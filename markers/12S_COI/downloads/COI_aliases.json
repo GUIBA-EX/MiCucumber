@@ -1,0 +1,7 @@
+{
+  "query": "Holothuroidea[Organism] AND (COX1[Title] OR COXI[Title] OR MT-CO1[Title] OR MT-CO1[Gene] OR cytochrome c oxidase subunit 1[Title] OR cytochrome c oxidase subunit one[Title] OR cytochrome oxidase subunit one[Title])",
+  "count": 1842,
+  "additional_uids": [
+    "240848516"
+  ]
+}

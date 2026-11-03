@@ -1,0 +1,5 @@
+{
+  "query": "Holothuroidea[Organism] AND (rrnS[Title] OR s-rRNA[Title] OR mitochondrial small subunit[Title] OR mitochondrial genome[Title])",
+  "count": 2,
+  "additional_uids": []
+}

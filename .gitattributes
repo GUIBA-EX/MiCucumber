@@ -1,1 +1,4 @@
 *.pdf binary
+
+# Keep empty terminal fields in tab-separated scan outputs.
+markers/**/*.tsv whitespace=-blank-at-eol
