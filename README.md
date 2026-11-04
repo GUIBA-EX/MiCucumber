@@ -1,6 +1,8 @@
 ![MiCucumber](figures/MiCucumber_overview.png)
 
-# MiCucumber
+# MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber
+
+Preprint v1.0 · 4 November 2026 · Not peer reviewed. [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.0) · [Citation](CITATION.cff)
 
 [中文](README.zh-CN.md)
 

@@ -1,22 +1,17 @@
-# MiCucumber computational preprint
+# MiCucumber preprint
 
-Author / 作者: **Fei Xia**. Updated / 更新: **4 November 2026**.
+Author: Fei Xia. Computational preprint; not peer reviewed.
 
-- [PDF](MiCucumber_preprint.pdf)
-- [Editable Markdown / Markdown稿](MiCucumber_preprint.md)
-- [Input provenance / 输入来源与校验](preprint_provenance.json)
-- [Validation / 验证](preprint_validation.json)
+[PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases)
 
-The manuscript covers mitochondrial 16S, 12S and COI on independent reference panels. Released primer sequences are unchanged. Genus-blocked fold candidates are diagnostic sequences, not replacement recommendations.
-稿件使用最新版冻结计算结果，正式引物不变。属级折内候选为诊断序列，不作为替换推荐。
+## Reproduction
 
-From the repository root / 在仓库根目录运行：
+Install Pandoc, Google Chrome or Chromium, Python 3 and Poppler. Set `CHROME` to the browser executable when needed. From the repository root:
 
 ```sh
-python3 -m pip install -r publications/requirements-preprint.txt
 python3 publications/build_preprint.py
 python3 publications/check_preprint.py
+python3 scripts/preprint_integrity.py
 ```
 
-Figures are regenerated from committed result tables. The source-data commit and input hashes are recorded in the provenance file. Repository upload is distinct from submission to a preprint server.
-图表由已提交结果表重绘，来源提交与输入哈希见provenance。仓库发布不代表已向预印本平台投稿。
+Pushes to `main` check for changes in research inputs and publication sources. A changed input triggers PDF rendering, sequence and result-table checks, checksum verification, a version commit and an immutable tagged GitHub Release containing the PDF, primer FASTA and checksums. Failed checks stop publication. Manuscript interpretations must be updated with the underlying results; the workflow does not generate scientific conclusions.

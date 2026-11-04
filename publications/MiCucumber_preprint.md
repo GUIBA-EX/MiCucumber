@@ -2,7 +2,7 @@
 
 Fei Xia
 
-Computational preprint · 4 November 2026
+Preprint v1.0 · 4 November 2026 · Not peer reviewed
 
 ## Abstract
 
@@ -11,12 +11,6 @@ Taxon-focused metabarcoding requires a balance between primer compatibility, mar
 The 12S MD candidate covered 28/90 species with four exact matches. COI LD covered 103/283 with eleven exact matches. Background counts and reference completeness are reported per marker.
 
 Keywords: Holothuroidea; environmental DNA; mitochondrial 16S; primer degeneracy; barcode discrimination; grouped holdout
-
-## 中文摘要
-
-本研究对MiCucumber五个线粒体16S窗口进行纯计算评价，使用每个物种一条代表的冻结参考面板。共同面板包含151个物种，覆盖最多的方案为SD（115/151），双端完全匹配最多的方案为LD（23/151）。分析区分引物兼容性、去引物内部条码唯一性及属级条件性留出表现。折内候选不作为正式替换方案，跨物种相同条码保留来源待核查。
-
-补充的12S与COI各自建库。12S MD覆盖28/90种，其中4种完全匹配；COI LD覆盖103/283种，其中11种完全匹配。以下共同面板和属级留出结果专属16S。
 
 ## 1. Introduction
 
@@ -253,3 +247,5 @@ All sequences are written 5′ to 3′. Deg F/R gives the number of concrete var
 5. Untergasser A, et al. (2012). Primer3—new capabilities and interfaces. Nucleic Acids Research 40:e115. https://doi.org/10.1093/nar/gks596
 
 Copyright © 2026 Fei Xia. Existing project copyright and third-party source conditions apply; see COPYRIGHT.md at the repository root.
+
+Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.0
