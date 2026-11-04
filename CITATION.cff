@@ -1,21 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this project's primers, data or analysis code, please cite the versioned preprint."
 type: software
-title: "MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber"
+title: "MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding"
 authors:
   - family-names: "Xia"
     given-names: "Fei"
 date-released: "2026-11-04"
 url: "https://github.com/GUIBA-EX/MiCucumber"
 repository-code: "https://github.com/GUIBA-EX/MiCucumber"
-version: "1.1"
+version: "1.2"
 preferred-citation:
   type: unpublished
-  title: "MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber"
+  title: "MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding"
   authors:
     - family-names: Xia
       given-names: Fei
   year: 2026
-  version: "1.1"
-  notes: "Computational preprint, version 1.1. Published on GitHub."
-  url: "https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.1"
+  version: "1.2"
+  notes: "Computational preprint, version 1.2. Published on GitHub."
+  url: "https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.2"

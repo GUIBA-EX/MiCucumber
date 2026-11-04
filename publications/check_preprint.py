@@ -4,7 +4,7 @@ import subprocess
 repo=Path(__file__).resolve().parents[1];name=repo.name;p=repo/'publications';md=(p/f'{name}_preprint.md').read_text();prov=json.loads((p/'preprint_provenance.json').read_text())
 text=subprocess.check_output(['pdftotext','-layout',str(p/f'{name}_preprint.pdf'),'-'],text=True)
 pages=[x for x in text.split('\f') if x.strip()]
-assert '\nFei Xia\n' in md
+assert '\n**Fei Xia**\n' in md
 assert all(len(x.strip())>150 for x in pages)
 assert not any(x in md for x in ['author confirmation','To be completed','49 labels','A/B alternatives'])
 for f,d in prov['inputs'].items():assert hashlib.sha256((repo/f).read_bytes()).hexdigest()==d,f
