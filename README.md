@@ -2,13 +2,17 @@
 
 # MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber
 
-Preprint v1.0 · 4 November 2026 · Not peer reviewed. [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.0) · [Citation](CITATION.cff)
+**Fei Xia**
 
-[中文](README.zh-CN.md)
+[English](README.md) · [简体中文](README.zh-CN.md)
+
+<!-- publication:start -->
+**Preprint v1.1 · 4 November 2026 · Not peer reviewed.**
+
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.1) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+<!-- publication:end -->
 
 MiCucumber contains 29 mitochondrial primer pairs for sea-cucumber eDNA. 16S, 12S and COI each have their own gene-relative coordinates and species panels.
-
-[All primer sequences](sequences/all_markers.fasta) · [Preprint PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md)
 
 ## Choosing a window
 
@@ -92,7 +96,7 @@ The 16S common-panel comparison, barcode identity analysis and genus-blocked hol
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber*. GitHub.
+Xia, F. (2026). *MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber*. Computational preprint v1.1. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.1).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 

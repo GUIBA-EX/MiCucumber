@@ -1,14 +1,16 @@
-"""Refresh hashes of publication outputs; verify the other archived entries."""
-import hashlib,json,sys
+"""Refresh publication hashes; retain independent checks of scientific source files."""
+import hashlib,json
 from pathlib import Path
-p=Path('SHA256SUMS.json')
-expected=json.loads(p.read_text())
-for f in expected:
-    digest=hashlib.sha256(Path(f).read_bytes()).hexdigest()
-    if f.startswith('publications/') or f in ['README.md','README.en.md','README.zh-CN.md','CITATION.bib','CITATION.cff']:
-        expected[f]=digest
-    else:
-        assert expected[f]==digest,f
-p.write_text(json.dumps(expected,indent=2,ensure_ascii=False)+'\n')
-files=[Path('publications/MiCucumber_preprint.pdf'),Path('sequences/all_markers.fasta')]
-Path('publications/SHA256SUMS.txt').write_text(''.join(hashlib.sha256(f.read_bytes()).hexdigest()+'  '+f.name+'\n' for f in files))
+root=Path(__file__).resolve().parents[1];c=json.loads((root/'publications/release.json').read_text())
+hashfile=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
+p=root/'SHA256SUMS.json'
+if p.exists():
+ expected=json.loads(p.read_text())
+ for f in expected:
+  digest=hashfile(root/f)
+  if f.startswith('publications/') or f in [*c['readmes'],'CITATION.bib','CITATION.cff']:
+   expected[f]=digest
+  else:assert expected[f]==digest,f
+ p.write_text(json.dumps(expected,indent=2,ensure_ascii=False)+'\n')
+files=[root/f'publications/{c["project"]}_preprint.pdf',root/c['fasta']]
+(root/'publications/SHA256SUMS.txt').write_text(''.join(hashfile(f)+'  '+f.name+'\n' for f in files))

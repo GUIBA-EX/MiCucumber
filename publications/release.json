@@ -1,0 +1,11 @@
+{
+  "project": "MiCucumber",
+  "title": "MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber",
+  "version": "1.1",
+  "date": "2026-11-04",
+  "readmes": {
+    "README.md": "en",
+    "README.zh-CN.md": "zh"
+  },
+  "fasta": "sequences/all_markers.fasta"
+}

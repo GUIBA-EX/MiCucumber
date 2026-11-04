@@ -2,13 +2,17 @@
 
 # MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber
 
-预印本 v1.0 · 2026 年 11 月 4 日 · 未经同行评审。[版本发布](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.0) · [引用信息](CITATION.cff)
+**Fei Xia**
 
-[English](README.md)
+[English](README.md) · [简体中文](README.zh-CN.md)
+
+<!-- publication:start -->
+**预印本 v1.1 · 2026 年 11 月 4 日 · 未经同行评审。**
+
+[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.1) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+<!-- publication:end -->
 
 MiCucumber 收录 29 对海参环境 DNA 候选引物，涵盖线粒体 16S、12S 和 COI。各基因独立建库，坐标均相对于 AB525437.1 中相应基因的第一个碱基。
-
-[下载全部引物 FASTA](sequences/all_markers.fasta) · [预印本 PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md)
 
 ## 如何选择窗口
 
@@ -92,7 +96,7 @@ MiCucumber 收录 29 对海参环境 DNA 候选引物，涵盖线粒体 16S、12
 
 ## 引用与著作权
 
-Xia, F. (2026). *MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber*. GitHub.
+Xia, F. (2026). *MiCucumber, a set of universal PCR primers for metabarcoding environmental DNA from sea cucumber*. Computational preprint v1.1. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.1).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 

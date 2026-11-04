@@ -1,0 +1,23 @@
+{
+  "project": "MiCucumber",
+  "version": "1.1",
+  "date": "2026-11-04",
+  "author": "Fei Xia",
+  "pages": 12,
+  "oligos": 58,
+  "status": "PASS",
+  "checks": [
+    "README titles, dates and release citations",
+    "CFF and BibTeX",
+    "local document links",
+    "PDF author and title metadata",
+    "all released oligos in manuscript and PDF",
+    "visible figure captions",
+    "nonempty pages"
+  ],
+  "artifacts": {
+    "publications/MiCucumber_preprint.md": "2b891b8ef6b92e902a632b2e40fb09082bc04492a4905237175af4374325ab7c",
+    "publications/MiCucumber_preprint.pdf": "4c8d5e183509784ffc016f89fd9a2c7679f8b3cf6e7770dfc7d51f935e92cc07",
+    "sequences/all_markers.fasta": "ceaa7b2d6055b8df06d429fe04b5ff695652e0c1ffd3541e5226a4b0357c6142"
+  }
+}

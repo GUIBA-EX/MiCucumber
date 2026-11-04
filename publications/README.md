@@ -1,17 +1,28 @@
 # MiCucumber preprint
 
-Author: Fei Xia. Computational preprint; not peer reviewed.
+**Fei Xia** · Computational preprint; not peer reviewed.
 
-[PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases)
+[PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases) · [Citation](../CITATION.cff)
 
-## Reproduction
+## Build and validate
 
-Install Pandoc, Google Chrome or Chromium, Python 3 and Poppler. Set `CHROME` to the browser executable when needed. From the repository root:
+Install Python 3, Pandoc, Poppler and Google Chrome or Chromium. Set `CHROME` to the browser executable when needed. Run from the repository root:
 
 ```sh
+python3 -m pip install -r publications/requirements-preprint.txt biopython
 python3 publications/build_preprint.py
 python3 publications/check_preprint.py
+python3 scripts/check_release.py
+python3 scripts/check_publication.py
 python3 scripts/preprint_integrity.py
 ```
 
-Pushes to `main` check for changes in research inputs and publication sources. A changed input triggers PDF rendering, sequence and result-table checks, checksum verification, a version commit and an immutable tagged GitHub Release containing the PDF, primer FASTA and checksums. Failed checks stop publication. Manuscript interpretations must be updated with the underlying results; the workflow does not generate scientific conclusions.
+## Automatic updates
+
+Pushes to `main` and manual workflow runs check the committed research results and publication files. Changes to README editions, citations, data, figures, publication sources or release scripts trigger a new minor preprint version. The workflow stamps all editions using Asia/Shanghai time, rebuilds the PDF, checks scientific tables and primer sequences, validates publication metadata and links, and verifies checksums before creating a tagged GitHub Release. A run with no relevant changes validates the existing version without creating a new one.
+
+The release contains the PDF, matching primer FASTA and SHA-256 checksums. Existing public releases remain unchanged. Relative links in the PDF point to the matching source tag. Scientific analyses and their interpretations are maintained in the source files; the workflow rebuilds the paper from those committed results.
+
+## Consistency checks
+
+`release.json` holds the title, version, date, README editions and primer FASTA path. `scripts/stamp_preprint.py` synchronizes the manuscript and citation formats. `scripts/check_publication.py` verifies metadata, local links, visible figure captions and every oligo in the PDF and manuscript. Project-specific checks separately verify scientific tables against their source CSV files. `publication_check.json` records the checked version, page and oligo counts, and output hashes.
