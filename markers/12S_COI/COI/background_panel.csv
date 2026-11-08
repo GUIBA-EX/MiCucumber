@@ -1674,3 +1674,544 @@ U50057.1,Cryptasterina pacifica,COI,background,Valvatida,Eukaryota;Metazoa;Echin
 U50059.1,Oreaster occidentalis,COI,background,Valvatida,Eukaryota;Metazoa;Echinodermata;Eleutherozoa;Asterozoa;Asteroidea;Valvatacea;Valvatida;Oreasteridae;Oreaster,CDS,[386:1938](+),1552,0,eligible
 U50060.1,Oreaster reticulatus,COI,background,Valvatida,Eukaryota;Metazoa;Echinodermata;Eleutherozoa;Asterozoa;Asteroidea;Valvatacea;Valvatida;Oreasteridae;Oreaster,CDS,[385:1937](+),1552,0,eligible
 X80396.1,Arbacia lixula,COI,background,Arbacioida,Eukaryota;Metazoa;Echinodermata;Eleutherozoa;Echinozoa;Echinoidea;Euechinoidea;Echinacea;Arbacioida;Arbaciidae;Arbacia,CDS,[5859:7410](+),1551,0,eligible
+PX255340.1,Aspidophoreas chinensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR995294.1,Maculastrombus mutabilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR995293.1,Canarium sp. (in: gastropods),COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR995292.1,Strombus labiatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR978595.1,Canarium microurceus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR978594.1,Dolomena robusta,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR978593.1,Lambis scorpius,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_084214.1,Euprotomus aratrum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_084210.1,Lentigo lentiginosus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_059923.1,Tridentarius dentatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_059922.1,Strombus pugilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_071230.1,Lambis lambis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_053786.1,Laevistrombus canarium,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_035726.1,Conomurex luhuanus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_024932.1,Aliger gigas,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MN885884.1,Harpago chiragra,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ671707.1,Clydonochilus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ671706.1,Calliotrochus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ197416.1,Lirularia iridescens,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ516718.1,Trochus rota,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ276883.1,Trochus radiatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_062608.1,Monodonta labio,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_067949.1,Trochus sacellum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041307.1,Umbonium thomasi,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_035682.1,Steromphala umbilicalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_031861.1,Stomatella planulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1542,0,background_extension
+AB505294.1,Stomatia phymotis,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+PZ168240.1,Synaptocochlea picta,COI,background,unassigned,,GenBank gene annotation or named fragment,,572,0,background_extension
+LC599069.1,Trochus histrio,COI,background,unassigned,,GenBank gene annotation or named fragment,,669,0,background_extension
+PX570580.1,Trochus maculatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,677,0,background_extension
+PV842481.1,Jujubinus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV842479.1,Jujubinus exasperatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV842470.1,Jujubinus montagui,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV842467.1,Jujubinus gravinae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV842448.1,Steromphala umbilicaris,COI,background,unassigned,,GenBank gene annotation or named fragment,,655,0,background_extension
+AY296821.1,Austrocochlea porcata,COI,background,unassigned,,GenBank gene annotation or named fragment,,578,0,background_extension
+PV000048.1,Monodonta confusa,COI,background,unassigned,,GenBank gene annotation or named fragment,,531,0,background_extension
+PX907807.1,Steromphala cineraria,COI,background,unassigned,,GenBank gene annotation or named fragment,,327,0,background_extension
+PQ781226.1,Gibbula drepanensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,558,0,background_extension
+PQ781225.1,Steromphala racketti,COI,background,unassigned,,GenBank gene annotation or named fragment,,546,0,background_extension
+PX507995.1,Jujubinus sp. T73779-11,COI,background,unassigned,,GenBank gene annotation or named fragment,,655,0,background_extension
+PX507951.1,Jujubinus sp. T73779-10,COI,background,unassigned,,GenBank gene annotation or named fragment,,655,0,background_extension
+PQ276885.1,Turbo chrysostomus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ276884.1,Astralium calcar,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ276881.1,Lunella cinerea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MT185943.1,Lunella correensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1542,0,background_extension
+NC_061024.1,Turbo cornutus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_031860.1,Angaria delphinus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_031858.1,Astralium haematragum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_031857.1,Lunella granulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_029366.1,Bolma rugosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_028707.1,Angaria neglecta,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+KF700096.1,Lunella aff. cinerea STW-2013,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX614756.1,Littoraria intermedia,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX427681.1,Littoraria lutea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX427680.1,Littoraria scabra,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX427679.1,Littoraria pallescens,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX399457.1,Littoraria articulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PP112332.1,Nodilittorina trochoides,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PP101872.1,Littoraria undulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PP101871.1,Echinolittorina melanacme,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_066085.1,Littoraria ardouiniana,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_064398.1,Littoraria melanostoma,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_050987.1,Littorina brevicula,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_030595.1,Littorina saxatilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR397957.1,Lineidae sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PZ510254.1,Poseidonemertes sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OR397956.1,Cerebratulus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PZ510252.1,Archimicrura sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,633,0,background_extension
+PZ510253.1,Siphonenteron sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ510263.1,Amphiporus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ510261.1,Dushia sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ510258.1,Eureptantia sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,624,0,background_extension
+PZ510256.1,Baseodiscus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ510249.1,Tetrastemma sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+QB103719.1,Cyanophthalma obscura,COI,background,unassigned,,GenBank gene annotation or named fragment,,539,0,background_extension
+PZ293175.3,Cerebratulus maldivensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,588,0,background_extension
+PZ892107.1,Zygonemertes sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ957614.1,Cephalothrix sp. (in: ribbon worms),COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+QB235895.1,Quasitetrastemma nigrifrons,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX368107.1,Zygonemertes sp. SMTM001,COI,background,unassigned,,GenBank gene annotation or named fragment,,621,0,background_extension
+PX368106.1,Valenciniidae sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,624,0,background_extension
+PX368105.1,Tubulanus sp. SMTM035,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368104.1,Tubulanus sp. SMTM034,COI,background,unassigned,,GenBank gene annotation or named fragment,,573,0,background_extension
+PX368103.1,Tubulanus sp. SMTM033,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368101.1,Tetrastemma sp. SMTM016,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368100.1,Tetrastemma sp. SMTM015,COI,background,unassigned,,GenBank gene annotation or named fragment,,627,0,background_extension
+PX368099.1,Tetrastemma sp. SMTM013,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368097.1,Tetrastemma sp. SMTM012,COI,background,unassigned,,GenBank gene annotation or named fragment,,613,0,background_extension
+PX368088.1,Tetrastemma sp. SMTM011,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368086.1,Tetrastemma sp. SMTM010,COI,background,unassigned,,GenBank gene annotation or named fragment,,641,0,background_extension
+PX368082.1,Tetrastemma sp. SMTM004,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368077.1,Tetrastemma sp. SMTM003,COI,background,unassigned,,GenBank gene annotation or named fragment,,636,0,background_extension
+PX368074.1,Tetrastemma sp. SMTM002,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368068.1,Tetrastemma sp. SMRS007,COI,background,unassigned,,GenBank gene annotation or named fragment,,638,0,background_extension
+PQ885711.1,Tetrastemma sp. SMGM004,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368065.1,Tetranemertes sp. SMTM009,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368062.1,Tetranemertes sp. SMGM035,COI,background,unassigned,,GenBank gene annotation or named fragment,,636,0,background_extension
+PX368060.1,Poseidonemertes sp. SMTM019,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368059.1,Poseidonemertes sp. SMTM015,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368058.1,Poseidonemertes sp. 508,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368052.1,Polystilifera sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,648,0,background_extension
+PX368047.1,Oxypolella sp. SMOM072,COI,background,unassigned,,GenBank gene annotation or named fragment,,627,0,background_extension
+PX368046.1,Oerstediina sp. SMTM017,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368045.1,Notospermus tricuspidatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,653,0,background_extension
+PX368044.1,Nipponnemertes sp. SMTM018,COI,background,unassigned,,GenBank gene annotation or named fragment,,633,0,background_extension
+PX368040.1,Nipponnemertes sp. SMTM014,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368033.1,Nemertellina sp. SMTM028,COI,background,unassigned,,GenBank gene annotation or named fragment,,641,0,background_extension
+PX368031.1,Micrurides sp. SMTM031,COI,background,unassigned,,GenBank gene annotation or named fragment,,630,0,background_extension
+PX368027.1,Micrurides sp. SMTM030,COI,background,unassigned,,GenBank gene annotation or named fragment,,636,0,background_extension
+PX368024.1,Micrurides sp. SMTM029,COI,background,unassigned,,GenBank gene annotation or named fragment,,630,0,background_extension
+PQ885673.1,Micrura callima,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368021.1,Lineidae sp. SMTM027,COI,background,unassigned,,GenBank gene annotation or named fragment,,648,0,background_extension
+PX368019.1,Lineidae sp. SMTM025,COI,background,unassigned,,GenBank gene annotation or named fragment,,639,0,background_extension
+PX368018.1,Lineidae sp. SMTM024,COI,background,unassigned,,GenBank gene annotation or named fragment,,645,0,background_extension
+PQ885666.1,Lineidae sp. SMOM067,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885659.1,Lineidae sp. SMGM025,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368011.1,Lineidae sp. ETP040,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX368007.1,Eousia sp. SMTM026,COI,background,unassigned,,GenBank gene annotation or named fragment,,613,0,background_extension
+AB505820.1,Diplomma serpentinum,COI,background,unassigned,,GenBank gene annotation or named fragment,,688,0,background_extension
+PX368004.1,Cephalotrichella sp. SMTM040,COI,background,unassigned,,GenBank gene annotation or named fragment,,596,0,background_extension
+PX368003.1,Cephalothrix sp. SMTM038,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+PX368002.1,Cephalothrix sp. SMTM037,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX367990.1,Cephalothrix sp. SMTM036,COI,background,unassigned,,GenBank gene annotation or named fragment,,637,0,background_extension
+PX367987.1,Carinina sp. SMTM032,COI,background,unassigned,,GenBank gene annotation or named fragment,,541,0,background_extension
+PX367986.1,Carcinonemertes sp. SMTM023,COI,background,unassigned,,GenBank gene annotation or named fragment,,527,0,background_extension
+PX367985.1,Carcinonemertes sp. SMTM020,COI,background,unassigned,,GenBank gene annotation or named fragment,,656,0,background_extension
+PQ885668.1,Bilucernus caputornatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX367983.1,Balionemertes sp. SMTM039,COI,background,unassigned,,GenBank gene annotation or named fragment,,625,0,background_extension
+PX970519.1,Cerebratulus sardonyx,COI,background,unassigned,,GenBank gene annotation or named fragment,,671,0,background_extension
+PX222708.1,Notospermus gena,COI,background,unassigned,,GenBank gene annotation or named fragment,,580,0,background_extension
+PX222709.1,Gorgonorhynchus albocinctus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+LC942295.1,Oerstediidae sp. ICHUM 9472,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+LC942294.1,Oerstediidae sp. ICHUM 9473,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OR397960.1,Heteronemertes longifissus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+LC919661.1,Prostoma sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,616,0,background_extension
+PP279839.2,Lineidae sp. 2 JA-2024a,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+NC_024670.1,Tetrastemma olgarum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_012889.1,Lineus viridis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+LC508725.1,Tubulanus punctatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV397471.1,Euborlasia lidiae,COI,background,unassigned,,GenBank gene annotation or named fragment,,532,0,background_extension
+PZ571182.1,Tetrastemma stimpsoni,COI,background,unassigned,,GenBank gene annotation or named fragment,,450,0,background_extension
+NC_042687.1,Notospermus geniculatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PZ507161.1,Tetrastemma pseudocoronatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507160.1,Tetrastemma phaeobasisae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507159.1,Amphiporus heteromusculosus,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+PZ507158.1,Asteronemertes gibsoni,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507155.1,Nipponnemertes neonilae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507153.1,Zygonemertes zhenylebedevi,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507152.1,Oerstedia phoresiae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PZ507151.1,Hubrechtella juliae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OR387321.1,Lineus ruber,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PX559723.1,Lineus sp. T74026-1,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OQ134402.1,Tetrastemma luteum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PX508216.1,Notospermus sp. T73794-1,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ110320.1,Pararosa vigarae,COI,background,unassigned,,GenBank gene annotation or named fragment,,633,0,background_extension
+PZ008408.1,Geonemertes pelaensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,636,0,background_extension
+PV156322.1,Nemertea sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ863974.1,Baseodiscus punnetti,COI,background,unassigned,,GenBank gene annotation or named fragment,,665,0,background_extension
+PX290017.1,Geonemertes sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1247,0,background_extension
+PQ885743.1,Zygonemertes sp. SMOM002,COI,background,unassigned,,GenBank gene annotation or named fragment,,678,0,background_extension
+PQ885742.1,Zygonemertes sp. SMGM022,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885739.1,Tubulanus sp. SMGM032,COI,background,unassigned,,GenBank gene annotation or named fragment,,673,0,background_extension
+PQ885738.1,Tetrastemma sp. SMGM038,COI,background,unassigned,,GenBank gene annotation or named fragment,,579,0,background_extension
+PQ885737.1,Tetrastemma sp. SMGM036,COI,background,unassigned,,GenBank gene annotation or named fragment,,613,0,background_extension
+PQ885736.1,Tetrastemma sp. SMGM020,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885735.1,Tetrastemma sp. SMGM018,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885734.1,Tetrastemma sp. SMGM015,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885731.1,Tetrastemma sp. SMGM013,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885726.1,Tetrastemma sp. SMGM008,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885724.1,Tetrastemma sp. SMGM006,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885714.1,Tetrastemma sp. SMGM005,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885707.1,Siphonenteron sp. SMOM059,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885705.1,Siphonenteron sp. SMGM017,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885701.1,Notospermus sp. SMGM031,COI,background,unassigned,,GenBank gene annotation or named fragment,,567,0,background_extension
+PQ885700.1,Notospermus sp. SMGM030,COI,background,unassigned,,GenBank gene annotation or named fragment,,606,0,background_extension
+PQ885699.1,Notospermus sp. SMGM009,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885698.1,Nipponnemertes sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885686.1,Nipponemertes sp. SMGM003,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885680.1,Nemertellina sp. SMGM002,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885675.1,Micrura sp. SMGM014,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885664.1,Lineidae sp. SMOM058,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885663.1,Lineidae sp. SMGM029,COI,background,unassigned,,GenBank gene annotation or named fragment,,697,0,background_extension
+PQ885662.1,Lineidae sp. SMGM028,COI,background,unassigned,,GenBank gene annotation or named fragment,,575,0,background_extension
+PQ885661.1,Lineidae sp. SMGM027,COI,background,unassigned,,GenBank gene annotation or named fragment,,557,0,background_extension
+PQ885660.1,Lineidae sp. SMGM026,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885656.1,Lineidae sp. SMGM024,COI,background,unassigned,,GenBank gene annotation or named fragment,,521,0,background_extension
+PQ885655.1,Lineidae sp. SMGM019,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885654.1,Lineidae sp. SMGM010,COI,background,unassigned,,GenBank gene annotation or named fragment,,621,0,background_extension
+PQ885651.1,Eousia sp. SMGM033,COI,background,unassigned,,GenBank gene annotation or named fragment,,672,0,background_extension
+PQ885647.1,Eousia sp. SMGM021,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885643.1,Drepanophorus sp. SMGM011,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885642.1,Drepanophorus sp. SMGM007,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885629.1,Cephalotrichidae sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,625,0,background_extension
+PQ885628.1,Baseodiscus komatsui,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885624.1,Baseodiscus hemprichii,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885622.1,Balionemertes sp. SMGM001,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ885614.1,Amphiporus sp. SMGM034,COI,background,unassigned,,GenBank gene annotation or named fragment,,654,0,background_extension
+PV639081.1,Baseodiscus quinquelineatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ317770.1,Nemertea sp. W5338,COI,background,unassigned,,GenBank gene annotation or named fragment,,607,0,background_extension
+PV640639.1,Baseodiscus hookabeae,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PV640638.1,Baseodiscus mindanaoensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ966710.1,Tubulanus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,592,0,background_extension
+PQ966636.1,Micrura sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,628,0,background_extension
+PQ505252.1,Reptantia sp. KH-01,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ505250.1,Protopelagonemertes beebei,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ505247.1,Profundonemertes hakuhoae,COI,background,unassigned,,GenBank gene annotation or named fragment,,591,0,background_extension
+PQ505246.1,Phallonemertes murrayi,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OR405546.1,Tubulanus polymorphus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR405545.1,Junoya sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR397959.1,Prosorhochmus claparedii,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR397958.1,Carinoma armandi,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR419502.1,Carinina ochracea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+OR387320.1,Lineus sanguineus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR387318.1,Lineus longissimus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR387316.1,Micrura purpurea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR387315.1,Lineus lacteus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR387314.1,Riseriellus occultus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR387313.1,Amphiporus lactifloreus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PX965792.1,Tubulanus lutescens,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+ON243879.1,Kulikovia fulva,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+ON041134.1,Polydendrorhynchus zhanjiangensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+ON000913.1,Yininemertes pratensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PX392563.1,Malacobdella japonica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_061541.1,Quasilineus sinicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_027727.1,Micrura bella,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_026874.1,Micrura ignea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_024823.1,Nemertopsis tetraclitophila,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_024822.1,Gononemertes parasita,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_023931.1,Prosadenoporus spectaculum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_023930.1,Nipponnemertes punctatula,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_023929.1,Amphiporus formidabilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_023523.1,Iwatanemertes piperata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_018356.1,Kulikovia alborostrata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_017877.1,Zygeupolia rubens,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_017874.1,Nectonemertes cf. mirabilis HC-2011,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_016952.1,Emplectonema gracile,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_014869.1,Cephalothrix sp. SCS-2010,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_014865.1,Paranemertes cf. peregrina SCS-2010,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_012821.1,Cephalothrix simula,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MT302207.1,Cephalothrix sp. BMK-2020,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MH630149.1,Parborlasia corrugatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+EF140788.1,Cephalothrix rufifrons,COI,background,unassigned,,GenBank gene annotation or named fragment,,701,0,background_extension
+MG924728.1,Conus betulinus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_080964.1,Conus marmoreus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_080963.1,Conus imperialis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_080962.1,Conus litteratus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_080961.1,Conus virgo,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_079625.1,Conus tessulatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+ON968980.1,Conus ventricosus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_063770.1,Conus miles,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_063769.1,Conus ebraeus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_038182.1,Bathytoma punicea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_035007.1,Conus quercinus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_032377.1,Californiconus californicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_030536.1,Conus striatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_030354.1,Conus capitaneus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_030213.1,Conus gloriamaris,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_027518.2,Conus tulipa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_027957.1,Conus tribblei,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_023460.1,Conus consors,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_013243.1,Conus borgesi,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_008797.1,Conus textile,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KY864967.1,Conus infinitus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KY801863.1,Conus hybridus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KY801860.1,Conus unifasciatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KY801847.1,Conus guanche,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PQ310516.1,Indothais malayensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PQ276882.1,Chicoreus brunneus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OR506260.1,Concholepas concholepas,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_082139.1,Morula spinosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_082138.1,Mancinella echinata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063940.1,Indothais javanica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063938.1,Indothais sacellum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063936.1,Purpura bufo,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063934.1,Arakawania musiva,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063773.1,Tylothais aculeata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063939.1,Mancinella alouina,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063935.1,Purpura persica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063931.1,Reishia bronni,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063941.1,Drupina grossularia,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063937.1,Drupa morum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063933.1,Arakawania granulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_063932.1,Drupella margariticola,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_069050.1,Coralliophila richardi,COI,background,unassigned,,GenBank gene annotation or named fragment,,1542,0,background_extension
+NC_046577.1,Ocinebrellus inornatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_046569.1,Ceratostoma burnetti,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_046526.1,Ceratostoma rorifluum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_046505.1,Boreotrophon candelabrum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_046052.1,Ocinebrellus falcatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_039165.1,Reishia luteostoma,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_039164.1,Chicoreus torrefactus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_037221.1,Indothais lacera,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_031405.1,Menathais tuberosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_013250.1,Bolinus brandaris,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_011193.1,Rapana venosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+NC_010090.1,Reishia clavigera,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+OK052648.2,Drupella rugosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+MN793976.1,Chicoreus asianus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+MN462589.1,Murex trapa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+PZ733766.1,Planaxis sulcatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MT587882.1,Supplanaxis niger,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MT587877.1,Supplanaxis nucleus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MT587872.1,Planaxis planicostatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278214.1,Hinea zonata,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW277907.1,Fossarus garrettii,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+LC167817.1,Planaxidae sp. MI26,COI,background,unassigned,,GenBank gene annotation or named fragment,,643,0,background_extension
+LC060527.1,Planaxidae sp. MI7,COI,background,unassigned,,GenBank gene annotation or named fragment,,689,0,background_extension
+AB365239.1,Conradia sp. Izu,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+KF728890.1,Nerita versicolor,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KF728889.1,Nerita tessellata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+KF728888.1,Nerita fulgurans,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MN477253.1,Nerita balteata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_068081.1,Nerita plicata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MN389006.1,Nerita litterata,COI,background,unassigned,,GenBank gene annotation or named fragment,,649,0,background_extension
+NC_068079.1,Nerita insculpta,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PX111136.1,Nerita incerta,COI,background,unassigned,,GenBank gene annotation or named fragment,,644,0,background_extension
+NC_068078.1,Nerita costata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PV826990.1,Nerita sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,629,0,background_extension
+AY296824.1,Nerita atramentosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,864,0,background_extension
+NC_062611.1,Clithon corona,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MW307283.1,Septaria porcellana,COI,background,unassigned,,GenBank gene annotation or named fragment,,615,0,background_extension
+NC_068083.1,Nerita histrio,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MT161611.1,Nerita chamaeleon,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MN690175.1,Nerita sp. IP0039,COI,background,unassigned,,GenBank gene annotation or named fragment,,289,0,background_extension
+MN690173.1,Nerita sp. IP0036,COI,background,unassigned,,GenBank gene annotation or named fragment,,290,0,background_extension
+NC_087859.1,Nerita undata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MN690171.1,Nerita sp. IP0038,COI,background,unassigned,,GenBank gene annotation or named fragment,,687,0,background_extension
+PQ285859.1,Nerita albicilla,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MW277680.1,Nerita polita,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ536049.1,Vittina coromandeliana,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MT230543.1,Neritina violacea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PQ536007.1,Neripteron cornucopia,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MN783108.1,Nerita sanguinolenta,COI,background,unassigned,,GenBank gene annotation or named fragment,,642,0,background_extension
+PQ216359.1,Nerita quadricolor,COI,background,unassigned,,GenBank gene annotation or named fragment,,633,0,background_extension
+OR112596.1,Theodoxus fluviatilis fluviatilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,659,0,background_extension
+MK395169.1,Nerita yoldii,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+OQ194188.1,Nerita melanotragus,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OQ682252.1,Nerita funiculata,COI,background,unassigned,,GenBank gene annotation or named fragment,,624,0,background_extension
+OQ682180.1,Nerita scabricosta,COI,background,unassigned,,GenBank gene annotation or named fragment,,575,0,background_extension
+NC_068077.1,Clithon sowerbianum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_068076.1,Clithon oualaniense,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+OM892154.1,Neritina sp. Neri2,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OM892153.1,Neritina sp. Neri3,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OM892152.1,Neritina sp. Neri5,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OM892151.1,Neritina sp. Neri4,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OM892150.1,Neritina sp. Neri6,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OM892149.1,Neritina sp. Neri1,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+LC215335.1,Neritina pulligera,COI,background,unassigned,,GenBank gene annotation or named fragment,,1276,0,background_extension
+MW591118.1,Neritina cf. iris BIOPH_TB46,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MN747116.1,Nerita japonica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MW124501.1,Neritidae sp. USNM IZ 1448967,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124465.1,Neritidae sp. USNM IZ 1448109,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124464.1,Neritidae sp. USNM IZ 1448108,COI,background,unassigned,,GenBank gene annotation or named fragment,,622,0,background_extension
+MW124452.1,Neritidae sp. USNM IZ 1448054,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+OL362211.1,Nerita tristis,COI,background,unassigned,,GenBank gene annotation or named fragment,,645,0,background_extension
+MZ559692.1,Nerita olivaria,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW139678.1,Theodoxus transversalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,617,0,background_extension
+MZ831955.1,Nerita planospira,COI,background,unassigned,,GenBank gene annotation or named fragment,,584,0,background_extension
+MW307288.1,Septaria tahitiana,COI,background,unassigned,,GenBank gene annotation or named fragment,,615,0,background_extension
+MW307277.1,Septaria borbonica,COI,background,unassigned,,GenBank gene annotation or named fragment,,615,0,background_extension
+MW277677.1,Nerita picea,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MT666023.1,Neritona granosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,313,0,background_extension
+MT666040.1,Neripteron cariosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,295,0,background_extension
+MT666024.1,Neripteron vespertinum,COI,background,unassigned,,GenBank gene annotation or named fragment,,313,0,background_extension
+MT563453.1,Theodoxus fluviatilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+NC_068080.1,Nerita ocellata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_068082.1,Nerita reticulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+MN657590.1,Theodoxus mesopotamicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657588.1,Theodoxus euphraticus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657584.1,Theodoxus meridionalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657582.1,Theodoxus baeticus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657581.1,Theodoxus cf. valentinus AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657579.1,Theodoxus guadianensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657577.1,Theodoxus velascoi,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657575.1,Theodoxus elongatulus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657573.1,Neritina schlaeflii,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657571.1,Theodoxus doriae,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657563.1,Theodoxus jordani,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657550.1,Theodoxus gurur,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657548.1,Theodoxus wesselinghi,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657546.1,Theodoxus wilkei,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657524.1,Theodoxus cf. sarmaticus AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN657523.1,Theodoxus major,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK628555.1,Vitta virginea,COI,background,unassigned,,GenBank gene annotation or named fragment,,639,0,background_extension
+MK628551.1,Vitta meleagris,COI,background,unassigned,,GenBank gene annotation or named fragment,,639,0,background_extension
+MK754816.1,Theodoxus subterrelictus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754815.1,Vittina natalensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754812.1,Theodoxus prevostianus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754809.1,Theodoxus cf. danasteri AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754808.1,Theodoxus sp. 3 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754807.1,Theodoxus sp. 1 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754800.1,Theodoxus varius callosus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754797.1,Theodoxus sp. 2 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754795.1,Theodoxus sp. 24163 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754792.1,Theodoxus pallasi,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754768.1,Theodoxus danubialis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754764.1,Theodoxus cf. euxinus AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754758.1,Theodoxus astrachanicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754735.1,Theodoxus numidicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754733.1,Theodoxus aff. marteli AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754723.1,Theodoxus velox,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754670.1,Neritina sp. 21819 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754669.1,Neritina canalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754667.1,Vittina gagates,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754665.1,Theodoxus cf. elongatulus AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754650.1,Theodoxus cf. heldreichi AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754646.1,Theodoxus cf. syriacus AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754632.1,Theodoxus cf. macri AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754619.1,Theodoxus sp. 4 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754616.1,Theodoxus cf. velox AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754598.1,Theodoxus niloticus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754589.1,Theodoxus anatolicus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754570.1,Theodoxus sp. 11384 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754567.1,Theodoxus sp. 9636 AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754555.1,Theodoxus altenai,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754537.1,Theodoxus schirazensis var. major AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MK754508.1,Theodoxus varius cf. varius AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN168757.1,Theodoxus pallidus,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN168672.1,Theodoxus schultzii,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+MN168602.1,Theodoxus cf. schirazensis var. major AFS-2019,COI,background,unassigned,,GenBank gene annotation or named fragment,,600,0,background_extension
+PX869898.1,Vittina cumingiana,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PX869897.1,Neripteron pileolus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PX869896.1,Smaragdia rangiana,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PQ310099.1,Nerita originalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+PP958837.1,Neritona juttingae,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_064130.1,Septaria lineata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_062613.1,Clithon squarrosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_062612.1,Neritina iris,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_062610.1,Clithon lentiginosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+NC_031893.1,Clithon retropictum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1548,0,background_extension
+QB242667.1,Neobernaya spadicea,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_066082.1,Erronea errones,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072235.1,Erronea caurica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072234.1,Erronea onyx,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072233.1,Naria miliaris,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072232.1,Monetaria caputserpentis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072231.1,Naria erosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072230.1,Naria helvola,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072229.1,Monetaria moneta,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072228.1,Purpuradusta gracilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1539,0,background_extension
+NC_072227.1,Mauritia arabica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_072226.1,Lyncina vitellus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MZ667219.1,Mauritia arabica asiatica,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MK783263.1,Cypraea tigris,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+LC469295.1,Monetaria annulus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+PQ203224.1,Anentome helena,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_062791.1,Nassarius gregarius,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_049091.1,Nassarius glans,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_048962.1,Nassarius siquijorensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041548.1,Nassarius jacksonianus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041547.1,Nassarius javanus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041546.1,Nassarius foveolatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041545.1,Nassarius sinarum,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041311.1,Nassarius pullus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_041310.1,Nassarius conoidalis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_038169.1,Nassarius hepaticus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_037887.1,Reticunassa hiradoensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1539,0,background_extension
+NC_037607.1,Reticunassa festiva,COI,background,unassigned,,GenBank gene annotation or named fragment,,1539,0,background_extension
+NC_037604.1,Nassarius fraterculus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_029173.1,Nassarius variciferus,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_013248.1,Tritia reticulata,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+NC_007781.1,Ilyanassa obsoleta,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MT374078.1,Nassarius granifer,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+MG744570.1,Reticunassa festiva complex sp. C,COI,background,unassigned,,GenBank gene annotation or named fragment,,1536,0,background_extension
+GQ868078.1,Zeacumantus subcarinatus,COI,background,unassigned,,GenBank gene annotation or named fragment,,900,0,background_extension
+PX250379.1,Cerithium lifuense,COI,background,unassigned,,GenBank gene annotation or named fragment,,594,0,background_extension
+KY021067.1,Rhinoclavis sinensis,COI,background,unassigned,,GenBank gene annotation or named fragment,,1533,0,background_extension
+MN249968.1,Clypeomorus petrosa,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+PV687034.1,Clypeomorus subbrevicula,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+PV682686.1,Clypeomorus bifasciata,COI,background,unassigned,,GenBank gene annotation or named fragment,,693,0,background_extension
+PV544837.1,Cerithium lividulum,COI,background,unassigned,,GenBank gene annotation or named fragment,,638,0,background_extension
+PP652121.1,Cerithium zonatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PP652096.1,Cerithium traillii,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PP652095.1,Cerithium alutaceum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PP652002.1,Cerithium dialeucum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PP651923.1,Bittium glareosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+ON716025.1,Bittium latreillii,COI,background,unassigned,,GenBank gene annotation or named fragment,,630,0,background_extension
+OM946272.1,Cerithiidae sp. 2mm_0492,COI,background,unassigned,,GenBank gene annotation or named fragment,,312,0,background_extension
+MW124500.1,Cerithium sp. USNM IZ 1448965,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124499.1,Cerithium sp. USNM IZ 1448964,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124477.1,Cerithiidae sp. USNM IZ 1448210,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124476.1,Cerithiidae sp. USNM IZ 1448209,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124475.1,Cerithiidae sp. USNM IZ 1448208,COI,background,unassigned,,GenBank gene annotation or named fragment,,629,0,background_extension
+MW124474.1,Cerithiidae sp. USNM IZ 1448207,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124473.1,Cerithiidae sp. USNM IZ 1448206,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124472.1,Cerithiidae sp. USNM IZ 1448205,COI,background,unassigned,,GenBank gene annotation or named fragment,,628,0,background_extension
+MW124456.1,Cerithiidae sp. USNM IZ 1448064,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW124455.1,Cerithiidae sp. USNM IZ 1448057,COI,background,unassigned,,GenBank gene annotation or named fragment,,655,0,background_extension
+MW124454.1,Cerithiidae sp. USNM IZ 1448056,COI,background,unassigned,,GenBank gene annotation or named fragment,,655,0,background_extension
+MT920123.1,Bittium reticulatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ560622.1,Cerithiidae sp. USNM 14665962,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ560203.1,Cerithium balteatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ559995.1,Cerithium egenum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ559819.1,Cerithiidae sp. USNM 1467441,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ559545.1,Cerithiidae sp. USNM 1467466,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ559393.1,Cerithiidae sp. USNM 1467492,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+AB162125.1,Clypeomorus batillariaeformis,COI,background,unassigned,,GenBank gene annotation or named fragment,,696,0,background_extension
+MZ831922.1,Clypeomorus sp. SWIMS-MOL-18-117,COI,background,unassigned,,GenBank gene annotation or named fragment,,532,0,background_extension
+MZ831921.1,Clypeomorus sp. SWIMS-MOL-20-015,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MZ831920.1,Clypeomorus sp. SWIMS-MOL-18-118,COI,background,unassigned,,GenBank gene annotation or named fragment,,601,0,background_extension
+AM932754.1,Cerithium coralium,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278470.1,Bittium impendens,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278467.1,Cerithium interstriatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278461.1,Cerithium echinatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278350.1,Cerithium placidum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278349.1,Cerithium nesioticum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278230.1,Cerithium cf. egenum CC-2020,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278105.1,Cerithium atromarginatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW278015.1,Cerithium rostratum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MW277848.1,Cerithium zebrum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MN249987.1,Cerithium mangrovum,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+MN249979.1,Cerithium punctatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,642,0,background_extension
+MN249961.1,Clypeomorus pellucida,COI,background,unassigned,,GenBank gene annotation or named fragment,,657,0,background_extension
+GQ273857.1,Cerithium atratum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+MK308041.1,Bittiolum varium,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MH253702.1,Ittibittium houbricki,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MH253701.1,Limatium aureum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+MH253700.1,Limatium pagodula,COI,background,unassigned,,GenBank gene annotation or named fragment,,635,0,background_extension
+GQ273892.1,Cerithium eburneum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273888.1,Cerithium nicaraguense,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273884.1,Cerithium muscarum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273880.1,Cerithium uncinatum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273877.1,Cerithium stercusmuscarum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273873.1,Cerithium lutosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273871.1,Cerithium menkei,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273868.1,Rhinoclavis gemmata,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273865.1,Cerithium litteratum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+GQ273861.1,Cerithium adustum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+LC167487.1,Cerithium sp. MI11,COI,background,unassigned,,GenBank gene annotation or named fragment,,558,0,background_extension
+LC167486.1,Cerithium sp. MI10,COI,background,unassigned,,GenBank gene annotation or named fragment,,630,0,background_extension
+HQ659994.1,Clypeomorus brevis,COI,background,unassigned,,GenBank gene annotation or named fragment,,593,0,background_extension
+GU246120.1,Cerithium guinaicum,COI,background,unassigned,,GenBank gene annotation or named fragment,,878,0,background_extension
+KC706862.1,Cerithium sp. BMOO-08327,COI,background,unassigned,,GenBank gene annotation or named fragment,,313,0,background_extension
+LC029915.1,Cerithium sp. HZ-2015,COI,background,unassigned,,GenBank gene annotation or named fragment,,684,0,background_extension
+KF289837.1,Cerithium koperbergi,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+AB976639.1,Rhinoclavis sp. HZ,COI,background,unassigned,,GenBank gene annotation or named fragment,,672,0,background_extension
+KC669687.1,Zeacumantus lutulentus,COI,background,unassigned,,GenBank gene annotation or named fragment,,900,0,background_extension
+JF693366.1,Clypeomorus humilis,COI,background,unassigned,,GenBank gene annotation or named fragment,,616,0,background_extension
+AM932755.1,Cerithium nodulosum,COI,background,unassigned,,GenBank gene annotation or named fragment,,658,0,background_extension
+PQ310515.1,Clypeomorus sp.,COI,background,unassigned,,GenBank gene annotation or named fragment,,1542,0,background_extension

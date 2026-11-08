@@ -1,6 +1,6 @@
 """Draw per-order binding-site alignments and gene-relative primer positions."""
 from pathlib import Path
-import csv
+import csv,argparse
 from collections import defaultdict
 import matplotlib
 matplotlib.use('Agg')
@@ -26,8 +26,9 @@ def alignment(path):
             seqs[key] += line.upper()
     return seqs
 
+parser=argparse.ArgumentParser();parser.add_argument('--gene',choices=['12S','COI']);parser.add_argument('--assays',nargs='+');args=parser.parse_args()
 OUT.mkdir(exist_ok=True)
-for gene in ('12S','COI'):
+for gene in ([args.gene] if args.gene else ('12S','COI')):
     d = ROOT / gene
     seqs = alignment(d/'aligned.fasta')
     cols = [i for i,b in enumerate(seqs[(d/'anchor.txt').read_text().strip()]) if b!='-']
@@ -38,6 +39,7 @@ for gene in ('12S','COI'):
     assays = read(d/'pairs.csv')
     for row in assays:
         name=row['name']
+        if args.assays and name not in args.assays:continue
         bounds=[int(row[k])-1 for k in ('F_start','F_end','R_start','R_end')]
         def templates(acc):
             seq=seqs[acc]
@@ -73,5 +75,7 @@ for gene in ('12S','COI'):
                     ax.text(start+j,y,c,ha='center',va='center',fontsize=8,fontfamily='monospace')
             ax.add_patch(Rectangle((start+len(q)-3-.5,.54),3,len(picked)-.08,fill=False,edgecolor='#294559',lw=1))
         ax.text(-43,len(picked)+1.3,'Green: compatible   Orange: mismatch   Grey: gap or missing   Box: terminal 3 nt   Right: full-sequence paired scan',fontsize=8)
-        fig.savefig(OUT/f'{gene}_{name}.svg',bbox_inches='tight')
+        target=OUT/f'{gene}_{name}.svg'
+        fig.savefig(target,bbox_inches='tight')
+        target.write_text('\n'.join(line.rstrip() for line in target.read_text().splitlines())+'\n')
         plt.close(fig)

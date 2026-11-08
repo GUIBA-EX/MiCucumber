@@ -22,7 +22,7 @@ MiCucumber 收录 29 对海参环境 DNA 候选引物，涵盖线粒体 16S、12
 
 **12S** 的 XLD 在保留的 D 方案中覆盖物种数最多，预测覆盖 33/53 种，其中 7 种双端完全匹配，参考跨度 354 bp。
 
-**COI** 的 LD 在保留的 D 方案中覆盖物种数最多，预测覆盖 103/283 种，其中 11 种双端完全匹配，参考跨度 293 bp。
+**COI。** XS 与 XSD 共用 AB525437.1 的 779–798 / 907–923 结合坐标，参考跨度为 145 bp。在相同的 57 物种面板上，XS 覆盖 20 种、双端完全匹配 2 种，XSD 覆盖 43 种、完全匹配 3 种；两者在 2,216 条背景记录中均无严格命中。较长窗口中，LD 的覆盖数最多，为 103/283。
 
 ## 引物序列与预测表现
 
@@ -63,12 +63,12 @@ MiCucumber 收录 29 对海参环境 DNA 候选引物，涵盖线粒体 16S、12
 
 ### COI
 
-非目标背景为 1,675 种其他棘皮动物的代表序列。
+非目标背景包含 2,216 条参考序列。
 
 | 方案 | F（5′–3′） | R（5′–3′） | 跨度（bp） | 覆盖 | 完全匹配 | 严格非目标 | 碱基图 |
 |---|---|---|---:|---:|---:|---:|---|
-| XS | `ACTATAGAGGAAAGCAAGAA` | `GTACTGCTATAATCATTGT` | 165 | 11/57 | 1/57 | 0 / 0 | [查看](markers/12S_COI/figures/COI_XS.svg) |
-| XSD | `ACTATAGAGGWAAGMAAGAR` | `GTACTGCTATWATCATDGT` | 165 | 41/57 | 1/57 | 2 / 4 | [查看](markers/12S_COI/figures/COI_XSD.svg) |
+| XS | `ACTATAGAGGAAAGCAAGAA` | `GCTGCTGTGAAGTAGGC` | 145 | 20/57 | 2/57 | 0 / 0 | [查看](markers/12S_COI/figures/COI_XS.svg) |
+| XSD | `ACTATAGAGGRAAGCMAGAR` | `GCTGCTGTRAAGTADGC` | 145 | 43/57 | 3/57 | 0 / 0 | [查看](markers/12S_COI/figures/COI_XSD.svg) |
 | S | `GAATGGTATACGCTATGGT` | `GTTTCTCAGACTAGCTTTG` | 193 | 10/55 | 0/55 | 0 / 0 | [查看](markers/12S_COI/figures/COI_S.svg) |
 | SD | `GAATGGTATAYGCWATGRT` | `GTTTCTCAGAYTARCTTKG` | 193 | 30/55 | 0/55 | 0 / 0 | [查看](markers/12S_COI/figures/COI_SD.svg) |
 | M | `CACTATAGAGGAAAGCAAGAACC` | `AACTTTGATCCTTGTAGGGT` | 218 | 9/55 | 0/55 | 0 / 0 | [查看](markers/12S_COI/figures/COI_M.svg) |
@@ -77,6 +77,8 @@ MiCucumber 收录 29 对海参环境 DNA 候选引物，涵盖线粒体 16S、12
 | LD | `AAAATGCGAACYCCAGGARTWAC` | `GGTTCTTGCTTWCCTCTRTARTG` | 293 | 103/283 | 11/283 | 0 / 2 | [查看](markers/12S_COI/figures/COI_LD.svg) |
 | XL | `ATGAACCTAAACCGCTGAT` | `CGTGGGCTATATTTCTTGA` | 415 | 11/62 | 0/62 | 0 / 0 | [查看](markers/12S_COI/figures/COI_XL.svg) |
 | XLD | `ATGAACCTAAAMCGYTGAY` | `CGTGGGCTATRTTTCTNGA` | 415 | 37/62 | 1/62 | 0 / 2 | [查看](markers/12S_COI/figures/COI_XLD.svg) |
+
+XS 与 XSD 去除引物后的参考内部条码为 108 bp。相对替换前方案，XS 新增漏检 *Holothuria hilla*、*Isostichopus badionotus*、*I. fuscus*、*Phyllophorella liuwutiensis* 和 *Neocucumis proteus*；XSD 新增漏检 *Actinopyga lecanora*、*Benthodytes marianensis*、*B. gosarsi*、*Holothuria pervicax* 和 *Laetmogone violacea*。两版同时覆盖了更多其他物种，因而净覆盖数均提高。普通与 D 方案分别评价。
 
 ## 参考结合位置
 

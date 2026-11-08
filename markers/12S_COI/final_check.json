@@ -124,31 +124,31 @@
     {
       "gene": "COI",
       "name": "XS",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 57,
-      "covered": 11,
-      "exact": 1,
+      "covered": 20,
+      "exact": 2,
       "WC": 0,
-      "WC3": 11,
+      "WC3": 12,
       "GT": 0,
-      "GT2": 0
+      "GT2": 1
     },
     {
       "gene": "COI",
       "name": "XSD",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 57,
-      "covered": 41,
-      "exact": 1,
-      "WC": 2,
-      "WC3": 44,
-      "GT": 4,
-      "GT2": 4
+      "covered": 43,
+      "exact": 3,
+      "WC": 0,
+      "WC3": 32,
+      "GT": 0,
+      "GT2": 1
     },
     {
       "gene": "COI",
       "name": "S",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 55,
       "covered": 10,
       "exact": 0,
@@ -160,7 +160,7 @@
     {
       "gene": "COI",
       "name": "SD",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 55,
       "covered": 30,
       "exact": 0,
@@ -172,7 +172,7 @@
     {
       "gene": "COI",
       "name": "M",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 55,
       "covered": 9,
       "exact": 0,
@@ -184,19 +184,19 @@
     {
       "gene": "COI",
       "name": "MD",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 55,
       "covered": 25,
       "exact": 3,
       "WC": 0,
       "WC3": 12,
       "GT": 0,
-      "GT2": 0
+      "GT2": 1
     },
     {
       "gene": "COI",
       "name": "L",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 283,
       "covered": 30,
       "exact": 0,
@@ -208,7 +208,7 @@
     {
       "gene": "COI",
       "name": "LD",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 283,
       "covered": 103,
       "exact": 11,
@@ -220,7 +220,7 @@
     {
       "gene": "COI",
       "name": "XL",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 62,
       "covered": 11,
       "exact": 0,
@@ -232,7 +232,7 @@
     {
       "gene": "COI",
       "name": "XLD",
-      "record_model_checks": 3707,
+      "record_model_checks": 4789,
       "evaluable": 62,
       "covered": 37,
       "exact": 1,

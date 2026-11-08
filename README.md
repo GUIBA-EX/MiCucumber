@@ -22,7 +22,7 @@ On the common 151-species 16S panel, SD covers 115 species with no exact paired 
 
 **12S.** Among retained D pairs, XLD covers 33/53 evaluable species, including 7 exact matches (reference span 354 bp).
 
-**COI.** Among retained D pairs, LD covers 103/283 evaluable species, including 11 exact matches (reference span 293 bp).
+**COI.** The 145 bp XS and XSD share binding coordinates 779–798 / 907–923 on AB525437.1. On the same 57-species panel, XS covers 20 species with two exact matches; XSD covers 43 with three. Both have zero strict background hits in the 2,216-record panel. LD remains the longer candidate with the greatest coverage count, at 103/283 species.
 
 ## Primer sequences and predicted performance
 
@@ -63,12 +63,12 @@ Background: 438 non-target echinoderm species.
 
 ### COI
 
-Background: 1,675 non-target echinoderm species.
+Background: 2,216 non-target reference records.
 
 | Assay | F (5′–3′) | R (5′–3′) | Span (bp) | Covered | Exact | Strict off-target hits | Base matching |
 |---|---|---|---:|---:|---:|---:|---|
-| XS | `ACTATAGAGGAAAGCAAGAA` | `GTACTGCTATAATCATTGT` | 165 | 11/57 | 1/57 | 0 / 0 | [View](markers/12S_COI/figures/COI_XS.svg) |
-| XSD | `ACTATAGAGGWAAGMAAGAR` | `GTACTGCTATWATCATDGT` | 165 | 41/57 | 1/57 | 2 / 4 | [View](markers/12S_COI/figures/COI_XSD.svg) |
+| XS | `ACTATAGAGGAAAGCAAGAA` | `GCTGCTGTGAAGTAGGC` | 145 | 20/57 | 2/57 | 0 / 0 | [View](markers/12S_COI/figures/COI_XS.svg) |
+| XSD | `ACTATAGAGGRAAGCMAGAR` | `GCTGCTGTRAAGTADGC` | 145 | 43/57 | 3/57 | 0 / 0 | [View](markers/12S_COI/figures/COI_XSD.svg) |
 | S | `GAATGGTATACGCTATGGT` | `GTTTCTCAGACTAGCTTTG` | 193 | 10/55 | 0/55 | 0 / 0 | [View](markers/12S_COI/figures/COI_S.svg) |
 | SD | `GAATGGTATAYGCWATGRT` | `GTTTCTCAGAYTARCTTKG` | 193 | 30/55 | 0/55 | 0 / 0 | [View](markers/12S_COI/figures/COI_SD.svg) |
 | M | `CACTATAGAGGAAAGCAAGAACC` | `AACTTTGATCCTTGTAGGGT` | 218 | 9/55 | 0/55 | 0 / 0 | [View](markers/12S_COI/figures/COI_M.svg) |
@@ -77,6 +77,8 @@ Background: 1,675 non-target echinoderm species.
 | LD | `AAAATGCGAACYCCAGGARTWAC` | `GGTTCTTGCTTWCCTCTRTARTG` | 293 | 103/283 | 11/283 | 0 / 2 | [View](markers/12S_COI/figures/COI_LD.svg) |
 | XL | `ATGAACCTAAACCGCTGAT` | `CGTGGGCTATATTTCTTGA` | 415 | 11/62 | 0/62 | 0 / 0 | [View](markers/12S_COI/figures/COI_XL.svg) |
 | XLD | `ATGAACCTAAAMCGYTGAY` | `CGTGGGCTATRTTTCTNGA` | 415 | 37/62 | 1/62 | 0 / 2 | [View](markers/12S_COI/figures/COI_XLD.svg) |
+
+The XS and XSD internal reference barcode is 108 bp after primer removal. Within the common panel, XS omits *Holothuria hilla*, *Isostichopus badionotus*, *I. fuscus*, *Phyllophorella liuwutiensis* and *Neocucumis proteus* that the preceding XS pair covered. XSD omits *Actinopyga lecanora*, *Benthodytes marianensis*, *B. gosarsi*, *Holothuria pervicax* and *Laetmogone violacea* that the preceding XSD pair covered. Their net coverage increases reflect additional covered species. Ordinary and D pairs are evaluated separately.
 
 ## Reference binding positions
 

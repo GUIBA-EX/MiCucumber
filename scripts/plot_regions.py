@@ -5,11 +5,11 @@ import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot as plt,font_manager,ticker
 p=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--cjk-font',default='/System/Library/Fonts/STHeiti Medium.ttc');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--cjk-font',default='/System/Library/Fonts/STHeiti Medium.ttc');parser.add_argument('--gene',choices=['16S','12S','COI']);args=parser.parse_args()
 font_manager.fontManager.addfont(args.cjk_font);cjk=font_manager.FontProperties(fname=args.cjk_font).get_name()
 rows=list(csv.DictReader((p/'figures/current_region_coordinates.csv').open()));ref=rows[0]['reference'];project=p.name
 assert all(r['reference']==ref for r in rows)
-for gene in ['16S','12S','COI']:
+for gene in ([args.gene] if args.gene else ['16S','12S','COI']):
  if gene=='16S':
   folder=p/'figures';prefix='amplicon_regions'
  else:
@@ -40,6 +40,7 @@ for gene in ['16S','12S','COI']:
    if ext=='svg':target.write_text('\n'.join(line.rstrip() for line in target.read_text().splitlines())+'\n')
   plt.close(fig)
 
+if args.gene=='16S':raise SystemExit(0)
 # Preserve the combined figure path used by earlier releases.
 from PIL import Image
 from base64 import b64encode
