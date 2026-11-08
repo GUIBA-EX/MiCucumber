@@ -2,7 +2,7 @@
 
 **Fei Xia**
 
-Preprint v1.3 · 9 November 2026 · Not peer reviewed
+Preprint v1.4 · 9 November 2026 · Not peer reviewed
 
 ## Abstract
 
@@ -11,6 +11,11 @@ Environmental DNA metabarcoding of sea cucumbers requires markers that combine b
 **Keywords:** Holothuroidea; environmental DNA; mitochondrial 16S; primer degeneracy; barcode discrimination; grouped holdout
 
 ## Introduction
+
+Sea-cucumber molecular identification has an established basis in mitochondrial reference libraries. Uthicke et al. (2010) evaluated COI barcodes for commercially harvested species, while Byrne et al. (2010) used COI and 16S to clarify relationships and taxonomic assignments within Stichopodidae. For processed products, Wen et al. (2010, 2011) developed PCR–RFLP and forensically informative nucleotide sequencing (FINS) approaches based on mitochondrial 16S. These applications support retaining explicit species identities and source accessions when designing broadly compatible primers.
+
+Xing et al. (2021) developed a 257 bp COI mini-barcode and combined it with next-generation sequencing to authenticate processed sea-cucumber products. Their study provides a sea-cucumber precedent for shortening a barcode and recovering multiple ingredients by sequencing. Environmental samples add a different template mixture and sampling context, so MiCucumber evaluates target compatibility, background matching and reference-insert discrimination on its own frozen panels.
+
 
 Environmental DNA metabarcoding uses short markers to characterize biological assemblages from mixed DNA. Marker selection combines conserved primer-binding regions with informative variation between them. MiFish exemplifies this approach for fish 12S (Miya et al., 2015), while ecoPrimers formalizes the joint evaluation of taxonomic coverage and discrimination (Riaz et al., 2011). These principles motivate Holothuroidea 16S candidate comparison without transferring performance estimates from other taxa or loci. Anthozoan 28S work additionally illustrates how lineage-specific binding-site variation can motivate controlled primer degeneracy (McCartin et al., 2024).
 
@@ -126,6 +131,10 @@ The genus-blocked diagnostic prevents direct reuse of a genus across training an
 
 One-reference-per-species scoring controls database redundancy but does not cover all haplotypes, populations or sequencing errors. Exact reference-insert uniqueness is not classifier accuracy, and compatibility models do not estimate competitive amplification in mixed DNA. Background libraries are finite and strongly shaped by available source data. Direct benchmarking against verified published taxon-compatible 16S primers, broader background sampling and repeated grouped splits remain additional computational analyses rather than completed results. These boundaries define the interpretation of this computational resource.
 
+Published barcoding results help interpret the reference identity conflicts. Uthicke et al. (2010) reported conspecific COI variation of 1.3% and congeneric divergence of 16.9%, with a small overlap and some morphologically disparate specimens sharing a barcode. Their observations motivate source and taxonomic review of shared sequences, including the 16S conflicts documented here. Byrne et al. (2010) further showed how combined COI and 16S evidence can clarify specimen assignments in Stichopodidae. A fixed short-window collision therefore warrants evaluation together with specimen identity and independent sequence evidence.
+
+Low degeneracy also has an echinoderm-specific methodological precedent. Hoareau and Boissin (2010) designed hybrid COI primers using 310 species, reporting fourfold degeneracy compared with at least 48-fold for their standard degenerate designs, and amplification in all 123 tested species. Their assays targeted more than 500 bp. MiCucumber applies a low-degeneracy constraint to shorter candidate windows and evaluates every retained pair against its own target and background references. The primer architecture, amplicon length and tested material determine the scope of each performance estimate.
+
 ### Priorities for assay evaluation
 
 | Intended use | Computational priority | Evidence |
@@ -162,9 +171,21 @@ Katoh K, Standley DM (2013). MAFFT multiple sequence alignment software version 
 
 Untergasser A, et al. (2012). Primer3—new capabilities and interfaces. Nucleic Acids Research 40:e115. https://doi.org/10.1093/nar/gks596
 
+Uthicke S, Byrne M, Conand C (2010). Genetic barcoding of commercial Bêche-de-mer species (Echinodermata: Holothuroidea). Molecular Ecology Resources 10:634–646. https://doi.org/10.1111/j.1755-0998.2009.02826.x
+
+Hoareau TB, Boissin E (2010). Design of phylum-specific hybrid primers for DNA barcoding: addressing the need for efficient COI amplification in the Echinodermata. Molecular Ecology Resources 10:960–967. https://doi.org/10.1111/j.1755-0998.2010.02848.x
+
+Byrne M, Rowe F, Uthicke S (2010). Molecular taxonomy, phylogeny and evolution in the family Stichopodidae (Aspidochirotida: Holothuroidea) based on COI and 16S mitochondrial DNA. Molecular Phylogenetics and Evolution 56:1068–1081. https://doi.org/10.1016/j.ympev.2010.04.013
+
+Wen J, Hu C, Zhang L, Luo P, Zhao Z, Fan S, Su T (2010). The application of PCR–RFLP and FINS for species identification used in sea cucumbers (Aspidochirotida: Stichopodidae) products from the market. Food Control 21:403–407. https://doi.org/10.1016/j.foodcont.2009.06.014
+
+Wen J, Hu C, Zhang L, Fan S (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. Food Control 22:72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
+
+Xing RR, Hu RR, Wang N, Zhang JK, Ge YQ, Chen Y (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. Food Control 129:108199. https://doi.org/10.1016/j.foodcont.2021.108199
+
 Copyright © 2026 Fei Xia. Existing project copyright and third-party source conditions apply; see COPYRIGHT.md at the repository root.
 
-Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3
+Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4
 
 ## Table 1. Reference binding coordinates and evaluable species.
 

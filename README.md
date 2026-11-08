@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.3 · 9 November 2026 · Not peer reviewed.**
+**Preprint v1.4 · 9 November 2026 · Not peer reviewed.**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
 The preprint follows the shared MiAnemone/MiUrchin manuscript format, with methods, results, discussion, evaluation priorities, references and complete end tables.
@@ -90,6 +90,10 @@ Arrows show primer-binding windows on separate gene axes. In the linked 12S and 
 
 ![COI](markers/12S_COI/figures/positions_COI.en.svg)
 
+## Literature context
+
+Sea-cucumber marker development builds on COI barcoding and combined COI/16S taxonomy (Uthicke et al., 2010; Byrne et al., 2010), mitochondrial 16S product identification using PCR–RFLP and FINS (Wen et al., 2010, 2011), and COI mini-barcoding with NGS (Xing et al., 2021). Hoareau and Boissin (2010) provide an echinoderm-specific precedent for taxon-informed, low-degeneracy hybrid COI primers. These studies inform the reference curation and design rationale used here.
+
 ## Reference panels and evaluation
 
 16S uses 174 curated species. The NCBI 12S/COI search returned 6,168 distinct accessions. Gene extraction and quality review retained 344 eligible 12S records (90 named species) and 5,681 COI records (357 named species). Missing binding windows are excluded. Both new genes use the same thermal and paired-scan rules, with at most eight concrete variants per primer. Strict target coverage allows two mismatches per primer and requires compatible terminal three bases. Exact requires both binding sites to match without mismatch.
@@ -100,7 +104,7 @@ The 16S common-panel comparison, barcode identity analysis and genus-blocked hol
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.3. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.4. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 
@@ -117,3 +121,16 @@ Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial pr
 5. Untergasser, A., Cutcutache, I., Koressaar, T., et al. (2012). Primer3—new capabilities and interfaces. *Nucleic Acids Research*, 40, e115. https://doi.org/10.1093/nar/gks596
 
 6. Riaz, T., Shehzad, W., Viari, A., et al. (2011). ecoPrimers: inference of new DNA barcode markers from whole genome sequence analysis. *Nucleic Acids Research*, 39, e145. https://doi.org/10.1093/nar/gkr732
+
+
+7. Uthicke, S., Byrne, M., & Conand, C. (2010). Genetic barcoding of commercial Bêche-de-mer species (Echinodermata: Holothuroidea). *Molecular Ecology Resources*, 10(4), 634–646. https://doi.org/10.1111/j.1755-0998.2009.02826.x
+
+8. Hoareau, T. B., & Boissin, E. (2010). Design of phylum-specific hybrid primers for DNA barcoding: addressing the need for efficient COI amplification in the Echinodermata. *Molecular Ecology Resources*, 10(6), 960–967. https://doi.org/10.1111/j.1755-0998.2010.02848.x
+
+9. Byrne, M., Rowe, F., & Uthicke, S. (2010). Molecular taxonomy, phylogeny and evolution in the family Stichopodidae (Aspidochirotida: Holothuroidea) based on COI and 16S mitochondrial DNA. *Molecular Phylogenetics and Evolution*, 56(3), 1068–1081. https://doi.org/10.1016/j.ympev.2010.04.013
+
+10. Wen, J., Hu, C., Zhang, L., Luo, P., Zhao, Z., Fan, S., & Su, T. (2010). The application of PCR–RFLP and FINS for species identification used in sea cucumbers (Aspidochirotida: Stichopodidae) products from the market. *Food Control*, 21(4), 403–407. https://doi.org/10.1016/j.foodcont.2009.06.014
+
+11. Wen, J., Hu, C., Zhang, L., & Fan, S. (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. *Food Control*, 22(1), 72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
+
+12. Xing, R.-R., Hu, R.-R., Wang, N., Zhang, J.-K., Ge, Y.-Q., & Chen, Y. (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. *Food Control*, 129, 108199. https://doi.org/10.1016/j.foodcont.2021.108199

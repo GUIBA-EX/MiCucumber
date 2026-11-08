@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**预印本 v1.3 · 2026 年 11 月 9 日 · 未经同行评审。**
+**预印本 v1.4 · 2026 年 11 月 9 日 · 未经同行评审。**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
 <!-- publication:end -->
 
 预印本采用与 MiAnemone、MiUrchin 一致的论文格式，包含方法、结果、讨论、评估重点、参考文献及文末完整数据表。
@@ -90,6 +90,10 @@ XS 与 XSD 去除引物后的参考内部条码为 108 bp。相对替换前方�
 
 ![COI](markers/12S_COI/figures/positions_COI.zh.svg)
 
+## 相关研究
+
+海参标记开发已有 COI 条形码和 COI/16S 联合分类研究基础（Uthicke 等，2010；Byrne 等，2010）。Wen 等（2010、2011）将基于线粒体 16S 的 PCR–RFLP 和 FINS 用于产品鉴定，Xing 等（2021）将 COI mini-barcode 与 NGS 结合用于加工产品鉴定。Hoareau 与 Boissin（2010）的棘皮动物 COI 杂合引物为按目标类群变异控制简并度提供了方法学先例。这些研究共同支持本项目的参考审核与设计依据。
+
 ## 参考库与评价范围
 
 16S 面板有 174 种。12S 和 COI 的 NCBI 检索下载了 6,168 条不同 accession；提取和审核后，12S 保留 344 条合格序列（90 个具名物种），COI 保留 5,681 条（357 个具名物种）。各窗口仅纳入结合区可评价的物种。两套新标记使用相同热力学和成对扫描门槛，每端最多 8 种具体变体。覆盖要求每端最多两个错配、末端三位兼容；完全匹配要求双端均无错配。
@@ -100,7 +104,7 @@ XS 与 XSD 去除引物后的参考内部条码为 108 bp。相对替换前方�
 
 ## 引用与著作权
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.3. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.4. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 
@@ -117,3 +121,16 @@ Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial pr
 5. Untergasser, A., Cutcutache, I., Koressaar, T., et al. (2012). Primer3—new capabilities and interfaces. *Nucleic Acids Research*, 40, e115. https://doi.org/10.1093/nar/gks596
 
 6. Riaz, T., Shehzad, W., Viari, A., et al. (2011). ecoPrimers: inference of new DNA barcode markers from whole genome sequence analysis. *Nucleic Acids Research*, 39, e145. https://doi.org/10.1093/nar/gkr732
+
+
+7. Uthicke, S., Byrne, M., & Conand, C. (2010). Genetic barcoding of commercial Bêche-de-mer species (Echinodermata: Holothuroidea). *Molecular Ecology Resources*, 10(4), 634–646. https://doi.org/10.1111/j.1755-0998.2009.02826.x
+
+8. Hoareau, T. B., & Boissin, E. (2010). Design of phylum-specific hybrid primers for DNA barcoding: addressing the need for efficient COI amplification in the Echinodermata. *Molecular Ecology Resources*, 10(6), 960–967. https://doi.org/10.1111/j.1755-0998.2010.02848.x
+
+9. Byrne, M., Rowe, F., & Uthicke, S. (2010). Molecular taxonomy, phylogeny and evolution in the family Stichopodidae (Aspidochirotida: Holothuroidea) based on COI and 16S mitochondrial DNA. *Molecular Phylogenetics and Evolution*, 56(3), 1068–1081. https://doi.org/10.1016/j.ympev.2010.04.013
+
+10. Wen, J., Hu, C., Zhang, L., Luo, P., Zhao, Z., Fan, S., & Su, T. (2010). The application of PCR–RFLP and FINS for species identification used in sea cucumbers (Aspidochirotida: Stichopodidae) products from the market. *Food Control*, 21(4), 403–407. https://doi.org/10.1016/j.foodcont.2009.06.014
+
+11. Wen, J., Hu, C., Zhang, L., & Fan, S. (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. *Food Control*, 22(1), 72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
+
+12. Xing, R.-R., Hu, R.-R., Wang, N., Zhang, J.-K., Ge, Y.-Q., & Chen, Y. (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. *Food Control*, 129, 108199. https://doi.org/10.1016/j.foodcont.2021.108199

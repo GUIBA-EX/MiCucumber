@@ -1,5 +1,11 @@
 # Order-balanced D selection · 2026-10-25
 
+## Preprint v1.4 · 9 November 2026
+
+- Integrate six verified studies on sea-cucumber barcoding, molecular taxonomy, product identification and low-degeneracy COI primer design.
+- Expand manuscript context and discussion and synchronize the bilingual README reference lists.
+
+
 ## Preprint v1.3 · 9 November 2026
 
 - Synchronize the manuscript and PDF with the adopted 145 bp COI XS/XSD assays.
