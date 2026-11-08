@@ -9,6 +9,19 @@ import tempfile
 
 out=Path(__file__).resolve().parent
 c=json.loads((out/'release.json').read_text())
+from tables import synchronize
+import hashlib
+manuscript=out/'MiCucumber_preprint.md'
+manuscript.write_text(synchronize(manuscript.read_text()))
+for gene in ('12S','COI'):
+    shutil.copyfile(out.parent/f'markers/12S_COI/figures/positions_{gene}.en.png',out/f'figures/{gene}_positions.png')
+provenance_file=out/'preprint_provenance.json'
+provenance=json.loads(provenance_file.read_text())
+sources=set(provenance['inputs'])|{'publications/tables.py','publications/release.json'}
+sources.update(f'markers/12S_COI/figures/positions_{gene}.en.png' for gene in ('12S','COI'))
+provenance.update(date=c['date'],source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=out.parent,text=True).strip())
+provenance['inputs']={name:hashlib.sha256((out.parent/name).read_bytes()).hexdigest() for name in sorted(sources)}
+provenance_file.write_text(json.dumps(provenance,indent=2)+'\n')
 article=subprocess.check_output(['pandoc','--from=gfm','--to=html5',str(out/'MiCucumber_preprint.md')],text=True)
 article=re.sub(r'href="(?!https?:|#)([^"]+)"',lambda m:'href="https://github.com/GUIBA-EX/MiCucumber/blob/preprint-v'+c['version']+'/'+str((out/m[1]).resolve().relative_to(out.parent))+'"',article)
 article=re.sub(r'(<p><img\b[^>]*></p>|<figure>.*?</figure>)\s*(<p><strong>Figure.*?</p>)',r'<div class=figure-block>\1\2</div>',article,flags=re.S)

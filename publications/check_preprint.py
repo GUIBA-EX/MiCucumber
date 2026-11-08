@@ -2,6 +2,11 @@ from pathlib import Path
 import csv,json,hashlib,re
 import subprocess
 repo=Path(__file__).resolve().parents[1];name=repo.name;p=repo/'publications';md=(p/f'{name}_preprint.md').read_text();prov=json.loads((p/'preprint_provenance.json').read_text())
+from tables import generated_tables
+for number,blocks in generated_tables().items():
+ for block in blocks:assert block in md,f'Table {number} differs from source CSV'
+for gene in ('12S','COI'):
+ assert (p/f'figures/{gene}_positions.png').read_bytes()==(repo/f'markers/12S_COI/figures/positions_{gene}.en.png').read_bytes()
 text=subprocess.check_output(['pdftotext','-layout',str(p/f'{name}_preprint.pdf'),'-'],text=True)
 pages=[x for x in text.split('\f') if x.strip()]
 assert '\n**Fei Xia**\n' in md
@@ -24,5 +29,5 @@ for x in csv.DictReader((repo/'markers/12S_COI/candidates.csv').open()):
   assert x[side] in md and x[side] in flat
  assert f"| {x['gene']} | {x['name']} | {x['span']} | {x['covered']}/{x['evaluable']} | {x['exact']}/{x['evaluable']} | {x['WC']}/{x['GT']} |" in md
 for cap,rel in re.findall(r'!\[(.*?)\]\((.*?)\)',md):assert (p/rel).exists()
-result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','common-panel table against CSV','conditional holdout table against CSV','figure files','no near-empty final page'],status='PASS')
+result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','all Tables 1–7 against source CSV', 'binding figures against current marker figures', 'common-panel table against CSV','conditional holdout table against CSV','figure files','no near-empty final page'],status='PASS')
 (p/'preprint_validation.json').write_text(json.dumps(result,indent=2)+'\n');print(name,'PASS',len(pages),'pages')

@@ -1,16 +1,17 @@
 {
   "author": "Fei Xia",
-  "date": "2026-11-04",
+  "date": "2026-11-09",
   "project": "MiCucumber",
-  "source_commit": "8ecd7a44c8b63cea2e3be446b3113fcc622b74e9",
+  "source_commit": "fc65dccf72be85ec38a60fab608a417ad9997958",
   "common_species": 151,
   "inputs": {
-    "markers/12S_COI/candidates.csv": "b7c6b9e57a0fa45b2c27fd98d8c2198575c1679c47c9fa68d8bdeb2429754f60",
-    "markers/12S_COI/final_check.json": "5543d4af2af8809bdc162026a4ae243e45225e2e42bd91241f2d2f59a23db16a",
-    "sequences/all_markers.fasta": "ceaa7b2d6055b8df06d429fe04b5ff695652e0c1ffd3541e5226a4b0357c6142",
-    "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48",
     "figures/current_region_coordinates.csv": "a94a75fd6dfabb270d0929905bcf2ed05640c527d4e4925c3b3dcc542694439e",
-    "results/current_primers/comparison.csv": "20c03762ea79111aa813b6c42fc04eaba594d0cc5606f44a23ffddb30d8b65df",
+    "markers/12S_COI/candidates.csv": "d496c6a26f69fc5cabd9a0ee5cfa9997f4ee23b25e32aa4e42eadfd44c21f7fe",
+    "markers/12S_COI/figures/positions_12S.en.png": "fcafcb11878322c5d5b3acb63527b235d583d8c4ea7f27b07d5e63a0b06c08a6",
+    "markers/12S_COI/figures/positions_COI.en.png": "0a5a8c1c6e55ec0197e14b0fa130787bec781cee7eed943ad41ddf6e6fe74b0d",
+    "markers/12S_COI/final_check.json": "2bdccd0f5fe5eada59a0812ea661a8841012c317486c042d34a35b45b8be3157",
+    "publications/release.json": "f85b4aee68d18a7f2cf2e1c240bb70e338b5aadc82a672df3b134084b816b5b9",
+    "publications/tables.py": "d64eab8a025b9daef4b6493ff8c41d4274f929a90d19b2ca3f3b2c86dafc51a9",
     "results/computational_evaluation/results/barcode_collisions.csv": "85e89bee797d7141c00e340d2e43304a1e23bb688adebac044f0eed770bc6e1a",
     "results/computational_evaluation/results/barcodes.csv": "4df0f209c919ccb329214c74ae876c897cfe37333ebb38037dede5b02c308783",
     "results/computational_evaluation/results/by_order.csv": "6477aa1677e120d1f6312ebf0af6c1e8657faa962ab642b861ada4bc023436be",
@@ -18,14 +19,17 @@
     "results/computational_evaluation/results/cv_folds.csv": "f790fe11c18c40c740cd9afae14f269382e823fbbba637085733339ceeb5de38",
     "results/computational_evaluation/results/cv_predictions.csv": "1967eb4c0907db95647e00b4af8a93765e494cd5c9576f1d4f26e20680dba4aa",
     "results/computational_evaluation/results/cv_summary.csv": "fe4962d8658d99cd6bf475e86da9136b9091d7160392c0a2c1ebeb7cf91c9dc7",
+    "results/computational_evaluation/results/manifest.json": "94e0e5d708991cfbe1c67abee5428176e7e90ddee7104cf134e528b7cae5975c",
     "results/computational_evaluation/results/nearest_neighbors.csv": "c56292986c9fdf2e8757ad0f89a766ffb48ca909e6e3958ea4c8075fa20c9aac",
     "results/computational_evaluation/results/new_curated_XS_hits.csv": "175055510bba584fdbec28463a9b1dfd759e6b7452c68c422bf7e490721104ea",
     "results/computational_evaluation/results/panel_comparison.csv": "aa97498aa132d7e3469305e17c7b796dc0545856e8991073cd681066f6cde663",
     "results/computational_evaluation/results/resolution.csv": "4c7f45ea8daaa95c269798e114dcd0af127028cba014328e4acdb688df8d38a2",
-    "results/computational_evaluation/results/manifest.json": "94e0e5d708991cfbe1c67abee5428176e7e90ddee7104cf134e528b7cae5975c"
+    "results/current_primers/comparison.csv": "20c03762ea79111aa813b6c42fc04eaba594d0cc5606f44a23ffddb30d8b65df",
+    "sequences/all_markers.fasta": "b1814a4bc6170d7a5ef15cc12c76d226b42ea6eb65601db5c6c0bf870966df68",
+    "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48"
   },
   "artifacts": {
-    "MiCucumber_preprint.pdf": "3ea5cd2617a3741d117ae3bdaac565343aad51bfdebd2b8f66e75de82bca7412",
-    "MiCucumber_preprint.md": "3d650e137d837c539cdad3106a37440606d5093a82c59a4d818af7acc13a646f"
+    "MiCucumber_preprint.pdf": "93fc344c32253a2c5f4de09a678756686c0c4f658da5d894e9fa14af7d08e6c0",
+    "MiCucumber_preprint.md": "d31297a4818063c7e72a2f690d920f6b25c598421ea43a21ac1dd848998996a5"
   }
 }

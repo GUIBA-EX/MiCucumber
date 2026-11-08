@@ -1,5 +1,13 @@
 # Order-balanced D selection · 2026-10-25
 
+## Preprint v1.3 · 9 November 2026
+
+- Synchronize the manuscript and PDF with the adopted 145 bp COI XS/XSD assays.
+- Generate and validate Tables 1–7 directly from the released CSV files.
+- Synchronize marker-position figures, provenance, citation metadata and release checksums.
+- Align the 12S coverage priority with XLD and clarify background-record units, concentration scenarios and coordinate conventions.
+
+
 Adopt order-balanced taxon detection including Apodida as the primary coverage metric. Select SD-T10, MD-T4, LD-T7 and XLD-T8 as current SD, MD, LD and XLD; retain XS. Update bilingual documentation, canonical sequences, raw evidence and base matching. Frozen baseline evidence remains available. All four selected pairs retain the ordinary/A/B endpoints.
 
 # XS integration · 2026-10-25

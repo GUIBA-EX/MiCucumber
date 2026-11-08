@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.2 · 4 November 2026 · Not peer reviewed.**
+**Preprint v1.3 · 9 November 2026 · Not peer reviewed.**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.2) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
 The preprint follows the shared MiAnemone/MiUrchin manuscript format, with methods, results, discussion, evaluation priorities, references and complete end tables.
@@ -100,7 +100,7 @@ The 16S common-panel comparison, barcode identity analysis and genus-blocked hol
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.2. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.2).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.3. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.3).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 
