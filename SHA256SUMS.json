@@ -187,7 +187,7 @@
   "markers/12S_COI/sequence_audit.csv": "effe027e50df1059776d29769db57e4a486b689805dba0af7d7cd0976af45a5a",
   "markers/12S_COI/summary.json": "c94244d1742d5d915bb89d4b78465089e1ac2f4a4c1f517131b71c3f9246db70",
   "publications/MiCucumber_preprint.md": "c9e94cb7cc144bb019e5768d84b392b01e5693c1a8b07a209181ad5e5ef25f8c",
-  "publications/MiCucumber_preprint.pdf": "9937bc817f822a5e7c592f7851308dbff0f2af4a741fb416f4d586b23bde3be7",
+  "publications/MiCucumber_preprint.pdf": "a45a6faa006d2a04a206e847fc1deb3d8c1905468ab8d3db0db384918c20b983",
   "publications/README.md": "5a5054675cc76be60dd8d23c44847dae73d5587aa2bdf523a488d7259bbcb674",
   "publications/build_preprint.py": "37493dc88a2b190c05a04ecbdec16c3eba99db027ef838614e6dd5dffbf028be",
   "publications/check_preprint.py": "4f4cb67c15960532fc40d4295d561a2764d02a8b5785b27a0eae34355f47a8f1",
@@ -197,7 +197,7 @@
   "publications/figures/holdout.png": "fdfd3586e0449a890271d5cb24614e3431fb6d1b40cf8e582d94a17bc0f8a7ed",
   "publications/figures/marker_positions.png": "e4172a61dbaed780f515d43726dd4ae5a188b1bdff09ec40cb35c10a31890270",
   "publications/figures/resolution.png": "fb36931804006d459adf96f82cf91bb4c007ecc24558dd3ab705c804130b4c78",
-  "publications/preprint_provenance.json": "6f95546af44bdb0cd304db2686c7e682653f0b610b4071db96c7efce96151e76",
+  "publications/preprint_provenance.json": "225aa50da4fc1d02dcc6a31b386b3a56359c69f674df56cd2e298c1a30f4ef3b",
   "publications/preprint_validation.json": "36678f764ed8c9545111c0db9e341c74749e8f565c759033950a93a4d0d21460",
   "publications/requirements-preprint.txt": "6b9d3af92e9bdb2317e9ac845c8349f4b6a44b7d05e628ea717938589b583fc2",
   "report.html": "fa7d6b84f598d187d11f4c78ddef391ab29d25b14f0f5d9c15d3cee22cd3d498",
@@ -545,6 +545,6 @@
   "results/anth28s_evaluation/figures/identity_COI.svg": "16bdfc55e66d5527cc583bfd5ead0353ca5a7452f7e07fb725fb94fa1b993d1e",
   "results/anth28s_evaluation/figures/identity_12S.svg": "4340d24fc73caf5f0c554e55cb8a13165cbf33d605fcf59830df6aa3c5771bf6",
   "publications/release.json": "de23ac2d3da60086d66e3746793d8a1c77d09a1912e55640c4d4874842e8c030",
-  "publications/publication_check.json": "a81ffccc54acf41684b6f4f1d963d8f36d80e77301f733522b089bc8963c9ea3",
+  "publications/publication_check.json": "dd16419b455c42474f6c01d737c8b78c63d6607fcc6b36559cbfbc3e3ad0431b",
   ".github/workflows/preprint.yml": "ac5a825011c70a942a6bdb1a39865690045835c20f1cadd308ec2a4e1ec177d8"
 }
