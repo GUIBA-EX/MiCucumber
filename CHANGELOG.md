@@ -1,5 +1,13 @@
 # Order-balanced D selection · 2026-10-25
 
+## Preprint v1.5 · 9 November 2026
+
+- Add 0/1/2-mismatch diagnostics with and without terminal-three compatibility for all 29 released pairs.
+- Add 15 primer-free identity matrices, taxonomic similarity distributions and paired-product length distributions.
+- Validate 87 released scores, 1,578 independently matched threshold flags and 465 sampled pairwise identities.
+- Integrate the diagnostic analyses into the formal manuscript/PDF, bilingual README and source-generated Tables 8–9; retain all primer sequences.
+- Remove the Computational assistance section.
+
 ## Preprint v1.4 · 9 November 2026
 
 - Integrate six verified studies on sea-cucumber barcoding, molecular taxonomy, product identification and low-degeneracy COI primer design.

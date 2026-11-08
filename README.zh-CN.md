@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**预印本 v1.4 · 2026 年 11 月 9 日 · 未经同行评审。**
+**预印本 v1.5 · 2026 年 11 月 9 日 · 未经同行评审。**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
 <!-- publication:end -->
 
 预印本采用与 MiAnemone、MiUrchin 一致的论文格式，包含方法、结果、讨论、评估重点、参考文献及文末完整数据表。
@@ -102,9 +102,33 @@ XS 与 XSD 去除引物后的参考内部条码为 108 bp。相对替换前方�
 
 [16S 方法](docs/METHODS.zh-CN.md) · [16S 参考审核](results/species_qc/README.md) · [16S 计算评价](results/computational_evaluation/README.zh-CN.md) · [12S 与 COI 参考资料](markers/12S_COI/README.md) · [独立复核](markers/12S_COI/final_check.json)
 
+<!-- anth28s:start -->
+## 参考 Anth-28S 的计算诊断
+
+[手稿](publications/MiCucumber_preprint.md) · [PDF](publications/MiCucumber_preprint.pdf) · [完整结果](results/anth28s_evaluation/README.zh-CN.md)。
+
+参考 McCartin 等（2024），对 29 对引物比较每端 0、1、2 个错配，并单列末三位约束；15 个去引物内部序列矩阵包含 130,599 个跨物种比较。各图沿用相应基因及窗口面板，不同分母的结果不作直接排名。
+
+| 基因 | 方案 | 物种 N | ≤0 | ≤1 | ≤2 | ≤2＋末三位 | 背景 ≤2 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 16S | SD | 174 | 0 | 24 | 130 | 130 | 0 |
+| 16S | LD | 174 | 29 | 60 | 84 | 82 | 0 |
+| 12S | XLD | 53 | 7 | 16 | 33 | 33 | 0 |
+| COI | XSD | 57 | 3 | 18 | 44 | 43 | 0 |
+| COI | LD | 283 | 11 | 59 | 122 | 103 | 0 |
+
+目标计物种、背景计记录；最后一列仅为每端≤2 个沃森–克里克错配且无末端约束的背景命中数，其他背景模型仍见引物表。SD 的覆盖较依赖允许两处错配，完全匹配应单独评价。
+
+![Mismatch sensitivity / 错配梯度](results/anth28s_evaluation/figures/mismatch_sensitivity.png)
+
+![16S primer-free sequence identity / 16S 内部序列相似度](results/anth28s_evaluation/figures/identity_16S.png)
+
+[Full methods, 12S/COI identity matrices and product lengths / 完整方法、12S/COI 矩阵及产物长度](results/anth28s_evaluation/README.zh-CN.md)
+<!-- anth28s:end -->
+
 ## 引用与著作权
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.4. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.5. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 

@@ -32,6 +32,10 @@ jobs:
           if ! git diff --quiet "$tag" HEAD -- README.md README.en.md README.zh-CN.md CITATION.cff CITATION.bib analysis results markers figures sequences publications scripts 12S 16S audit all_results.csv primers.fasta check_release.py .github/workflows/preprint.yml; then
             echo "next=1.$(( ${tag##*.} + 1 ))" >> "$GITHUB_OUTPUT"
           fi
+      - name: Reproduce mismatch and sequence-identity diagnostics
+        run: |
+          python results/anth28s_evaluation/run.py
+          python results/anth28s_evaluation/verify.py
       - name: Rebuild and stamp the new version
         if: steps.version.outputs.next != ''
         env:

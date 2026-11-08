@@ -21,6 +21,6 @@ Independent C++ and Python scans evaluate the same reference data; they are algo
 [Independent reference panels and raw paired-scan verification](../markers/12S_COI/README.md). The preceding sections describe the 16S analysis.
 
 
-### 12S and COI
+### Anth-28S-inspired diagnostics
 
-The common-panel and genus holdout analyses above apply to 16S. See the [independent marker panels and verification method](../markers/12S_COI/README.md).
+The [computational diagnostic methods](../results/anth28s_evaluation/README.md) extend mismatch thresholds to 0, 1 and 2 per primer, each with and without terminal-three compatibility, on all three genes. They also describe primer-free nucleotide identity, exact insert uniqueness and product-length distributions. The diagnostic thresholds are reported separately from the released coverage definition.

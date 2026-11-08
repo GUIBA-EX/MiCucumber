@@ -2,11 +2,11 @@
 
 **Fei Xia**
 
-Preprint v1.4 · 9 November 2026 · Not peer reviewed
+Preprint v1.5 · 9 November 2026 · Not peer reviewed
 
 ## Abstract
 
-Environmental DNA metabarcoding of sea cucumbers requires markers that combine broad primer compatibility with informative internal sequence variation. We evaluated five mitochondrial 16S windows on a curated panel of 174 species and independently screened mitochondrial 12S and COI. Each retained ordinary/D alternative shares reference endpoints, with at most eight concrete variants per D oligonucleotide. On the common 151-species 16S panel, SD covered 115 species, whereas LD gave the most exact paired matches (23 species). Performance varied by lineage: LD covered 71/77 evaluable Holothuriida but 0/22 Elasipodida and 0/5 Apodida on its own panel. Primer-free inserts contained six distinct interspecific identity-conflict pairs. Genus-blocked sequence selection quantified compatibility conditional on the predefined 16S windows. Among retained 12S D assays, XLD covered 33/53 species with seven exact matches. The refined 145 bp COI XS and XSD covered 20/57 and 43/57 species, with two and three exact matches and no strict background hits among 2,216 reference records. COI LD covered 103/283 species. The resulting sequence collection and reproducible analyses support marker choice by length, lineage and binding properties. Released-assay estimates use the design panels, while the genus-blocked diagnostic omits the formal thermal and background gates.
+Environmental DNA metabarcoding of sea cucumbers requires markers that combine broad primer compatibility with informative internal sequence variation. We evaluated five mitochondrial 16S windows on a curated panel of 174 species and independently screened mitochondrial 12S and COI. Each retained ordinary/D alternative shares reference endpoints, with at most eight concrete variants per D oligonucleotide. On the common 151-species 16S panel, SD covered 115 species, whereas LD gave the most exact paired matches (23 species). Performance varied by lineage: LD covered 71/77 evaluable Holothuriida but 0/22 Elasipodida and 0/5 Apodida on its own panel. Primer-free inserts contained six distinct interspecific identity-conflict pairs. Genus-blocked sequence selection quantified compatibility conditional on the predefined 16S windows. Among retained 12S D assays, XLD covered 33/53 species with seven exact matches. The refined 145 bp COI XS and XSD covered 20/57 and 43/57 species, with two and three exact matches and no strict background hits among 2,216 reference records. COI LD covered 103/283 species. Mismatch-gradient analysis of all 29 pairs showed that 16S SD matched 0, 24 and 130/174 species at zero, one and two mismatches per primer. Fifteen taxonomically ordered internal-barcode matrices comprised 130,599 within-window species comparisons. The resulting sequence collection and reproducible analyses support marker choice by length, lineage and binding properties. Released-assay estimates use the design panels, while the genus-blocked diagnostic omits the formal thermal and background gates.
 
 **Keywords:** Holothuroidea; environmental DNA; mitochondrial 16S; primer degeneracy; barcode discrimination; grouped holdout
 
@@ -69,6 +69,14 @@ The search of NCBI Nucleotide retrieved 6,168 distinct accessions across both lo
 
 The frozen computational bundle contains input hashes, source sequences, window panels, scripts, per-species predictions, fold candidates and aggregate tables. Numerical analysis uses Python's standard library; plotting uses matplotlib. Validation checks denominators, fold sizes, genus separation, identical-sequence grouping, input hashes and summary totals. Source audits remain available in the repository. The present manuscript was generated from the committed result tables, with input hashes recorded in its provenance file.
 
+### Mismatch sensitivity, product lengths and taxonomic sequence identity
+
+Following the diagnostic approach of McCartin et al. (2024, pp. 6 and 11–13; Fig. 3), all 29 released primer pairs were rescanned on both strands of their frozen target and background sequences. Mismatch thresholds of zero, one and two apply separately to each primer, with IUPAC compatibility treated as a match under Watson–Crick pairing. Each threshold was evaluated with and without requiring compatibility at the final three 3′ bases of both primers. Ambiguous binding sites were excluded. Target product-length limits reproduce the released rules: 70–500 bp with an insert ≥20 bp for 16S XS, 150–500 bp with an insert ≥50 bp for the remaining 16S assays, and 100–500 bp with an insert ≥50 bp for 12S/COI. Background inserts were allowed from 0 to 1,000 bp. Target denominators contain one representative per evaluable species per window; background denominators are 5,600, 438 and 2,216 accession records for 16S, 12S and COI. Counts therefore describe different units and are not amplification proportions in a mixed sample. The released guanine–thymine and more permissive background models remain separately reported.
+
+For sequence-identity matrices, primer-free inserts were extracted between the aligned reference endpoints from each window's evaluable panel. Inserts containing ambiguous nucleotides were excluded; the existing curated gene alignments were retained. Identity equals the number of equal A/C/G/T columns divided by the number of columns containing at least one base. A base opposite a gap is a difference, and double-gap columns are ignored. Matrices were sorted by the source order assignment, genus and species. Ordinary/D alternatives share the same internal region, so one matrix represents each length. Exact ungapped insert identity was also counted independently. Between-species similarities were stratified into same genus, same order/different genus, and different orders. These available-panel summaries do not provide within-species variation, a barcoding-gap test, or matched cross-gene performance estimates. Product distributions count each unique accession/product-span combination once at each threshold; target products are restricted to the evaluable window panel.
+
+The new C++ exhaustive scan was compared with the released exact and strict Watson–Crick summaries in 87 checks. An independent Python regex-seed matcher verified 1,578 threshold/terminal flags on deterministic hit and non-hit subsets spanning every assay and both target/background roles. A further 465 sampled pairwise identities were recalculated independently.
+
 ## Results
 
 ### Released assays on their available panels
@@ -121,7 +129,43 @@ The COI L window has 283 evaluable species compared with 55–57 for XS through 
 
 **Figure 4b.** Ordinary and degenerate primer windows on the COI reference.
 
+### Anth-28S-inspired diagnostic results
+
+The mismatch series separates exact compatibility from tolerance-dependent coverage. On their own available panels, 16S SD matched 0, 24 and 130 of 174 species at zero, one and two mismatches per primer; requiring terminal-three compatibility at the two-mismatch threshold retained all 130. In contrast, LD matched 29, 60 and 84 species, decreasing to 82 after the terminal constraint. For 12S XLD, the series was 7, 16 and 33 of 53 species, with 33 retained by the terminal rule. COI XSD matched 3, 18 and 44 of 57 species, decreasing to 43; COI LD decreased from 122 to 103 of 283 species when terminal compatibility was required at the two-mismatch threshold. These differences show why relaxed mismatch totals cannot replace the released strict coverage measure.
+
+At up to two Watson–Crick mismatches without the terminal constraint, the frozen background scan predicted one record for each of 16S XS and S and none for the other 27 pairs. This restricted model does not replace the reported guanine–thymine or higher-mismatch screens. The product-length plot presents these finite-panel predictions without assuming size selection will separate target and background products.
+
+The 15 identity matrices contain 130,599 distinct within-window species comparisons. Exact insert uniqueness was 154/166 species for 16S XS and 168/174 for S, M and L; the XL panel contained 146/152 unique representatives. For 12S XL, 53/53 available inserts were unique; COI XL contained 62/62 unique inserts. The COI L identity analysis retained 278 of 283 evaluable species after excluding five ambiguous internal inserts, of which 272 had unique inserts. Complete sequences can therefore differ in primer evaluability and usable internal-barcode status. Neither smaller-panel uniqueness nor higher average divergence alone establishes a better assay.
+
+Table 8 reports the mismatch-gradient counts for all 29 assays; Table 9 summarizes the internal-barcode panels.
+
+![Figure 5](../results/anth28s_evaluation/figures/mismatch_sensitivity.png)
+
+**Figure 5.** Mismatch sensitivity for the 29 released assays. Stacked bars show cumulative zero-, one- and two-mismatch matches, with thresholds applied to each primer separately. Orange symbols require terminal-three compatibility at the two-mismatch threshold. Target annotations give evaluable species denominators; backgrounds count accession records. Only Watson–Crick pairing is shown.
+
+![Figure 6](../results/anth28s_evaluation/figures/identity_16S.png)
+
+**Figure 6.** 16S primer-free aligned sequence identities, sorted by source order, genus and species. Black boxes delimit orders and white dashed boxes delimit genera. All available unambiguous inserts are included regardless of released-primer compatibility. Single gaps count as differences and double gaps are excluded.
+
+![Figure 7](../results/anth28s_evaluation/figures/identity_12S.png)
+
+**Figure 7.** 12S primer-free aligned sequence identities, using the same definition as Figure 6. Each window uses its own available panel and species order.
+
+![Figure 8](../results/anth28s_evaluation/figures/identity_COI.png)
+
+**Figure 8.** COI primer-free aligned sequence identities, using the same definition as Figure 6. Five ambiguous internal inserts were excluded from the L window; its identity denominator is 278 rather than the binding-evaluable 283.
+
+![Figure 9](../results/anth28s_evaluation/figures/identity_distributions.png)
+
+**Figure 9.** Between-species aligned identity by taxonomic relationship. Boxes span quartiles; whiskers show the fifth and ninety-fifth percentiles. Pairwise observations share species and are descriptive, not independent statistical replicates. One representative per species precludes assessment of a within-/between-species barcoding gap.
+
+![Figure 10](../results/anth28s_evaluation/figures/product_lengths.png)
+
+**Figure 10.** Predicted complete product lengths at up to two mismatches per primer, without a terminal constraint. Lines show full ranges, thick segments show quartiles and circles show medians of unique accession/span combinations. Background matches occur only for 16S XS and S in this restricted model. Product-length separation is not assumed.
+
 ## Discussion
+
+The mismatch-gradient analysis further shows that high two-mismatch compatibility can coexist with very few exact or one-mismatch matches. For example, 16S SD has no exact matches but 130/174 two-mismatch matches on its available panel. These are complementary diagnostics, and should not be collapsed into a single assay ranking. Taxonomically sorted identity matrices expose shared and divergent internal sequences, while the separate ambiguity filter keeps primer-site evaluability distinct from barcode usability.
 
 The analysis separates three questions: whether a primer pair matches the target reference, whether the paired sites match exactly, and whether the internal sequence distinguishes that reference from other named species. On the common 151-species panel, the largest predicted coverage was 115/151 (SD), and the largest number of exact paired matches was 23/151 (LD). These properties need not favor the same design. Coverage improvements from controlled degeneracy should therefore be interpreted alongside exact matches, lineage changes and non-target susceptibility rather than a single aggregate percentage.
 
@@ -153,11 +197,8 @@ MiCucumber provides five controlled mitochondrial 16S windows for computational 
 
 ## Data availability and reproducibility
 
-All primer sequences, frozen reference inputs, analyses and this preprint are available at https://github.com/GUIBA-EX/MiCucumber. The computational evaluation bundle is under results/computational_evaluation; this manuscript's Markdown, PDF, build script and provenance are under publications. No new database retrieval is needed to reproduce the numerical analyses from the frozen inputs.
+All primer sequences, frozen reference inputs, analyses and this preprint are available at https://github.com/GUIBA-EX/MiCucumber. The common-panel evaluation bundle is under results/computational_evaluation and the mismatch/identity diagnostic bundle is under results/anth28s_evaluation; this manuscript's Markdown, PDF, build script and provenance are under publications. No new database retrieval is needed to reproduce the numerical analyses from the frozen inputs.
 
-## Computational assistance
-
-OpenAI Codex assisted with analysis code, manuscript organization and PDF production. Fei Xia is the sole named author.
 
 ## References
 
@@ -185,7 +226,7 @@ Xing RR, Hu RR, Wang N, Zhang JK, Ge YQ, Chen Y (2021). Authentication of sea cu
 
 Copyright © 2026 Fei Xia. Existing project copyright and third-party source conditions apply; see COPYRIGHT.md at the repository root.
 
-Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4
+Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5
 
 ## Table 1. Reference binding coordinates and evaluable species.
 
@@ -323,3 +364,62 @@ Deg F/R gives the number of concrete variants per direction. The 16S ordinary an
 | COI LD | AAAATGCGAACYCCAGGARTWAC | GGTTCTTGCTTWCCTCTRTARTG | 8/8 |
 | COI XL | ATGAACCTAAACCGCTGAT | CGTGGGCTATATTTCTTGA | 1/1 |
 | COI XLD | ATGAACCTAAAMCGYTGAY | CGTGGGCTATRTTTCTNGA | 8/8 |
+
+
+## Table 8. Paired-primer mismatch sensitivity on the available species panels.
+
+Mismatch ceilings apply to each primer separately. Target counts are species; background counts are accession records under Watson–Crick pairing. The terminal-three column uses the released target compatibility rule. Background ≤2 does not require terminal compatibility and does not replace the broader background models in Tables 2 and 6.
+
+| Gene | Assay | Species N | ≤0 | ≤1 | ≤2 | ≤2 + terminal 3 | Background ≤2 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 16S | XS | 166 | 0 | 19 | 76 | 75 | 1 |
+| 16S | S | 174 | 5 | 26 | 110 | 110 | 1 |
+| 16S | SD | 174 | 0 | 24 | 130 | 130 | 0 |
+| 16S | M | 174 | 9 | 34 | 55 | 55 | 0 |
+| 16S | MD | 174 | 24 | 51 | 89 | 89 | 0 |
+| 16S | L | 174 | 13 | 34 | 66 | 65 | 0 |
+| 16S | LD | 174 | 29 | 60 | 84 | 82 | 0 |
+| 16S | XL | 152 | 1 | 7 | 52 | 23 | 0 |
+| 16S | XLD | 152 | 3 | 15 | 50 | 43 | 0 |
+| 12S | XS | 74 | 0 | 4 | 17 | 15 | 0 |
+| 12S | XSD | 74 | 9 | 20 | 33 | 21 | 0 |
+| 12S | S | 88 | 2 | 5 | 17 | 13 | 0 |
+| 12S | SD | 88 | 7 | 16 | 37 | 27 | 0 |
+| 12S | M | 90 | 0 | 1 | 16 | 8 | 0 |
+| 12S | MD | 90 | 4 | 11 | 35 | 28 | 0 |
+| 12S | L | 83 | 1 | 11 | 20 | 14 | 0 |
+| 12S | LD | 83 | 12 | 19 | 36 | 19 | 0 |
+| 12S | XL | 53 | 5 | 15 | 31 | 31 | 0 |
+| 12S | XLD | 53 | 7 | 16 | 33 | 33 | 0 |
+| COI | XS | 57 | 2 | 11 | 29 | 20 | 0 |
+| COI | XSD | 57 | 3 | 18 | 44 | 43 | 0 |
+| COI | S | 55 | 0 | 1 | 14 | 10 | 0 |
+| COI | SD | 55 | 0 | 9 | 33 | 30 | 0 |
+| COI | M | 55 | 0 | 2 | 13 | 9 | 0 |
+| COI | MD | 55 | 3 | 9 | 25 | 25 | 0 |
+| COI | L | 283 | 0 | 12 | 55 | 30 | 0 |
+| COI | LD | 283 | 11 | 59 | 122 | 103 | 0 |
+| COI | XL | 62 | 0 | 1 | 16 | 11 | 0 |
+| COI | XLD | 62 | 1 | 6 | 37 | 37 | 0 |
+
+## Table 9. Primer-free barcode identity on the available window panels.
+
+Unique denotes a species whose ungapped insert differs from every other retained species in the same window. Ambiguous internal inserts are excluded independently of binding-site evaluability. Identical pairs count distinct species pairs within each window.
+
+| Gene | Window | Unambiguous N | Unique species | Identical pairs | Insert bp |
+| --- | --- | --- | --- | --- | --- |
+| 16S | XS | 166 | 154 | 6 | 148–165 |
+| 16S | S | 174 | 168 | 3 | 148–191 |
+| 16S | M | 174 | 168 | 3 | 175–218 |
+| 16S | L | 174 | 168 | 3 | 230–274 |
+| 16S | XL | 152 | 146 | 3 | 313–361 |
+| 12S | XS | 74 | 70 | 2 | 125–147 |
+| 12S | S | 88 | 86 | 1 | 159–172 |
+| 12S | M | 90 | 88 | 1 | 177–190 |
+| 12S | L | 83 | 81 | 1 | 294–310 |
+| 12S | XL | 53 | 53 | 0 | 287–323 |
+| COI | XS | 57 | 55 | 1 | 104–184 |
+| COI | S | 55 | 53 | 1 | 69–155 |
+| COI | M | 55 | 53 | 1 | 102–233 |
+| COI | L | 278 | 272 | 3 | 247–311 |
+| COI | XL | 62 | 62 | 0 | 377–377 |

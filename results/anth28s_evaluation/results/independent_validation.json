@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "method": "independent Python regex-seed paired scan; deterministic hits and non-hits for every primer and both roles",
+  "threshold_flag_checks": 1578,
+  "identity_recalculation_checks": 465,
+  "full_released_score_checks": 87
+}

@@ -12,6 +12,7 @@ pages=[x for x in text.split('\f') if x.strip()]
 assert '\n**Fei Xia**\n' in md
 assert all(len(x.strip())>150 for x in pages)
 assert not any(x in md for x in ['author confirmation','To be completed','49 labels','A/B alternatives'])
+assert 'Computational assistance' not in md and 'OpenAI Codex' not in md
 for f,d in prov['inputs'].items():assert hashlib.sha256((repo/f).read_bytes()).hexdigest()==d,f
 prov['artifacts']={f:hashlib.sha256((p/f).read_bytes()).hexdigest() for f in prov['artifacts']}
 (p/'preprint_provenance.json').write_text(json.dumps(prov,indent=2)+'\n')
@@ -29,5 +30,14 @@ for x in csv.DictReader((repo/'markers/12S_COI/candidates.csv').open()):
   assert x[side] in md and x[side] in flat
  assert f"| {x['gene']} | {x['name']} | {x['span']} | {x['covered']}/{x['evaluable']} | {x['exact']}/{x['evaluable']} | {x['WC']}/{x['GT']} |" in md
 for cap,rel in re.findall(r'!\[(.*?)\]\((.*?)\)',md):assert (p/rel).exists()
-result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','all Tables 1–7 against source CSV', 'binding figures against current marker figures', 'common-panel table against CSV','conditional holdout table against CSV','figure files','no near-empty final page'],status='PASS')
+for number in range(5,11):assert f'Figure{number}.' in flat,number
+assert 'Computationalassistance' not in flat and 'OpenAICodex' not in flat
+diagnostic=repo/'results/anth28s_evaluation/results'
+validation=json.loads((diagnostic/'validation.json').read_text());independent=json.loads((diagnostic/'independent_validation.json').read_text())
+assert validation['status']==independent['status']=='PASS' and validation['pair_count']==29
+for f,d in validation['input_sha256'].items():assert hashlib.sha256((repo/f).read_bytes()).hexdigest()==d,f
+assert independent['full_released_score_checks']==87 and independent['threshold_flag_checks']==1578 and independent['identity_recalculation_checks']==465
+identities=list(csv.DictReader((diagnostic/'identity_summary.csv').open()));assert len(identities)==15
+assert sum(sum(1 for _ in csv.DictReader(f.open())) for f in diagnostic.glob('*_identity.csv'))==130599
+result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','all Tables 1–9 against source CSV', 'binding figures against current marker figures', 'common-panel table against CSV','conditional holdout table against CSV','six new figures and captions','29-assay diagnostic verification','15 barcode matrices and 130599 comparisons','requested section removed','no near-empty final page'],status='PASS')
 (p/'preprint_validation.json').write_text(json.dumps(result,indent=2)+'\n');print(name,'PASS',len(pages),'pages')

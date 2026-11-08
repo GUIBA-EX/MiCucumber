@@ -6,6 +6,8 @@
 
 ## Build and validate
 
+The preprint integrates the [mismatch, product-length and sequence-identity analyses](../results/anth28s_evaluation/README.md), with six diagnostic figures and source-generated Tables 8–9. All 29 primer pairs and 58 oligonucleotides are retained.
+
 Install Python 3, Pandoc, Poppler and Google Chrome or Chromium. Set `CHROME` to the browser executable when needed. Run from the repository root:
 
 ```sh

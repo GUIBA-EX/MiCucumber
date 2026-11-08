@@ -26,6 +26,16 @@ def generated_tables():
  tables[6]=[table(['Gene','Assay','Span bp','Covered/N','Exact/N','Strict background hits¹'],[[r['gene'],r['name'],r['span'],r['covered']+'/'+r['evaluable'],r['exact']+'/'+r['evaluable'],r['WC']+'/'+r['GT']] for r in markers])]
  headers=['Assay','F, 5′–3′','R, 5′–3′','Deg F/R']
  tables[7]=[table(headers,[[r['name'],r['F'],r['R'],r['degeneracy_F']+'/'+r['degeneracy_R']] for r in pairs]),table(headers,[[r['gene']+' '+r['name'],r['F'],r['R'],r['deg_F']+'/'+r['deg_R']] for r in markers])]
+ diagnostic=read('results/anth28s_evaluation/results/mismatch_summary.csv')
+ def value(gene,name,threshold,terminal=0,role='target'):
+  return next(r['matched'] for r in diagnostic if r['gene']==gene and r['name']==name and r['threshold']==str(threshold) and r['terminal3_required']==str(terminal) and r['role']==role)
+ rr=[]
+ for gene,name in dict.fromkeys((r['gene'],r['name']) for r in diagnostic):
+  n=next(r['n'] for r in diagnostic if r['gene']==gene and r['name']==name and r['role']=='target')
+  rr.append([gene,name,n,*[value(gene,name,k) for k in (0,1,2)],value(gene,name,2,1),value(gene,name,2,0,'background')])
+ tables[8]=[table(['Gene','Assay','Species N','≤0','≤1','≤2','≤2 + terminal 3','Background ≤2'],rr)]
+ identity=read('results/anth28s_evaluation/results/identity_summary.csv')
+ tables[9]=[table(['Gene','Window','Unambiguous N','Unique species','Identical pairs','Insert bp'],[[r['gene'],r['window'],r['n'],r['unique_species'],r['identical_species_pairs'],r['insert_min']+'–'+r['insert_max']] for r in identity])]
  return tables
 def synchronize(text):
  for number,expected in generated_tables().items():

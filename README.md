@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.4 · 9 November 2026 · Not peer reviewed.**
+**Preprint v1.5 · 9 November 2026 · Not peer reviewed.**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
 The preprint follows the shared MiAnemone/MiUrchin manuscript format, with methods, results, discussion, evaluation priorities, references and complete end tables.
@@ -102,9 +102,33 @@ The 16S common-panel comparison, barcode identity analysis and genus-blocked hol
 
 [16S methods](docs/METHODS.md) · [16S curation](results/species_qc/README.md) · [16S computational evaluation](results/computational_evaluation/README.md) · [12S and COI data](markers/12S_COI/README.md) · [Independent checks](markers/12S_COI/final_check.json)
 
+<!-- anth28s:start -->
+## Anth-28S-inspired computational diagnostics
+
+[Manuscript](publications/MiCucumber_preprint.md) · [PDF](publications/MiCucumber_preprint.pdf) · [All results](results/anth28s_evaluation/README.md).
+
+Following McCartin et al. (2024), all 29 pairs were compared at 0, 1 and 2 mismatches per primer, with a separate terminal-three constraint. Fifteen primer-free identity matrices cover 130,599 species pairs. Figures use existing gene/window panels; counts across different denominators are not directly comparable.
+
+| Gene | Assay | Species N | ≤0 | ≤1 | ≤2 | ≤2 + terminal 3 | Background ≤2 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 16S | SD | 174 | 0 | 24 | 130 | 130 | 0 |
+| 16S | LD | 174 | 29 | 60 | 84 | 82 | 0 |
+| 12S | XLD | 53 | 7 | 16 | 33 | 33 | 0 |
+| COI | XSD | 57 | 3 | 18 | 44 | 43 | 0 |
+| COI | LD | 283 | 11 | 59 | 122 | 103 | 0 |
+
+Targets count species; backgrounds count records. The last column uses Watson–Crick pairing with ≤2 mismatches and no terminal constraint. Other published background models remain in the sequence tables. SD coverage depends strongly on accepting two mismatches; exact matching remains a separate criterion.
+
+![Mismatch sensitivity / 错配梯度](results/anth28s_evaluation/figures/mismatch_sensitivity.png)
+
+![16S primer-free sequence identity / 16S 内部序列相似度](results/anth28s_evaluation/figures/identity_16S.png)
+
+[Full methods, 12S/COI identity matrices and product lengths / 完整方法、12S/COI 矩阵及产物长度](results/anth28s_evaluation/README.md)
+<!-- anth28s:end -->
+
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.4. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.4).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.5. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5).
 
 [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
 
