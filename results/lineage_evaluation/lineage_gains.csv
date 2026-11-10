@@ -1,0 +1,9 @@
+assay,panel,n,added_oligos,base_covered,covered,added_coverage,base_exact,exact,added_exact,new_strict_WC,new_strict_GT,new_WC3,new_GT2,new_WC4
+SD-Dendrochirotida,available,174,1,130,155,25,0,1,1,0,0,0,1,20
+SD-Dendrochirotida,common,151,1,115,138,23,0,1,1,0,0,0,1,20
+LD-Synallactida,available,174,1,82,104,22,29,36,7,0,0,0,0,0
+LD-Synallactida,common,151,1,73,92,19,23,28,5,0,0,0,0,0
+LD-Synallactida-Elasipodida,available,174,2,82,119,37,29,36,7,0,0,0,0,0
+LD-Synallactida-Elasipodida,common,151,2,73,99,26,23,28,5,0,0,0,0,0
+LD-Elasipodida,available,174,1,82,97,15,29,29,0,0,0,0,0,0
+LD-Elasipodida,common,151,1,73,80,7,23,23,0,0,0,0,0,0

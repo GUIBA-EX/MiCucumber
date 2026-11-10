@@ -1,0 +1,27 @@
+{
+  "unique_candidate_accessions": 511,
+  "retained_marker_references": 460,
+  "historical_accession_count": 16597,
+  "historical_sequence_count": 13712,
+  "historical_sequence_index_sha256": "10b2ea66a1fa66976f59dedb86c9735ef8d1a29ab83eb568967723f2dd2c33df",
+  "genbank_batches": {
+    "genbank_04fd8c1f6e3a.gb": "f90882474adb8f610956e4084d80c67d53601248237f7300da738a92d49cc08f",
+    "genbank_09edee876c44.gb": "c6f100c210d1a0b51bd4b556d71b88f082745d96aada59754f70d990a9b13f16",
+    "genbank_110902ff36a0.gb": "a6268451daa72ee87a5b973fb60554cf40f94dae3c074a30e45f66d9f53ed3d9",
+    "genbank_22b9492cdf84.gb": "45cd164161b08d82daf84571b294e8261a4ecf20f174964497266439d8179a74",
+    "genbank_27b77e10b30a.gb": "e6f201fcb1f638dbf6ebb5bea8b0e7bc8b4d3923ba05a111f7fa2095bae299b5",
+    "genbank_3ad17e46675b.gb": "4c589dc4fbbcd2810fa3edbc2e7d9f08bc6fd1d84061ff130d2018696ba658f8",
+    "genbank_517c3931ff04.gb": "1866e83da12043d695b0918ef250fde72cad3803f24aae772a4c5f5f1cfb8478",
+    "genbank_56aab9201e3c.gb": "1a677641a180354e713ba7133fb29d68a54662425a00820226f4fb5fecbe4d2a",
+    "genbank_59760e97cc3b.gb": "a55c6ac3a8ef7dc2f63f1cd65954d4154d3b8517919a073954b93f3c8eb701c5",
+    "genbank_59fa8ac71c9c.gb": "4815b13741671aaa85dac6bb34802397b2c13c0f729616e2e8a5aa576284c9cc",
+    "genbank_5a9a865ce817.gb": "fd30808c4418f70d9334e67fcbdf490b5b8039d5e407ca3a5c2284614250e5ce",
+    "genbank_5e58cbb57267.gb": "9e600f4859a8d977f345f139792cf36d475e4d687e3ad2c274301ad937851e2b",
+    "genbank_8cb6a322d458.gb": "adc04caf18013f86aa5b9a477e0dd37725cefcd53ff856887dbb68d38953107e",
+    "genbank_9acdb681267b.gb": "381fc8bfaf4b708a5a58f6b9db4c082962d8068112139512e8e22bb13641b640",
+    "genbank_9f86fbc657d0.gb": "d7342d24bcf6edf42fabb7ea0da70e1b1e5ddd6ca21ffafe6106af2444c3a5e8",
+    "genbank_c84bceb670e6.gb": "7f0d2eccba30f5707b9a7f92b88bd9a220491e3d3657bf5a0771e5a4932f0efe",
+    "genbank_de7a8a210f3e.gb": "9f6bb7462d9df18c635de342fbc21049ddb4c13a45e2190e5d87354d8fc9b499",
+    "genbank_f0676930eebb.gb": "8102960f800049972d269b55ee5af680845195774e499aa25e04482e249cc408"
+  }
+}

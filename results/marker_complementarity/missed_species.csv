@@ -1,0 +1,19 @@
+species,order,accession_16s,limited_16s,marker,accession,source_name,same_accession,reference_status,conflicting_source_name,evaluable,strict,exact,limited_focal
+Chiridota hydrothermica,Apodida,MW357261.1,0,12S,NC_058250.1,Chiridota heheva,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,,,0
+Chiridota hydrothermica,Apodida,MW357261.1,0,COI,NC_058250.1,Chiridota heheva,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,0
+Chiridota laevis,Apodida,U15596.1,0,12S,KX856719.1,Chiridota laevis,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,
+Chiridota laevis,Apodida,U15596.1,0,COI,KX874399.1,Chiridota laevis,0,evaluable,,L;LD,,,
+Euapta godeffroyi,Apodida,LC704718.1,0,12S,LC704718.1,Euapta godeffroyi,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,,,0
+Euapta godeffroyi,Apodida,LC704718.1,0,COI,LC704718.1,Euapta godeffroyi,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,0
+Protankyra bidentata,Apodida,PP853087.1,0,12S,PP853087.1,Protankyra bidentata,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,XLD,,1
+Protankyra bidentata,Apodida,PP853087.1,0,COI,PP853087.1,Protankyra bidentata,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,0
+Protankyra verrilli,Apodida,ON018239.1,0,12S,ON018239.1,Protankyra verrilli,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,XLD,,1
+Protankyra verrilli,Apodida,ON018239.1,0,COI,ON018239.1,Protankyra verrilli,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,0
+Ocnus glacialis,Dendrochirotida,NC_082941.1,0,12S,NC_082941.1,Ocnus glacialis,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,XL;XLD,,1
+Ocnus glacialis,Dendrochirotida,NC_082941.1,0,COI,NC_082941.1,Ocnus glacialis,1,evaluable,,XS;XSD;S;SD;M;MD;L;LD;XL;XLD,XS;XSD,,1
+Peniagone diaphana,Elasipodida,KX856725.1,0,12S,KX856705.1,Peniagone diaphana,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD,,,
+Peniagone diaphana,Elasipodida,KX856725.1,0,COI,KX874384.1,Peniagone diaphana,0,evaluable,,L;LD,,,
+Gephyrothuria alcocki,Persiculida,KX856738.1,0,12S,KX856671.1,Gephyrothuria alcocki,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD,SD,,
+Gephyrothuria alcocki,Persiculida,KX856738.1,0,COI,KX874377.1,Gephyrothuria alcocki,0,evaluable,,L;LD,,,
+Paroriza prouhoi,Persiculida,KX856737.1,0,12S,KX856672.1,Paroriza prouhoi,0,evaluable,,XS;XSD;S;SD;M;MD;L;LD,SD;MD,,
+Paroriza prouhoi,Persiculida,KX856737.1,0,COI,KX874378.1,Paroriza prouhoi,0,evaluable,,L;LD,,,

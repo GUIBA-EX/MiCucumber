@@ -1,0 +1,9 @@
+gene,assay,role,n,strict,limited_relaxed
+16S,SD-Dendrochirotida,target,174,155,155
+16S,SD-Dendrochirotida,background,5600,0,0
+16S,LD-Elasipodida,target,174,97,98
+16S,LD-Elasipodida,background,5600,0,0
+12S,XLD,target,53,33,33
+12S,XLD,background,438,0,0
+COI,XSD,target,57,43,44
+COI,XSD,background,2216,0,0

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "method": "Independent Python regex seed-and-extend",
+  "assays": [
+    {
+      "assay": "SD",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    },
+    {
+      "assay": "SD-Dendrochirotida",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    },
+    {
+      "assay": "LD",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    },
+    {
+      "assay": "LD-Synallactida",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    },
+    {
+      "assay": "LD-Synallactida-Elasipodida",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    },
+    {
+      "assay": "LD-Elasipodida",
+      "target_species": 174,
+      "background_records": 5600,
+      "disagreements": 0
+    }
+  ],
+  "accession_flag_checks": 170088
+}

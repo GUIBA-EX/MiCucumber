@@ -7,12 +7,12 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.6 · 10 November 2026 · Not peer reviewed.**
+**Preprint v1.6 · 10 November 2026**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[Working PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
-MiCucumber provides 29 candidate mitochondrial primer pairs for sea cucumber eDNA metabarcoding across 16S, 12S and COI.
+MiCucumber provides 29 candidate primer pairs for sea cucumber eDNA metabarcoding at three mitochondrial loci (16S, 12S and COI), plus two lineage supplements for 16S.
 
 [Baseline primer set (FASTA)](sequences/all_markers.fasta) · [16S primer table (CSV)](sequences/primer_pairs.csv) · [12S and COI primer table (CSV)](markers/12S_COI/candidates.csv)
 
@@ -21,15 +21,48 @@ MiCucumber provides 29 candidate mitochondrial primer pairs for sea cucumber eDN
 | Goal | Assay | Reference span | Covered | Exact |
 |---|---|---:|---:|---:|
 | Broader 16S coverage | 16S SD-Dendrochirotida | 226 bp | 138/151 | 1/151 |
-| More exact 16S matches | 16S LD | 302 bp | 73/151 | 23/151 |
-| 12S candidate with the most covered species | 12S XLD | 354 bp | 33/53 | 7/53 |
+| Exact matches with one 16S pair | 16S LD | 302 bp | 73/151 | 23/151 |
+| Highest 12S species count | 12S XLD | 354 bp | 33/53 | 7/53 |
 | Shortest COI window | COI XSD | 145 bp | 43/57 | 3/57 |
-| COI candidate with the most covered species | COI LD | 293 bp | 103/283 | 11/283 |
+| Highest COI species count | COI LD | 293 bp | 103/283 | 11/283 |
 
-The 16S rows share the 151-species panel. The 12S and COI rows use their own evaluable panels. Coverage permits up to two mismatches per primer with the final three 3′ bases compatible. Exact requires zero mismatches at both sites. All results are computational predictions.
+The 16S rows use the same 151-species panel. For 12S and COI, denominators are the species evaluable in each window. Predicted coverage allows up to two mismatches per primer and requires compatibility at the three 3′ terminal bases. An exact match requires zero mismatches at both sites.
 
-- **SD-Dendrochirotida** adds one R at the original binding site and covers **155/174** species on the full panel. The two strict screens added zero background records. GT2 and WC4 added 1 and 20 records, respectively. [S pool FASTA](results/lineage_exploration/sd_pool.fasta) · [Verification](results/lineage_exploration/README.md)
-- **LD-Elasipodida** adds one F and covers **15/22** Elasipodida species. Separate S and L assays have a combined predicted coverage of **165/174** species. When using L on its own, include F-Synallactida if that order is a priority. [LD-Elasipodida FASTA](results/lineage_pool/ld_elasipodida.fasta) · [L pool composition and use](results/lineage_pool/README.md)
+## 16S lineage supplements
+
+Both supplements retain the original binding coordinates. Counts below use the same 174 sea cucumber species.
+
+| Scheme | Added oligo | Covered | Paired exact | Added strict background hits¹ |
+|---|---|---:|---:|---:|
+| SD-Dendrochirotida | R-Dendrochirotida | 130 → 155 | 0 → 1 | 0 / 0 |
+| LD-Elasipodida | F-Elasipodida | 82 → 97 | 29 → 29 | 0 / 0 |
+| LD-Synallactida | F-Synallactida | 82 → 104 | 29 → 36 | 0 / 0 |
+| LD-Synallactida-Elasipodida | Both F oligos | 82 → 119 | 29 → 36 | 0 / 0 |
+
+¹ Watson–Crick only / also allowing guanine–thymine pairing. SD-Dendrochirotida added 1 and 20 background records under relaxed GT2 and WC4, respectively. The L supplements left all five background hit sets unchanged. SD-Dendrochirotida and LD-Elasipodida used in separate assays cover 165/174 species in union. Adding F-Synallactida to the L assay raises exact matches from 30 to 37, with the same coverage.
+
+[Counts by order](results/lineage_evaluation/by_order.csv) · [Species gained](results/lineage_evaluation/lineage_gain_species.csv) · [Background hits](results/lineage_evaluation/background_hits.csv) · [Methods and verification](results/lineage_evaluation/README.md)
+
+[S pool FASTA](results/lineage_exploration/sd_pool.fasta) · [L pool FASTA](results/lineage_pool/ld_elasipodida.fasta)
+
+<details>
+<summary>Base matching at the supplemented S and L sites</summary>
+
+![Original and supplementary S reverse-primer base matching](figures/base_matching_SD-Dendrochirotida.svg)
+
+![Original and supplementary L forward-primer base matching](figures/base_matching_LD-Elasipodida.svg)
+
+</details>
+
+Licuanan and Matias previously described short echinoderm 12S and 16S candidate markers. [Reference](https://doi.org/10.56899/151.03.14)
+
+## Marker complementarity and limited mismatches
+
+Among the nine species missed by both 16S supplements, existing 12S XLD and SD together cover five in silico. COI XS/XSD also covers one of those five. Under a limited near-terminal mismatch scenario, LD-Elasipodida and COI XSD each gain one other target species. All four focal assays retain their strict background hit counts. [Species, mismatch rules and same-accession barcode comparisons](results/marker_complementarity/README.md)
+
+## External reference evaluation
+
+On 28 evaluable external 16S species per window, SD-Dendrochirotida covered 23 (82.1%) with zero exact matches, and LD-Elasipodida covered 16 (57.1%) with two exact matches. COI LD covered 13/15 species with one exact match. No external 12S target passed curation, and no external COI reference spanned both binding sites outside L/LD. The limited mismatch rule added one target each for 16S M, 16S MD and COI L. Neither Watson–Crick rule yielded a background hit among 142, 143 and 127 references for 16S, 12S and COI, respectively. [External panel, all assays and separate guanine–thymine background results](results/external_panel/README.md)
 
 ## Primer sequences and binding sites
 

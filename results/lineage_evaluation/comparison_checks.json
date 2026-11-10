@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "common_species": 151,
+  "available_species": 174,
+  "input_sha256": {
+    "results/lineage_exploration/shortlist.json": "159be9546a4b20c55ce647f45960967d6a8ac389d6914d2627659976ffd915a3",
+    "results/lineage_pool/ld_verification_input.json": "a5440cad9789931c8b8f59461f73e7ef58f0d2450f93c27c039c19d672bbb577",
+    "results/current_primers/S/SD_independent_hits.tsv": "ac7a873bc78913660be431d90fe1fe2c943ae3ce34bb1cbdd62902e0caa55b1a",
+    "figures/current_region_coordinates.csv": "a94a75fd6dfabb270d0929905bcf2ed05640c527d4e4925c3b3dcc542694439e",
+    "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48",
+    "results/species_qc/curated_alignment.fasta": "16097b0fd0930b7e632ff093886811a94865ffe7734bdbc68a6cafa792c73606",
+    "results/species_qc/panel.csv": "455ce1697ba94ff05e1e4b61bbf39823c83274ddf931444cbeda5915628574be",
+    "results/computational_evaluation/results/panel_comparison.csv": "aa97498aa132d7e3469305e17c7b796dc0545856e8991073cd681066f6cde663",
+    "results/computational_evaluation/results/nearest_neighbors.csv": "c56292986c9fdf2e8757ad0f89a766ffb48ca909e6e3958ea4c8075fa20c9aac",
+    "results/species_qc/panel_XS.csv": "788402baaf09ec02870012a012d9502149c0e63c5628c17b3c7cb28540e34717",
+    "results/species_qc/panel_S.csv": "455ce1697ba94ff05e1e4b61bbf39823c83274ddf931444cbeda5915628574be",
+    "results/species_qc/panel_M.csv": "455ce1697ba94ff05e1e4b61bbf39823c83274ddf931444cbeda5915628574be",
+    "results/species_qc/panel_L.csv": "455ce1697ba94ff05e1e4b61bbf39823c83274ddf931444cbeda5915628574be",
+    "results/species_qc/panel_XL.csv": "4c4dba0d3c5c6b749173dd39aed7572786af4373d179e48626141bdac01d1c4a"
+  }
+}

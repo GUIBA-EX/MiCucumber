@@ -1,18 +1,20 @@
 {
   "project": "MiCucumber",
   "author": "Fei Xia",
-  "pages": 21,
+  "pages": 26,
   "checks": [
     "source input hashes",
     "artifact hashes",
     "all released primer sequences in PDF and Markdown",
-    "all Tables 1\u20139 against source CSV",
+    "all Tables 1\u201312 against source CSV",
     "binding figures against current marker figures",
     "common-panel table against CSV",
     "conditional holdout table against CSV",
-    "six new figures and captions",
+    "eight diagnostic figures and captions",
+    "six independent lineage comparisons",
     "29-assay diagnostic verification",
     "15 barcode matrices and 130599 comparisons",
+    "external panel accession exclusion and prediction totals",
     "requested section removed",
     "no near-empty final page"
   ],

@@ -5,7 +5,9 @@ import hashlib,json,re,subprocess
 from pypdf import PdfReader
 root=Path(__file__).resolve().parents[1];p=root/'publications';c=json.loads((p/'release.json').read_text())
 name,title,version=c['project'],c['title'],c['version'];day=date.fromisoformat(c['date']);url=f'https://github.com/GUIBA-EX/{name}/releases/tag/preprint-v{version}'
-md=p/f'{name}_preprint.md';paper=md.read_text();status=f'Preprint v{version} · {day.day} {day:%B %Y} · Not peer reviewed'
+md=p/f'{name}_preprint.md';paper=md.read_text()
+readme_status=f'Preprint v{version} · {day.day} {day:%B %Y}'
+status=f'{readme_status} · Not peer reviewed'
 assert paper.startswith('# '+title+'\n') and '\n**Fei Xia**\n' in paper and status in paper
 files=[root/f for f in c['readmes']]+[md,p/'README.md']
 for f in files:
@@ -16,8 +18,8 @@ for f in files:
 for file,lang in c['readmes'].items():
  s=(root/file).read_text();assert '# '+title+'\n' in s and '**Fei Xia**' in s and url in s
  assert f'Computational preprint v{version}.' in s,(file,'citation')
- expected=status if lang=='en' else f'{"預印本" if lang=="zh-Hant" else "预印本"} v{version} · {day.year} 年 {day.month} 月 {day.day} 日'
- assert expected in s,(file,'date')
+ expected=readme_status if lang=='en' else f'{"預印本" if lang=="zh-Hant" else "预印本"} v{version} · {day.year} 年 {day.month} 月 {day.day} 日'
+ assert f'**{expected}**' in s.splitlines(),(file,'version and date')
 cff=(root/'CITATION.cff').read_text();bib=(root/'CITATION.bib').read_text()
 assert cff.count(f'title: "{title}"')==2 and f'date-released: "{day}"' in cff
 assert re.findall(r'version: "([^"]+)"',cff)==[version,version]

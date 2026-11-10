@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "assays": 33,
+  "independent_strict_and_exact_accession_checks": 5119,
+  "external_records_by_role_gene": {
+    "16S_target": 31,
+    "16S_background": 142,
+    "12S_target": 0,
+    "12S_background": 143,
+    "COI_target": 17,
+    "COI_background": 127
+  }
+}

@@ -1,0 +1,9 @@
+assay,accession,species,order,changed_side,binding_motif,original_mismatches,supplement_mismatches,shared_mismatches,original_terminal_mismatches
+SD-Dendrochirotida,MW044622.1,Cercodemas anceps,Dendrochirotida,R,AAGGAGATTACGCTGTTATCCCTG,3,0,0,0
+SD-Dendrochirotida,JX133924.1,Cucamba psolidiformis,Dendrochirotida,R,AAGGAGATAACGCTGTTATCCCTG,3,1,1,0
+SD-Dendrochirotida,JX133922.1,Echinopsolus charcoti,Dendrochirotida,R,AAGGAAATGACGCTGTTATCCCTG,3,2,1,0
+SD-Dendrochirotida,EU822440.1,Pearsonothuria graeffei,Holothuriida,R,AAGGGGATTACGCTGTTATCCCTG,4,1,2,0
+LD-Elasipodida,KX856728.1,Amperima robusta,Elasipodida,F,AAACTAGTATGAATGGCTTTTCAT,6,0,1,0
+LD-Elasipodida,KX856729.1,Rhipidothuria racovitzai,Elasipodida,F,AAACTAGTATGAATGGCTTTACAT,5,1,1,0
+LD-Elasipodida,MK617317.1,Benthodytes gosarsi,Elasipodida,F,AAACTAGTATGAATGGCCCTTCAT,6,2,0,0
+LD-Elasipodida,MK617314.1,Laetmogone violacea,Elasipodida,F,AGACTAGTATGAATGGCTTTACAT,4,2,1,0

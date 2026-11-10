@@ -36,6 +36,30 @@ def generated_tables():
  tables[8]=[table(['Gene','Assay','Species N','≤0','≤1','≤2','≤2 + terminal 3','Background ≤2'],rr)]
  identity=read('results/anth28s_evaluation/results/identity_summary.csv')
  tables[9]=[table(['Gene','Window','Unambiguous N','Unique species','Identical pairs','Insert bp'],[[r['gene'],r['window'],r['n'],r['unique_species'],r['identical_species_pairs'],r['insert_min']+'–'+r['insert_max']] for r in identity])]
+ gains=read('results/lineage_evaluation/lineage_gains.csv')
+ tables[10]=[table(['Assay','Added oligos','Covered','Exact','Added background'],[
+  [r['assay'],r['added_oligos'],f"{r['base_covered']} → {r['covered']}",
+   f"{r['base_exact']} → {r['exact']}",' / '.join(r['new_'+k] for k in ('strict_WC','strict_GT','WC3','GT2','WC4'))]
+  for r in gains if r['panel']=='available'])]
+ order_rows=read('results/lineage_evaluation/by_order.csv')
+ selected={r['assay']:{} for r in order_rows}
+ for row in order_rows:
+  if row['panel']=='available':selected[row['assay']][row['order']]=row
+ def changes(base,pool,order):
+  return [f"{selected[base][order][k]} → {selected[pool][order][k]}" for k in ('covered','exact','covered_unique')]
+ tables[11]=[table(['Order','N','S covered','S exact','S covered + unique','L covered','L exact','L covered + unique'],[
+  [order,row['n'],*changes('SD','SD-Dendrochirotida',order),*changes('LD','LD-Elasipodida',order)]
+  for order,row in selected['SD'].items()])]
+ external={(r['gene'],r['assay'],r['role']):r for r in read('results/external_panel/summary.csv')}
+ rows=[]
+ for gene,assay in [('16S','SD'),('16S','SD-Dendrochirotida'),('16S','LD'),('16S','LD-Elasipodida'),
+                    ('12S','XLD'),('COI','XSD'),('COI','L'),('COI','LD')]:
+  target=external[gene,assay,'target'];background=external[gene,assay,'background']
+  target_counts=[f"{target[k]}/{target['evaluable']}" if int(target['evaluable']) else 'NA'
+                 for k in ('exact','strict','limited')]
+  background_counts=' / '.join(background[k] for k in ('strict','limited','strict_GT'))
+  rows.append([gene,assay,*target_counts,background['evaluable'],background_counts])
+ tables[12]=[table(['Gene','Assay','Exact','Strict','Limited','Background N','Background hits¹'],rows)]
  return tables
 def synchronize(text):
  for number,expected in generated_tables().items():

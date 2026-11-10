@@ -3,7 +3,7 @@
   "version": "1.6",
   "date": "2026-11-10",
   "author": "Fei Xia",
-  "pages": 21,
+  "pages": 26,
   "oligos": 58,
   "status": "PASS",
   "checks": [
@@ -16,8 +16,8 @@
     "nonempty pages"
   ],
   "artifacts": {
-    "publications/MiCucumber_preprint.md": "19e7ced55d7083fc5b9328339513dd29b45684e014b8498a51cf63b931f2181f",
-    "publications/MiCucumber_preprint.pdf": "4ee90d24110222ac3f70a5d10374ac5a78269b79698962f800e61905439b8f46",
+    "publications/MiCucumber_preprint.md": "42fcd44ff63a5617d6f1e519c4bd3fbfbb9705d0a610586fa677bc92717e52cc",
+    "publications/MiCucumber_preprint.pdf": "dfb4e47dd5b38483580664149bfaa4e3df4cbbcb4e572382b89e57f0303bceb9",
     "sequences/all_markers.fasta": "b1814a4bc6170d7a5ef15cc12c76d226b42ea6eb65601db5c6c0bf870966df68"
   }
 }

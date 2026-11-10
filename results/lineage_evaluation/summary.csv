@@ -1,0 +1,13 @@
+assay,panel,n,covered,exact,barcode_n,barcode_unique,covered_unique,barcode_nearest_one,strict_WC,strict_GT,WC3,GT2,WC4
+SD,available,174,130,0,174,168,124,8,0,5,58,6,817
+SD,common,151,115,0,151,145,109,6,0,5,58,6,817
+SD-Dendrochirotida,available,174,155,1,174,168,149,8,0,5,58,7,837
+SD-Dendrochirotida,common,151,138,1,151,145,132,6,0,5,58,7,837
+LD,available,174,82,29,174,168,82,8,0,0,0,0,1015
+LD,common,151,73,23,151,145,73,6,0,0,0,0,1015
+LD-Synallactida,available,174,104,36,174,168,100,8,0,0,0,0,1015
+LD-Synallactida,common,151,92,28,151,145,88,6,0,0,0,0,1015
+LD-Synallactida-Elasipodida,available,174,119,36,174,168,113,8,0,0,0,0,1015
+LD-Synallactida-Elasipodida,common,151,99,28,151,145,93,6,0,0,0,0,1015
+LD-Elasipodida,available,174,97,29,174,168,95,8,0,0,0,0,1015
+LD-Elasipodida,common,151,80,23,151,145,78,6,0,0,0,0,1015

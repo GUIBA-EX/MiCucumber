@@ -14,20 +14,22 @@ citation=f'Xia, F. ({day.year}). *{title}*. Computational preprint v{version}. [
 for file,lang in c['readmes'].items():
  p=root/file;s=p.read_text()
  if lang=='en':
-  status=f'**Preprint v{version} · {date} · Not peer reviewed.**'
+  status=f'**Preprint v{version} · {date}**'
   links=f'[PDF](publications/{name}_preprint.pdf) · [Manuscript](publications/{name}_preprint.md) · [Versioned release]({url}) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib)'
  elif lang=='zh-Hant':
-  status=f'**預印本 v{version} · {day.year} 年 {day.month} 月 {day.day} 日 · 尚未經同儕審查。**'
+  status=f'**預印本 v{version} · {day.year} 年 {day.month} 月 {day.day} 日**'
   links=f'[PDF](publications/{name}_preprint.pdf) · [論文 Markdown](publications/{name}_preprint.md) · [固定版本]({url}) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib)'
  else:
-  status=f'**预印本 v{version} · {day.year} 年 {day.month} 月 {day.day} 日 · 未经同行评审。**'
+  status=f'**预印本 v{version} · {day.year} 年 {day.month} 月 {day.day} 日**'
   links=f'[PDF](publications/{name}_preprint.pdf) · [论文 Markdown](publications/{name}_preprint.md) · [固定版本]({url}) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib)'
  links += ' · [Build and updates](publications/README.md)' if lang=='en' else ' · [构建与更新](publications/README.md)'
  s=re.sub(r'<!-- publication:start -->.*?<!-- publication:end -->',f'<!-- publication:start -->\n{status}\n\n{links}\n<!-- publication:end -->',s,flags=re.S)
  s=re.sub(r'^Xia, F\..*$',citation,s,flags=re.M);p.write_text(s)
 p=root/f'publications/{name}_preprint.md';s=p.read_text();s=re.sub(r'^# .*', '# '+title,s,count=1)
 s=re.sub(r'(?:Computational preprint · |Preprint v[\d.]+ · )\d+ [A-Za-z]+ \d{4}(?: · Not peer reviewed)?',f'Preprint v{version} · {date} · Not peer reviewed',s)
+s=re.sub(r'^\*\*Working revision · .*?\*\*\n\n','',s,flags=re.M)
 s=re.sub(r'preprint-v1\.\d+',f'preprint-v{version}',s);p.write_text(s)
+p=root/'publications/README.md';p.write_text(p.read_text().replace('[Working PDF]', '[PDF]'))
 (root/'CITATION.cff').write_text(f'''cff-version: 1.2.0
 message: "If you use this project's primers, data or analysis code, please cite the versioned preprint."
 type: software

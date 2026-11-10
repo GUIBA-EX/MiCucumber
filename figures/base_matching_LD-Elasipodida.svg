@@ -1,0 +1,471 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1072 375" width="1072" height="375" role="img" aria-labelledby="title description">
+<title id="title">LD-Elasipodida base matching</title>
+<desc id="description">Target templates shown in primer orientation and compared with the original and supplementary oligonucleotides.</desc>
+<rect x="0" y="0" width="1072" height="375" rx="12" fill="#f7fafb" stroke="none"/>
+<text x="25" y="35" font-family="system-ui, sans-serif" font-size="22" fill="#103746" font-weight="700">16S LD-Elasipodida  |  Forward binding site</text>
+<text x="25" y="59" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="400">AB525437.1 positions 868–891  •  5′ to 3′ primer orientation  •  Selected rescued species</text>
+<rect x="24" y="77" width="1024" height="233" rx="9" fill="#ffffff" stroke="#d7e5e8"/>
+<text x="39" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="700">Target species and accession</text>
+<text x="313" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="700">Original LD F</text>
+<text x="690" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="700">Supplementary F</text>
+<text x="315.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="327.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="340.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="352.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="365.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="377.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="390.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="402.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="415.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="427.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="440.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="452.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="465.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="477.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">Y</text>
+<text x="490.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="502.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="515.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="527.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">R</text>
+<text x="540.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="552.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="565.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="577.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="590.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">M</text>
+<text x="602.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="621.0" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#244453" font-weight="650">MM</text>
+<text x="692.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="704.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="717.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="729.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="742.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="754.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="767.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="779.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="792.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="804.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="817.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="829.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="842.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="854.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="867.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="879.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">G</text>
+<text x="892.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="904.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="917.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="929.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="942.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="954.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">C</text>
+<text x="967.0" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">A</text>
+<text x="979.5" y="128" font-family="monospace" font-size="12" fill="#244453" font-weight="700">T</text>
+<text x="998.0" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#244453" font-weight="650">MM</text>
+<text x="39" y="155" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="620">Amperima robusta</text>
+<text x="39" y="171" font-family="system-ui, sans-serif" font-size="11" fill="#52717d" font-weight="400">KX856728.1  •  Elasipodida</text>
+<rect x="313.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="315.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="325.5" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="327.5" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="338.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="340.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="350.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="352.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="363.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="365.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="375.5" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="377.5" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="388.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="390.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="400.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="402.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="413.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="415.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="425.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="427.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="438.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="440.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="450.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="452.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="463.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="465.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="475.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="477.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="488.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="490.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="500.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="502.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="513.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="515.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="525.5" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="527.5" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="538.0" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="540.0" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="550.5" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="552.5" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="563.0" y="146" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="565.0" y="161" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="575.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="577.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="588.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="590.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="600.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="602.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="626.0" y="161" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">6</text>
+<rect x="690.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="692.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="702.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="704.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="715.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="717.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="727.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="729.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="740.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="742.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="752.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="754.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="765.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="767.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="777.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="779.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="790.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="792.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="802.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="804.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="815.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="817.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="827.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="829.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="840.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="842.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="852.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="854.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="865.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="867.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="877.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="879.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="890.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="892.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="902.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="904.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="915.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="917.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="927.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="929.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="940.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="942.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="952.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="954.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="965.0" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="967.0" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="977.5" y="146" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="979.5" y="161" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="1003.0" y="161" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">0</text>
+<rect x="39" y="179" width="993" height="1" rx="0" fill="#e7eff1" stroke="none"/>
+<text x="39" y="194" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="620">Rhipidothuria racovitzai</text>
+<text x="39" y="210" font-family="system-ui, sans-serif" font-size="11" fill="#52717d" font-weight="400">KX856729.1  •  Elasipodida</text>
+<rect x="313.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="315.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="325.5" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="327.5" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="338.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="340.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="350.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="352.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="363.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="365.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="375.5" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="377.5" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="388.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="390.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="400.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="402.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="413.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="415.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="425.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="427.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="438.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="440.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="450.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="452.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="463.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="465.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="475.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="477.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="488.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="490.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="500.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="502.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="513.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="515.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="525.5" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="527.5" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="538.0" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="540.0" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="550.5" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="552.5" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="563.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="565.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="575.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="577.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="588.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="590.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="600.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="602.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="626.0" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">5</text>
+<rect x="690.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="692.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="702.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="704.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="715.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="717.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="727.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="729.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="740.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="742.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="752.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="754.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="765.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="767.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="777.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="779.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="790.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="792.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="802.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="804.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="815.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="817.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="827.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="829.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="840.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="842.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="852.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="854.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="865.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="867.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="877.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="879.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="890.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="892.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="902.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="904.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="915.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="917.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="927.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="929.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="940.0" y="185" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="942.0" y="200" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="952.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="954.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="965.0" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="967.0" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="977.5" y="185" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="979.5" y="200" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="1003.0" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">1</text>
+<rect x="39" y="218" width="993" height="1" rx="0" fill="#e7eff1" stroke="none"/>
+<text x="39" y="233" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="620">Benthodytes gosarsi</text>
+<text x="39" y="249" font-family="system-ui, sans-serif" font-size="11" fill="#52717d" font-weight="400">MK617317.1  •  Elasipodida</text>
+<rect x="313.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="315.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="325.5" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="327.5" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="338.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="340.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="350.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="352.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="363.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="365.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="375.5" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="377.5" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="388.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="390.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="400.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="402.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="413.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="415.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="425.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="427.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="438.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="440.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="450.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="452.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="463.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="465.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="475.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="477.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="488.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="490.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="500.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="502.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="513.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="515.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="525.5" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="527.5" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">C</text>
+<rect x="538.0" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="540.0" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">C</text>
+<rect x="550.5" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="552.5" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="563.0" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="565.0" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="575.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="577.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="588.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="590.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="600.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="602.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="626.0" y="239" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">6</text>
+<rect x="690.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="692.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="702.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="704.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="715.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="717.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="727.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="729.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="740.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="742.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="752.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="754.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="765.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="767.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="777.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="779.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="790.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="792.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="802.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="804.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="815.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="817.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="827.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="829.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="840.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="842.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="852.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="854.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="865.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="867.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="877.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="879.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="890.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="892.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="902.5" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="904.5" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">C</text>
+<rect x="915.0" y="224" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="917.0" y="239" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">C</text>
+<rect x="927.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="929.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="940.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="942.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="952.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="954.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="965.0" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="967.0" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="977.5" y="224" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="979.5" y="239" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="1003.0" y="239" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">2</text>
+<rect x="39" y="257" width="993" height="1" rx="0" fill="#e7eff1" stroke="none"/>
+<text x="39" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="620">Laetmogone violacea</text>
+<text x="39" y="288" font-family="system-ui, sans-serif" font-size="11" fill="#52717d" font-weight="400">MK617314.1  •  Elasipodida</text>
+<rect x="313.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="315.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="325.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="327.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="338.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="340.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="350.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="352.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="363.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="365.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="375.5" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="377.5" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="388.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="390.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="400.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="402.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="413.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="415.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="425.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="427.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="438.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="440.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="450.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="452.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="463.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="465.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="475.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="477.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="488.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="490.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="500.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="502.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="513.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="515.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="525.5" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="527.5" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="538.0" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="540.0" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="550.5" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="552.5" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">T</text>
+<rect x="563.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="565.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="575.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="577.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="588.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="590.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="600.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="602.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="626.0" y="278" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">4</text>
+<rect x="690.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="692.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="702.5" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="704.5" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">G</text>
+<rect x="715.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="717.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="727.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="729.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="740.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="742.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="752.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="754.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="765.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="767.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="777.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="779.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="790.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="792.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="802.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="804.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="815.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="817.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="827.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="829.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="840.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="842.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="852.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="854.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="865.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="867.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="877.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="879.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">G</text>
+<rect x="890.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="892.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="902.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="904.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="915.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="917.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="927.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="929.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<rect x="940.0" y="263" width="11.5" height="21" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="942.0" y="278" font-family="monospace" font-size="12" fill="#842d26" font-weight="650">A</text>
+<rect x="952.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="954.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">C</text>
+<rect x="965.0" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="967.0" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">A</text>
+<rect x="977.5" y="263" width="11.5" height="21" rx="2" fill="#d8efe9" stroke="#548c92"/>
+<text x="979.5" y="278" font-family="monospace" font-size="12" fill="#125547" font-weight="650">T</text>
+<text x="1003.0" y="278" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="680">2</text>
+<rect x="28" y="331" width="13" height="13" rx="2" fill="#d8efe9" stroke="none"/>
+<text x="48" y="342" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="400">Compatible base</text>
+<rect x="182" y="331" width="13" height="13" rx="2" fill="#f9ded9" stroke="none"/>
+<text x="202" y="342" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="400">Mismatch</text>
+<rect x="301" y="331" width="13" height="13" rx="2" fill="#ffffff" stroke="#548c92"/>
+<text x="321" y="342" font-family="system-ui, sans-serif" font-size="13" fill="#244453" font-weight="400">Final three 3′ positions</text>
+<text x="510" y="342" font-family="system-ui, sans-serif" font-size="12" fill="#244453" font-weight="400">MM = mismatches at this site. The unchanged partner is compatible for every row.</text>
+</svg>

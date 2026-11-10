@@ -7,12 +7,12 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**预印本 v1.6 · 2026 年 11 月 10 日 · 未经同行评审。**
+**预印本 v1.6 · 2026 年 11 月 10 日**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+[修订稿 PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
 <!-- publication:end -->
 
-MiCucumber 提供 29 对用于海参环境 DNA 宏条形码的候选引物，涵盖线粒体 16S、12S 和 COI。
+MiCucumber 提供 29 对海参环境 DNA 宏条形码候选引物，靶向线粒体 16S、12S 和 COI 三个标记，并提供两套 16S 谱系补充方案。
 
 [基础引物集（FASTA）](sequences/all_markers.fasta) · [16S 引物表（CSV）](sequences/primer_pairs.csv) · [12S 与 COI 引物表（CSV）](markers/12S_COI/candidates.csv)
 
@@ -21,15 +21,48 @@ MiCucumber 提供 29 对用于海参环境 DNA 宏条形码的候选引物，涵
 | 用途 | 方案 | 参考跨度 | 覆盖 | 完全匹配 |
 |---|---|---:|---:|---:|
 | 优先扩大 16S 覆盖 | 16S SD-Dendrochirotida | 226 bp | 138/151 | 1/151 |
-| 优先提高 16S 完全匹配 | 16S LD | 302 bp | 73/151 | 23/151 |
+| 优先考虑单对 16S 引物的完全匹配 | 16S LD | 302 bp | 73/151 | 23/151 |
 | 覆盖物种数最多的 12S 方案 | 12S XLD | 354 bp | 33/53 | 7/53 |
 | 最短 COI 窗口 | COI XSD | 145 bp | 43/57 | 3/57 |
 | 覆盖物种数最多的 COI 方案 | COI LD | 293 bp | 103/283 | 11/283 |
 
-16S 两行使用共同的 151 物种面板。12S 和 COI 使用各窗口的可评价物种。覆盖允许每端最多两个错配，并要求 3′ 末三位兼容。完全匹配要求两端均无错配。所有结果均为计算预测。
+16S 两项使用同一组 151 个物种。12S 和 COI 以各窗口可评价的物种数为分母。预测覆盖允许每条引物最多两个错配，并要求 3′ 末端三个碱基兼容。双端完全匹配要求两条引物均无错配。
 
-- **SD-Dendrochirotida** 在原 SD 上加一条同坐标 R，在完整面板覆盖 **155/174** 种。两档严格背景筛查均无新增，GT2 和 WC4 分别新增 1 条和 20 条记录。[S 组合 FASTA](results/lineage_exploration/sd_pool.fasta) · [复核结果](results/lineage_exploration/README.md)
-- **深海样本可另做 LD-Elasipodida**。它在原 LD 上只加 F-Elasipodida，覆盖 **15/22** 种 Elasipodida。与新版 S 分开扩增，预测覆盖并集为 **165/174** 种。L 单独使用时，可按目标类群选配 F-Synallactida。[LD-Elasipodida FASTA](results/lineage_pool/ld_elasipodida.fasta) · [L 组合与用法](results/lineage_pool/README.md)
+## 16S 谱系补充
+
+补充引物沿用原结合坐标。下表使用同一组 174 种海参参考。
+
+| 方案 | 增加的引物 | 预测覆盖 | 双端完全匹配 | 严格背景新增¹ |
+|---|---|---:|---:|---:|
+| SD-Dendrochirotida | R-Dendrochirotida | 130 → 155 | 0 → 1 | 0 / 0 |
+| LD-Elasipodida | F-Elasipodida | 82 → 97 | 29 → 29 | 0 / 0 |
+| LD-Synallactida | F-Synallactida | 82 → 104 | 29 → 36 | 0 / 0 |
+| LD-Synallactida-Elasipodida | 两条补充 F | 82 → 119 | 29 → 36 | 0 / 0 |
+
+¹ 仅沃森–克里克配对 / 另允许鸟嘌呤–胸腺嘧啶配对。SD-Dendrochirotida 在宽松 GT2 和 WC4 下分别新增 1 条和 20 条背景记录。L 补充方案的五档背景命中名单均与 LD 一致。S 补充方案与 LD-Elasipodida 分开使用时，预测覆盖并集为 165/174 种。再给 L 加入 F-Synallactida，完全匹配由 30 种增至 37 种，覆盖物种名单相同。
+
+[分目覆盖、完全匹配和物种分辨率](results/lineage_evaluation/by_order.csv) · [新增物种](results/lineage_evaluation/lineage_gain_species.csv) · [背景命中](results/lineage_evaluation/background_hits.csv) · [方法与复核](results/lineage_evaluation/README.md)
+
+[S 补充组合 FASTA](results/lineage_exploration/sd_pool.fasta) · [L 补充组合 FASTA](results/lineage_pool/ld_elasipodida.fasta)
+
+<details>
+<summary>S 和 L 补充位点的逐碱基匹配图</summary>
+
+![S 原反向引物与补充反向引物的碱基匹配](figures/base_matching_SD-Dendrochirotida.svg)
+
+![L 原正向引物与补充正向引物的碱基匹配](figures/base_matching_LD-Elasipodida.svg)
+
+</details>
+
+Licuanan 和 Matias 曾提出棘皮动物 12S 和 16S 短片段候选标记。 [参考文献](https://doi.org/10.56899/151.03.14)
+
+## 跨标记互补与有限错配
+
+两套 16S 补充方案均漏检的 9 种海参中，现有 12S XLD 与 SD 合计预测补回 5 种。COI XS/XSD 也覆盖其中 1 种。有限放宽 3′ 端附近错配后，LD-Elasipodida 和 COI XSD 各新增 1 个其他目标物种，四个重点方案的背景命中数均无新增。 [逐物种结果、错配规则和同 accession 条形码比较](results/marker_complementarity/README.md)
+
+## 外部参考复核
+
+在各有 28 个可评价物种的外部 16S 参考中，SD-Dendrochirotida 覆盖 23 种（82.1%），完全匹配 0 种。LD-Elasipodida 覆盖 16 种（57.1%），完全匹配 2 种。COI LD 覆盖 13/15 种，完全匹配 1 种。12S 没有通过筛选的外部海参参考，COI 只有 L/LD 的结合区有可评价参考。有限错配规则为 16S M、16S MD 和 COI L 各新增 1 个覆盖物种。两套沃森–克里克规则在 16S、12S、COI 的 142、143、127 条背景参考中均未命中。 [外部面板、全部引物结果及另允许鸟嘌呤–胸腺嘧啶配对的背景结果](results/external_panel/README.md)
 
 ## 引物序列与结合位置
 
