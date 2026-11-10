@@ -1,0 +1,6 @@
+assay,variable_side,site_motifs,terminal_and_gain_candidates,thermally_eligible,background_neutral
+XS,R,41,37,28,0
+SD,R,30,25,17,0
+MD,F,98,63,0,0
+LD,F,83,58,54,23
+XLD,F,65,47,30,1

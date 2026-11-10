@@ -13,4 +13,5 @@ if p.exists():
   else:assert expected[f]==digest,f
  p.write_text(json.dumps(expected,indent=2,ensure_ascii=False)+'\n')
 files=[root/f'publications/{c["project"]}_preprint.pdf',root/c['fasta']]
+files.extend(root / name for name in c.get('supplementary_fasta', []))
 (root/'publications/SHA256SUMS.txt').write_text(''.join(hashfile(f)+'  '+f.name+'\n' for f in files))

@@ -1,8 +1,8 @@
 {
   "author": "Fei Xia",
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "project": "MiCucumber",
-  "source_commit": "c6820a7648dda2cb6d8288733372fa8301767adc",
+  "source_commit": "8a72045e67576233d465c2a783cedb7b5cbf884f",
   "common_species": 151,
   "inputs": {
     "figures/current_region_coordinates.csv": "a94a75fd6dfabb270d0929905bcf2ed05640c527d4e4925c3b3dcc542694439e",
@@ -10,7 +10,7 @@
     "markers/12S_COI/figures/positions_12S.en.png": "fcafcb11878322c5d5b3acb63527b235d583d8c4ea7f27b07d5e63a0b06c08a6",
     "markers/12S_COI/figures/positions_COI.en.png": "0a5a8c1c6e55ec0197e14b0fa130787bec781cee7eed943ad41ddf6e6fe74b0d",
     "markers/12S_COI/final_check.json": "2bdccd0f5fe5eada59a0812ea661a8841012c317486c042d34a35b45b8be3157",
-    "publications/release.json": "de23ac2d3da60086d66e3746793d8a1c77d09a1912e55640c4d4874842e8c030",
+    "publications/release.json": "e71e02e2fdcc93b3ac9abb08951bde46e50575baf741e9e3aeb59329121ccd74",
     "publications/tables.py": "35d0866e153e758ab660c36bc1ee2e4e6761b447596c349a65b481f3eac350f4",
     "results/anth28s_evaluation/figures/identity_12S.png": "a42f0d6093b3903d465718c96fbfeeaa8d7786e1639af902f981cd00cf0c91b2",
     "results/anth28s_evaluation/figures/identity_12S.svg": "4340d24fc73caf5f0c554e55cb8a13165cbf33d605fcf59830df6aa3c5771bf6",
@@ -25,7 +25,7 @@
     "results/anth28s_evaluation/figures/product_lengths.png": "84542441e05786718aa9a816847a7767a96d236b664d89f6ac86e447132e5680",
     "results/anth28s_evaluation/figures/product_lengths.svg": "d181e6d15360574a5988240fc3b7c8d5b1001254a216b835bed17b194e570c4c",
     "results/anth28s_evaluation/plot.py": "d5600541ca6f00d35d159bc084b31d15bfc705ee5cbd81e6768faf356b56f75b",
-    "results/anth28s_evaluation/report.py": "b843ae517cef2105d2a24aecfe1e69095b80c00072a068eb6cc9d49a63c52135",
+    "results/anth28s_evaluation/report.py": "f93cade4be62a4e4bb4e37b379f40f17b130ee18563569c3284f5729df8578b1",
     "results/anth28s_evaluation/results/12S_L_identity.csv": "b335cc93cd4061c043b8e6b9e46c934716f507ba7ae0e20d266f3c632354ed75",
     "results/anth28s_evaluation/results/12S_M_identity.csv": "f7488413378d2c2811f57107a196b3b5645a0e075c6c40d62820cc49658de872",
     "results/anth28s_evaluation/results/12S_S_identity.csv": "4667c10d0ce0a9a14c81573e54ab42fa08b0259110f35d8a2f6046358fac1bb7",
@@ -70,11 +70,17 @@
     "results/computational_evaluation/results/panel_comparison.csv": "aa97498aa132d7e3469305e17c7b796dc0545856e8991073cd681066f6cde663",
     "results/computational_evaluation/results/resolution.csv": "4c7f45ea8daaa95c269798e114dcd0af127028cba014328e4acdb688df8d38a2",
     "results/current_primers/comparison.csv": "20c03762ea79111aa813b6c42fc04eaba594d0cc5606f44a23ffddb30d8b65df",
+    "results/lineage_exploration/sd_pool.fasta": "8ab38e7d84d8ce66d433fcebaff62b47106258f3857f1e15c2a32ee10a54ed64",
+    "results/lineage_exploration/shortlist.json": "159be9546a4b20c55ce647f45960967d6a8ac389d6914d2627659976ffd915a3",
+    "results/lineage_exploration/verification.json": "899714a2e9d704d6350b4395623675007065354178ff73e237ca6e0794226b32",
+    "results/lineage_pool/ld_elasipodida.fasta": "881bee99baed80a7393a0eb4ce98a565c83e9ded2d2f1f41b8551a082e9f02a0",
+    "results/lineage_pool/ld_verification_input.json": "a5440cad9789931c8b8f59461f73e7ef58f0d2450f93c27c039c19d672bbb577",
+    "results/lineage_pool/verification.json": "2b7f8b1bf88875cec773f9340a473904b98443883042952121bbac43f5cd1f4c",
     "sequences/all_markers.fasta": "b1814a4bc6170d7a5ef15cc12c76d226b42ea6eb65601db5c6c0bf870966df68",
     "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48"
   },
   "artifacts": {
-    "MiCucumber_preprint.pdf": "a45a6faa006d2a04a206e847fc1deb3d8c1905468ab8d3db0db384918c20b983",
-    "MiCucumber_preprint.md": "c9e94cb7cc144bb019e5768d84b392b01e5693c1a8b07a209181ad5e5ef25f8c"
+    "MiCucumber_preprint.pdf": "def201ca7abc219aec4913904e262131b1c26853472c987d24d9439c3c39d8c1",
+    "MiCucumber_preprint.md": "19e7ced55d7083fc5b9328339513dd29b45684e014b8498a51cf63b931f2181f"
   }
 }

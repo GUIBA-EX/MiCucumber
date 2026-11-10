@@ -5,10 +5,10 @@ title: "MiCucumber: in silico design and evaluation of mitochondrial primers for
 authors:
   - family-names: "Xia"
     given-names: "Fei"
-date-released: "2026-11-09"
+date-released: "2026-11-10"
 url: "https://github.com/GUIBA-EX/MiCucumber"
 repository-code: "https://github.com/GUIBA-EX/MiCucumber"
-version: "1.5"
+version: "1.6"
 preferred-citation:
   type: unpublished
   title: "MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding"
@@ -16,6 +16,6 @@ preferred-citation:
     - family-names: Xia
       given-names: Fei
   year: 2026
-  version: "1.5"
-  notes: "Computational preprint, version 1.5. Published on GitHub."
-  url: "https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5"
+  version: "1.6"
+  notes: "Computational preprint, version 1.6. Published on GitHub."
+  url: "https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6"

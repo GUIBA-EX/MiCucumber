@@ -11,3 +11,8 @@ Recheck retained assays with `python3 scripts/final_check.py` from this director
 The two searches evaluated 834 primer pairs for 12S and 1,050 for COI after the thermal gate. Within each length class, the 12S choice maximizes exact matches among pairs reaching at least 80% of the best passing coverage count. COI first retains windows within 95% of the largest evaluable denominator and then maximizes covered species. See the [12S search audit](12S/screening_audit.csv) and [COI search audit](COI/screening_audit.csv). Raw accession and alignment integrity checks run with `python3 scripts/check_data.py`. Reference order names include historical GenBank classifications.
 
 COI XS and XSD use a 145 bp reference span (779–923 on AB525437.1), including a 108 bp internal sequence. Each shares the same F 779–798 and R 907–923 coordinates. Their respective coverage is 20/57 and 43/57, with two and three exact paired matches. Both strict background models return zero hits. The per-window metrics in candidates.csv use the frozen background FASTA supplied with each locus.
+
+Compared with the preceding pairs on the common panel, coverage increased overall. Five formerly covered species per assay were missed:
+
+- **XS:** *Holothuria hilla*, *Isostichopus badionotus*, *I. fuscus*, *Phyllophorella liuwutiensis* and *Neocucumis proteus*.
+- **XSD:** *Actinopyga lecanora*, *Benthodytes marianensis*, *B. gosarsi*, *Holothuria pervicax* and *Laetmogone violacea*.

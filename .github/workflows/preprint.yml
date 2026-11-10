@@ -67,11 +67,12 @@ jobs:
           TAG: ${{ steps.version.outputs.next && format('preprint-v{0}', steps.version.outputs.next) || steps.version.outputs.previous }}
         run: |
           if ! gh release view "$TAG" >/dev/null 2>&1; then
-            gh release create "$TAG" --verify-tag --draft --title "MiCucumber computational preprint ${TAG#preprint-}" --notes "Fei Xia. Version ${TAG#preprint-v}. Computational preprint; not peer reviewed. The PDF, primer sequences/all_markers.fasta and SHA-256 checksums correspond to the tagged source."
+            gh release create "$TAG" --verify-tag --draft --title "MiCucumber computational preprint ${TAG#preprint-}" --notes "Fei Xia. Version ${TAG#preprint-v}. Computational preprint, pending peer review. The PDF, baseline and supplemental primer FASTAs, and SHA-256 checksums correspond to the tagged source."
           fi
           if [ "$(gh release view "$TAG" --json isDraft --jq .isDraft)" = true ]; then
             dir=$(mktemp -d)
-            for file in publications/MiCucumber_preprint.pdf sequences/all_markers.fasta publications/SHA256SUMS.txt; do
+            mapfile -t fastas < <(git show "$TAG:publications/release.json" | python -c 'import json, sys; c = json.load(sys.stdin); print(c["fasta"], *c.get("supplementary_fasta", []), sep="\n")')
+            for file in publications/MiCucumber_preprint.pdf "${fastas[@]}" publications/SHA256SUMS.txt; do
               git show "$TAG:$file" > "$dir/${file##*/}"
             done
             (cd "$dir" && sha256sum -c SHA256SUMS.txt)

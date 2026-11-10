@@ -1,0 +1,26 @@
+[
+  {
+    "assay": "SD",
+    "side": "R",
+    "start": 1156,
+    "end": 1179,
+    "primer": "AAGGAGATTACGCTGTTATCCCTG",
+    "background": "strict-neutral",
+    "position": "same",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0
+  },
+  {
+    "assay": "MD",
+    "side": "F",
+    "start": 921,
+    "end": 942,
+    "primer": "AAATTTCCTCCTGTGTGAAGAA",
+    "background": "all-neutral",
+    "position": "same",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0
+  }
+]

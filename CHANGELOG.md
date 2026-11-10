@@ -1,5 +1,11 @@
 # Order-balanced D selection · 2026-10-25
 
+## Preprint v1.6
+
+- Add the SD-Dendrochirotida and LD-Elasipodida supplemental pools with separate FASTA downloads.
+- Record coverage, background screening, thermodynamic results and accession-level verification.
+- Streamline both README editions and package the supplementary FASTAs in GitHub releases.
+
 ## Preprint v1.5 · 9 November 2026
 
 - Add 0/1/2-mismatch diagnostics with and without terminal-three compatibility for all 29 released pairs.

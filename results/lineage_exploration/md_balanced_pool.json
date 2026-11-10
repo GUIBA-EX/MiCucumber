@@ -1,0 +1,102 @@
+[
+  {
+    "trim_5prime": 1,
+    "R": "TTATCCCTGCGGTAACT",
+    "terminal_pass": true,
+    "thermal": [
+      {
+        "scenario": "50 nM per variant",
+        "max_duplex_midpoint_delta_C": 4.30432,
+        "max_structure_tm_C": 39.420068,
+        "passes": true
+      },
+      {
+        "scenario": "200 nM per direction",
+        "max_duplex_midpoint_delta_C": 3.816072,
+        "max_structure_tm_C": 39.420068,
+        "passes": true
+      }
+    ],
+    "F": [
+      "AAACTTCTATTHAYGTGAAGAA",
+      "AAATTTCCTCCTGTGTGAAGAA"
+    ],
+    "R_start": 1148,
+    "R_end": 1164,
+    "n": 174,
+    "background_n": 5600,
+    "covered": 106,
+    "exact": 32,
+    "original_covered": 89,
+    "original_exact": 24,
+    "gained": [
+      "EU191979.1",
+      "EU220800.1",
+      "EU220801.1",
+      "EU220802.1",
+      "EU220803.1",
+      "EU220812.1",
+      "GU797647.1",
+      "JN207498.1",
+      "JN207510.1",
+      "JN207516.1",
+      "JN207535.1",
+      "JN207555.1",
+      "JN207557.1",
+      "KF479394.1",
+      "LR694133.1",
+      "OP895172.1",
+      "PV998923.1"
+    ],
+    "lost": [],
+    "gained_at_other_sites": [],
+    "new_background": {
+      "strict_WC": [],
+      "strict_GT": [],
+      "WC3": [],
+      "GT2": [],
+      "WC4": []
+    },
+    "coverage_matches_untrimmed_pool": true,
+    "exact_matches_untrimmed_pool": true,
+    "accession_disagreements": 0
+  },
+  {
+    "trim_5prime": 2,
+    "R": "TATCCCTGCGGTAACT",
+    "terminal_pass": true,
+    "thermal": [
+      {
+        "scenario": "50 nM per variant",
+        "max_duplex_midpoint_delta_C": 5.604852,
+        "max_structure_tm_C": 39.420068,
+        "passes": false
+      },
+      {
+        "scenario": "200 nM per direction",
+        "max_duplex_midpoint_delta_C": 4.062251,
+        "max_structure_tm_C": 39.420068,
+        "passes": true
+      }
+    ]
+  },
+  {
+    "trim_5prime": 3,
+    "R": "ATCCCTGCGGTAACT",
+    "terminal_pass": true,
+    "thermal": [
+      {
+        "scenario": "50 nM per variant",
+        "max_duplex_midpoint_delta_C": 5.886544,
+        "max_structure_tm_C": 39.420068,
+        "passes": false
+      },
+      {
+        "scenario": "200 nM per direction",
+        "max_duplex_midpoint_delta_C": 4.188516,
+        "max_structure_tm_C": 39.420068,
+        "passes": true
+      }
+    ]
+  }
+]

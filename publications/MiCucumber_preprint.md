@@ -2,7 +2,7 @@
 
 **Fei Xia**
 
-Preprint v1.5 · 9 November 2026 · Not peer reviewed
+Preprint v1.6 · 10 November 2026 · Not peer reviewed
 
 ## Abstract
 
@@ -92,6 +92,12 @@ The common panel includes 151 species, compared with 166 evaluable XS species, 1
 ![Figure 1](figures/common_panel.png)
 
 **Figure 1.** Compatibility and exact paired matching on the common species panel. All bars use the same denominator.
+
+### Supplemental 16S oligo pools
+
+We evaluated additions at the existing binding sites using the same 174 species and 5,600 background records as the original S and L assays. Candidate pools passed Primer3 screening for all hairpins and dimers and for the duplex midpoint temperature difference between each F and R formulation. An exhaustive scan and an independent seed-based scan agreed accession by accession. Sequence lists, thermal results and screening scripts are available for the [S supplement](../results/lineage_exploration/README.md) and the [L supplements](../results/lineage_pool/README.md).
+
+SD-Dendrochirotida adds a reverse oligo and increases predicted coverage from 130 to 155 of 174 species, including a gain from 21 to 35 of 36 Dendrochirotida. Both strict background screens returned the same accession sets. Relaxed GT2 and WC4 screens added 1 and 20 records, respectively. LD-Elasipodida adds one forward oligo and increases predicted coverage from 82 to 97 of 174 species, including 15 of 22 Elasipodida. All five background screens returned the same accession sets. Separate S and L assays yield a predicted coverage union of 165/174 species, or 142/151 on the five-window common panel. These predictions describe primer compatibility in reference sequences. Relative yields and primer competition require experimental assessment.
 
 ### Reference-insert discrimination
 
@@ -226,7 +232,7 @@ Xing RR, Hu RR, Wang N, Zhang JK, Ge YQ, Chen Y (2021). Authentication of sea cu
 
 Copyright © 2026 Fei Xia. Existing project copyright and third-party source conditions apply; see COPYRIGHT.md at the repository root.
 
-Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5
+Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6
 
 ## Table 1. Reference binding coordinates and evaluable species.
 

@@ -1,15 +1,14 @@
-"""Synchronize the bilingual diagnostic report and README summaries.
+"""Generate the bilingual diagnostic reports.
 The formal manuscript is maintained in publications/MiCucumber_preprint.md.
 """
-import csv,json,re
+import csv
 from pathlib import Path
-P=Path(__file__).resolve().parent;ROOT=P.parents[1];R=P/'results'
+P=Path(__file__).resolve().parent;R=P/'results'
 def read(n):return list(csv.DictReader((R/n).open()))
 S=read('mismatch_summary.csv');ID=read('identity_summary.csv')
 def count(g,n,k,terminal=0,role='target'):
  return next(x['matched'] for x in S if x['gene']==g and x['name']==n and x['threshold']==str(k) and x['terminal3_required']==str(terminal) and x['role']==role)
 def table(head,data):return '| '+' | '.join(head)+' |\n| '+' | '.join(['---']*len(head))+' |\n'+'\n'.join('| '+' | '.join(map(str,row))+' |' for row in data)
-selected=[('16S','SD'),('16S','LD'),('12S','XLD'),('COI','XSD'),('COI','LD')]
 def mismatch_table(head,chosen=None):
  data=[]
  if chosen is None:chosen=list(dict.fromkeys((r['gene'],r['name']) for r in S))
@@ -54,19 +53,3 @@ for lang in ('en','zh'):
  text+=('C++17 compiler; Python 3.10+; matplotlib and numpy for figures. Run from the repository root. Raw hits, product spans, per-order summaries, full identity matrices, source hashes and independent validation are in [results](results). Exact insert uniqueness uses every retained reference insert, independently of whether a released primer matches it.\n\n' if lang=='en' else '需要 C++17 编译器及 Python 3.10+；绘图另需 matplotlib、numpy。从仓库根目录依次运行。原始命中、产物长度、分目汇总、完整相似度矩阵、输入哈希及独立验证见[结果目录](results)。内部序列唯一性纳入全部保留的参考区段，不以正式引物是否匹配作为前提。\n\n')
  text+='McCartin, L., et al. (2024). Nuclear eDNA metabarcoding primers for anthozoan coral biodiversity assessment. *PeerJ*, 12, e18607. https://doi.org/10.7717/peerj.18607\n'
  (P/('README.md' if lang=='en' else 'README.zh-CN.md')).write_text(text)
- # Root README is concise; full figures and tables remain in the diagnostic report.
- short=f'## {title}\n\n'+('[Manuscript](publications/MiCucumber_preprint.md) · [PDF](publications/MiCucumber_preprint.pdf) · [All results](results/anth28s_evaluation/README.md).\n\n' if lang=='en' else '[手稿](publications/MiCucumber_preprint.md) · [PDF](publications/MiCucumber_preprint.pdf) · [完整结果](results/anth28s_evaluation/README.zh-CN.md)。\n\n')
- short+=('Following McCartin et al. (2024), all 29 pairs were compared at 0, 1 and 2 mismatches per primer, with a separate terminal-three constraint. Fifteen primer-free identity matrices cover 130,599 species pairs. Figures use existing gene/window panels; counts across different denominators are not directly comparable.\n\n' if lang=='en' else '参考 McCartin 等（2024），对 29 对引物比较每端 0、1、2 个错配，并单列末三位约束；15 个去引物内部序列矩阵包含 130,599 个跨物种比较。各图沿用相应基因及窗口面板，不同分母的结果不作直接排名。\n\n')
- short+=mismatch_table(ENHEAD if lang=='en' else ZHHEAD,selected)+'\n\n'
- short+=('Targets count species; backgrounds count records. The last column uses Watson–Crick pairing with ≤2 mismatches and no terminal constraint. Other published background models remain in the sequence tables. SD coverage depends strongly on accepting two mismatches; exact matching remains a separate criterion.\n\n' if lang=='en' else '目标计物种、背景计记录；最后一列仅为每端≤2 个沃森–克里克错配且无末端约束的背景命中数，其他背景模型仍见引物表。SD 的覆盖较依赖允许两处错配，完全匹配应单独评价。\n\n')
- for stem,label in figs[:2]:short+=f'![{label}](results/anth28s_evaluation/figures/{stem}.png)\n\n'
- report='README.md' if lang=='en' else 'README.zh-CN.md'
- short+=f'[Full methods, 12S/COI identity matrices and product lengths / 完整方法、12S/COI 矩阵及产物长度](results/anth28s_evaluation/{report})\n'
- file=ROOT/('README.md' if lang=='en' else 'README.zh-CN.md');text=file.read_text()
- block='<!-- anth28s:start -->\n'+short+'<!-- anth28s:end -->\n\n'
- text=re.sub(r'<!-- anth28s:start -->.*?<!-- anth28s:end -->\n*','',text,flags=re.S)
- text=text.replace('## Citation and permissions' if lang=='en' else '## 引用与著作权',block+('## Citation and permissions' if lang=='en' else '## 引用与著作权'))
- # Accommodate the existing Chinese heading without modifying its wording.
- if '<!-- anth28s:start -->' not in text:
-  text=text.replace('## 参考文献',block+'## 参考文献')
- file.write_text(text)

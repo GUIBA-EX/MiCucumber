@@ -1,11 +1,15 @@
 {
   "project": "MiCucumber",
   "title": "MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding",
-  "version": "1.5",
-  "date": "2026-11-09",
+  "version": "1.6",
+  "date": "2026-11-10",
   "readmes": {
     "README.md": "en",
     "README.zh-CN.md": "zh"
   },
-  "fasta": "sequences/all_markers.fasta"
+  "fasta": "sequences/all_markers.fasta",
+  "supplementary_fasta": [
+    "results/lineage_exploration/sd_pool.fasta",
+    "results/lineage_pool/ld_elasipodida.fasta"
+  ]
 }

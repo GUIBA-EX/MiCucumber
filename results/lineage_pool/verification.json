@@ -1,0 +1,54 @@
+[
+  {
+    "scheme": "LD",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0,
+    "covered": 82,
+    "exact": 29,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "WC3": 0,
+    "GT2": 0,
+    "WC4": 1015
+  },
+  {
+    "scheme": "LD-Synallactida",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0,
+    "covered": 104,
+    "exact": 36,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "WC3": 0,
+    "GT2": 0,
+    "WC4": 1015
+  },
+  {
+    "scheme": "LD-Synallactida-Elasipodida",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0,
+    "covered": 119,
+    "exact": 36,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "WC3": 0,
+    "GT2": 0,
+    "WC4": 1015
+  },
+  {
+    "scheme": "LD-Elasipodida",
+    "target_records": 174,
+    "background_records": 5600,
+    "accession_disagreements": 0,
+    "covered": 97,
+    "exact": 29,
+    "strict_WC": 0,
+    "strict_GT": 0,
+    "WC3": 0,
+    "GT2": 0,
+    "WC4": 1015
+  }
+]

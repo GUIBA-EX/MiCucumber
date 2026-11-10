@@ -7,30 +7,38 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.5 · 9 November 2026 · Not peer reviewed.**
+**Preprint v1.6 · 10 November 2026 · Not peer reviewed.**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
-The preprint follows the shared MiAnemone/MiUrchin manuscript format, with methods, results, discussion, evaluation priorities, references and complete end tables.
+MiCucumber provides 29 candidate mitochondrial primer pairs for sea cucumber eDNA metabarcoding across 16S, 12S and COI.
 
-MiCucumber contains 29 mitochondrial primer pairs for sea-cucumber eDNA. 16S, 12S and COI each have their own gene-relative coordinates and species panels.
+[Baseline primer set (FASTA)](sequences/all_markers.fasta) · [16S primer table (CSV)](sequences/primer_pairs.csv) · [12S and COI primer table (CSV)](markers/12S_COI/candidates.csv)
 
-## Choosing a window
+## Choosing a primer
 
-On the common 151-species 16S panel, SD covers 115 species with no exact paired matches. LD has 23 exact matches and covers 73 species. The two measures describe different binding properties.
+| Goal | Assay | Reference span | Covered | Exact |
+|---|---|---:|---:|---:|
+| Broader 16S coverage | 16S SD-Dendrochirotida | 226 bp | 138/151 | 1/151 |
+| More exact 16S matches | 16S LD | 302 bp | 73/151 | 23/151 |
+| 12S candidate with the most covered species | 12S XLD | 354 bp | 33/53 | 7/53 |
+| Shortest COI window | COI XSD | 145 bp | 43/57 | 3/57 |
+| COI candidate with the most covered species | COI LD | 293 bp | 103/283 | 11/283 |
 
-**12S.** Among retained D pairs, XLD covers 33/53 evaluable species, including 7 exact matches (reference span 354 bp).
+The 16S rows share the 151-species panel. The 12S and COI rows use their own evaluable panels. Coverage permits up to two mismatches per primer with the final three 3′ bases compatible. Exact requires zero mismatches at both sites. All results are computational predictions.
 
-**COI.** The 145 bp XS and XSD share binding coordinates 779–798 / 907–923 on AB525437.1. On the same 57-species panel, XS covers 20 species with two exact matches; XSD covers 43 with three. Both have zero strict background hits in the 2,216-record panel. LD remains the longer candidate with the greatest coverage count, at 103/283 species.
+- **SD-Dendrochirotida** adds one R at the original binding site and covers **155/174** species on the full panel. The two strict screens added zero background records. GT2 and WC4 added 1 and 20 records, respectively. [S pool FASTA](results/lineage_exploration/sd_pool.fasta) · [Verification](results/lineage_exploration/README.md)
+- **LD-Elasipodida** adds one F and covers **15/22** Elasipodida species. Separate S and L assays have a combined predicted coverage of **165/174** species. When using L on its own, include F-Synallactida if that order is a priority. [LD-Elasipodida FASTA](results/lineage_pool/ld_elasipodida.fasta) · [L pool composition and use](results/lineage_pool/README.md)
 
-## Primer sequences and predicted performance
+## Primer sequences and binding sites
 
-Sequences read 5′ to 3′. Each window pairs an ordinary oligonucleotide set with its D alternative at identical endpoints, except for the single retained 16S XS pair. Coverage and exact counts use the evaluable species for that window. Strict off-target hits give two counts in this order: **Watson–Crick pairing alone / also allowing guanine–thymine pairing**.
+Sequences are 5′→3′. Ordinary and D pairs for the same window share coordinates. The single 16S XS pair is listed on its own. The expanded tables use each window’s evaluable species panel. Strict background counts are listed as **Watson–Crick only / also allowing guanine–thymine pairing**.
 
-### 16S
+<details>
+<summary>16S · sequences, predicted matches and binding map</summary>
 
-Background: 5,600 reference records.
+Background panel · 5,600 reference records
 
 | Assay | F (5′–3′) | R (5′–3′) | Span (bp) | Covered | Exact | Strict off-target hits | Base matching |
 |---|---|---|---:|---:|---:|---:|---|
@@ -44,9 +52,14 @@ Background: 5,600 reference records.
 | XL | `GGTCACGCCTGCCCAGTGGA` | `AAGATAACGCTGTTATCCCTGCGGTAACTT` | 396 | 23/152 | 1/152 | 0 / 0 | [View](results/current_primers/XL/base_matching_XL.svg) |
 | XLD | `GGTAACGCCTGCCCARTGGA` | `GAGATTACGCTGTTATCCCTGCGGTAACTD` | 396 | 43/152 | 3/152 | 0 / 10 | [View](results/current_primers/XL/base_matching_XLD.svg) |
 
-### 12S
+![16S](figures/amplicon_regions.en.svg)
 
-Background: 438 non-target echinoderm species.
+</details>
+
+<details>
+<summary>12S · sequences, predicted matches and binding map</summary>
+
+Background panel · 438 reference records
 
 | Assay | F (5′–3′) | R (5′–3′) | Span (bp) | Covered | Exact | Strict off-target hits | Base matching |
 |---|---|---|---:|---:|---:|---:|---|
@@ -61,9 +74,14 @@ Background: 438 non-target echinoderm species.
 | XL | `GGTGGTTAATAACGTGCCAG` | `CGACGATGGTATACAGGCTG` | 354 | 31/53 | 5/53 | 0 / 1 | [View](markers/12S_COI/figures/12S_XL.svg) |
 | XLD | `GGTGGTTAATAACGTGCCAG` | `CGACGATGGTATACWRRCTG` | 354 | 33/53 | 7/53 | 0 / 1 | [View](markers/12S_COI/figures/12S_XLD.svg) |
 
-### COI
+![12S](markers/12S_COI/figures/positions_12S.en.svg)
 
-Background: 2,216 non-target reference records.
+</details>
+
+<details>
+<summary>COI · sequences, predicted matches and binding map</summary>
+
+Background panel · 2,216 reference records
 
 | Assay | F (5′–3′) | R (5′–3′) | Span (bp) | Covered | Exact | Strict off-target hits | Base matching |
 |---|---|---|---:|---:|---:|---:|---|
@@ -78,61 +96,26 @@ Background: 2,216 non-target reference records.
 | XL | `ATGAACCTAAACCGCTGAT` | `CGTGGGCTATATTTCTTGA` | 415 | 11/62 | 0/62 | 0 / 0 | [View](markers/12S_COI/figures/COI_XL.svg) |
 | XLD | `ATGAACCTAAAMCGYTGAY` | `CGTGGGCTATRTTTCTNGA` | 415 | 37/62 | 1/62 | 0 / 2 | [View](markers/12S_COI/figures/COI_XLD.svg) |
 
-The XS and XSD internal reference barcode is 108 bp after primer removal. Within the common panel, XS omits *Holothuria hilla*, *Isostichopus badionotus*, *I. fuscus*, *Phyllophorella liuwutiensis* and *Neocucumis proteus* that the preceding XS pair covered. XSD omits *Actinopyga lecanora*, *Benthodytes marianensis*, *B. gosarsi*, *Holothuria pervicax* and *Laetmogone violacea* that the preceding XSD pair covered. Their net coverage increases reflect additional covered species. Ordinary and D pairs are evaluated separately.
-
-## Reference binding positions
-
-Arrows show primer-binding windows on separate gene axes. In the linked 12S and COI base diagrams, rows show one representative per source order. Reverse sites are displayed in primer orientation and the box marks the terminal three bases.
-
-![16S](figures/amplicon_regions.en.svg)
-
-![12S](markers/12S_COI/figures/positions_12S.en.svg)
+The XS and XSD internal reference barcode is 108 bp after primer removal.
 
 ![COI](markers/12S_COI/figures/positions_COI.en.svg)
 
-## Literature context
+</details>
 
-Sea-cucumber marker development builds on COI barcoding and combined COI/16S taxonomy (Uthicke et al., 2010; Byrne et al., 2010), mitochondrial 16S product identification using PCR–RFLP and FINS (Wen et al., 2010, 2011), and COI mini-barcoding with NGS (Xing et al., 2021). Hoareau and Boissin (2010) provide an echinoderm-specific precedent for taxon-informed, low-degeneracy hybrid COI primers. These studies inform the reference curation and design rationale used here.
+## Evaluation and data
 
-## Reference panels and evaluation
+The 0–2 mismatch analysis separates exact matches from coverage gained by allowing mismatches. Full results include 15 internal-barcode identity matrices and predicted product lengths.
 
-16S uses 174 curated species. The NCBI 12S/COI search returned 6,168 distinct accessions. Gene extraction and quality review retained 344 eligible 12S records (90 named species) and 5,681 COI records (357 named species). Missing binding windows are excluded. Both new genes use the same thermal and paired-scan rules, with at most eight concrete variants per primer. Strict target coverage allows two mismatches per primer and requires compatible terminal three bases. Exact requires both binding sites to match without mismatch.
-
-The 16S common-panel comparison, barcode identity analysis and genus-blocked holdout use the frozen 16S collection. The 12S and COI results are independent candidate screens on their respective reference libraries.
-
-[16S methods](docs/METHODS.md) · [16S curation](results/species_qc/README.md) · [16S computational evaluation](results/computational_evaluation/README.md) · [12S and COI data](markers/12S_COI/README.md) · [Independent checks](markers/12S_COI/final_check.json)
-
-<!-- anth28s:start -->
-## Anth-28S-inspired computational diagnostics
-
-[Manuscript](publications/MiCucumber_preprint.md) · [PDF](publications/MiCucumber_preprint.pdf) · [All results](results/anth28s_evaluation/README.md).
-
-Following McCartin et al. (2024), all 29 pairs were compared at 0, 1 and 2 mismatches per primer, with a separate terminal-three constraint. Fifteen primer-free identity matrices cover 130,599 species pairs. Figures use existing gene/window panels; counts across different denominators are not directly comparable.
-
-| Gene | Assay | Species N | ≤0 | ≤1 | ≤2 | ≤2 + terminal 3 | Background ≤2 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 16S | SD | 174 | 0 | 24 | 130 | 130 | 0 |
-| 16S | LD | 174 | 29 | 60 | 84 | 82 | 0 |
-| 12S | XLD | 53 | 7 | 16 | 33 | 33 | 0 |
-| COI | XSD | 57 | 3 | 18 | 44 | 43 | 0 |
-| COI | LD | 283 | 11 | 59 | 122 | 103 | 0 |
-
-Targets count species; backgrounds count records. The last column uses Watson–Crick pairing with ≤2 mismatches and no terminal constraint. Other published background models remain in the sequence tables. SD coverage depends strongly on accepting two mismatches; exact matching remains a separate criterion.
-
-![Mismatch sensitivity / 错配梯度](results/anth28s_evaluation/figures/mismatch_sensitivity.png)
-
-![16S primer-free sequence identity / 16S 内部序列相似度](results/anth28s_evaluation/figures/identity_16S.png)
-
-[Full methods, 12S/COI identity matrices and product lengths / 完整方法、12S/COI 矩阵及产物长度](results/anth28s_evaluation/README.md)
-<!-- anth28s:end -->
+[Mismatch sensitivity, identity matrices and product lengths](results/anth28s_evaluation/README.md) · [16S common-panel and genus holdout results](results/computational_evaluation/README.md) · [12S and COI panels](markers/12S_COI/README.md) · [Methods](docs/METHODS.md) · [Reproduction](docs/REPRODUCIBILITY.md)
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.5. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.5).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.6. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6).
 
-[CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Copyright](COPYRIGHT.md)
+[Copyright](COPYRIGHT.md)
 
-## References
+<details>
+<summary>References</summary>
 
 1. Gold, Z., Wall, A. R., Schweizer, T. M., et al. (2022). A manager’s guide to using eDNA metabarcoding in marine ecosystems. *PeerJ*, 10, e14071. https://doi.org/10.7717/peerj.14071
 
@@ -158,3 +141,5 @@ Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial pr
 11. Wen, J., Hu, C., Zhang, L., & Fan, S. (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. *Food Control*, 22(1), 72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
 
 12. Xing, R.-R., Hu, R.-R., Wang, N., Zhang, J.-K., Ge, Y.-Q., & Chen, Y. (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. *Food Control*, 129, 108199. https://doi.org/10.1016/j.foodcont.2021.108199
+
+</details>

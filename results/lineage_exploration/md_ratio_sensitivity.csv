@@ -1,0 +1,8 @@
+original_F_fraction,scenario,max_duplex_midpoint_delta_C,max_structure_tm_C,passes
+0.5,200 nM per direction,5.742058,39.420068,False
+0.8,200 nM per direction,5.145286,39.420068,False
+0.88,200 nM per direction,5.024,39.420068,False
+0.9,200 nM per direction,4.995389,39.420068,True
+0.92,200 nM per direction,4.967402,39.420068,True
+0.95,200 nM per direction,4.926534,39.420068,True
+0.97,200 nM per direction,4.899993,39.420068,True
