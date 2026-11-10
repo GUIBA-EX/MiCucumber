@@ -2,7 +2,7 @@
   "author": "Fei Xia",
   "date": "2026-11-10",
   "project": "MiCucumber",
-  "source_commit": "8a72045e67576233d465c2a783cedb7b5cbf884f",
+  "source_commit": "e9866961e57571dabd80ebc33338c5812da5e876",
   "common_species": 151,
   "inputs": {
     "figures/current_region_coordinates.csv": "a94a75fd6dfabb270d0929905bcf2ed05640c527d4e4925c3b3dcc542694439e",
@@ -80,7 +80,7 @@
     "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48"
   },
   "artifacts": {
-    "MiCucumber_preprint.pdf": "def201ca7abc219aec4913904e262131b1c26853472c987d24d9439c3c39d8c1",
+    "MiCucumber_preprint.pdf": "4ee90d24110222ac3f70a5d10374ac5a78269b79698962f800e61905439b8f46",
     "MiCucumber_preprint.md": "19e7ced55d7083fc5b9328339513dd29b45684e014b8498a51cf63b931f2181f"
   }
 }
