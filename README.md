@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.6 · 10 November 2026**
+**Preprint v1.7 · 11 November 2026**
 
-[Working PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
 MiCucumber provides 29 candidate primer pairs for sea cucumber eDNA metabarcoding at three mitochondrial loci (16S, 12S and COI), plus two lineage supplements for 16S.
@@ -143,7 +143,7 @@ The 0–2 mismatch analysis separates exact matches from coverage gained by allo
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.6. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.7. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7).
 
 [Copyright](COPYRIGHT.md)
 

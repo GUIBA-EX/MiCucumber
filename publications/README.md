@@ -2,7 +2,7 @@
 
 **Fei Xia** · Computational preprint
 
-[Working PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases) · [Citation](../CITATION.cff)
+[PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases) · [Citation](../CITATION.cff)
 
 ## Build and validate
 

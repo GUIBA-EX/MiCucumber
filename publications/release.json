@@ -1,8 +1,8 @@
 {
   "project": "MiCucumber",
   "title": "MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding",
-  "version": "1.6",
-  "date": "2026-11-10",
+  "version": "1.7",
+  "date": "2026-11-11",
   "readmes": {
     "README.md": "en",
     "README.zh-CN.md": "zh"

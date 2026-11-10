@@ -2,9 +2,7 @@
 
 **Fei Xia**
 
-Preprint v1.6 · 10 November 2026 · Not peer reviewed
-
-**Working revision · 11 November 2026**
+Preprint v1.7 · 11 November 2026 · Not peer reviewed
 
 ## Abstract
 
@@ -280,7 +278,7 @@ Ruiz E, Lamy T, Mouillot D, Durand JD (2026). Benchmarking the taxonomic resolut
 
 Copyright © 2026 Fei Xia. Existing project copyright and third-party source conditions apply; see COPYRIGHT.md at the repository root.
 
-Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6
+Versioned preprint and associated sequence files: https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7
 
 ## Table 1. Reference binding coordinates and evaluable species.
 

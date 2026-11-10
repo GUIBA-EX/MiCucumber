@@ -1,8 +1,8 @@
 {
   "author": "Fei Xia",
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "project": "MiCucumber",
-  "source_commit": "b4c37faef69a9e9bc0accb37dba3daebb4dc3aaf",
+  "source_commit": "2cc90b3a436574326e0b45d437ff24f565280072",
   "common_species": 151,
   "inputs": {
     "figures/base_matching_LD-Elasipodida.svg": "577e950a62cb0ab851ce8272cae2db2f02cea80efd91671bd29c5fe1774488d2",
@@ -12,7 +12,7 @@
     "markers/12S_COI/figures/positions_12S.en.png": "fcafcb11878322c5d5b3acb63527b235d583d8c4ea7f27b07d5e63a0b06c08a6",
     "markers/12S_COI/figures/positions_COI.en.png": "0a5a8c1c6e55ec0197e14b0fa130787bec781cee7eed943ad41ddf6e6fe74b0d",
     "markers/12S_COI/final_check.json": "2bdccd0f5fe5eada59a0812ea661a8841012c317486c042d34a35b45b8be3157",
-    "publications/release.json": "e71e02e2fdcc93b3ac9abb08951bde46e50575baf741e9e3aeb59329121ccd74",
+    "publications/release.json": "ea3ba6223dce47f2a3b2702de5e7f5e8f029fc1b0470778b7f2e263070c2eff5",
     "publications/tables.py": "7a61715b381746ab6d52078ef7583b4f0630de845fb424261265cb062ad3d50c",
     "results/anth28s_evaluation/figures/identity_12S.png": "a42f0d6093b3903d465718c96fbfeeaa8d7786e1639af902f981cd00cf0c91b2",
     "results/anth28s_evaluation/figures/identity_12S.svg": "4340d24fc73caf5f0c554e55cb8a13165cbf33d605fcf59830df6aa3c5771bf6",
@@ -124,8 +124,8 @@
     "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48"
   },
   "artifacts": {
-    "MiCucumber_preprint.pdf": "dfb4e47dd5b38483580664149bfaa4e3df4cbbcb4e572382b89e57f0303bceb9",
-    "MiCucumber_preprint.md": "42fcd44ff63a5617d6f1e519c4bd3fbfbb9705d0a610586fa677bc92717e52cc"
+    "MiCucumber_preprint.pdf": "496e73e91ce6883e406d9756291c9db804bed23514b1be7a408a1c305f2d61cc",
+    "MiCucumber_preprint.md": "381f179f9139138904b8bcb0cee54725c883e2f6dc6984bc4f0cdaa42b6d6512"
   },
-  "working_revision": true
+  "working_revision": false
 }

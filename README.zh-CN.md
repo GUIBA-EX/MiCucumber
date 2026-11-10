@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**预印本 v1.6 · 2026 年 11 月 10 日**
+**预印本 v1.7 · 2026 年 11 月 11 日**
 
-[修订稿 PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
 <!-- publication:end -->
 
 MiCucumber 提供 29 对海参环境 DNA 宏条形码候选引物，靶向线粒体 16S、12S 和 COI 三个标记，并提供两套 16S 谱系补充方案。
@@ -143,7 +143,7 @@ XS 与 XSD 去除引物后的参考内部条码为 108 bp。
 
 ## 引用与著作权
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.6. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.6).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.7. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7).
 
 [著作权](COPYRIGHT.md)
 
