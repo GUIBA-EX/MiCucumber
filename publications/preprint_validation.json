@@ -1,12 +1,12 @@
 {
   "project": "MiCucumber",
   "author": "Fei Xia",
-  "pages": 25,
+  "pages": 27,
   "checks": [
     "source input hashes",
     "artifact hashes",
     "all released primer sequences in PDF and Markdown",
-    "all Tables 1\u201312 against source CSV",
+    "all Tables 1\u201315 against source CSV",
     "binding figures against current marker figures",
     "common-panel table against CSV",
     "conditional holdout table against CSV",

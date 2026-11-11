@@ -2,7 +2,7 @@
   "author": "Fei Xia",
   "date": "2026-11-11",
   "project": "MiCucumber",
-  "source_commit": "2cc90b3a436574326e0b45d437ff24f565280072",
+  "source_commit": "d672a9b84862544c26686265c250d09c8d42aa70",
   "common_species": 151,
   "inputs": {
     "figures/base_matching_LD-Elasipodida.svg": "577e950a62cb0ab851ce8272cae2db2f02cea80efd91671bd29c5fe1774488d2",
@@ -12,8 +12,8 @@
     "markers/12S_COI/figures/positions_12S.en.png": "fcafcb11878322c5d5b3acb63527b235d583d8c4ea7f27b07d5e63a0b06c08a6",
     "markers/12S_COI/figures/positions_COI.en.png": "0a5a8c1c6e55ec0197e14b0fa130787bec781cee7eed943ad41ddf6e6fe74b0d",
     "markers/12S_COI/final_check.json": "2bdccd0f5fe5eada59a0812ea661a8841012c317486c042d34a35b45b8be3157",
-    "publications/release.json": "ea3ba6223dce47f2a3b2702de5e7f5e8f029fc1b0470778b7f2e263070c2eff5",
-    "publications/tables.py": "7a61715b381746ab6d52078ef7583b4f0630de845fb424261265cb062ad3d50c",
+    "publications/release.json": "67d275d81499760572f5a878730c719af79fe4972bc622b6e248811a0c70629b",
+    "publications/tables.py": "093ef4068b26060f024e38290278f7b2df057c7848131fd436b7f773e09adcdf",
     "results/anth28s_evaluation/figures/identity_12S.png": "a42f0d6093b3903d465718c96fbfeeaa8d7786e1639af902f981cd00cf0c91b2",
     "results/anth28s_evaluation/figures/identity_12S.svg": "4340d24fc73caf5f0c554e55cb8a13165cbf33d605fcf59830df6aa3c5771bf6",
     "results/anth28s_evaluation/figures/identity_16S.png": "8a62b6ed9e49eaa52ab86eb3a2e507efd5f6e5363e88cf01ac135eaf0d966c7e",
@@ -59,6 +59,13 @@
     "results/anth28s_evaluation/run.py": "a2c8453a1c148c035fd0eac1898b21fbf6e264c2bb4b81007a595c91f7f5e0c1",
     "results/anth28s_evaluation/scan.cpp": "f51be0abfed1bf2f35a6969d62587273e81f87a34194c6b2fec32790357905d4",
     "results/anth28s_evaluation/verify.py": "66e05b4becdb5d503647d7ca82f9d0965da87e94f6b7c15feba2d0220b902de7",
+    "results/benchmark_revision/README.md": "3299ed51c750491f59986bfb8e527b6a52976659f216595f7b2bdddcfea6d932",
+    "results/benchmark_revision/analyze.py": "487c131a1cc5c36cc9fcbcd8216f41ea1bab9682087c3c99b3e27629652641a9",
+    "results/benchmark_revision/barcode_collisions_by_rank.csv": "b9fafb97ec39bdb2454b5da6863661414ec625185930abe5ca2895f1b6ccb120",
+    "results/benchmark_revision/limited_mismatch_changes.csv": "62972af92d7d64284c4aa836d10df19aa2e08aebc70f69976c359ab03b0fdf92",
+    "results/benchmark_revision/marker_comparison.csv": "9d2038100d3a5cd98be18e393316944ae39a71b23091d799a02b78c284479b45",
+    "results/benchmark_revision/near_relative_background.csv": "c209eab2c5829a4578687cf0406db12de852bd05efbb880914635dd3e6fe7362",
+    "results/benchmark_revision/resolution_by_rank.csv": "c2367fdcf266e2c240710ff97863248d9878666a1ea00d3160f632c9d40c2f66",
     "results/computational_evaluation/results/barcode_collisions.csv": "85e89bee797d7141c00e340d2e43304a1e23bb688adebac044f0eed770bc6e1a",
     "results/computational_evaluation/results/barcodes.csv": "4df0f209c919ccb329214c74ae876c897cfe37333ebb38037dede5b02c308783",
     "results/computational_evaluation/results/by_order.csv": "6477aa1677e120d1f6312ebf0af6c1e8657faa962ab642b861ada4bc023436be",
@@ -120,12 +127,14 @@
     "results/marker_complementarity/mismatch_sensitivity.csv": "0412f7b11ab180e262d4db8ae243f86c3ccf56b3912f488302d2260a7a43d11a",
     "results/marker_complementarity/missed_species.csv": "fb228fefded516d6c082c4be1514a18d98e05458fb3d7ac54d3c1e47b3e183ff",
     "results/marker_complementarity/paired_barcode_collisions.csv": "072267026773c721571996947f862829c771ccf31455b1e7b8ad7a2b50f4cafb",
+    "results/species_qc/gbif_accepted.json": "c6c6c1d304f3c62cf92ea335706b57a4e497feeda1a1d0b531fc47eafe974afb",
+    "results/species_qc/gbif_matches.json": "a03b545863e7a8f976ebbe2ddb7a9eb971bc2b5a4b636d5b94b2793abc742cd3",
     "sequences/all_markers.fasta": "b1814a4bc6170d7a5ef15cc12c76d226b42ea6eb65601db5c6c0bf870966df68",
     "sequences/primer_pairs.csv": "df5090f3833fd2e986fe7f03c1435678008178d6b91a11905b37d69643e88e48"
   },
   "artifacts": {
-    "MiCucumber_preprint.pdf": "496e73e91ce6883e406d9756291c9db804bed23514b1be7a408a1c305f2d61cc",
-    "MiCucumber_preprint.md": "381f179f9139138904b8bcb0cee54725c883e2f6dc6984bc4f0cdaa42b6d6512"
+    "MiCucumber_preprint.pdf": "f56a25a9e2c4899422d06a3b4e99796d2c684c071643a12540f1547bfa6ab673",
+    "MiCucumber_preprint.md": "1e9ae01fd84b199b7bec1e3441c2f6631ab52a9df507bedeaeb8484ee121e89c"
   },
   "working_revision": false
 }
