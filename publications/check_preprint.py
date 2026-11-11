@@ -23,7 +23,7 @@ for line in (repo/'sequences/all_markers.fasta').read_text().splitlines():
  if line and not line.startswith('>'):assert line in flat,line
 n=prov['common_species']
 for x in csv.DictReader((repo/'results/computational_evaluation/results/panel_comparison.csv').open()):
- if x['panel']=='common':assert f"| {x['name']} | {x['covered']}/{n} | {x['exact']}/{n} | {x['covered_identity_unique']}/{n} |" in md
+ if x['panel']=='common':assert re.search(rf"^\| {re.escape(x['name'])} \| \d+ \| {x['covered']}/{n} \| {x['exact']}/{n} \| {x['covered_identity_unique']}/{n} \|",md,re.M)
 for x in csv.DictReader((repo/'results/computational_evaluation/results/cv_summary.csv').open()):assert f"| {x['region']} | {x['n']} | {x['covered']} ({float(x['coverage_pct']):.2f}%) | {x['exact']} ({float(x['exact_pct']):.2f}%) |" in md
 for x in csv.DictReader((repo/'markers/12S_COI/candidates.csv').open()):
  for side in ('F','R'):
@@ -70,5 +70,5 @@ for r in csv.DictReader((external/'summary.csv').open()):
  assert sum(x['evaluable']=='1' for x in rows)==n
  for key in ('exact','strict','limited','strict_GT'):
   if r[key]:assert sum(x[key]=='1' for x in rows)==int(r[key])
-result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','all Tables 1–12 against source CSV', 'binding figures against current marker figures', 'common-panel table against CSV','conditional holdout table against CSV','eight diagnostic figures and captions','six independent lineage comparisons','29-assay diagnostic verification','15 barcode matrices and 130599 comparisons','external panel accession exclusion and prediction totals','requested section removed','no near-empty final page'],status='PASS')
+result=dict(project=name,author='Fei Xia',pages=len(pages),checks=['source input hashes','artifact hashes','all released primer sequences in PDF and Markdown','all Tables 1–15 against source CSV', 'binding figures against current marker figures', 'common-panel table against CSV','conditional holdout table against CSV','eight diagnostic figures and captions','six independent lineage comparisons','29-assay diagnostic verification','15 barcode matrices and 130599 comparisons','external panel accession exclusion and prediction totals','requested section removed','no near-empty final page'],status='PASS')
 (p/'preprint_validation.json').write_text(json.dumps(result,indent=2)+'\n');print(name,'PASS',len(pages),'pages')

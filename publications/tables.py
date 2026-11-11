@@ -13,9 +13,12 @@ def generated_tables():
  resolution=read(base+'resolution.csv');nearest=read(base+'nearest_neighbors.csv');folds=read(base+'cv_summary.csv')
  pairs=read('sequences/primer_pairs.csv');markers=read('markers/12S_COI/candidates.csv')
  tables={}
- tables[1]=[table(['Window','F positions','R positions','Span bp','Available species'],[[r['locus'],f"{r['F_start']}–{r['F_end']}",f"{r['R_start']}–{r['R_end']}",r['reference_span_bp'],next(x['n'] for x in own if x['region']==r['locus'])] for r in coords])]
- tables[2]=[table(['Assay','Own-panel N','Covered','Exact','Strict background hits¹'],[[r['name'],r['n'],r['covered'],r['exact'],metrics[r['name']]['strict_WC']+' / '+metrics[r['name']]['strict_GT']] for r in own])]
- tables[3]=[table(['Assay','Covered','Exact','Covered + unique'],[[r['name'],r['covered']+'/'+n,r['exact']+'/'+n,r['covered_identity_unique']+'/'+n] for r in common])]
+ span={r['locus']:r['reference_span_bp'] for r in coords}
+ tables[1]=[table(['Assay','Span (bp)','Covered','Exact','Covered + unique','Strict background¹'],[
+  [r['name'],span[r['region']],r['covered']+'/'+n,r['exact']+'/'+n,r['covered_identity_unique']+'/'+n,
+   metrics[r['name']]['strict_WC']+' / '+metrics[r['name']]['strict_GT']] for r in common])]
+ tables[2]=[table(['Window','F positions','R positions','Span bp','Available species'],[[r['locus'],f"{r['F_start']}–{r['F_end']}",f"{r['R_start']}–{r['R_end']}",r['reference_span_bp'],next(x['n'] for x in own if x['region']==r['locus'])] for r in coords])]
+ tables[3]=[table(['Assay','Own-panel N','Covered','Exact','Strict background hits¹'],[[r['name'],r['n'],r['covered'],r['exact'],metrics[r['name']]['strict_WC']+' / '+metrics[r['name']]['strict_GT']] for r in own])]
  rr=[]
  for r in resolution:
   if r['panel']!='own':continue
@@ -60,10 +63,23 @@ def generated_tables():
   background_counts=' / '.join(background[k] for k in ('strict','limited','strict_GT'))
   rows.append([gene,assay,*target_counts,background['evaluable'],background_counts])
  tables[12]=[table(['Gene','Assay','Exact','Strict','Limited','Background N','Background hits¹'],rows)]
+ comparisons=read('results/benchmark_revision/marker_comparison.csv')
+ tables[13]=[table(['Gene','Assay','Span (bp)','Covered','Exact','Covered + unique','Strict background¹'],[
+  [r['gene'],r['assay'],r['span'],*[r[key]+'/'+r['n'] for key in ('covered','exact','covered_unique')],
+   r['background_wc']+' / '+r['background_gt']]
+  for r in comparisons if r['panel']=='all_windows' and r['assay'].endswith('D')])]
+ rank=read('results/benchmark_revision/resolution_by_rank.csv')
+ tables[14]=[table(['Window','Species','Genus','Family','Shared inserts'],[
+  [r['window'],r['species_unique']+'/'+r['barcode_groups'],r['genus_unique']+'/'+r['genus_evaluable'],
+   r['family_unique']+'/'+r['family_evaluable'],r['conflicting_groups']] for r in rank])]
+ changes=read('results/benchmark_revision/limited_mismatch_changes.csv')
+ tables[15]=[table(['Panel','Gene and assay','Added target species','Accession','Position','Added background'],[
+  [r['panel'],r['gene']+' '+r['assay'],'*'+r['species']+'*',r['accession'],r['position'],
+   r['added_background']+'/'+r['background_n']] for r in changes])]
  return tables
 def synchronize(text):
  for number,expected in generated_tables().items():
-  pattern=rf'(^## Table {number}\..*?)(?=^## Table |\Z)'
+  pattern=rf'(^###? Table {number}\..*?)(?=^## |^### Table |\Z)'
   match=re.search(pattern,text,re.M|re.S)
   if not match:raise ValueError(f'Missing Table {number}')
   section=match[0];blocks=list(re.finditer(r'^\|.*(?:\n\|.*)*',section,re.M))

@@ -1,0 +1,19 @@
+window,classification,species
+XS,within genus,Bohadschia marmorata; Bohadschia vitiensis
+XS,within genus,Holothuria fuscocinerea; Holothuria spinifera
+XS,within genus,Molpadiodemas involutus; Molpadiodemas villosus
+XS,within genus,Stichopus hermanni; Stichopus ocellatus
+XS,within family,Protelpidia murrayi; Scotoplanes clarki
+XS,within family,Astichopus multifidus; Isostichopus macroparentheses
+S,within family,Astichopus multifidus; Isostichopus macroparentheses
+S,within family,Protelpidia murrayi; Scotoplanes clarki
+S,within genus,Stichopus hermanni; Stichopus ocellatus
+M,within family,Protelpidia murrayi; Scotoplanes clarki
+M,within genus,Stichopus hermanni; Stichopus ocellatus
+M,within family,Astichopus multifidus; Isostichopus macroparentheses
+L,within family,Astichopus multifidus; Isostichopus macroparentheses
+L,within genus,Stichopus hermanni; Stichopus ocellatus
+L,within family,Protelpidia murrayi; Scotoplanes clarki
+XL,within genus,Stichopus hermanni; Stichopus ocellatus
+XL,within family,Astichopus multifidus; Isostichopus macroparentheses
+XL,within family,Protelpidia murrayi; Scotoplanes clarki

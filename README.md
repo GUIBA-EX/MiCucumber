@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**Preprint v1.7 · 11 November 2026**
+**Preprint v1.8 · 11 November 2026**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [Manuscript](publications/MiCucumber_preprint.md) · [Versioned release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.8) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [Build and updates](publications/README.md)
 <!-- publication:end -->
 
 MiCucumber provides 29 candidate primer pairs for sea cucumber eDNA metabarcoding at three mitochondrial loci (16S, 12S and COI), plus two lineage supplements for 16S.
@@ -23,10 +23,10 @@ MiCucumber provides 29 candidate primer pairs for sea cucumber eDNA metabarcodin
 | Broader 16S coverage | 16S SD-Dendrochirotida | 226 bp | 138/151 | 1/151 |
 | Exact matches with one 16S pair | 16S LD | 302 bp | 73/151 | 23/151 |
 | Highest 12S species count | 12S XLD | 354 bp | 33/53 | 7/53 |
-| Shortest COI window | COI XSD | 145 bp | 43/57 | 3/57 |
-| Highest COI species count | COI LD | 293 bp | 103/283 | 11/283 |
+| Shortest COI window and highest coverage on the common panel | COI XSD | 145 bp | 41/49 | 3/49 |
+| COI L window on its available panel | COI LD | 293 bp | 103/283 | 11/283 |
 
-The 16S rows use the same 151-species panel. For 12S and COI, denominators are the species evaluable in each window. Predicted coverage allows up to two mismatches per primer and requires compatibility at the three 3′ terminal bases. An exact match requires zero mismatches at both sites.
+The 16S rows share a 151-species panel. The five-window intersections include 53 species for 12S and 49 for COI. On those intersections, 12S XLD covered 33 species and COI XSD covered 41, with species-unique inserts for 33 and 39, respectively. COI LD covered 24/49 on the same COI panel. The 103/283 result uses all species evaluable for LD. Predicted coverage allows up to two mismatches per primer and requires compatibility at the three 3′ terminal bases. Exact matches have zero mismatches at both sites. [All lengths on matched and available panels](results/benchmark_revision/marker_comparison.csv)
 
 ## 16S lineage supplements
 
@@ -137,13 +137,15 @@ The XS and XSD internal reference barcode is 108 bp after primer removal.
 
 ## Evaluation and data
 
-The 0–2 mismatch analysis separates exact matches from coverage gained by allowing mismatches. Full results include 15 internal-barcode identity matrices and predicted product lengths.
+Of the 160 distinct usable 16S XS inserts, 154 map to one reference species, 158 to one genus and 160 to one family. The evaluation also identifies which species gain coverage under limited 3′ mismatches and tabulates background hits for the other echinoderm classes represented in the original 12S and COI panels. [Rank-level resolution, mismatch positions and background tables](results/benchmark_revision/README.md)
+
+The 0–2 mismatch analysis also reports 15 internal-barcode identity matrices and predicted product lengths.
 
 [Mismatch sensitivity, identity matrices and product lengths](results/anth28s_evaluation/README.md) · [16S common-panel and genus holdout results](results/computational_evaluation/README.md) · [12S and COI panels](markers/12S_COI/README.md) · [Methods](docs/METHODS.md) · [Reproduction](docs/REPRODUCIBILITY.md)
 
 ## Citation and permissions
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.7. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.8. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.8).
 
 [Copyright](COPYRIGHT.md)
 
@@ -174,5 +176,9 @@ Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial pr
 11. Wen, J., Hu, C., Zhang, L., & Fan, S. (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. *Food Control*, 22(1), 72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
 
 12. Xing, R.-R., Hu, R.-R., Wang, N., Zhang, J.-K., Ge, Y.-Q., & Chen, Y. (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. *Food Control*, 129, 108199. https://doi.org/10.1016/j.foodcont.2021.108199
+
+13. Ficetola, G. F., Guerrieri, A., Cantera, I., & Bonin, A. (2024). In silico assessment of 18S rDNA metabarcoding markers for the characterization of nematode communities. *PLOS ONE*, 19, e0298905. https://doi.org/10.1371/journal.pone.0298905
+
+14. Osorio, M. H., Arias, T., Jiménez-Segura, L., & Soto-Calderón, I. D. (2026). Andean fish inventories using an eDNA metabarcoding approach. *Discover Conservation*, 3, 16. https://doi.org/10.1007/s44353-026-00081-3
 
 </details>

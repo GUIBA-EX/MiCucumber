@@ -1,0 +1,6 @@
+panel,gene,assay,species,accession,position,added_background,background_n
+design,16S,LD-Elasipodida,Cucumaria georgiana,JX133921.1,F −2,0,5600
+design,COI,XSD,Actinopyga lecanora,NC_057223.1,R −3,0,2216
+external,16S,M,Ypsilothuria bitentaculata,PX453036.1,R −3,0,142
+external,16S,MD,Ypsilothuria bitentaculata,PX453036.1,R −3,0,142
+external,COI,L,Thelenota ananas,MH834593.1,F −3,0,127

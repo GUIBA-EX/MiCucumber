@@ -7,9 +7,9 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 <!-- publication:start -->
-**预印本 v1.7 · 2026 年 11 月 11 日**
+**预印本 v1.8 · 2026 年 11 月 11 日**
 
-[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
+[PDF](publications/MiCucumber_preprint.pdf) · [论文 Markdown](publications/MiCucumber_preprint.md) · [固定版本](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.8) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [构建与更新](publications/README.md)
 <!-- publication:end -->
 
 MiCucumber 提供 29 对海参环境 DNA 宏条形码候选引物，靶向线粒体 16S、12S 和 COI 三个标记，并提供两套 16S 谱系补充方案。
@@ -23,10 +23,10 @@ MiCucumber 提供 29 对海参环境 DNA 宏条形码候选引物，靶向线粒
 | 优先扩大 16S 覆盖 | 16S SD-Dendrochirotida | 226 bp | 138/151 | 1/151 |
 | 优先考虑单对 16S 引物的完全匹配 | 16S LD | 302 bp | 73/151 | 23/151 |
 | 覆盖物种数最多的 12S 方案 | 12S XLD | 354 bp | 33/53 | 7/53 |
-| 最短 COI 窗口 | COI XSD | 145 bp | 43/57 | 3/57 |
-| 覆盖物种数最多的 COI 方案 | COI LD | 293 bp | 103/283 | 11/283 |
+| COI 最短窗口，共同面板覆盖最高 | COI XSD | 145 bp | 41/49 | 3/49 |
+| COI L 窗口的全部可评价参考 | COI LD | 293 bp | 103/283 | 11/283 |
 
-16S 两项使用同一组 151 个物种。12S 和 COI 以各窗口可评价的物种数为分母。预测覆盖允许每条引物最多两个错配，并要求 3′ 末端三个碱基兼容。双端完全匹配要求两条引物均无错配。
+16S 两项使用同一组 151 个物种。12S 和 COI 各自五个窗口共有的可评价物种分别为 53 种和 49 种。12S XLD 覆盖 33 种，COI XSD 覆盖 41 种，其中分别有 33 种和 39 种具有物种唯一的参考片段。COI LD 在同一 COI 面板覆盖 24/49 种，103/283 则来自 LD 窗口的全部可评价物种。预测覆盖允许每条引物最多两个错配，并要求 3′ 末端三个碱基兼容。双端完全匹配要求两条引物均无错配。 [各长度在共同面板和各自面板上的结果](results/benchmark_revision/marker_comparison.csv)
 
 ## 16S 谱系补充
 
@@ -137,13 +137,15 @@ XS 与 XSD 去除引物后的参考内部条码为 108 bp。
 
 ## 评价与数据
 
-每端 0–2 个错配的分析区分了完全匹配与放宽错配后增加的覆盖。完整结果包含 15 个内部条形码相似度矩阵及预测产物长度。
+16S XS 的 160 种不同参考片段中，154 种可唯一归到物种，158 种可唯一归到属，160 种可唯一归到科。评价也列出有限放宽 3′ 端错配后新增的覆盖物种，并按纲汇总原 12S 和 COI 背景面板中其他棘皮动物的命中情况。 [分类分辨率、错配位置和背景结果](results/benchmark_revision/README.md)
+
+每端 0–2 个错配的完整分析还包括 15 个内部条形码相似度矩阵及预测产物长度。
 
 [错配梯度、相似度矩阵与产物长度](results/anth28s_evaluation/README.zh-CN.md) · [16S 共同面板与属级留出结果](results/computational_evaluation/README.zh-CN.md) · [12S 与 COI 面板](markers/12S_COI/README.md) · [方法](docs/METHODS.zh-CN.md) · [复现](docs/REPRODUCIBILITY.zh-CN.md)
 
 ## 引用与著作权
 
-Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.7. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.7).
+Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial primers for sea cucumber (Holothuroidea) eDNA metabarcoding*. Computational preprint v1.8. [GitHub Release](https://github.com/GUIBA-EX/MiCucumber/releases/tag/preprint-v1.8).
 
 [著作权](COPYRIGHT.md)
 
@@ -174,5 +176,9 @@ Xia, F. (2026). *MiCucumber: in silico design and evaluation of mitochondrial pr
 11. Wen, J., Hu, C., Zhang, L., & Fan, S. (2011). Genetic identification of global commercial sea cucumber species on the basis of mitochondrial DNA sequences. *Food Control*, 22(1), 72–77. https://doi.org/10.1016/j.foodcont.2010.06.010
 
 12. Xing, R.-R., Hu, R.-R., Wang, N., Zhang, J.-K., Ge, Y.-Q., & Chen, Y. (2021). Authentication of sea cucumber products using NGS-based DNA mini-barcoding. *Food Control*, 129, 108199. https://doi.org/10.1016/j.foodcont.2021.108199
+
+13. Ficetola, G. F., Guerrieri, A., Cantera, I., & Bonin, A. (2024). In silico assessment of 18S rDNA metabarcoding markers for the characterization of nematode communities. *PLOS ONE*, 19, e0298905. https://doi.org/10.1371/journal.pone.0298905
+
+14. Osorio, M. H., Arias, T., Jiménez-Segura, L., & Soto-Calderón, I. D. (2026). Andean fish inventories using an eDNA metabarcoding approach. *Discover Conservation*, 3, 16. https://doi.org/10.1007/s44353-026-00081-3
 
 </details>

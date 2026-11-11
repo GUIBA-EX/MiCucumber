@@ -1,4 +1,10 @@
-# Order-balanced D selection · 2026-10-25
+# MiCucumber changelog
+
+## Preprint v1.8
+
+- Compare 12S and COI on shared five-window and short-window species panels alongside the available panels.
+- Add 16S species, genus and family resolution, exact positions of newly tolerated mismatches, and class-specific 12S and COI background counts.
+- Reorganize the manuscript around candidate choice and synchronize the English and Chinese README, analysis tables and citations.
 
 ## Preprint v1.6
 

@@ -29,6 +29,9 @@ sources.update(str(f.relative_to(out.parent)) for f in (out.parent/'results/mark
                if f.is_file() and f.suffix in ('.csv','.py','.md'))
 sources.update(str(f.relative_to(out.parent)) for f in (out.parent/'results/external_panel').iterdir()
                if f.is_file() and f.suffix in ('.csv','.json','.fasta','.txt','.md','.py'))
+sources.update(str(f.relative_to(out.parent)) for f in (out.parent/'results/benchmark_revision').iterdir()
+               if f.is_file() and f.suffix in ('.csv','.md','.py'))
+sources.update({'results/species_qc/gbif_matches.json','results/species_qc/gbif_accepted.json'})
 sources.update(f'figures/base_matching_{name}.svg' for name in ('SD-Dendrochirotida','LD-Elasipodida'))
 provenance.update(date=c['date'],working_revision=working_revision,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=out.parent,text=True).strip())
 provenance['inputs']={name:hashlib.sha256((out.parent/name).read_bytes()).hexdigest() for name in sorted(sources)}
