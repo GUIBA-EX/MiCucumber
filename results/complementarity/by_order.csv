@@ -1,0 +1,35 @@
+assay,order,n,e0,e1,e2
+16S SD,ALL,174,1,46,155
+16S SD,Apodida,5,0,0,0
+16S SD,Dendrochirotida,36,1,23,35
+16S SD,Elasipodida,22,0,0,14
+16S SD,Holothuriida,77,0,15,75
+16S SD,Molpadida,4,0,1,4
+16S SD,Persiculida,4,0,0,2
+16S SD,Synallactida,26,0,7,25
+16S SD,EXTERNAL,28,0,5,23
+16S LD,ALL,174,29,66,99
+16S LD,Apodida,5,0,0,0
+16S LD,Dendrochirotida,36,0,4,9
+16S LD,Elasipodida,22,0,6,15
+16S LD,Holothuriida,77,29,56,72
+16S LD,Molpadida,4,0,0,0
+16S LD,Persiculida,4,0,0,0
+16S LD,Synallactida,26,0,0,3
+16S LD,EXTERNAL,28,2,5,16
+COI LD,ALL,283,11,59,122
+COI LD,Apodida,20,0,1,1
+COI LD,Aspidochirotida,118,10,35,78
+COI LD,Dendrochirotida,90,1,18,31
+COI LD,Elasipodida,46,0,1,7
+COI LD,Molpadida,9,0,4,5
+COI LD,EXTERNAL,15,1,5,13
+hol.11,ALL,174,122,161,163
+hol.11,Apodida,5,0,2,4
+hol.11,Dendrochirotida,36,19,35,35
+hol.11,Elasipodida,22,4,14,14
+hol.11,Holothuriida,77,68,77,77
+hol.11,Molpadida,4,4,4,4
+hol.11,Persiculida,4,2,4,4
+hol.11,Synallactida,26,25,25,25
+hol.11,EXTERNAL,0,0,0,0

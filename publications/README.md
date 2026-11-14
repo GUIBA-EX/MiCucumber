@@ -1,31 +1,21 @@
-# MiCucumber preprint
+# MiCucumber manuscript
 
-**Fei Xia** · Computational preprint
+Fei Xia · The University of Tokyo · xf@g.ecc.u-tokyo.ac.jp
 
-[PDF](MiCucumber_preprint.pdf) · [Manuscript](MiCucumber_preprint.md) · [Versioned releases](https://github.com/GUIBA-EX/MiCucumber/releases) · [Citation](../CITATION.cff)
+[Manuscript PDF](submission/MiCucumber_revision.pdf) · [Editable Word](submission/MiCucumber_revision.docx) · [Markdown](submission/MiCucumber_revision.md) · [Supplementary PDF](submission/Supplementary.pdf)
 
-## Build and validate
+## Supporting files
 
-The [mismatch, product-length and sequence-identity analyses](../results/anth28s_evaluation/README.md) supply six diagnostic figures and Tables 8–9. The [16S lineage evaluation](../results/lineage_evaluation/README.md) supplies the S/L gains and order-level tables, two base-matching figures and the independent checks. The [external reference evaluation](../results/external_panel/README.md) supplies Table 12 and the full accession-level results. The [candidate comparison and resolution analysis](../results/benchmark_revision/README.md) supplies Tables 13–15 and the class-specific background counts.
+- [Online Resource 1](submission/ESM_1.xlsx) contains 29 baseline primer pairs and original panel summaries.
+- [Online Resource 2](submission/ESM_2.xlsx) contains all 61 oligonucleotides.
+- [Online Resource 3](submission/Supplementary.pdf) contains Figs. S1–S5.
+- [Fig. 1 A4](submission/figures/Fig1_A4.pdf) displays five 16S windows and [31 representatives](submission/figures/Fig1_representatives.csv).
+- [Cover letter](submission/Cover_letter.docx) is the editable submission draft.
 
-Install Python 3, Pandoc, Poppler and Google Chrome or Chromium. Set `CHROME` to the browser executable when needed. Run from the repository root:
+## Reproduction
 
-```sh
-python3 -m pip install -r publications/requirements-preprint.txt biopython primer3-py==2.4.0
-python3 results/benchmark_revision/analyze.py
-python3 publications/build_preprint.py
-python3 publications/check_preprint.py
-python3 scripts/check_release.py
-python3 scripts/check_publication.py
-python3 scripts/preprint_integrity.py
-```
+Run python scripts/check_review.py from the repository root. Current analyses are documented in [scripts/review](../scripts/review/README.md). Figure inputs are retained in [results/visualization](../results/visualization/). Run python scripts/render_submission_figures.py with NumPy, Matplotlib and Pillow to reproduce the main figures and Fig. S5. Arial is used when installed.
 
-## Automatic updates
+Run python publications/submission/build_docx.py with Pandoc and python-docx to rebuild editable documents from Markdown. Export the resulting Word files to PDF and inspect pagination before replacing the checked PDFs. Fig. 1 occupies a full page and its caption follows on the next page.
 
-Pushes to `main` and manual workflow runs check the committed research results and publication files. Changes to README editions, citations, data, figures, publication sources or release scripts trigger a new minor preprint version. The workflow stamps all editions using Asia/Shanghai time, rebuilds the PDF, checks scientific tables and primer sequences, validates publication metadata and links, and verifies checksums before creating a tagged GitHub Release. A run with no relevant changes validates the existing version without creating a new one.
-
-The release contains the PDF, the baseline primer FASTA, the two selected 16S lineage supplement FASTAs and SHA-256 checksums. Relative links in the PDF point to the matching source tag. The workflow rebuilds the paper from the committed results.
-
-## Consistency checks
-
-`release.json` holds the title, version, date, README editions and baseline and supplementary FASTA paths. `scripts/stamp_preprint.py` synchronizes the manuscript and citation formats. `scripts/check_publication.py` verifies metadata, local links, visible figure captions and the baseline oligos in the PDF and manuscript. The builder regenerates Tables 1–15 from the current scientific CSV files and copies the current 12S and COI position figures. Checks verify every generated table and both figure copies against their sources. `publication_check.json` records the checked version, page and oligo counts, and output hashes.
+The files directly under this directory retain the earlier v1.8 release and its build scripts. Current files are indexed in [PROJECT_FILES.md](../PROJECT_FILES.md). Checksums are in [SHA256SUMS_revision.txt](submission/SHA256SUMS_revision.txt).

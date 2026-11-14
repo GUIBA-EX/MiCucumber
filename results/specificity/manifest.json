@@ -1,0 +1,16 @@
+[
+  {
+    "archive": "https://zenodo.org/records/22685701/files/MIDORI2_GB273_SINTAX.zip",
+    "member": "SINTAX/uniq/MIDORI2_UNIQ_NUC_GB273_CO1_SINTAX.fasta.gz",
+    "bytes": 105123013,
+    "sha256": "d1fdbb40151e87259c7b7a57f077486bb7c3035f30f2fcb89ded84b0721af84a",
+    "download_date": "2026-11-12"
+  },
+  {
+    "archive": "https://zenodo.org/records/22685701/files/MIDORI2_GB273_SINTAX.zip",
+    "member": "SINTAX/uniq/MIDORI2_UNIQ_NUC_GB273_lrRNA_SINTAX.fasta.gz",
+    "bytes": 32431177,
+    "sha256": "75be2258e8c913305cc166c2b2ab1fbba7e8ac43109ad280baa867723f902414",
+    "download_date": "2026-11-12"
+  }
+]

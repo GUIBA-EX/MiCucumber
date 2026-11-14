@@ -1,0 +1,14 @@
+{
+  "16S": {
+    "records": 414544,
+    "excluded_without_named_species": 0,
+    "named_species": 119214,
+    "sha256_gz": "75be2258e8c913305cc166c2b2ab1fbba7e8ac43109ad280baa867723f902414"
+  },
+  "COI": {
+    "records": 1864515,
+    "excluded_without_named_species": 1,
+    "named_species": 242979,
+    "sha256_gz": "d1fdbb40151e87259c7b7a57f077486bb7c3035f30f2fcb89ded84b0721af84a"
+  }
+}

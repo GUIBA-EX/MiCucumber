@@ -1,0 +1,13 @@
+assay,rank,unique,evaluable,matched_records
+16S LD,species,338,346,564
+16S LD,genus,345,346,564
+16S LD,family,346,346,564
+16S SD,species,473,483,1343
+16S SD,genus,480,483,1343
+16S SD,family,483,483,1343
+COI LD,species,666,683,2614
+COI LD,genus,681,683,2614
+COI LD,family,682,683,2614
+hol.11,species,516,525,1351
+hol.11,genus,522,525,1351
+hol.11,family,525,525,1351
